@@ -24,7 +24,7 @@ def check_ghostscript():
 
 def compress_pdf(input_path, output_path):
     """Compress a single PDF"""
-    # Ghostscript command optimized for fast rendering
+    # Maximum compression for smallest files
     gs_command = [
         'gs',
         '-q',
@@ -32,24 +32,21 @@ def compress_pdf(input_path, output_path):
         '-dBATCH',
         '-dSAFER',
         '-sDEVICE=pdfwrite',
-        '-dCompatibilityLevel=1.4',  # Better compatibility
-        '-dPDFSETTINGS=/ebook',
+        '-dCompatibilityLevel=1.4',
+        '-dPDFSETTINGS=/screen',  # Maximum compression
         '-dDownsampleColorImages=true',
-        '-dColorImageResolution=100',  # Lower for faster loading
+        '-dColorImageResolution=72',  # 72 DPI
         '-dDownsampleGrayImages=true',
-        '-dGrayImageResolution=100',
+        '-dGrayImageResolution=72',
         '-dDownsampleMonoImages=true',
-        '-dMonoImageResolution=200',  # Still clear for text
+        '-dMonoImageResolution=150',
         '-dCompressFonts=true',
-        '-dEmbedAllFonts=true',
+        '-dEmbedAllFonts=false',
         '-dSubsetFonts=true',
         '-dAutoRotatePages=/None',
         '-dOptimize=true',
-        '-dFastWebView=true',  # Page-at-a-time downloading
-        '-dMaxInlineImageSize=4000',  # Inline small images
-        '-dPassThroughJPEGImages=false',  # Recompress JPEGs
-        '-dConvertCMYKImagesToRGB=true',  # RGB is faster
-        '-dDetectDuplicateImages=true',  # Remove duplicates
+        '-dFastWebView=true',
+        '-dDetectDuplicateImages=true',
         f'-sOutputFile={output_path}',
         str(input_path)
     ]
