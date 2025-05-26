@@ -24,7 +24,7 @@ def check_ghostscript():
 
 def compress_pdf(input_path, output_path):
     """Compress a single PDF"""
-    # Ghostscript command with better balance of size/quality
+    # Ghostscript command optimized for fast rendering
     gs_command = [
         'gs',
         '-q',
@@ -32,20 +32,24 @@ def compress_pdf(input_path, output_path):
         '-dBATCH',
         '-dSAFER',
         '-sDEVICE=pdfwrite',
-        '-dCompatibilityLevel=1.5',
-        '-dPDFSETTINGS=/ebook',  # Better than /screen for rendering
+        '-dCompatibilityLevel=1.4',  # Better compatibility
+        '-dPDFSETTINGS=/ebook',
         '-dDownsampleColorImages=true',
-        '-dColorImageResolution=150',  # 150 DPI instead of 72
+        '-dColorImageResolution=100',  # Lower for faster loading
         '-dDownsampleGrayImages=true',
-        '-dGrayImageResolution=150',
+        '-dGrayImageResolution=100',
         '-dDownsampleMonoImages=true',
-        '-dMonoImageResolution=300',  # Higher for text clarity
+        '-dMonoImageResolution=200',  # Still clear for text
         '-dCompressFonts=true',
-        '-dEmbedAllFonts=true',  # Embed fonts for better rendering
+        '-dEmbedAllFonts=true',
         '-dSubsetFonts=true',
         '-dAutoRotatePages=/None',
         '-dOptimize=true',
-        '-dFastWebView=true',  # Optimize for web viewing
+        '-dFastWebView=true',  # Page-at-a-time downloading
+        '-dMaxInlineImageSize=4000',  # Inline small images
+        '-dPassThroughJPEGImages=false',  # Recompress JPEGs
+        '-dConvertCMYKImagesToRGB=true',  # RGB is faster
+        '-dDetectDuplicateImages=true',  # Remove duplicates
         f'-sOutputFile={output_path}',
         str(input_path)
     ]
