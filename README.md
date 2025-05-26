@@ -34,6 +34,20 @@ To save online articles as compressed PDFs:
 
 Example: `Variety-Oscar_Nominations_2024-01-23-2024.pdf`
 
+### Compress Existing PDFs
+
+To compress PDFs you've already downloaded:
+
+```bash
+cd "/Users/spencejb/Documents/GiltzWeb 2"
+python3 compress_pdf.py ~/Desktop/your-article.pdf
+```
+
+This will:
+- Compress the PDF to ~72 DPI (typically 90-95% size reduction)
+- Save compressed version with original filename
+- Rename original to `filename_original.pdf`
+
 ### For Developers
 
 ```bash
