@@ -36,17 +36,16 @@ Example: `Variety-Oscar_Nominations_2024-01-23-2024.pdf`
 
 ### Compress Existing PDFs
 
-To compress PDFs you've already downloaded:
+To compress PDFs for fast web viewing:
 
-```bash
-cd "/Users/spencejb/Documents/GiltzWeb 2"
-python3 compress_pdf.py ~/Desktop/your-article.pdf
-```
+1. Put PDFs in the **"PDFs to Compress"** folder on Desktop
+2. Double-click **"Compress PDFs on Desktop.command"**
+3. Find compressed PDFs in **"Compressed PDFs"** folder
 
-This will:
-- Compress the PDF to ~72 DPI (typically 90-95% size reduction)
-- Save compressed version with original filename
-- Rename original to `filename_original.pdf`
+Features:
+- 72 DPI compression (~90% size reduction)
+- Optimized for fast web viewing
+- Originals saved in "Original PDFs" folder
 
 ### For Developers
 
