@@ -69,6 +69,7 @@ def main():
     desktop = Path.home() / 'Desktop'
     input_folder = desktop / 'PDFs to Compress'
     output_folder = desktop / 'Compressed PDFs'
+    original_folder = desktop / 'Original PDFs'
     
     # Create input folder if it doesn't exist
     if not input_folder.exists():
@@ -89,8 +90,9 @@ def main():
     
     print(f"\n📄 Found {len(pdf_files)} PDF(s) to compress")
     
-    # Create output folder
+    # Create output folders
     output_folder.mkdir(exist_ok=True)
+    original_folder.mkdir(exist_ok=True)
     
     # Process each PDF
     success_count = 0
@@ -110,15 +112,20 @@ def main():
             reduction = (1 - compressed_size / original_size) * 100
             print(f"  ✅ Compressed: {compressed_size / 1024:.0f} KB ({reduction:.0f}% smaller)")
             print(f"  📁 Saved to: Compressed PDFs/{output_path.name}")
+            
+            # Move original to Original PDFs folder
+            original_path = original_folder / pdf_path.name
+            pdf_path.rename(original_path)
+            print(f"  📁 Original moved to: Original PDFs/{pdf_path.name}")
+            
             success_count += 1
-            # Original stays in place
         else:
             print(f"  ❌ Compression failed")
     
     print(f"\n{'='*50}")
     print(f"✅ Complete! Compressed {success_count} of {len(pdf_files)} PDFs")
-    print(f"\n📁 Compressed files in: {output_folder}")
-    print("📁 Original files remain in: PDFs to Compress")
+    print(f"\n📁 Compressed files in: Compressed PDFs")
+    print("📁 Original files in: Original PDFs")
 
 if __name__ == "__main__":
     main()
