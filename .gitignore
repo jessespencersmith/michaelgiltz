@@ -1,0 +1,84 @@
+# Sensitive files
+.htpasswd
+.htaccess
+admin/.htpasswd
+admin/.htaccess
+deployment_config.json
+create_password.php
+create_htpasswd.py
+*password*
+*credentials*
+
+# Temporary and backup files
+*.backup
+*.bak
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+ENV/
+env/
+.env
+
+# Logs
+*.log
+logs/
+error_log
+access_log
+
+# IDE specific files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Test files
+test_*.py
+test_*.php
+*_test.py
+*_test.php
+
+# Deployment scripts with credentials
+quick_upload.py
+quick_deploy.py
+deploy_html.py
+fix_admin.py
+upload_file.py
+
+# State files
+.pdf_processor_state.json
+processing_log.txt
+
+# Local development
+local/
+temp/
+tmp/
+
+# Archives
+*.zip
+*.tar.gz
+*.rar
+
+# OS generated files
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Desktop.ini
+
+# Backup directory (contains old versions)
+backup/
+
+# Any file with sensitive information
+*secret*
+*private*

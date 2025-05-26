@@ -1,0 +1,6 @@
+# PDF Processing
+PyPDF2>=3.0.0
+
+# Optional: For better PDF text extraction
+# pdfplumber>=0.9.0
+# pymupdf>=1.23.0

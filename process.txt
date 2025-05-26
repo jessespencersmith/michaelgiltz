@@ -1,0 +1,17 @@
+PROCESS
+
+Typically, I publish an article at another website. I then turn that article into a PDF, compress the PDF and then upload it to my website. The article is stored chronologically in sections devoted to various outlets, such as Huffington Post, the Los Angeles Times, Substack and so on. It might also be placed in a portfolio containing my best articles on various topics, like movies, music, books, theater etc. 
+
+I update information on the website, such as my résumè, people I’ve interviewed and so on, as well as adding articles as they are written. 
+
+TOOLS
+
+Here are the tools I use to create and maintain my webpage. 
+
+I use Adobe Acrobat to create my PDFs. 
+
+I use a free, publicly available tool at the website simpleimageresizer.com to compress my PDFs. 
+
+I use BBedit, but I can use TextEdit instead. 
+
+Any of the tools can be replaced with newer, simpler tools if available, but it should all be free. 

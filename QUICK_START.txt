@@ -1,0 +1,48 @@
+MICHAEL GILTZ WEBSITE - QUICK START GUIDE
+==========================================
+
+YOUR NEW WORKFLOW (Super Simple!)
+---------------------------------
+
+OLD WAY:
+1. Create PDF
+2. Upload PDF
+3. Run complicated Python command
+4. Hope it works
+
+NEW WAY:
+1. Create PDF (same as always)
+2. Upload PDF (same as always)  
+3. Go to: michaelgiltz.com/admin
+4. Click the big blue button
+5. Done!
+
+THAT'S IT!
+----------
+- No command line
+- No technical knowledge needed
+- Just click one button
+
+ADMIN PANEL
+-----------
+URL: http://michaelgiltz.com/admin
+Username: michael
+Password: [The password you set]
+
+The button says: "Update Website Now"
+Just click it and wait 30 seconds.
+
+IF SOMETHING GOES WRONG
+-----------------------
+1. Try the "Run Test" button first
+2. Check that your PDFs are named correctly:
+   Publication-Title_With_Underscores-MM-DD-YYYY.pdf
+   
+REMEMBER
+--------
+- Everything else stays EXACTLY the same
+- You still create PDFs the same way
+- You still upload them the same way
+- The ONLY change is clicking a button instead of typing commands
+
+Need help? Contact: [support contact]
