@@ -6,6 +6,7 @@ admin/.htaccess
 deployment_config.json
 create_password.php
 create_htpasswd.py
+deploy_with_password.py
 *password*
 *credentials*
 
