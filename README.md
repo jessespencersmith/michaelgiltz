@@ -21,6 +21,19 @@ A comprehensive journalism portfolio website featuring 20+ years of entertainmen
 4. Click "Update Website Now"
 5. Done! Your article is now live and searchable
 
+### Archive Web Articles as PDFs
+
+To save online articles as compressed PDFs:
+
+1. **Open Terminal**
+2. **Navigate to project folder**: `cd "/Users/spencejb/Documents/GiltzWeb 2"`
+3. **Run archiver**: `python3 archive_article_simple.py`
+4. **Enter the article URL**
+5. **Enter filename** in format: `Publication-Article_Title-MM-DD-YYYY`
+6. **Find compressed PDF on your Desktop**
+
+Example: `Variety-Oscar_Nominations_2024-01-23-2024.pdf`
+
 ### For Developers
 
 ```bash
