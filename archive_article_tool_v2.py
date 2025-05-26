@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
 """
-Entertainment Article PDF Archiver
-==================================
+Entertainment Article PDF Archiver v2
+=====================================
 
 This tool converts entertainment articles to space-efficient PDFs.
-Designed specifically for archiving Michael Giltz's entertainment articles.
+Updated to use Playwright instead of discontinued wkhtmltopdf.
 
 Features:
-- Converts webpages to PDF
+- Converts webpages to PDF using Playwright
 - Compresses PDFs using Ghostscript (9MB → 400KB)
 - Images downsampled to 72 DPI
 - Interactive filename creation
@@ -15,11 +15,11 @@ Features:
 
 Requirements:
 - macOS
-- Ghostscript (REQUIRED): brew install ghostscript
-- wkhtmltopdf: brew install --cask wkhtmltopdf
+- Ghostscript: brew install ghostscript
+- Playwright: pip3 install playwright && playwright install chromium
 
 Usage:
-    python3 archive_article_tool.py
+    python3 archive_article_tool_v2.py
 """
 
 import os
@@ -31,6 +31,7 @@ from datetime import datetime
 from pathlib import Path
 import urllib.request
 import urllib.parse
+import asyncio
 
 
 def check_requirements():
@@ -46,13 +47,14 @@ def check_requirements():
         print("  Install with: brew install ghostscript")
         tools_ok = False
     
-    # Check wkhtmltopdf
+    # Check if Playwright is installed
     try:
-        subprocess.run(['wkhtmltopdf', '--version'], capture_output=True, check=True)
-        print("✓ wkhtmltopdf installed")
-    except:
-        print("✗ wkhtmltopdf NOT installed")
-        print("  Install with: brew install --cask wkhtmltopdf")
+        import playwright
+        print("✓ Playwright installed")
+    except ImportError:
+        print("✗ Playwright NOT installed")
+        print("  Install with: pip3 install playwright")
+        print("  Then run: playwright install chromium")
         tools_ok = False
     
     if not tools_ok:
@@ -126,8 +128,64 @@ def get_suggested_publication(url):
     return ''.join(word.capitalize() for word in name.split('-'))
 
 
-def get_suggested_title(url):
-    """Try to extract article title from webpage"""
+async def get_page_info_with_playwright(url):
+    """Get title and content using Playwright"""
+    try:
+        from playwright.async_api import async_playwright
+        
+        suggested_title = ""
+        suggested_date = datetime.now().strftime('%m-%d-%Y')
+        
+        async with async_playwright() as p:
+            browser = await p.chromium.launch(headless=True)
+            page = await browser.new_page()
+            
+            # Navigate to URL
+            await page.goto(url, wait_until='networkidle', timeout=30000)
+            
+            # Wait a bit for JavaScript to load
+            await page.wait_for_timeout(2000)
+            
+            # Try to get title
+            try:
+                # Try Open Graph title first
+                og_title = await page.query_selector('meta[property="og:title"]')
+                if og_title:
+                    suggested_title = await og_title.get_attribute('content')
+                
+                if not suggested_title:
+                    # Try regular title
+                    suggested_title = await page.title()
+                    # Remove site name
+                    if suggested_title:
+                        suggested_title = re.split(r'\s*[\|–—-]\s*', suggested_title)[0].strip()
+            except:
+                pass
+            
+            # Try to get date
+            try:
+                # Try article:published_time
+                date_meta = await page.query_selector('meta[property="article:published_time"]')
+                if date_meta:
+                    date_content = await date_meta.get_attribute('content')
+                    if date_content:
+                        date_obj = datetime.fromisoformat(date_content.split('T')[0])
+                        suggested_date = date_obj.strftime('%m-%d-%Y')
+            except:
+                pass
+            
+            await browser.close()
+        
+        return suggested_title, suggested_date
+        
+    except Exception as e:
+        print(f"Warning: Could not fetch page info: {e}")
+        return "", datetime.now().strftime('%m-%d-%Y')
+
+
+def get_suggested_info(url):
+    """Get suggested title and date"""
+    # Try simple HTTP request first
     try:
         req = urllib.request.Request(url, headers={
             'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)'
@@ -137,62 +195,34 @@ def get_suggested_title(url):
             html = response.read().decode('utf-8', errors='ignore')
         
         # Try to find title
-        import re
-        
-        # Try Open Graph title
+        title = ""
         match = re.search(r'<meta\s+property=["\']og:title["\']\s+content=["\'](.*?)["\']', html, re.I)
         if match:
-            return match.group(1)
+            title = match.group(1)
+        else:
+            match = re.search(r'<title>(.*?)</title>', html, re.I | re.S)
+            if match:
+                title = match.group(1).strip()
+                title = re.split(r'\s*[\|–—-]\s*', title)[0].strip()
         
-        # Try regular title tag
-        match = re.search(r'<title>(.*?)</title>', html, re.I | re.S)
-        if match:
-            title = match.group(1).strip()
-            # Remove site name
-            title = re.split(r'\s*[\|–—-]\s*', title)[0].strip()
-            return title
-            
-    except:
-        pass
-    
-    return ""
-
-
-def get_suggested_date(url):
-    """Try to extract article date"""
-    try:
-        req = urllib.request.Request(url, headers={
-            'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)'
-        })
-        
-        with urllib.request.urlopen(req, timeout=10) as response:
-            html = response.read().decode('utf-8', errors='ignore')
-        
-        # Try article:published_time
+        # Try to find date
+        date_str = datetime.now().strftime('%m-%d-%Y')
         match = re.search(r'<meta\s+property=["\']article:published_time["\']\s+content=["\']([\d-]+)', html, re.I)
         if match:
-            date_str = match.group(1)[:10]
             try:
-                date_obj = datetime.strptime(date_str, '%Y-%m-%d')
-                return date_obj.strftime('%m-%d-%Y')
+                date_obj = datetime.strptime(match.group(1)[:10], '%Y-%m-%d')
+                date_str = date_obj.strftime('%m-%d-%Y')
             except:
                 pass
         
-        # Try datePublished
-        match = re.search(r'"datePublished"\s*:\s*"([\d-]+)', html)
-        if match:
-            date_str = match.group(1)[:10]
-            try:
-                date_obj = datetime.strptime(date_str, '%Y-%m-%d')
-                return date_obj.strftime('%m-%d-%Y')
-            except:
-                pass
-                
+        return title, date_str
+        
     except:
-        pass
-    
-    # Default to today
-    return datetime.now().strftime('%m-%d-%Y')
+        # Fall back to Playwright if simple request fails
+        try:
+            return asyncio.run(get_page_info_with_playwright(url))
+        except:
+            return "", datetime.now().strftime('%m-%d-%Y')
 
 
 def interactive_filename_creation(url):
@@ -206,8 +236,7 @@ def interactive_filename_creation(url):
     
     # Get suggestions
     suggested_pub = get_suggested_publication(url)
-    suggested_title = get_suggested_title(url)
-    suggested_date = get_suggested_date(url)
+    suggested_title, suggested_date = get_suggested_info(url)
     
     # Get publication
     print(f"\n1. PUBLICATION NAME")
@@ -272,27 +301,37 @@ def interactive_filename_creation(url):
     return filename
 
 
-def create_pdf_from_url(url, output_path):
-    """Create PDF from URL using wkhtmltopdf"""
+async def create_pdf_with_playwright(url, output_path):
+    """Create PDF using Playwright"""
     print("\nGenerating PDF from webpage...")
     
-    cmd = [
-        'wkhtmltopdf',
-        '--print-media-type',
-        '--no-stop-slow-scripts',
-        '--javascript-delay', '3000',
-        '--load-error-handling', 'ignore',
-        '--load-media-error-handling', 'ignore',
-        '--enable-local-file-access',
-        url,
-        output_path
-    ]
-    
     try:
-        result = subprocess.run(cmd, capture_output=True, text=True)
-        if result.returncode != 0 and not os.path.exists(output_path):
-            print(f"Error creating PDF: {result.stderr}")
-            return False
+        from playwright.async_api import async_playwright
+        
+        async with async_playwright() as p:
+            browser = await p.chromium.launch(headless=True)
+            page = await browser.new_page()
+            
+            # Set viewport
+            await page.set_viewport_size({"width": 1200, "height": 800})
+            
+            # Navigate to page
+            print("Loading webpage...")
+            await page.goto(url, wait_until='networkidle', timeout=60000)
+            
+            # Wait for content to load
+            await page.wait_for_timeout(3000)
+            
+            # Generate PDF
+            print("Converting to PDF...")
+            await page.pdf(
+                path=output_path,
+                format='A4',
+                print_background=True,
+                margin={'top': '0.5in', 'bottom': '0.5in', 'left': '0.5in', 'right': '0.5in'}
+            )
+            
+            await browser.close()
         
         if os.path.exists(output_path) and os.path.getsize(output_path) > 0:
             size_mb = os.path.getsize(output_path) / 1024 / 1024
@@ -303,7 +342,20 @@ def create_pdf_from_url(url, output_path):
             return False
             
     except Exception as e:
-        print(f"✗ Error: {e}")
+        print(f"✗ Error creating PDF: {e}")
+        return False
+
+
+def create_pdf_from_url(url, output_path):
+    """Create PDF from URL"""
+    # Try Playwright
+    try:
+        return asyncio.run(create_pdf_with_playwright(url, output_path))
+    except Exception as e:
+        print(f"Error: {e}")
+        print("\nMake sure Playwright is installed:")
+        print("  pip3 install playwright")
+        print("  playwright install chromium")
         return False
 
 
@@ -375,7 +427,7 @@ def compress_pdf_with_ghostscript(input_path, output_path):
 
 def main():
     """Main function"""
-    print("\nENTERTAINMENT ARTICLE PDF ARCHIVER")
+    print("\nENTERTAINMENT ARTICLE PDF ARCHIVER v2")
     print("="*60)
     print("Converts web articles to space-efficient PDFs")
     print("Images compressed to 72 DPI for minimal file size")
