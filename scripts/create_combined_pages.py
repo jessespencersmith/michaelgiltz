@@ -101,6 +101,15 @@ def create_combined_page(pdf_filename, pdf_path, output_path):
             padding: 0;
             background: #f5f5f5;
         }}
+        .site-banner {{
+            text-align: center;
+            background: white;
+            padding: 10px 0;
+        }}
+        .site-banner img {{
+            max-width: 100%;
+            height: auto;
+        }}
         .container {{
             max-width: 900px;
             margin: 0 auto;
@@ -176,6 +185,11 @@ def create_combined_page(pdf_filename, pdf_path, output_path):
     <link rel="icon" type="image/png" href="../favicon.png">
 </head>
 <body>
+    <!-- Site Banner -->
+    <div class="site-banner">
+        <a href="../index.htm"><img src="../giltz.jpg" width="800" height="146" alt="MichaelGiltz.com" /></a>
+    </div>
+    
     <div class="container">
         <div class="header">
             <h1>{title}</h1>

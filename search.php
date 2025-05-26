@@ -8,11 +8,11 @@ $search_query = isset($_GET['q']) ? trim($_GET['q']) : '';
 $results = array();
 
 if ($search_query && strlen($search_query) >= 3) {
-    $extracted_dir = 'extracted_content';
+    $articles_dir = 'articles';
     $max_results = 50;
     
     // Search through HTML files
-    $files = glob($extracted_dir . '/*.html');
+    $files = glob($articles_dir . '/*.html');
     
     foreach ($files as $file) {
         $content = file_get_contents($file);
@@ -44,7 +44,7 @@ if ($search_query && strlen($search_query) >= 3) {
                     'publication' => $publication,
                     'date' => $date,
                     'excerpt' => $excerpt,
-                    'url' => $extracted_dir . '/' . $filename,
+                    'url' => $articles_dir . '/' . $filename,
                     'pdf_url' => 'scans/' . str_replace('.html', '.pdf', $filename)
                 );
             }
@@ -160,7 +160,6 @@ if ($search_query && strlen($search_query) >= 3) {
                         </div>
                         <div class="links">
                             <a href="<?php echo $result['url']; ?>">Read Article</a>
-                            <a href="<?php echo $result['pdf_url']; ?>">Download PDF</a>
                         </div>
                     </div>
                 <?php endforeach; ?>

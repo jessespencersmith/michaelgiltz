@@ -56,6 +56,7 @@ quick_deploy.py
 deploy_html.py
 fix_admin.py
 upload_file.py
+upload_site.py
 
 # State files
 .pdf_processor_state.json

@@ -13,13 +13,40 @@ A comprehensive journalism portfolio website featuring 20+ years of entertainmen
 
 ## 🚀 Quick Start
 
-### For Content Updates (Non-Technical Users)
+### Updating with New Articles
 
-1. Create your article PDF as usual
-2. Upload to the `scans/` folder via FTP
-3. Visit `http://michaelgiltz.com/admin`
-4. Click "Update Website Now"
-5. Done! Your article is now live and searchable
+Follow these steps to add new articles to your website:
+
+1. **Save articles as PDFs**
+   - For each article, save/download as PDF from the publication's website
+   - Use this filename format: `Publication-Title-MM-DD-YYYY.pdf`
+   - Example: `HuffPo-Theater_Review_Hamilton-03-15-2025.pdf`
+   - Place all PDFs in the **"PDFs to Compress"** folder on your Desktop
+
+2. **Compress all PDFs**
+   - Double-click **"Compress PDFs on Desktop.command"**
+   - Wait for "Processing complete!" message
+   - All PDFs will be compressed at once
+
+3. **Move compressed PDFs to scans**
+   - Open the **"Compressed PDFs"** folder on your Desktop
+   - Select ALL files in this folder
+   - Move them to: `/Users/spencejb/Documents/GiltzWeb 2/scans/`
+   - The "Compressed PDFs" folder should now be empty
+
+4. **Upload to website**
+   - Open your FTP client
+   - Connect to `ftp.michaelgiltz.com`
+   - Navigate to the `scans/` folder
+   - Upload all the new PDFs you just moved
+
+5. **Update the website**
+   - Go to `http://michaelgiltz.com/admin`
+   - Click the **"Process New PDFs"** button
+   - The system will process all new articles at once
+   - Wait for "Website updated successfully!" message
+
+**Done!** All your new articles are now live with embedded PDFs and searchable text.
 
 ### Archive Web Articles as PDFs
 
@@ -34,9 +61,9 @@ To save online articles as compressed PDFs:
 
 Example: `Variety-Oscar_Nominations_2024-01-23-2024.pdf`
 
-### Compress Existing PDFs
+### Compress Existing PDFs (Standalone Use)
 
-To compress PDFs for fast web viewing:
+If you need to compress PDFs separately:
 
 1. Put PDFs in the **"PDFs to Compress"** folder on Desktop
 2. Double-click **"Compress PDFs on Desktop.command"**
@@ -44,8 +71,9 @@ To compress PDFs for fast web viewing:
 
 Features:
 - 72 DPI compression (~90% size reduction)
-- Optimized for fast web viewing
-- Originals saved in "Original PDFs" folder
+- Optimized for fast web viewing with linearization
+- Originals automatically moved to "Original PDFs" folder
+- Processes all PDFs in the folder at once
 
 ### For Developers
 
@@ -65,44 +93,52 @@ python3 scripts/test_local.py
 
 ```
 .
+├── articles/                 # Combined HTML pages (4,200+ files) - NEW!
 ├── scans/                    # PDF articles (4,200+ files)
-├── extracted_content/        # SEO-friendly HTML versions
 ├── admin/                    # Admin panel
-│   └── index.php            # Admin interface
+│   └── index.php            # Admin interface (updated)
 ├── scripts/                  # Processing scripts
-│   ├── process_pdfs.py      # Main processing script
-│   ├── deploy.py            # Deployment script
-│   └── migrate_existing.py  # One-time migration
-├── *.htm                    # Main HTML pages
-├── search.php               # Search functionality
-└── giltz.css               # Stylesheet
+│   ├── create_combined_pages.py  # Creates HTML+PDF pages
+│   ├── process_new_pdfs.py      # Processes new uploads
+│   └── deploy.py                # Deployment script
+├── *.htm                    # Main HTML pages (all updated)
+├── search.php               # Search functionality (updated)
+├── giltz.css               # Stylesheet
+├── compress_pdf_web.py      # PDF compression tool
+└── archive_article_simple.py # Web article archiver
 ```
 
 ## 🛠️ Technical Details
 
 ### PDF Processing System
 
-The site uses an automated system to process PDFs:
+The site now uses a combined HTML+PDF system:
 
 1. **Filename Format**: `Publication-Title_of_Article-MM-DD-YYYY.pdf`
-2. **Text Extraction**: PyPDF2 extracts text for search functionality
-3. **HTML Generation**: Creates SEO-friendly pages for each article
-4. **Link Updates**: Automatically updates publication pages with new articles
+2. **Combined Pages**: Each PDF gets an HTML page with:
+   - Embedded PDF viewer at the top
+   - Extracted text content below for SEO
+   - Site navigation and branding
+3. **Automatic Updates**: Publication pages are updated with new article links
+4. **Search Integration**: Full text search across all articles
 
 ### Admin Panel
 
 Located at `/admin`, the admin panel provides:
-- One-click website updates
-- Recent PDF listing
+- One-click processing of new PDFs
+- Shows unprocessed PDF count
+- Recent PDF listing with status
 - Processing statistics
 - Test mode for verification
+- Automatic publication page updates
 
 ### Search Functionality
 
 - Full-text search across all articles
-- Searches both PDF content and metadata
+- Searches extracted text content in HTML pages
 - Returns excerpts with highlighted search terms
-- Links to both HTML and PDF versions
+- Links directly to combined HTML pages
+- Much faster and more accurate than before
 
 ## 🔧 Configuration
 
@@ -137,19 +173,24 @@ The admin panel is protected with HTTP Basic Authentication. To set up:
 
 ## 🚀 Deployment
 
-### Full Deployment
+### Full Site Upload (NEW)
 ```bash
-python3 scripts/deploy.py --full
+python3 upload_site.py
+```
+This uploads:
+- All HTML pages with updated links
+- 4,213 combined article pages
+- Updated search functionality
+- Admin panel updates
+
+### Process New PDFs Locally
+```bash
+python3 scripts/create_combined_pages.py
 ```
 
-### Update HTML Files Only
+### Quick HTML Updates
 ```bash
 python3 deploy_html.py
-```
-
-### Process New PDFs
-```bash
-python3 scripts/process_pdfs.py
 ```
 
 ## 🔒 Security
@@ -176,7 +217,16 @@ python3 scripts/process_pdfs.py
 - Check PHP is enabled on server
 - Run full update to regenerate HTML files
 
-## 📈 Future Enhancements
+## 📈 Recent Updates (January 2025)
+
+- [x] Combined HTML+PDF pages for all articles
+- [x] Improved search with full text indexing
+- [x] PDF compression workflow
+- [x] Web article archiving tool
+- [x] Automatic publication page updates
+- [x] Enhanced admin panel
+
+## 🎯 Future Enhancements
 
 - [ ] Automatic social media posting
 - [ ] Analytics integration
