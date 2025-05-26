@@ -24,7 +24,7 @@ def check_ghostscript():
 
 def compress_pdf(input_path, output_path):
     """Compress a single PDF"""
-    # Maximum compression for smallest files
+    # Optimized for web viewing - small size + fast rendering
     gs_command = [
         'gs',
         '-q',
@@ -33,9 +33,9 @@ def compress_pdf(input_path, output_path):
         '-dSAFER',
         '-sDEVICE=pdfwrite',
         '-dCompatibilityLevel=1.4',
-        '-dPDFSETTINGS=/screen',  # Maximum compression
+        '-dPDFSETTINGS=/screen',
         '-dDownsampleColorImages=true',
-        '-dColorImageResolution=72',  # 72 DPI
+        '-dColorImageResolution=72',
         '-dDownsampleGrayImages=true',
         '-dGrayImageResolution=72',
         '-dDownsampleMonoImages=true',
@@ -45,8 +45,11 @@ def compress_pdf(input_path, output_path):
         '-dSubsetFonts=true',
         '-dAutoRotatePages=/None',
         '-dOptimize=true',
-        '-dFastWebView=true',
+        '-dFastWebView=true',  # CRITICAL: Enables page-by-page loading
         '-dDetectDuplicateImages=true',
+        '-dPassThroughJPEGImages=false',  # Recompress JPEGs
+        '-dConvertCMYKImagesToRGB=true',  # RGB loads faster in browsers
+        '-dCompressPages=true',  # Compress page content streams
         f'-sOutputFile={output_path}',
         str(input_path)
     ]
