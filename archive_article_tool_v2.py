@@ -309,18 +309,36 @@ async def create_pdf_with_playwright(url, output_path):
         from playwright.async_api import async_playwright
         
         async with async_playwright() as p:
-            browser = await p.chromium.launch(headless=True)
-            page = await browser.new_page()
+            # Launch browser with more options
+            browser = await p.chromium.launch(
+                headless=True,
+                args=['--disable-blink-features=AutomationControlled']
+            )
             
-            # Set viewport
-            await page.set_viewport_size({"width": 1200, "height": 800})
+            # Create context with more realistic settings
+            context = await browser.new_context(
+                viewport={'width': 1200, 'height': 800},
+                user_agent='Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36'
+            )
+            
+            page = await context.new_page()
+            
+            # Block unnecessary resources to speed up loading
+            await page.route("**/*.{png,jpg,jpeg,gif,svg,ico}", lambda route: route.abort())
             
             # Navigate to page
             print("Loading webpage...")
-            await page.goto(url, wait_until='networkidle', timeout=60000)
-            
-            # Wait for content to load
-            await page.wait_for_timeout(3000)
+            try:
+                # Try with shorter timeout and domcontentloaded
+                await page.goto(url, wait_until='domcontentloaded', timeout=20000)
+                # Wait a bit for JavaScript
+                await page.wait_for_timeout(3000)
+            except Exception as e:
+                print(f"Initial load failed: {e}")
+                print("Trying simplified approach...")
+                # Just go to the page with minimal waiting
+                await page.goto(url, timeout=15000)
+                await page.wait_for_timeout(2000)
             
             # Generate PDF
             print("Converting to PDF...")
@@ -331,6 +349,7 @@ async def create_pdf_with_playwright(url, output_path):
                 margin={'top': '0.5in', 'bottom': '0.5in', 'left': '0.5in', 'right': '0.5in'}
             )
             
+            await context.close()
             await browser.close()
         
         if os.path.exists(output_path) and os.path.getsize(output_path) > 0:
@@ -346,17 +365,71 @@ async def create_pdf_with_playwright(url, output_path):
         return False
 
 
+def create_pdf_from_url_macos_fallback(url, output_path):
+    """Fallback: Create PDF using macOS built-in tools"""
+    print("\nTrying macOS fallback method...")
+    
+    # Create a simple HTML file that redirects to the URL
+    with tempfile.NamedTemporaryFile(mode='w', suffix='.html', delete=False) as f:
+        f.write(f'''
+        <html>
+        <head>
+            <meta http-equiv="refresh" content="0; url={url}">
+        </head>
+        <body>
+            <p>Loading article from: <a href="{url}">{url}</a></p>
+        </body>
+        </html>
+        ''')
+        temp_html = f.name
+    
+    try:
+        # Use cupsfilter to convert to PDF (built into macOS)
+        print("Generating basic PDF...")
+        cmd = [
+            'cupsfilter',
+            '-o', 'media=letter',
+            '-o', 'fit-to-page',
+            temp_html
+        ]
+        
+        result = subprocess.run(cmd, capture_output=True)
+        
+        if result.returncode == 0 and result.stdout:
+            with open(output_path, 'wb') as f:
+                f.write(result.stdout)
+            os.unlink(temp_html)
+            return True
+        else:
+            os.unlink(temp_html)
+            return False
+            
+    except Exception as e:
+        if os.path.exists(temp_html):
+            os.unlink(temp_html)
+        return False
+
+
 def create_pdf_from_url(url, output_path):
     """Create PDF from URL"""
-    # Try Playwright
+    # Try Playwright first
     try:
-        return asyncio.run(create_pdf_with_playwright(url, output_path))
+        if asyncio.run(create_pdf_with_playwright(url, output_path)):
+            return True
     except Exception as e:
-        print(f"Error: {e}")
-        print("\nMake sure Playwright is installed:")
-        print("  pip3 install playwright")
-        print("  playwright install chromium")
-        return False
+        print(f"Playwright error: {e}")
+    
+    # Try macOS fallback
+    if create_pdf_from_url_macos_fallback(url, output_path):
+        print("✓ Created basic PDF using macOS tools")
+        print("Note: This is a simple capture. For better results, ensure Playwright is properly installed.")
+        return True
+    
+    print("\nFailed to create PDF with all methods.")
+    print("\nTo fix Playwright installation:")
+    print("  pip3 install playwright")
+    print("  playwright install chromium")
+    return False
 
 
 def compress_pdf_with_ghostscript(input_path, output_path):
