@@ -34,6 +34,13 @@ def upload_file(local_path):
             except:
                 pass
             remote_path = local_path
+        elif local_path.startswith('articles/'):
+            # Ensure articles directory exists
+            try:
+                ftp.mkd('articles')
+            except:
+                pass
+            remote_path = local_path
         else:
             remote_path = os.path.basename(local_path)
         

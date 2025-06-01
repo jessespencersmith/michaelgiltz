@@ -45,11 +45,38 @@
             color: #666;
             margin: 0;
         }
+        .pdf-container {
+            width: 100%;
+            margin: 20px 0;
+            text-align: center;
+        }
         .pdf-viewer {
             width: 100%;
             height: 800px;
-            margin: 20px 0;
             border: 1px solid #ddd;
+        }
+        .pdf-fallback {
+            padding: 40px;
+            background: #f5f5f5;
+            border: 1px solid #ddd;
+            text-align: center;
+        }
+        .pdf-fallback h3 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .pdf-link {
+            display: inline-block;
+            padding: 15px 40px;
+            background: #007bff;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            margin: 10px;
+        }
+        .pdf-link:hover {
+            background: #0056b3;
         }
         .home-button {
             text-align: center;
@@ -111,15 +138,19 @@
             <p class="article-meta">Publication: Popsurfing &nbsp;&nbsp;|&nbsp;&nbsp; Date: January 2, 2006</p>
         </div>
         
-        <!-- PDF Viewer - Direct embed without buttons -->
-        <iframe class="pdf-viewer" 
-                src="../scans/Popsurfing-IRA_Awards_2006_The_Full_Story-1-2-2006.pdf#toolbar=0&navpanes=0" 
-                type="application/pdf"
-                frameborder="0">
-            <p>Your browser does not support PDFs. 
-               <a href="../scans/Popsurfing-IRA_Awards_2006_The_Full_Story-1-2-2006.pdf">Click here to view the PDF</a>.
-            </p>
-        </iframe>
+        <!-- PDF Container -->
+        <div class="pdf-container">
+            <!-- Try object tag first, then fallback -->
+            <object class="pdf-viewer" data="../scans/Popsurfing-IRA_Awards_2006_The_Full_Story-1-2-2006.pdf" type="application/pdf">
+                <!-- Fallback for browsers that can't display PDFs inline -->
+                <div class="pdf-fallback">
+                    <h3>📄 IRA Awards 2006 The Full Story</h3>
+                    <p>Your browser cannot display PDFs inline. Please use one of the options below:</p>
+                    <a href="../scans/Popsurfing-IRA_Awards_2006_The_Full_Story-1-2-2006.pdf" target="_blank" class="pdf-link">Open PDF in New Tab</a>
+                    <a href="../scans/Popsurfing-IRA_Awards_2006_The_Full_Story-1-2-2006.pdf" download class="pdf-link">Download PDF</a>
+                </div>
+            </object>
+        </div>
         
         <!-- Home Button -->
         <div class="home-button">
