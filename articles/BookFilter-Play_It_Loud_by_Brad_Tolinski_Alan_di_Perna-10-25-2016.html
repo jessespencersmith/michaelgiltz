@@ -3,135 +3,135 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Play It Loud By Brad Tolinski Alan Di Perna-10-25 by Michael Giltz - BookFilter">
-    <meta name="keywords" content="BookFilter, Play It Loud By Brad Tolinski Alan Di Perna-10-25, Michael Giltz, journalism, entertainment">
+    <meta name="description" content="Play It Loud by Brad Tolinski Alan di Perna - BookFilter - Michael Giltz">
+    <meta name="keywords" content="Michael Giltz, BookFilter, journalism, article">
     <meta name="author" content="Michael Giltz">
-    <title>Play It Loud By Brad Tolinski Alan Di Perna-10-25 - BookFilter - Michael Giltz</title>
+    <title>Play It Loud by Brad Tolinski Alan di Perna - Michael Giltz</title>
     <link href="../giltz.css" rel="stylesheet" type="text/css" />
     <style>
-        body { 
-            font-family: Arial, sans-serif;
+        body {
+            font-family: 'Times New Roman', Times, serif;
             margin: 0;
             padding: 0;
-            background: #f5f5f5;
+            background: #fff;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
         }
         .site-banner {
             text-align: center;
-            background: white;
-            padding: 10px 0;
+            padding: 20px 0;
+            background: #f9f9f9;
         }
         .site-banner img {
             max-width: 100%;
             height: auto;
         }
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            background: white;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        .header {
-            background: #333;
-            color: white;
-            padding: 20px;
+        .article-header {
             text-align: center;
+            padding: 30px 0 20px 0;
         }
-        .header h1 {
-            margin: 0;
-            font-size: 24px;
+        .article-title {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 28px;
+            font-weight: bold;
+            margin: 0 0 10px 0;
+            color: #333;
         }
-        .header p {
-            margin: 5px 0;
+        .article-meta {
             font-size: 14px;
+            color: #666;
+            margin: 0;
         }
         .pdf-viewer {
             width: 100%;
-            height: 600px;
-            border: none;
-            display: block;
+            height: 800px;
+            margin: 20px 0;
+            border: 1px solid #ddd;
         }
         .home-button {
             text-align: center;
-            padding: 20px;
-            background: #f0f0f0;
+            padding: 30px 0;
         }
         .home-button a {
             display: inline-block;
-            padding: 10px 30px;
+            padding: 12px 40px;
             background: #333;
             color: white;
             text-decoration: none;
             font-weight: bold;
+            font-size: 16px;
             border-radius: 5px;
+            text-transform: uppercase;
         }
         .home-button a:hover {
             background: #555;
         }
         .text-section {
-            padding: 20px;
+            padding: 40px 0;
+            border-top: 3px solid #333;
+            margin-top: 40px;
         }
         .text-section h2 {
+            font-size: 20px;
             color: #333;
-            border-bottom: 2px solid #333;
-            padding-bottom: 10px;
+            margin: 0 0 20px 0;
+            text-transform: uppercase;
         }
         .text-content {
             line-height: 1.8;
             color: #333;
+            font-size: 16px;
         }
         .text-content p {
             margin-bottom: 15px;
         }
-        .footer {
-            background: #f0f0f0;
-            padding: 20px;
-            text-align: center;
-            font-size: 12px;
-            color: #666;
-        }
         @media (max-width: 768px) {
             .pdf-viewer {
-                height: 400px;
+                height: 500px;
+            }
+            .article-title {
+                font-size: 22px;
             }
         }
     </style>
-    <link rel="icon" type="image/x-icon" href="../favicon.ico">
-    <link rel="icon" type="image/png" href="../favicon.png">
 </head>
 <body>
-    <!-- Site Banner -->
-    <div class="site-banner">
-        <a href="../index.htm"><img src="../giltz.jpg" width="800" height="146" alt="MichaelGiltz.com" /></a>
-    </div>
-    
     <div class="container">
-        <div class="header">
-            <h1>Play It Loud By Brad Tolinski Alan Di Perna-10-25</h1>
-            <p>Publication: BookFilter | Date: 2016 | by Michael Giltz</p>
+        <!-- Site Banner -->
+        <div class="site-banner">
+            <a href="../index.htm"><img src="../giltz.jpg" width="800" height="146" alt="MichaelGiltz.com" /></a>
         </div>
         
-        <!-- PDF Viewer -->
-        <iframe class="pdf-viewer" src="../scans/BookFilter-Play_It_Loud_by_Brad_Tolinski_Alan_di_Perna-10-25-2016.pdf" title="PDF Article">
-            <p>Your browser does not support embedded PDFs. <a href="../scans/BookFilter-Play_It_Loud_by_Brad_Tolinski_Alan_di_Perna-10-25-2016.pdf">Download the PDF</a> to view.</p>
+        <!-- Article Header -->
+        <div class="article-header">
+            <h1 class="article-title">Play It Loud by Brad Tolinski Alan di Perna</h1>
+            <p class="article-meta">Publication: BookFilter &nbsp;&nbsp;|&nbsp;&nbsp; Date: October 25, 2016</p>
+        </div>
+        
+        <!-- PDF Viewer - Direct embed without buttons -->
+        <iframe class="pdf-viewer" 
+                src="../scans/BookFilter-Play_It_Loud_by_Brad_Tolinski_Alan_di_Perna-10-25-2016.pdf#toolbar=0&navpanes=0" 
+                type="application/pdf"
+                frameborder="0">
+            <p>Your browser does not support PDFs. 
+               <a href="../scans/BookFilter-Play_It_Loud_by_Brad_Tolinski_Alan_di_Perna-10-25-2016.pdf">Click here to view the PDF</a>.
+            </p>
         </iframe>
         
         <!-- Home Button -->
         <div class="home-button">
-            <a href="../index.htm">HOME</a>
+            <a href="../index.htm">Home</a>
         </div>
         
-        <!-- Text Section -->
+        <!-- SEO Text Section -->
         <div class="text-section">
-            <h2>SEO TEXT: Article Content for Search</h2>
+            <h2>SEO TEXT: Article Content for Search Engines</h2>
             <div class="text-content">
                 <p>Home |Register |Sign In Home Top Picks: All Books Play It Loud Play It Loud by Brad Tolinski, Alan di Perna, Carlos Santana Price: $26.95 (Hardcover) MorePublished: October 25, 2016 Rating: 0.0/ 5 (0 votes cast) From the Publisher: "Every guitar player will want to read this book twice.&lt;/p&gt;&lt;p&gt; And even the casual music fan will find a thrilling narrative that weaves together cultural history, musical history, race, politics, business case studies, advertising, and technological discovery." —Daniel Levitin, Wall Street Journal An unprecedented history of the electric guitar, its explosive impact on music and culture, and the players and builders who brought it to life For generations the electric guitar has been an international symbol of freedom, danger, rebellion, and hedonism.&lt;/p&gt;&lt;p&gt; In Play It Loud , veteran music journalists Brad Tolinski and Alan di Perna bring the history of this iconic instrument to roaring life.&lt;/p&gt;&lt;p&gt; It's astory of inventors and iconoclasts, of scam artists, prodigies, and mythologizers as varied and original as the instruments they spawned.&lt;/p&gt;&lt;p&gt; Play It Loud uses… Rate This Book Add To Wishlist |Rate/Review Add To Bookshelf Get This Book Personalize / Add More ChoicesGo to your preferred retailer, click to choose a format and you' ll be taken directly to their site where you can get this book.&lt;/p&gt;&lt;p&gt; What We Say I'm no gearhead.&lt;/p&gt;&lt;p&gt; I know nothing about guitars or frankly any musical instrument or even the soundboard and other equipment used to record them for an album.&lt;/p&gt;&lt;p&gt; So naturally, I'm a music critic! But truly, when Carl Perkins sang "Once I hada little Spanish guitar" on Paul McCartney's album "Tug Of War," I thought he meant, you know, a guitar from Spain.&lt;/p&gt;&lt;p&gt; So I started from scratch on the new book "Play It Loud: An Epic History Of The Style, Sound &amp; Revolution Of The Electric Guitar" by Brad Tolinski &amp; Alan Di Perna.&lt;/p&gt;&lt;p&gt; Tolinski was a long-time editor-in-chief of "Guitar World" and Di Perna contributedto it and Rolling Stone and many others.&lt;/p&gt;&lt;p&gt; Happily, they've written a book that geeks out over technical details and the doo-Share This Book About The Author Brad Tolinski, Alan di Perna, Carlos Santana MoreBRAD TOLINSKI was the editor-in-chief of Guitar World , the world's bestselling magazine for musicians, for twenty-fiveyears.&lt;/p&gt;&lt;p&gt; He is the author of Light &amp; Shade:Conversations with Jimmy Page .&lt;/p&gt;&lt;p&gt; ALAN DI PERNA is a longtime contributor to Guitar World and Guitar Aficionado … Release Info List Price: $26.95 (Hardcover) Published: October 25, 2016 Publisher: Doubleday Pages: 400 ISBN 10: 038554099X ISBN 13: 9780385540995dads strapped to the body and neck or simply plugged into electric guitars, but they manage to make it fascinating.&lt;/p&gt;&lt;p&gt; In truth, this is the history of popular music as told through the lens of the electric guitar, a way of telling that story from a fresh angle.&lt;/p&gt;&lt;p&gt; It starts with the craze for Hawaiian music in the 1920s and slides through blues and country and jazz right up to pop and rock n roll without ever missing a beat (or breaking a string, I guess).&lt;/p&gt;&lt;p&gt; You hear stories from -- and about --legends like Les Paul and Jack White and honestly, the writers are so knowledgable about guitars I was more fascinated inthe technological breakthroughs than their take on music.&lt;/p&gt;&lt;p&gt; Indeed, with such a sweeping tale, it's only natural they mighthave some judgments I take issue with or miss a finer point here and there. (Bing Crosby is dismissed as "well-groomed," oddly enough, when in fact he should be a hero to them for making full use of an earlier technological breakthrough -- the microphone -- and revolutionizing singing forever.) But that's a quibble.&lt;/p&gt;&lt;p&gt; Jimi Hendrix, Eddie Van Halen, Muddy Waters andEric Clapton are just some of the artists who come alive here precisely because Tolinski and Di Perna are focused on thegear they used and how they used it, rather than the usual tales of touring and the like.&lt;/p&gt;&lt;p&gt; You also get the lowdown onamplifiers and fuzz boxes and all sorts of tools that become colors in the palette of guitar gods.&lt;/p&gt;&lt;p&gt; Happily, with the easy access of music today, you can do what I did and call up the classic singles they mention throughout and actually HEAR what they're talking about.&lt;/p&gt;&lt;p&gt; I would have loved a deluxe version of this book since their descriptions of all these axes callout for full color photographs beyond what is included.&lt;/p&gt;&lt;p&gt; But hey, there's always Google.&lt;/p&gt;&lt;p&gt; So I'll even forgive them for notmentioning the greatest living electric (and acoustic!) guitarist, Richard Thompson. "Play It Loud" is solid and entertaining and certainly eye-opening for those like me who never studied music videos to see what brand of guitar one of my favorites was sporting.&lt;/p&gt;&lt;p&gt; I can even hope someone else will take up the implied gauntlet and produce their own history of drums oreven the microphone.&lt;/p&gt;&lt;p&gt; When they do, Bing Crosby will be front and center. -- Michael Giltz What Others Say “Every guitar player will want to read this book twice.&lt;/p&gt;&lt;p&gt; And even the casual music fan will find a thrilling narrative that weaves together cultural history, musical history, race, politics, business case studies, advertisingand technological discovery.&lt;/p&gt;&lt;p&gt; It could serve just as easily as a text on entrepreneurship and corporate R&amp;D in the 20th century as it could a weekend vacation read.” —Daniel Levitin, Wall Street Journal “A lively and fascinating history….You're going to want to keep your tablet or phone nearby as you read it, because you'll be absolutely compelled to find and listen to the signature songs and riffs referenced throughoutthe volume.&lt;/p&gt;&lt;p&gt; The authors do a great job of introducing just enough technical information to make their points,while keeping explanations clear enough so that those of a nontechnical bent—like this reviewer—can followthem.&lt;/p&gt;&lt;p&gt; Tolinski and Di Perna have produced a book that lives up to the urgent, innovative, all-encompassingspirit of its subject.”—Minneapolis Star-Tribune “The authors... bring freshness to chestnuts through technical nuggets aplenty....&lt;/p&gt;&lt;p&gt; The electric guitar changed the world, and Tolinski… More What You Say Filter by No Reviews Found ..... about us |faq|advertise |privacy policy |newsletter |contact us ©2018, BookBuddha LLc.&lt;/p&gt;&lt;p&gt; All Rights Reserved.</p>
             </div>
-        </div>
-        
-        <!-- Footer -->
-        <div class="footer">
-            <p>&copy; 2025 Michael Giltz. All rights reserved.</p>
-            <p>This article originally appeared in BookFilter on 2016.</p>
         </div>
     </div>
 </body>

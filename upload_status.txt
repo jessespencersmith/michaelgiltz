@@ -1,0 +1,25 @@
+Upload Status for Article Batches
+=================================
+
+Total files: 4,213
+Batch size: 500 files
+Total batches: 9
+
+Status:
+✅ Batch 1 (1-500): Complete
+✅ Batch 2 (501-1000): Complete
+✅ Batch 3 (1001-1500): Complete
+✅ Batch 4 (1501-2000): Complete
+✅ Batch 5 (2001-2500): Complete
+✅ Batch 6 (2501-3000): Complete
+✅ Batch 7 (3001-3500): Complete
+✅ Batch 8 (3501-4000): Complete
+✅ Batch 9 (4001-4213): Complete
+
+To continue uploading:
+python3 upload_articles_batch.py 2  # For batch 3
+python3 upload_articles_batch.py 3  # For batch 4
+... and so on
+
+Or run all remaining:
+for i in {2..8}; do python3 upload_articles_batch.py $i; sleep 5; done

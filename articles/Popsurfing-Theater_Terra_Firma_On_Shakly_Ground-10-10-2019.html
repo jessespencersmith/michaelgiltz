@@ -3,135 +3,135 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Theater Terra Firma On Shakly Ground-10-10 by Michael Giltz - Popsurfing">
-    <meta name="keywords" content="Popsurfing, Theater Terra Firma On Shakly Ground-10-10, Michael Giltz, journalism, entertainment">
+    <meta name="description" content="Theater Terra Firma On Shakly Ground - Popsurfing - Michael Giltz">
+    <meta name="keywords" content="Michael Giltz, Popsurfing, journalism, article">
     <meta name="author" content="Michael Giltz">
-    <title>Theater Terra Firma On Shakly Ground-10-10 - Popsurfing - Michael Giltz</title>
+    <title>Theater Terra Firma On Shakly Ground - Michael Giltz</title>
     <link href="../giltz.css" rel="stylesheet" type="text/css" />
     <style>
-        body { 
-            font-family: Arial, sans-serif;
+        body {
+            font-family: 'Times New Roman', Times, serif;
             margin: 0;
             padding: 0;
-            background: #f5f5f5;
+            background: #fff;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
         }
         .site-banner {
             text-align: center;
-            background: white;
-            padding: 10px 0;
+            padding: 20px 0;
+            background: #f9f9f9;
         }
         .site-banner img {
             max-width: 100%;
             height: auto;
         }
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            background: white;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        .header {
-            background: #333;
-            color: white;
-            padding: 20px;
+        .article-header {
             text-align: center;
+            padding: 30px 0 20px 0;
         }
-        .header h1 {
-            margin: 0;
-            font-size: 24px;
+        .article-title {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 28px;
+            font-weight: bold;
+            margin: 0 0 10px 0;
+            color: #333;
         }
-        .header p {
-            margin: 5px 0;
+        .article-meta {
             font-size: 14px;
+            color: #666;
+            margin: 0;
         }
         .pdf-viewer {
             width: 100%;
-            height: 600px;
-            border: none;
-            display: block;
+            height: 800px;
+            margin: 20px 0;
+            border: 1px solid #ddd;
         }
         .home-button {
             text-align: center;
-            padding: 20px;
-            background: #f0f0f0;
+            padding: 30px 0;
         }
         .home-button a {
             display: inline-block;
-            padding: 10px 30px;
+            padding: 12px 40px;
             background: #333;
             color: white;
             text-decoration: none;
             font-weight: bold;
+            font-size: 16px;
             border-radius: 5px;
+            text-transform: uppercase;
         }
         .home-button a:hover {
             background: #555;
         }
         .text-section {
-            padding: 20px;
+            padding: 40px 0;
+            border-top: 3px solid #333;
+            margin-top: 40px;
         }
         .text-section h2 {
+            font-size: 20px;
             color: #333;
-            border-bottom: 2px solid #333;
-            padding-bottom: 10px;
+            margin: 0 0 20px 0;
+            text-transform: uppercase;
         }
         .text-content {
             line-height: 1.8;
             color: #333;
+            font-size: 16px;
         }
         .text-content p {
             margin-bottom: 15px;
         }
-        .footer {
-            background: #f0f0f0;
-            padding: 20px;
-            text-align: center;
-            font-size: 12px;
-            color: #666;
-        }
         @media (max-width: 768px) {
             .pdf-viewer {
-                height: 400px;
+                height: 500px;
+            }
+            .article-title {
+                font-size: 22px;
             }
         }
     </style>
-    <link rel="icon" type="image/x-icon" href="../favicon.ico">
-    <link rel="icon" type="image/png" href="../favicon.png">
 </head>
 <body>
-    <!-- Site Banner -->
-    <div class="site-banner">
-        <a href="../index.htm"><img src="../giltz.jpg" width="800" height="146" alt="MichaelGiltz.com" /></a>
-    </div>
-    
     <div class="container">
-        <div class="header">
-            <h1>Theater Terra Firma On Shakly Ground-10-10</h1>
-            <p>Publication: Popsurfing | Date: 2019 | by Michael Giltz</p>
+        <!-- Site Banner -->
+        <div class="site-banner">
+            <a href="../index.htm"><img src="../giltz.jpg" width="800" height="146" alt="MichaelGiltz.com" /></a>
         </div>
         
-        <!-- PDF Viewer -->
-        <iframe class="pdf-viewer" src="../scans/Popsurfing-Theater_Terra_Firma_On_Shakly_Ground-10-10-2019.pdf" title="PDF Article">
-            <p>Your browser does not support embedded PDFs. <a href="../scans/Popsurfing-Theater_Terra_Firma_On_Shakly_Ground-10-10-2019.pdf">Download the PDF</a> to view.</p>
+        <!-- Article Header -->
+        <div class="article-header">
+            <h1 class="article-title">Theater Terra Firma On Shakly Ground</h1>
+            <p class="article-meta">Publication: Popsurfing &nbsp;&nbsp;|&nbsp;&nbsp; Date: October 10, 2019</p>
+        </div>
+        
+        <!-- PDF Viewer - Direct embed without buttons -->
+        <iframe class="pdf-viewer" 
+                src="../scans/Popsurfing-Theater_Terra_Firma_On_Shakly_Ground-10-10-2019.pdf#toolbar=0&navpanes=0" 
+                type="application/pdf"
+                frameborder="0">
+            <p>Your browser does not support PDFs. 
+               <a href="../scans/Popsurfing-Theater_Terra_Firma_On_Shakly_Ground-10-10-2019.pdf">Click here to view the PDF</a>.
+            </p>
         </iframe>
         
         <!-- Home Button -->
         <div class="home-button">
-            <a href="../index.htm">HOME</a>
+            <a href="../index.htm">Home</a>
         </div>
         
-        <!-- Text Section -->
+        <!-- SEO Text Section -->
         <div class="text-section">
-            <h2>SEO TEXT: Article Content for Search</h2>
+            <h2>SEO TEXT: Article Content for Search Engines</h2>
             <div class="text-content">
                 <p>More Create Blog Sign In THURSDAY, OCTOBER 10, 2019 THEATER: "Terra Firma" Is On Shaky Ground TERRA FIRMA ** out of **** THE COOP AT BARUCH PERFORMING ARTS CENTER Terra Firma is a muddled allegory of a play by Barbara Hammond.&lt;/p&gt;&lt;p&gt; It features a hugely impressive physical presentation, but that can't compensate for several flaws.&lt;/p&gt;&lt;p&gt; Acting styles range all over the map,basic information is withheld from the audience without cause and thesetting is fundamentally wrong.&lt;/p&gt;&lt;p&gt; The plot is simple, even fable-like, though it's closer to one of those dark and disturbing Grimm tales, not the sort of story that ends with"and they all lived happily ever after." In the not-so-distant-future, a group of people live on a gigantic steel platform somewhere out on the "Vast Sea." It's an abandoned relicfrom earlier days (a War era naval defense platform, per the shownotes).&lt;/p&gt;&lt;p&gt; The three inhabitants style themselves a Queen (AndrusNichols), a King (Gerardo Rodriguez) and Jones (John Keating), a Citizen.&lt;/p&gt;&lt;p&gt; Their impromptu world is invaded by a man known only as the Hostage (Tom O'Keefe).&lt;/p&gt;&lt;p&gt; The Hostage says he's a fisherman but whocan be certain? The inhabitants of this platform call it Terra Firma and feel beset on all sides.&lt;/p&gt;&lt;p&gt; It's one of eight such platforms they can spy in the vicinity and the others are exploding into bits, the victims of somenefarious enemy, they believe.&lt;/p&gt;&lt;p&gt; The Hostage might in fact be a Spy! Andso they keep him tied up and under guard, with occasional breaks for agame of chess.&lt;/p&gt;&lt;p&gt; Paranoid, scared, defensive and longing for attention, the people of Terra Firma simply don't know what to do about the Hostage or muchof anything.&lt;/p&gt;&lt;p&gt; They slip messages into bottles and toss those into the sea,MICHAEL GILTZ AT WORK Michael Giltz is a freelance writer based in NYC and can be reached atmgiltz@pipeline.com FAVORITE LINKS Americablog Five O'Clock Lightning baseball blogDeep Pop -- Lori Lakin's Blog The Back Page -- Jason Page on ESPN Radio Cine-Blog -- George Robinson's Blog Documents On Art &amp; Cinema - Daryl Chin's Blog Brucie G's Wondrous Blog Of Adventure and Mystery -- Bruce Greenspan's Blog BLOG ARCHIVE ▼ 2019 (71) ▼ October (9) THEATER: "Terra Firma" Is Onwondering if anyone will ever acknowledge their existence.&lt;/p&gt;&lt;p&gt; They long for the return of their children, the Prince and Princess who left some time ago.&lt;/p&gt;&lt;p&gt; And every once in a while another explosion rocks theirworld and another platform is blown into bits.&lt;/p&gt;&lt;p&gt; Are they next? Soon, Prince Teddy (Daniel Molina) clambers back on board, though where he's been and what he's seen is barely hinted at.&lt;/p&gt;&lt;p&gt; Then anotherstranger appears, a self-styled Diplomat who found one of theirmessages and tracked them down.&lt;/p&gt;&lt;p&gt; He offers his services as negotiatorfor the Hostage, though adding that a crust of bread would also be quite welcome.&lt;/p&gt;&lt;p&gt; What follows are multiple games of chess, fireworks, a boxing match, a pistol (fired, as per Chekhov) and the spooky fallingof ash, accompanied by a reference to nuclear winter.&lt;/p&gt;&lt;p&gt; We spend most of the show simply wondering what is going on.&lt;/p&gt;&lt;p&gt; At some points it leans toward Beckett, at others a satirical comedy, butnever much of anything for long.&lt;/p&gt;&lt;p&gt; And once Terra Firma reveals its hand by telling the audience what the characters have known all along,it has nothing else to say and ends. (Photo by Ashley Garrett ©2019) One can't praise the technical elements of this show enough, a realcredit to the hotly anticipated new theater company The Coop.&lt;/p&gt;&lt;p&gt; The playwright certainly can't complain about her work's presentation.&lt;/p&gt;&lt;p&gt; However, the real-world specificity of the set works against the show'sinclination towards absurdity and allegory. (It's no coincidence thescript begins with a quote from Gulliver's Travels. ) Still, the physical production is a triumph.&lt;/p&gt;&lt;p&gt; The stage is filled with a massive steel platform solidly placed on top of giant round cement pillars.&lt;/p&gt;&lt;p&gt; We're told it rises 60 feet above sea leveland you never doubt its solidity and immense presence.&lt;/p&gt;&lt;p&gt; A rickety staircase leads skyward on the right, with one step tilting dangerously down.&lt;/p&gt;&lt;p&gt; Each cement tower houses unseen lower decks, including aspiral staircase on the right and a more cellar-like entrance on the left.Even better is the curved screen that hugs the entire stage, depicting avast and beautiful ocean as far as the eye can see.&lt;/p&gt;&lt;p&gt; The effect is wonderfully convincing.Shaky Ground THEATER: "The Glass Menagerie" Sans Tricks Or Trea...&lt;/p&gt;&lt;p&gt; THEATER: Wrestling With Faith in "Heroes Of The Fo...&lt;/p&gt;&lt;p&gt; THEATER: A Bright Future In Reach For "Chasing Rai...&lt;/p&gt;&lt;p&gt; THEATER: The Not-So "Great Society" THEATER: BOO! A Halloween Scare Fest Closes Its Ey...&lt;/p&gt;&lt;p&gt; THEATER: "A(loft) Modulation" -- A Play With Jazz ...&lt;/p&gt;&lt;p&gt; THEATER: "Freestyle Love Supreme" and "DerrenBrow...&lt;/p&gt;&lt;p&gt; BOOKS: A Fantasy Classic Finally Translated Into E... ► September (11) ► August (9) ► July (7) ► June (3) ► May (8) ► April (10) ► March (5) ► February (1) ► January (8) ► 2018 (38) ► 2017 (6) ► 2016 (2) ► 2015 (29) ► 2014 (2) ► 2013 (5) ► 2012 (17) ► 2011 (15) ► 2010 (10) ► 2009 (43) ► 2008 (86) ► 2007 (781) ► 2006 (2412) ► 2005 (5)That scenic triumph is by Andrew Boyce and it works hand in hand with all the other tech elements.&lt;/p&gt;&lt;p&gt; The lighting by Eric Southern is a treat, from explosions to fireworks to the simple but necessarysuggestion of life on the water.&lt;/p&gt;&lt;p&gt; Ditto the sound design of Jane Shaw,which is just as essential for bringing this world to life without ever calling attention to itself. (Though I must admit, I did tend to look around wondering if there was an actual cat wandering around.) Thecostumes by Ntokozo Fuzunina Kunene similarly manage to berealistic and yet attuned to each character's plight.&lt;/p&gt;&lt;p&gt; Even the fightchoreography by Carman Lacivita is a treat.&lt;/p&gt;&lt;p&gt; Realistic fights are never easy to do under the best of circumstances; here she has the added challenge of actors tumbling around the lip of a platform with a prettyserious drop to the ground below.&lt;/p&gt;&lt;p&gt; That's where the consistency ends.&lt;/p&gt;&lt;p&gt; The actors seem in warring camps when it comes to style and one must blame the director Shana Cooperand more to the point a story that doesn't know what it wants to be.&lt;/p&gt;&lt;p&gt; Nichols is the Queen and she's been a treat on stage before.&lt;/p&gt;&lt;p&gt; Here she walks around in a comic opera style, her hand raised high in the air tomaintain a self-defeating "royal" air.&lt;/p&gt;&lt;p&gt; That mild absurdity is echoed byT.&lt;/p&gt;&lt;p&gt; Ryder Smith as the Diplomat.&lt;/p&gt;&lt;p&gt; They're good but seem in a different show from the rest.&lt;/p&gt;&lt;p&gt; Tom O'Keefe is closer to them as the Hostage, thanks to a shifty accent, but he seems to exist in the real world.&lt;/p&gt;&lt;p&gt; As does the inestimableJohn Keating as the citizen Jones.&lt;/p&gt;&lt;p&gt; Invariably at home in any setting, Keating is a solid center here.&lt;/p&gt;&lt;p&gt; The playwright doesn't always know what to do, but his character is never in doubt.&lt;/p&gt;&lt;p&gt; Less can be said aboutRodriguez as the King and Molina as Teddy since it's never clear whatsort of people they're meant to be.&lt;/p&gt;&lt;p&gt; They're not comic figures of even a modest sort like the Queen and the Diplomat.&lt;/p&gt;&lt;p&gt; But they aren't flesh and bone either, like the Hostage or Jones.&lt;/p&gt;&lt;p&gt; They barely register at all.&lt;/p&gt;&lt;p&gt; How much blame can one place on the notes in the program? It goes to great lengths to describe the inspiration Hammond took from thereal world "country" of Sealand, an abandoned WW II military platform now claimed as the smallest nation in the world by its precious few inhabitants.&lt;/p&gt;&lt;p&gt; That platform has been the site of a pirateradio station servicing the UK, pitched battles both real and legal andultimately the "founding" of Sealand complete with Constitution and national anthem.&lt;/p&gt;&lt;p&gt; The media loves the place, needless to say.&lt;/p&gt;&lt;p&gt; You can learn about its story everywhere from the movies to countless newspaper articles andthe new book The Outlaw Ocean by New York Times reporter Ian Urbina. (He devotes a chapter to Sealand.) Hammond even used agrant to visit the platform herself and soak up its history and anarchicspirit.&lt;/p&gt;&lt;p&gt; I can't imagine why since the real story of Sealand doesn'tinform the fanciful play in the least.She doesn't quite mock our brutal desire for nationalism above humanity.&lt;/p&gt;&lt;p&gt; And she doesn't quite skewer how people reject society a la Burning Man...and then inevitably start to recreate that society in their own brave new world.&lt;/p&gt;&lt;p&gt; All she does is give us people trapped in a strange, perhaps desperate situation that teeters between reality andfantasy.&lt;/p&gt;&lt;p&gt; We don't quite grasp their predicament until the very end.&lt;/p&gt;&lt;p&gt; In this case, withholding information from the audience doesn't create poignancy, just annoyance.&lt;/p&gt;&lt;p&gt; Here's the problem.&lt;/p&gt;&lt;p&gt; Sealand represents a rejection of the real world, an escape from a stultifying life.&lt;/p&gt;&lt;p&gt; You don't get trapped on Sealand; you choose Sealand.&lt;/p&gt;&lt;p&gt; It's a powerful symbol of nonconformity.&lt;/p&gt;&lt;p&gt; And it makes no sense as a setting for a post-apocalyptic story, where characters by definition are forced into desperate straits.&lt;/p&gt;&lt;p&gt; You can't turn your back onthe world if the world no longer exists.&lt;/p&gt;&lt;p&gt; Better to have played out thisstory on the iconic "island" of countless cartoons and comics, a moundof land with a lone coconut tree floating in the midst of an empty sea.That would be a start.&lt;/p&gt;&lt;p&gt; But then Hammond would need to figure out what story she wants to tell, rather than just hinting at it.&lt;/p&gt;&lt;p&gt; THEATER OF 2019Frankenstein: Under The Radar Fest at the Public ** 1/2 Minor Character: Under The Radar Festival at the Public *** Ink: Under The Radar Festival at the Public ** 1/2 Choir Boy ** 1/2 White Noise ** 1/2 Kiss Me, Kate *** Ain't No Mo' *** 1/2 Ain't Too Proud ** The Cradle Will Rock * 1/2 Mrs.&lt;/p&gt;&lt;p&gt; Murray's Menagerie *** 1/2 Oklahoma! (on Broadway) ** 1/2 Socrates ** The Pain Of My Belligerence * Burn This ** Hadestown *** 1/2 All My Sons * 1/2 Tootsie ** 1/2 Ink *** Beetlejuice ** Estado Vegetal *** Hans Christian Andersen * 1/2 Cirque du Soleil: Luzia *** BLKS ** 1/2 Moulin Rouge ** 1/2 Bat Out Of Hell ** Unchilding ** Sea Wall/ A Life ** 1/2 Harry Potter and the Cursed Child *** Betrayal *** 1/2 Fifty Million Frenchmen ** 1/2 Freestyle Love Supreme ** 1/2 Derren Brown: Secret *** (A)loft Modulation * 1/2 The Great Society ** I Can't See * Heroes Of The Fourth Turning ** 1/2 Chasing Rainbows: The Road To Oz *** The Glass Menagerie (dir Austin Pendleton &amp; Peter Bloch) ** Terra Firma (debut of The Coop theater company) ** Thanks for reading.&lt;/p&gt;&lt;p&gt; Michael Giltz is the creator of BookFilter, a book lover’s best friend.&lt;/p&gt;&lt;p&gt; It’s a website that lets you browse for books online the way you do in a physical bookstore, provides comprehensive info on new releases every week in every category and offers passionate personal recommendations every step of the way.&lt;/p&gt;&lt;p&gt; He’s also the cohost of Showbiz Sandbox , a weekly pop culture podcast that reveals the industry take on entertainment news of the day with top journalists and opinion makers as guests.&lt;/p&gt;&lt;p&gt; It’s available for free on iTunes.&lt;/p&gt;&lt;p&gt; Visit Michael Giltz at his website.&lt;/p&gt;&lt;p&gt; Download his podcast of celebrity interviews and his radio show, also called Popsurfing and also available for free on iTunes.&lt;/p&gt;&lt;p&gt; POSTED BY MICHAEL GILTZ AT 11:08 PM NO COMMENTS: Post a Comment Subscribe to: Post Comments (Atom)Older Post Home</p>
             </div>
-        </div>
-        
-        <!-- Footer -->
-        <div class="footer">
-            <p>&copy; 2025 Michael Giltz. All rights reserved.</p>
-            <p>This article originally appeared in Popsurfing on 2019.</p>
         </div>
     </div>
 </body>

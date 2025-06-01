@@ -3,135 +3,135 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Theater The Best Shows Of 2013-12-31 by Michael Giltz - HuffPo">
-    <meta name="keywords" content="HuffPo, Theater The Best Shows Of 2013-12-31, Michael Giltz, journalism, entertainment">
+    <meta name="description" content="Theater The Best Shows of 2013 - HuffPo - Michael Giltz">
+    <meta name="keywords" content="Michael Giltz, HuffPo, journalism, article">
     <meta name="author" content="Michael Giltz">
-    <title>Theater The Best Shows Of 2013-12-31 - HuffPo - Michael Giltz</title>
+    <title>Theater The Best Shows of 2013 - Michael Giltz</title>
     <link href="../giltz.css" rel="stylesheet" type="text/css" />
     <style>
-        body { 
-            font-family: Arial, sans-serif;
+        body {
+            font-family: 'Times New Roman', Times, serif;
             margin: 0;
             padding: 0;
-            background: #f5f5f5;
+            background: #fff;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
         }
         .site-banner {
             text-align: center;
-            background: white;
-            padding: 10px 0;
+            padding: 20px 0;
+            background: #f9f9f9;
         }
         .site-banner img {
             max-width: 100%;
             height: auto;
         }
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            background: white;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        .header {
-            background: #333;
-            color: white;
-            padding: 20px;
+        .article-header {
             text-align: center;
+            padding: 30px 0 20px 0;
         }
-        .header h1 {
-            margin: 0;
-            font-size: 24px;
+        .article-title {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 28px;
+            font-weight: bold;
+            margin: 0 0 10px 0;
+            color: #333;
         }
-        .header p {
-            margin: 5px 0;
+        .article-meta {
             font-size: 14px;
+            color: #666;
+            margin: 0;
         }
         .pdf-viewer {
             width: 100%;
-            height: 600px;
-            border: none;
-            display: block;
+            height: 800px;
+            margin: 20px 0;
+            border: 1px solid #ddd;
         }
         .home-button {
             text-align: center;
-            padding: 20px;
-            background: #f0f0f0;
+            padding: 30px 0;
         }
         .home-button a {
             display: inline-block;
-            padding: 10px 30px;
+            padding: 12px 40px;
             background: #333;
             color: white;
             text-decoration: none;
             font-weight: bold;
+            font-size: 16px;
             border-radius: 5px;
+            text-transform: uppercase;
         }
         .home-button a:hover {
             background: #555;
         }
         .text-section {
-            padding: 20px;
+            padding: 40px 0;
+            border-top: 3px solid #333;
+            margin-top: 40px;
         }
         .text-section h2 {
+            font-size: 20px;
             color: #333;
-            border-bottom: 2px solid #333;
-            padding-bottom: 10px;
+            margin: 0 0 20px 0;
+            text-transform: uppercase;
         }
         .text-content {
             line-height: 1.8;
             color: #333;
+            font-size: 16px;
         }
         .text-content p {
             margin-bottom: 15px;
         }
-        .footer {
-            background: #f0f0f0;
-            padding: 20px;
-            text-align: center;
-            font-size: 12px;
-            color: #666;
-        }
         @media (max-width: 768px) {
             .pdf-viewer {
-                height: 400px;
+                height: 500px;
+            }
+            .article-title {
+                font-size: 22px;
             }
         }
     </style>
-    <link rel="icon" type="image/x-icon" href="../favicon.ico">
-    <link rel="icon" type="image/png" href="../favicon.png">
 </head>
 <body>
-    <!-- Site Banner -->
-    <div class="site-banner">
-        <a href="../index.htm"><img src="../giltz.jpg" width="800" height="146" alt="MichaelGiltz.com" /></a>
-    </div>
-    
     <div class="container">
-        <div class="header">
-            <h1>Theater The Best Shows Of 2013-12-31</h1>
-            <p>Publication: HuffPo | Date: 2013 | by Michael Giltz</p>
+        <!-- Site Banner -->
+        <div class="site-banner">
+            <a href="../index.htm"><img src="../giltz.jpg" width="800" height="146" alt="MichaelGiltz.com" /></a>
         </div>
         
-        <!-- PDF Viewer -->
-        <iframe class="pdf-viewer" src="../scans/HuffPo-Theater_The_Best_Shows_of_2013-12-31-2013.pdf" title="PDF Article">
-            <p>Your browser does not support embedded PDFs. <a href="../scans/HuffPo-Theater_The_Best_Shows_of_2013-12-31-2013.pdf">Download the PDF</a> to view.</p>
+        <!-- Article Header -->
+        <div class="article-header">
+            <h1 class="article-title">Theater The Best Shows of 2013</h1>
+            <p class="article-meta">Publication: HuffPo &nbsp;&nbsp;|&nbsp;&nbsp; Date: December 31, 2013</p>
+        </div>
+        
+        <!-- PDF Viewer - Direct embed without buttons -->
+        <iframe class="pdf-viewer" 
+                src="../scans/HuffPo-Theater_The_Best_Shows_of_2013-12-31-2013.pdf#toolbar=0&navpanes=0" 
+                type="application/pdf"
+                frameborder="0">
+            <p>Your browser does not support PDFs. 
+               <a href="../scans/HuffPo-Theater_The_Best_Shows_of_2013-12-31-2013.pdf">Click here to view the PDF</a>.
+            </p>
         </iframe>
         
         <!-- Home Button -->
         <div class="home-button">
-            <a href="../index.htm">HOME</a>
+            <a href="../index.htm">Home</a>
         </div>
         
-        <!-- Text Section -->
+        <!-- SEO Text Section -->
         <div class="text-section">
-            <h2>SEO TEXT: Article Content for Search</h2>
+            <h2>SEO TEXT: Article Content for Search Engines</h2>
             <div class="text-content">
                 <p>Arts &amp; Culture • Painting • Film• Design • Photography • Theater • Music• Dance• Architecture • Female Artists • Art Meets Science • On Our Radar • ImageBlog MOST POPULAR Eerie Photos Reveal The Lonely Life Of A Reclusive Heiress Pooch Protests Haircut By Standing On Hind Legs, Looking Pissed The $1,000 Mansion You Have To See To Believe Rihanna Is The Only Girl (In The World) Who Can Turn A Selfie Into $81,000 Charity Payday This Is Why You Should Spell-Check Before Sending A Breakup Text If Marriage Is About Flexibility, This Couple Is Golden Friends Find $40,000 Hidden In Secondhand Couch, And Do The RightThing Long-Lost Honeymoon Photos From 1939 Will Take Your Breath Away With Signs Like This, Married Couples May Never Fight Again Fox News Is Really Concerned About AFRONT PAGE ENTERTAINMENT ARTS BOOKS TV SCIENCE STYLE HOME HUFFPOST LIVE ALL SECTIONS Artists Challenges Food-Shaming With Nude Self Portraits (NSFW)The Five Stages Of Inebriation, According To One 19th Century DrunkardThis Is The Epic 'Phantom' Medley You've Been Waiting ForT L Michael Giltz Become a fan Freelance writer Posted: 12/31/2013 2:59 pm EST Updated: 03/02/2014 5:59 am EST MORE:Theater: The Best Shows of 2013 Here's a look back at my favorite shows of the year.&lt;/p&gt;&lt;p&gt; The truly frustrating, wonderful thing about theater is how ephemeral it is.&lt;/p&gt;&lt;p&gt; Performances are slightly different everynight depending on the actors, the audience, the weather and a million other factors.&lt;/p&gt;&lt;p&gt; Of course, when the cast changes, the show changes even more.&lt;/p&gt;&lt;p&gt; So already shows like Matilda and soon After Midnight are very different (better, worse, just as good but in different ways) as the shows I saw and reviewed.&lt;/p&gt;&lt;p&gt; And despite seeingthree shows a week, I've still managed to miss some of the most acclaimed shows ofthe year.&lt;/p&gt;&lt;p&gt; Maybe it was the title -- it sounds like an Off Broadway revue designed tobe commercial -- but I never saw Bad Jews , only to have a friend see it on closing night and tell me I'd missed the best play of the year.&lt;/p&gt;&lt;p&gt; Argh! So of the shows I actually saw, here are my favorites.&lt;/p&gt;&lt;p&gt; And thanks again to the actors and writers and directors and artisans and stage hands who make it happen, even on shows I didn't like.&lt;/p&gt;&lt;p&gt; No one gets into the theater to become rich.&lt;/p&gt;&lt;p&gt; A bad movie can be annoying; a bad play should make you empathize with the actors who must goonstage every night and try and kick some life into a dead mule.&lt;/p&gt;&lt;p&gt; I try to reflect thatin reviews that never avoid calling a flop a flop but always try to pan for gold andcelebrate a particular performance or element of even the worst show that offers aglimmer of talent.&lt;/p&gt;&lt;p&gt; THE BEST SHOWS OF 2013 1. and 2.&lt;/p&gt;&lt;p&gt; Julius Caesar/Twelfth Night 3.&lt;/p&gt;&lt;p&gt; Parsifal at the Met 4.&lt;/p&gt;&lt;p&gt; August Wilson's American Century Cycle 5.&lt;/p&gt;&lt;p&gt; Vanya and Sonia and Masha and Spike6.&lt;/p&gt;&lt;p&gt; Passion at CSC 7.&lt;/p&gt;&lt;p&gt; Matilda The Musical8.&lt;/p&gt;&lt;p&gt; The Weir at Irish Rep 9.&lt;/p&gt;&lt;p&gt; The New York Musical Theatre Festival 10.&lt;/p&gt;&lt;p&gt; Savion Glover's STePz Follow 105 Share 29 Tweet 0 1 Email 0 Comment May 16, 2014 Edition: U.S.&lt;/p&gt;&lt;p&gt; Follow Newsletters Huffington Post Search iPhone app iPad app Android phone app Android tablet app More Log in Create AccountHead Injury They Thought Was Fake Is 'Clueless' Star Stacey Dash Joining Fox News? Parents, 6 Sons, Accused Of Sexually Abusing Girl For Nearly A Decade Cressida Bonas Doesn't Get Mad At Prince Harry, She Gets Even In Body- Hugging Gown Eli Manning On How Michael Sam Would Be Treated In The Giants'Locker Room 15 Places To Go Before They Get Famous This Amazing Rescue Will Make You Think Twice About Saying 'ScaredyCat' This Artist Swapped Iconic Characters' Skin Colors In 'Racebent Disney' Whoopi Sounds Off On Those Long- Standing Lesbian Rumors Happy Anniversary To Miranda Lambert And Blake Shelton! 12 Red Flags That Could Spell Doom For Your Relationship FOLLOW HUFFPOST11.&lt;/p&gt;&lt;p&gt; A Gentleman's Guide To Love And Murder 12.&lt;/p&gt;&lt;p&gt; The Rime Of The Ancient Mariner at BAM 13.&lt;/p&gt;&lt;p&gt; Isaac's Eye/Year Of The Rooster 1. and 2.&lt;/p&gt;&lt;p&gt; JULIUS CAESAR AT ST.&lt;/p&gt;&lt;p&gt; ANN'S WAREHOUSE /TWELTH NIGHT -- The trappings for this Julius Caesar are boldly innovative: an all-female cast! An immersive experience with armed guards taking you to your seat! A setting of a prison! But all of that melted away and what I remember most is a Shakespeare playI've never been terribly fond of brought to vivid, brilliant life led by a brilliant cast.Not a brilliant cast of women -- though that they were -- but a brilliant cast ofactors.&lt;/p&gt;&lt;p&gt; I couldn't imagine anyone male or female better in these roles than Frances Barber, Harriet Walter, Cush Jumbo and the rest.&lt;/p&gt;&lt;p&gt; A triumph for director Phyllida Lloyd and her entire team.&lt;/p&gt;&lt;p&gt; In contrast, the London Globe Theatre's production of Twelfth Night was thoroughly traditional.&lt;/p&gt;&lt;p&gt; The staging was done as in Shakespeare's time, the actors donned their makeup and costume in sight of the audience and it was an all-male cast.&lt;/p&gt;&lt;p&gt; But justlike Julius Caesar , the casting was not a stunt but an approach to the work that drew out riches and insight into the play that no other casting would do.&lt;/p&gt;&lt;p&gt; This troupe also performed a solid Richard III in repertory and it was a treat to see actors in dramatically different roles from one night to the next.&lt;/p&gt;&lt;p&gt; But Twelfth Night was the highlight, with even the movement of an actor from one part of the stage to another handled in hilarious fashion. (The women glide across the stage as if on a movingsidewalk with their feet hidden under voluminous dresses; the effect is invariablystriking and amusing, while the speed at which they move reveals the character'sstate of mind -- it's not just a gimmick.) At the heart of it was Mark Rylance, one ofthe great stage actors of this or any time.&lt;/p&gt;&lt;p&gt; He's smart enough to surround himselfwith the best so this show had many pleasures, including the unexpected delight ofseeing Stephen Fry on stage (!) and Samuel Barnett in two delicious turns as women.&lt;/p&gt;&lt;p&gt; He's a handsome man and a fetching woman and one would hate to choose -- luckily, with live theater we can have him either way. 3.&lt;/p&gt;&lt;p&gt; PARSIFAL AT THE MET -- My first experience of Wagner's gorgeous masterwork was overwhelming in its beauty.&lt;/p&gt;&lt;p&gt; A religious experience indeed, overseen by director Francois Giraud and sung by an impeccable cast includingRene Papa, Peter Mattei and Jonas Kaufmann as Parsifal. 4.&lt;/p&gt;&lt;p&gt; AUGUST WILSON'S AMERICAN CENTURY CYCLE -- One of the theatrical triumphs of the year didn't take place on Broadway.&lt;/p&gt;&lt;p&gt; It happened at a radio station.&lt;/p&gt;&lt;p&gt; The Greene Space is a performance venue shared by WNYC andWQXR.&lt;/p&gt;&lt;p&gt; They partnered with the August Wilson estate to stage readings of all tenplays in Wilson's epic look at the 20th century, with one play for every decade.They'll be edited and aired on public radio in 2014 and the audio recordings will bemade available in various ways through libraries, academic institutions and the like(though one has to hope a commercial release of all ten will also happen).Overseeing this endeavor was playwright, actor and director Ruben Santiago-Hudson, who brought together a dream team of veterans of Wilson's plays toperform them for posterity.&lt;/p&gt;&lt;p&gt; I attended three of the readings -- Jitney (which is the only Wilson play yet to debut on Broadway, a fact Santiago-Hudson is determined to change), Ma Rainey's Black Bottom and Gem Of The Ocean.&lt;/p&gt;&lt;p&gt; Each had their pleasures and each made me eager to see them again in fully staged productions.&lt;/p&gt;&lt;p&gt; Since I hadn't seen the latter two (I've seen the other eight in the cycle at leastonce), this event offered me exactly what it intended -- a chance to experienceWilson's great words performed by great casts.&lt;/p&gt;&lt;p&gt; They stand on their own but they'realso invaluable for those who have yet to see them on stage.&lt;/p&gt;&lt;p&gt; Since Wilson was thesecond most produced playwright in America last year (after Shakespeare), clearly most everyone has the chance to see at least some of his plays.&lt;/p&gt;&lt;p&gt; That will surely make them all the more hungry to read and hear the rest.&lt;/p&gt;&lt;p&gt; And then they'll discover thisresource, this archive, this work of art. 5.&lt;/p&gt;&lt;p&gt; VANYA AND SONYA AND MASHA AND SPIKE -- I missed its first incarnation at Lincoln Center, so while many critics had this on their list last year, I caught up with it on Broadway.&lt;/p&gt;&lt;p&gt; It's Christopher Durang's warmest, most humancomedy and the funniest show of the year.&lt;/p&gt;&lt;p&gt; The entire play is perfectly cast and it'sgreat to see stars like David Hyde Pierce and Sigourney Weaver make room forKristine Nielsen's remarkable turn in the role of a lifetime.&lt;/p&gt;&lt;p&gt; I look forward to the revivals sure to come. 6.PASSION -- The revival of Stephen Sondheim's Passion was the highlight of Classic Stage Company's season.&lt;/p&gt;&lt;p&gt; It wasn't a revelation for me -- I loved the show HuffPost Daily Brief Arts Get top stories and blog posts emailed to me each day..&lt;/p&gt;&lt;p&gt; Learning to Read by Reading to CatsSlate Articles » Crowd Ignite »when it debuted on Broadway -- but the excellent cast and staging combined with the gift of CSC's intimate space to make this a truly memorable evening of theater.Judy Kuhn and Melissa Errico were triumphant and Ryan Silverman (new to me) was their match as Giorgio.&lt;/p&gt;&lt;p&gt; Over the years, I've been heartbroken that a number of shows that premiered at CSC didn't transfer and get a longer life, if only for theselfish reason that I wanted to see them again.&lt;/p&gt;&lt;p&gt; Here's one more to add to my list. 7.&lt;/p&gt;&lt;p&gt; MATILDA THE MUSICAL -- It came from London wrapped in hype and lived up to expectations.&lt;/p&gt;&lt;p&gt; This, for me, is the family show of the moment, with a wickedly black sense of humor, great and eye-catching production design and solid songs thatoffer plenty of opportunity for witty and engaging performances.&lt;/p&gt;&lt;p&gt; They improved on Roald Dahl's novel in ways both large and small, adding some emotional depth without sacrificing his rather nasty worldview and it's all perfectly wonderful forkids and their parents.&lt;/p&gt;&lt;p&gt; The score isn't great enough to send me into heaven, but it'ssolid and funny.&lt;/p&gt;&lt;p&gt; I'll be remembering and laughing and shivering just a bit overBertie Carvell's brilliant embodiment of Miss Trunchbull for the rest of my life. 8.&lt;/p&gt;&lt;p&gt; THE WEIR AT THE IRISH REP -- I seem to be alone in finding Conor McPherson's new play The Night Alive underwhelming.&lt;/p&gt;&lt;p&gt; It's sure to be on many other Best of the Year lists.&lt;/p&gt;&lt;p&gt; But I am a big fan of his work in general and this impeccable revival of The Weir is a case in point.&lt;/p&gt;&lt;p&gt; I loved it when I saw the show well into its run on the West End.&lt;/p&gt;&lt;p&gt; Here it was even better and an excellent way to celebrate the Irish Rep's 25th anniversary.&lt;/p&gt;&lt;p&gt; I'm only astonished it isn't still running,though Off Broadway is such a puzzle for commercial producers I suppose Ishouldn't be surprised this didn't transfer. 9.&lt;/p&gt;&lt;p&gt; THE NEW YORK MUSICAL THEATRE FESTIVAL -- This annual celebration of new musicals wisely moved to the summer where it could get more attention.&lt;/p&gt;&lt;p&gt; NYMF is an institution now and 2013 was a banner year in terms of quality.&lt;/p&gt;&lt;p&gt; Bend In The Road was a Broadway worthy production of Anne Of Green Gables, with Alison Woods a delight in the central role.&lt;/p&gt;&lt;p&gt; Volleygirls was a seriously commercial and fun look at high school volleyball bursting with talent in its largelyfemale cast. (I suppose the flops Lysistrata Jones and Bring It On! scared investors off sports musicals but they missed a winner here.) Other shows almost as goodincluded another high school set story Crossing Swords, a look at the making of a Fred Astaire/Ginger Rogers movie named Castle Walk and Onalea Gilbertson in another terrific turn in Mata Hari in 8 Bullets.&lt;/p&gt;&lt;p&gt; Can't wait for 2014. 10.&lt;/p&gt;&lt;p&gt; SAVION GLOVER'S STePz -- Every year, dancer, director and choreographer Savion Glover has a three week residency at the Joyce and offers up a new show.STePz is the latest and one of the best from this enduring talent.&lt;/p&gt;&lt;p&gt; He did everything imaginable with steps and stairs, aided by an excellent cast including above all themarvelous Marshall Davis Jr.&lt;/p&gt;&lt;p&gt; From the opener set to John Contrane's "Miles' Mode"to the penultimate triumph of a haunting "Mr.&lt;/p&gt;&lt;p&gt; Bojangles" sung by Sammy Davis Jr.,it was an evening of pure delight. 11.&lt;/p&gt;&lt;p&gt; A GENTLEMAN'S GUIDE TO LOVE AND MURDER -- Like Catch Me If You Can a few seasons ago, this is a great production of a merely good musical.&lt;/p&gt;&lt;p&gt; But it out-Droods The Mystery Of Edwin Drood in its music hall silliness, the set design is brilliant, the cast strong and Jefferson Mays a wonder in playing virtually half of the characters in the show.&lt;/p&gt;&lt;p&gt; It's a show-stopper of a turn and more than that becauseMays never hijacks the show to show off; he creates individual characters and bringsthem to life.&lt;/p&gt;&lt;p&gt; If no one told you what he was doing, you might not even notice untilhalf way through the night. (My god, isn't that the same actor??!!) Great fun. 12.&lt;/p&gt;&lt;p&gt; THE RIME OF THE ANCIENT MARINER AT BAM -- Just as the year came to an end, actress Fiona Shaw, dancer-actor Daniel Hay-Gordon and director Phyllida Lloyd (yes, the same talent behind Julius Caesar ) delivered theater at its most elemental and powerful.&lt;/p&gt;&lt;p&gt; Their performance of Samuel Taylor Coleridge's RimeOf The Ancient Mariner at the Brooklyn Academy Of Music used subtle, centuries- old craft to tell the story of a sailor haunted by the killing of an albatross anddoomed to tell his tale of woe to passers-by seemingly for all eternity.&lt;/p&gt;&lt;p&gt; Shaw andHay-Gordon did a delightful dance, with Shaw voicing all the parts and the twoseamlessly trading off the physical parts with clarity and grace.&lt;/p&gt;&lt;p&gt; One moment Shaw isplaying the Wedding Guest and the next the Mariner, one moment Hay-Gordon isthe Guest and the next he's a sailor or the albatross and they never miss a beat.Impeccably done and hopefully the latest in what will continue to be an exploration by Shaw and Lloyd of great poetry on stage. 13.&lt;/p&gt;&lt;p&gt; ISAAC'S EYE /YEAR OF THE ROOSTER -- It was the year of EnsembleAndrew Garfield Dresses in Drag for Arcade Fire’s Powerful New Video The Most Dramatic Women’s Haircutson TV and in the Movies The Internet's Best Batfleck Photoshops 25 Action Movies That Changed the Genre Forever Jason Sudeikis and Alison Brie Headline Sleeping With Other PeopleStudio Theatre for me.&lt;/p&gt;&lt;p&gt; This small house nurtures new playwrights with care and passion.&lt;/p&gt;&lt;p&gt; They introduced me to the distinctive voices of Lucas Hnath and Eric Dufault, two talents I'll be following for years to come. (Indeed, Hnath alreadydelivered a fascinating piece on Walt Disney, confirming his promise.) Good writingattracts good actors so I also had the pleasure of watching Bobby Moreno strutaround the stage like the cock of the walk as he embodied the confused, angry,preening rooster Odysseus.&lt;/p&gt;&lt;p&gt; OTHER MEMORABLE MOMENTS GILBERTO SANTA ROSA IN FOREVER TANGO -- I came for the tango and stayed for the salsa.&lt;/p&gt;&lt;p&gt; Santa Rosa -- the Gentleman Of Salsa -- came onto the stage of this revival of the dance show to a wave of applause from the knowingLatino/Hispanic audience and you immediately understood why.&lt;/p&gt;&lt;p&gt; He was a magneticpresence, a brilliant singer and an effortless showman.&lt;/p&gt;&lt;p&gt; Forever Santa Rosa -- now that's a show I'd go see again and again.&lt;/p&gt;&lt;p&gt; NATHAN LANE IN THE NANCE -- Douglas Carter Beane's play about a closeted gay man playing effeminate gay characters in vaudeville -- the "nance" of the title -- was an ambitious work that didn't quite hit a home run for me.&lt;/p&gt;&lt;p&gt; But Nathan Lanewas a marvel.&lt;/p&gt;&lt;p&gt; He literally did it all: singing and dancing, comic routines,vaudevillian energy, comedy, drama, pathos.&lt;/p&gt;&lt;p&gt; If he burst into a high c at some point,I might have missed it but I wouldn't be surprised.&lt;/p&gt;&lt;p&gt; Lane's ability to make lightningfast switches between old school shtick and dramatic intensity was a gift to the showand the audience.&lt;/p&gt;&lt;p&gt; They don't make 'em like that anymore, except sometimes theydo, thank goodness.&lt;/p&gt;&lt;p&gt; NELLIE MCKAY IN OLD HATS -- I'm eager to see Bill Irwin and David Shiner any time they want to clown around.&lt;/p&gt;&lt;p&gt; Their evening of vaudeville and silent comic gems was great fun indeed.&lt;/p&gt;&lt;p&gt; But the icing on the cake was the presence of theabsurdly gifted Nellie McKay as the musical guest.&lt;/p&gt;&lt;p&gt; She didn't just lead a band interrific renditions of her songs.&lt;/p&gt;&lt;p&gt; McKay also interacted with Irwin and Shiner as theycompete for her attention, lasering in on the retro vibe of the show but alwaysmaintaining a key intelligence as well.&lt;/p&gt;&lt;p&gt; She strolled the aisles during intermission,playing the ukelele and delivering weird facts, like whose birthday it was that day orexclaiming apropos of nothing that we should be kind to our waitress. "Try the tofu!"she burbled.&lt;/p&gt;&lt;p&gt; What a delight.&lt;/p&gt;&lt;p&gt; No wonder those two men fight for her affection.&lt;/p&gt;&lt;p&gt; CHRISTINE GOERKE IN THE WOMAN WITHOUT A SHADOW AT THE MET -- I was mixed on this production of Strauss's opera.&lt;/p&gt;&lt;p&gt; But no one could deny it was a thrilling night of theater to see Christine Goerke's triumphant return to the Met after years of vocal issues and proceed to tear it up as the Dyer's Wife.&lt;/p&gt;&lt;p&gt; Any foolcould see she would be a great Brunnhilde and literally as I posted my review theMetropolitan Opera announced Goerke would be doing exactly that when the RingCycle returned in 2018.&lt;/p&gt;&lt;p&gt; AARON COSTA GANIS -- The play The Mnemonist Of Dutchess County didn't come close to working for me.&lt;/p&gt;&lt;p&gt; But Ganis played a carnival barker of a guy who hosted stage performances by a man with a freakish memory.&lt;/p&gt;&lt;p&gt; His energy and audience improv woke the play up (briefly) and made me laugh.&lt;/p&gt;&lt;p&gt; I've been saying,"The Mnemonist! Of Dutchess County!" ever since and that has to count forsomething.&lt;/p&gt;&lt;p&gt; DEBORAH COX IN JEKYLL &amp; HYDE -- Who knew pop star Deborah Cox would be such a winning stage presence? Get her a good show right away, Broadway producers! (And god willing some day Constantine Maroulis will get a good show, too.) ROGER REES IN THE WINSLOW BOY -- Seeing Roger Rees age before our eyes in this strong revival of The Winslow Boy by Roundabout was one of the highlights of the year and a timely reminder of his talents on stage.&lt;/p&gt;&lt;p&gt; Rees has become so adept as a director with the success of Peter and the Starcatcher that we might have forgotten what a terrific actor he is as well.&lt;/p&gt;&lt;p&gt; No one seeing this chestnut broughtvividly to life will forget about Rees the actor ever again.&lt;/p&gt;&lt;p&gt; FANTASIA IN AFTER MIDNIGHT -- I'd love to return to this re-imagining of a night at the Cotton Club when kd lang is the guest singer.&lt;/p&gt;&lt;p&gt; But boy am I glad I caught Fantasia.&lt;/p&gt;&lt;p&gt; She looked great.&lt;/p&gt;&lt;p&gt; She sounded great.&lt;/p&gt;&lt;p&gt; And she sang some classic tunes withthe aplomb of a star and the insight of a world-weary soul.&lt;/p&gt;&lt;p&gt; Sometimes people liketheir divas tragic but here's hoping Fantasia continues to give her fans a happyending.HAMISH MCCANN IN LA SOIREE -- I'm not a natural fan of burlesque (too uptight!) but I was won over by the entire cast of this sexy, silly edition.&lt;/p&gt;&lt;p&gt; Hamish McCann is in the duo The English Gents with Denis Lock.&lt;/p&gt;&lt;p&gt; But it was his solo spotclimbing up a rope while holding his body parallel to the ground that stopped theshow for me -- McCann was physically impressive, gymnastically precise andwinningly charming to boot.&lt;/p&gt;&lt;p&gt; As a bonus, I spent the show captivated by thebeguiling person across the way from me who seemed to be enjoying the antics inexactly the same manner as myself.&lt;/p&gt;&lt;p&gt; Theater in the round can be tricky, but it doesallow you to check out audience members just as easily as you check out the talenton stage.&lt;/p&gt;&lt;p&gt; THE THEATER OF 2013 (on a four star scale) The Other Place ** 1/2 Picnic * 1/2 Opus No. 7 ** 1/2 Deceit * 1/2 Life And Times Episodes 1-4 ** Cat On A Hot Tin Roof (w Scarlett Johansson) * 1/2 The Jamme r *** Blood Play ** 1/2 Manilow On Broadway ** 1/2 Women Of Will ** 1/2 All In The Timing *** Isaac's Eye *** Bunnicula: A Rabbit Tale Of Musical Mystery ** 1/2 The Mnemonist Of Dutchess County * 1/2 Much Ado About Nothing *** Really Really * Parsifal at the Met *** 1/2 The Madrid * 1/2 The Wild Bride at St.&lt;/p&gt;&lt;p&gt; Ann's ** 1/2 Passion at CSC *** 1/2 Carousel at Lincoln Center *** The Revisionist ** Rodgers &amp; Hammerstein's Cinderella *** Rock Of Ages * 1/2 Ann ** 1/2 Old Hats *** The Flick *** Detroit '67 ** 1/2 Howling Hilda reading * (Mary Testa ***) Hit The Wall * Breakfast At Tiffany's * 1/2 The Mound Builders at Signature * Vanya And Sonia And Masha And Spike *** 1/2 Cirque Du Soleil's Totem *** The Lying Lesson * 1/2 Hands On A Hardbody * Kinky Boots ** Matilda The Musical *** 1/2 The Rascals: Once Upon A Dream *** Motown: The Musical ** La Ruta ** 1/2 The Big Knife * The Nance *** The Assembled Parties ** 1/2 Jekyll &amp; Hyde * 1/2 Thoroughly Modern Millie ** 1/2 Macbeth w Alan Cumming * Orphans ** 1/2 The Testament Of Mary ** 1/2 The Drawer Boy ** The Trip To Bountiful *** I'll Eat You Last ** 1/2 Pippin * This Side Of Neverland *** A Public Reading Of An Unproduced Screenplay About The Death Of Walt Disney***Natasha, Pierre And The Great Comet Of 1812 *** Colin Quinn Unconstitutional ** 1/2 A Family For All Occasions * The Weir *** 1/2 Disney's The Little Mermaid ** Far From Heaven ** The Caucasian Chalk Circle ** Somewhere Fun ** Venice no stars Reasons To Be Happy ** STePz *** 1/2 The Comedy of Errors (Shakespeare In The Park) *** Roadkill ** 1/2 Forever Tango *** Monkey: Journey To The West ** 1/2 The Civilians: Be The Death Of Me *** NYMF: Swiss Family Robinson ** NYMF: Dizzy Miss Lizzie's Roadside Revue Presents The Brontes * 1/2 NYMF: Mata Hari in 8 Bullets *** NYMF: Life Could Be A Dream ** NYMF: Mother Divine ** NYMF: Julian Po ** 1/2 NYMF: Marry Harry ** NYMF: Gary Goldfarb: Master Escapist ** 1/2 NYMF: Castle Walk *** NYMF: Crossing Swords *** NYMF: Bend In The Road *** 1/2 NYMF: Homo The Musical no stars NYMF: Volleygirls *** 1/2 Murder For Two ** Let it Be ** The Cheaters Club * All The Faces Of The Moon * Women Or Nothing ** 1/2 Mr.&lt;/p&gt;&lt;p&gt; Burns, A Post-Electric Play * 1/2 You Never Can Tell *** Romeo And Juliet * Arguendo ** August Wilson's American Century Cycle **** The Glass Menagerie ** 1/2 Lady Day * 1/2 Julius Caesar at St.&lt;/p&gt;&lt;p&gt; Ann's Warehouse **** Honeymoon In Vegas: The Musical ** 1/2 Bronx Bombers * 1/2 Romeo &amp; Juliet at CSC * 1/2 A Night With Janis Joplin ** The Winslow Boy *** Juno And The Paycock ** How I Learned To Drive ** Fun Home ** Two Boys at the Met ** Big Fish ** A Time To Kill * 1/2 Year Of The Rooster *** The Snow Geese ** 1/2 A Midsummer Night's Dream ** 1/2 The Lady in Red Converses With Diablo ** 1/2 After Midnight *** La Soiree *** Nothing To Hide ** 1/2 The Patron Saint Of Sea Monsters ** Die Frau Ohne Schatten/The Woman Without A Shadow at the Met *** Little Miss Sunshine ** Souvenir ** 1/2 A Gentleman's Guide To Love &amp; Murder *** 1/2 Twelfth Night *** 1/2 King Richard The Third *** Lies My Father Told Me ** Regular Singing **Advertise Log In Make HuffPost Your Home Page RSS Careers FAQ User Agreement Privacy Comment Policy About Us About Our Ads Contact Us Copyright ©2014 TheHuffingtonPost.com, Inc. "The Huffington Post" is a registered trademark of TheHuffingtonPost.com, Inc.&lt;/p&gt;&lt;p&gt; All rights reserved.&lt;/p&gt;&lt;p&gt; Part of AOL LifestyleAnd Away We Go ** Analog.ue at St.&lt;/p&gt;&lt;p&gt; Ann's Warehouse ** 1/2 Oliver! at Papermill ** Waiting For Godot ** 1/2 No Man's Land *** The Rime Of The Ancient Mariner *** 1/2 Macbeth w Ethan Hawke ** How I Learned What I Learned *** The Curious Case Of The Watson Intelligence *** The Night Alive ** Thanks for reading.&lt;/p&gt;&lt;p&gt; Michael Giltz is the founder and CEO of BookFilter, a book lover's best friend.&lt;/p&gt;&lt;p&gt; It's a website that lets you browse for books online the way you do in a physical bookstore, provides comprehensive info on new releases every week in every category and offers passionate personal recommendations everystep of the way.&lt;/p&gt;&lt;p&gt; It's like a fall book preview or holiday gift guide -- but every weekin every category.&lt;/p&gt;&lt;p&gt; He's also the cohost of Showbiz Sandbox , a weekly pop culture podcast that reveals the industry take on entertainment news of the day and features top journalists and opinion makers as guests.&lt;/p&gt;&lt;p&gt; It's available for free on iTunes.&lt;/p&gt;&lt;p&gt; Visit Michael Giltz at his website and his daily blog.&lt;/p&gt;&lt;p&gt; Download his podcast of celebrity interviews and his radio show, also called Popsurfing and also available for free on iTunes.&lt;/p&gt;&lt;p&gt; Link to him on Netflix and gain access to thousands of ratings and reviews.&lt;/p&gt;&lt;p&gt; Note : Michael Giltz is provided with free tickets to shows with the understanding that he will be writing a review.&lt;/p&gt;&lt;p&gt; All productions are in New York City unless otherwise indicated.&lt;/p&gt;&lt;p&gt; Follow Michael Giltz on Twitter: www.twitter.com/michaelgiltz</p>
             </div>
-        </div>
-        
-        <!-- Footer -->
-        <div class="footer">
-            <p>&copy; 2025 Michael Giltz. All rights reserved.</p>
-            <p>This article originally appeared in HuffPo on 2013.</p>
         </div>
     </div>
 </body>

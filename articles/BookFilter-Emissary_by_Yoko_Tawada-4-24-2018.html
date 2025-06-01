@@ -3,135 +3,135 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Emissary By Yoko Tawada-4-24 by Michael Giltz - BookFilter">
-    <meta name="keywords" content="BookFilter, Emissary By Yoko Tawada-4-24, Michael Giltz, journalism, entertainment">
+    <meta name="description" content="Emissary by Yoko Tawada - BookFilter - Michael Giltz">
+    <meta name="keywords" content="Michael Giltz, BookFilter, journalism, article">
     <meta name="author" content="Michael Giltz">
-    <title>Emissary By Yoko Tawada-4-24 - BookFilter - Michael Giltz</title>
+    <title>Emissary by Yoko Tawada - Michael Giltz</title>
     <link href="../giltz.css" rel="stylesheet" type="text/css" />
     <style>
-        body { 
-            font-family: Arial, sans-serif;
+        body {
+            font-family: 'Times New Roman', Times, serif;
             margin: 0;
             padding: 0;
-            background: #f5f5f5;
+            background: #fff;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
         }
         .site-banner {
             text-align: center;
-            background: white;
-            padding: 10px 0;
+            padding: 20px 0;
+            background: #f9f9f9;
         }
         .site-banner img {
             max-width: 100%;
             height: auto;
         }
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            background: white;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        .header {
-            background: #333;
-            color: white;
-            padding: 20px;
+        .article-header {
             text-align: center;
+            padding: 30px 0 20px 0;
         }
-        .header h1 {
-            margin: 0;
-            font-size: 24px;
+        .article-title {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 28px;
+            font-weight: bold;
+            margin: 0 0 10px 0;
+            color: #333;
         }
-        .header p {
-            margin: 5px 0;
+        .article-meta {
             font-size: 14px;
+            color: #666;
+            margin: 0;
         }
         .pdf-viewer {
             width: 100%;
-            height: 600px;
-            border: none;
-            display: block;
+            height: 800px;
+            margin: 20px 0;
+            border: 1px solid #ddd;
         }
         .home-button {
             text-align: center;
-            padding: 20px;
-            background: #f0f0f0;
+            padding: 30px 0;
         }
         .home-button a {
             display: inline-block;
-            padding: 10px 30px;
+            padding: 12px 40px;
             background: #333;
             color: white;
             text-decoration: none;
             font-weight: bold;
+            font-size: 16px;
             border-radius: 5px;
+            text-transform: uppercase;
         }
         .home-button a:hover {
             background: #555;
         }
         .text-section {
-            padding: 20px;
+            padding: 40px 0;
+            border-top: 3px solid #333;
+            margin-top: 40px;
         }
         .text-section h2 {
+            font-size: 20px;
             color: #333;
-            border-bottom: 2px solid #333;
-            padding-bottom: 10px;
+            margin: 0 0 20px 0;
+            text-transform: uppercase;
         }
         .text-content {
             line-height: 1.8;
             color: #333;
+            font-size: 16px;
         }
         .text-content p {
             margin-bottom: 15px;
         }
-        .footer {
-            background: #f0f0f0;
-            padding: 20px;
-            text-align: center;
-            font-size: 12px;
-            color: #666;
-        }
         @media (max-width: 768px) {
             .pdf-viewer {
-                height: 400px;
+                height: 500px;
+            }
+            .article-title {
+                font-size: 22px;
             }
         }
     </style>
-    <link rel="icon" type="image/x-icon" href="../favicon.ico">
-    <link rel="icon" type="image/png" href="../favicon.png">
 </head>
 <body>
-    <!-- Site Banner -->
-    <div class="site-banner">
-        <a href="../index.htm"><img src="../giltz.jpg" width="800" height="146" alt="MichaelGiltz.com" /></a>
-    </div>
-    
     <div class="container">
-        <div class="header">
-            <h1>Emissary By Yoko Tawada-4-24</h1>
-            <p>Publication: BookFilter | Date: 2018 | by Michael Giltz</p>
+        <!-- Site Banner -->
+        <div class="site-banner">
+            <a href="../index.htm"><img src="../giltz.jpg" width="800" height="146" alt="MichaelGiltz.com" /></a>
         </div>
         
-        <!-- PDF Viewer -->
-        <iframe class="pdf-viewer" src="../scans/BookFilter-Emissary_by_Yoko_Tawada-4-24-2018.pdf" title="PDF Article">
-            <p>Your browser does not support embedded PDFs. <a href="../scans/BookFilter-Emissary_by_Yoko_Tawada-4-24-2018.pdf">Download the PDF</a> to view.</p>
+        <!-- Article Header -->
+        <div class="article-header">
+            <h1 class="article-title">Emissary by Yoko Tawada</h1>
+            <p class="article-meta">Publication: BookFilter &nbsp;&nbsp;|&nbsp;&nbsp; Date: April 24, 2018</p>
+        </div>
+        
+        <!-- PDF Viewer - Direct embed without buttons -->
+        <iframe class="pdf-viewer" 
+                src="../scans/BookFilter-Emissary_by_Yoko_Tawada-4-24-2018.pdf#toolbar=0&navpanes=0" 
+                type="application/pdf"
+                frameborder="0">
+            <p>Your browser does not support PDFs. 
+               <a href="../scans/BookFilter-Emissary_by_Yoko_Tawada-4-24-2018.pdf">Click here to view the PDF</a>.
+            </p>
         </iframe>
         
         <!-- Home Button -->
         <div class="home-button">
-            <a href="../index.htm">HOME</a>
+            <a href="../index.htm">Home</a>
         </div>
         
-        <!-- Text Section -->
+        <!-- SEO Text Section -->
         <div class="text-section">
-            <h2>SEO TEXT: Article Content for Search</h2>
+            <h2>SEO TEXT: Article Content for Search Engines</h2>
             <div class="text-content">
                 <p>Home |Register |Sign In Home Top Picks: All Books The Emissary The Emissary by Yoko Tawada, Margaret Mitsutani Price: $14.95 (Paperback) Published: April 24, 2018 Rating: 0.0/ 5 (0 votes cast) From the Publisher: Japan, after suffering from a massive irreparable disaster, cuts itself off from the world.&lt;/p&gt;&lt;p&gt; Children are so weak they can barely stand or walk: the only people with any get-go are the elderly.&lt;/p&gt;&lt;p&gt; Mumei lives with his grandfather Yoshiro, who worries about himconstantly.&lt;/p&gt;&lt;p&gt; They carry on a day-to-day routine in what could be viewed asa post-Fukushima time, with all the children born ancient—frail and gray- haired, yet incredibly compassionate and wise.&lt;/p&gt;&lt;p&gt; Mumei may be enfeebled and feverish, but he is a beacon of hope, full of wit and free of self-pityand pessimism.&lt;/p&gt;&lt;p&gt; Yoshiro concentrates on nourishing Mumei, a strangelywonderful boy who offers “the beauty of the time that is yet to come.” Adelightful, irrepressibly funny book, The Emissary is filled with light.&lt;/p&gt;&lt;p&gt; Yoko Tawada, deftly turning inside-out “the curse,” defies gravity and creates a playful joyous novel out of a dystopian one, with a legerdemain uniquelyher own.&lt;/p&gt;&lt;p&gt; Rate This Book Add To Wishlist |Rate/Review Add To Bookshelf Get This Book Personalize / Add More ChoicesGo to your preferred retailer, click to choose a format and you' ll be taken directly to their site where you can get this book.&lt;/p&gt;&lt;p&gt; What We Say Think of "The Emissary" as a quieter, homebound spin on "The Road." In Yoko Tawada's new dystopian novel set in Japan, something has happened.&lt;/p&gt;&lt;p&gt; An unnamed disaster has upended the world in odd, unsettling ways that quietly revealthemselves with a word here or an observation there.&lt;/p&gt;&lt;p&gt; We watch a great-grandfather named Yoshiro care for his great- grandson Mumei and slowly the picture comes into focus.&lt;/p&gt;&lt;p&gt; Old people have been robbed of death -- they just live on and on and are the only people with the energy and physical ability to do banal, daily tasks.&lt;/p&gt;&lt;p&gt; They live so long that people are nowcalled young-old (those in their 70s) middle-old (80s and up) and the venerable plain old "old" like Yoshiro, who isShare This Book About The Author Yoko Tawada, Margaret Mitsutani Yoko Tawada—“strange, exquisite” (The New Yorker )—was born in Tokyo in 1960 and moved to Germany when she was twenty-two.&lt;/p&gt;&lt;p&gt; She writes in both Japanese andGerman and has received the AkutagawaPrize, the Adelbert von Chamisso Prize, the Goethe Medal, and the Tanizaki Prize.&lt;/p&gt;&lt;p&gt; Margaret Mitsutani has also translated Japan’s 1994 Nobel Prize laureate KenzaburoOe.&lt;/p&gt;&lt;p&gt; Release Info List Price: $14.95 (Paperback) Published: April 24, 2018 Publisher: New Directions Pages: 128 ISBN 10: 0811227626 ISBN 13: 9780811227629approaching 108 years of age.&lt;/p&gt;&lt;p&gt; Now the elderly are somewhat spry and the children are feeble and fragile, unable to walk much, eat food and so on.&lt;/p&gt;&lt;p&gt; In another reversal, the old people are sad and angry and confused while the young seem to have a complacent or perhaps philosophical acceptance of their fate.&lt;/p&gt;&lt;p&gt; This is a curious book, just 128 pages long but only shyly revealing some of its secrets, even at the end.&lt;/p&gt;&lt;p&gt; Japan is quarantined from the world or perhaps has shut the world out.Foreign words are not allowed, either because the outside world is seen as hostile and inferior (in an embrace of Japan'sEdo past) or perhaps because foreign countries now charge money for words they have exported and the Japanesegovernment can't afford the cost.&lt;/p&gt;&lt;p&gt; Even the purpose of the emissary in the title is left fuzzily unclear -- even after it is explained, we're not sure what to make of it.&lt;/p&gt;&lt;p&gt; What does comes through is life, the need to get by however dire or absurd or heartbreaking the struggle may be.&lt;/p&gt;&lt;p&gt; We slip into the consciousness of various characters including the child Mumei, ateacher, the boy's great-grandmother and others.&lt;/p&gt;&lt;p&gt; But mostly we see the world from the point of view of Yoshiro, whopatiently continues to write his fiction though no one will publish it, patiently cuts up an orange for the boy and tries tolearn from this Buddha-like child. "The Emissary" is strange, beguiling and not quite satisfying.&lt;/p&gt;&lt;p&gt; One can't help worrying over the translation when the publisher insists this gently mournful novel is "delightful, irrepressibly funny." Perhaps they're as scared by the book's essential melancholy as Yoshiro and everyone around him, who whisper about or simply don't mentionthe cold facts of the world they made.&lt;/p&gt;&lt;p&gt; Nevertheless, it's hard to shake and lingers in the mind with a half-life all its own. --Michael Giltz What Others Say An airily beautiful dystopian novella about mortality.&lt;/p&gt;&lt;p&gt; Tawada’s quirky style and ability to jump from realism to abstraction manages to both chastise humanity for the path we are taking towards destruction and lookhopefully toward an unknown future. - Enobong Essien Booklist Wonderful—what is truly affecting is Tawada’s language, which jumps off the page and practically sings. - NPR Recessive, lunar beauty [with] a high sheen.&lt;/p&gt;&lt;p&gt; Her language has never been so arresting—flickering brilliance. - Parul Sehgal The New York Times The Emissary carries us beyond the limits of what is it is to be human, in order to remind us of what we must hold dearest in our conflicted world, our humanity. - Sjón Persistent mystery is what is so enchanting about Tawada’s writing.&lt;/p&gt;&lt;p&gt; Her penetrating irony and deadpan surrealism fray our notions of home and combine to deliver another offbeat tale.&lt;/p&gt;&lt;p&gt; An absorbing work from afascinating mind. - Kirkus Reviews What You Say Filter by No Reviews Found ..... about us |faq|advertise |privacy policy |newsletter |contact us ©2018, BookBuddha LLc.&lt;/p&gt;&lt;p&gt; All Rights Reserved.</p>
             </div>
-        </div>
-        
-        <!-- Footer -->
-        <div class="footer">
-            <p>&copy; 2025 Michael Giltz. All rights reserved.</p>
-            <p>This article originally appeared in BookFilter on 2018.</p>
         </div>
     </div>
 </body>

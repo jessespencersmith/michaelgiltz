@@ -3,135 +3,135 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Barracoon By Zora Neale Hurston-5-8 by Michael Giltz - BookFilter">
-    <meta name="keywords" content="BookFilter, Barracoon By Zora Neale Hurston-5-8, Michael Giltz, journalism, entertainment">
+    <meta name="description" content="Barracoon by Zora Neale Hurston - BookFilter - Michael Giltz">
+    <meta name="keywords" content="Michael Giltz, BookFilter, journalism, article">
     <meta name="author" content="Michael Giltz">
-    <title>Barracoon By Zora Neale Hurston-5-8 - BookFilter - Michael Giltz</title>
+    <title>Barracoon by Zora Neale Hurston - Michael Giltz</title>
     <link href="../giltz.css" rel="stylesheet" type="text/css" />
     <style>
-        body { 
-            font-family: Arial, sans-serif;
+        body {
+            font-family: 'Times New Roman', Times, serif;
             margin: 0;
             padding: 0;
-            background: #f5f5f5;
+            background: #fff;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
         }
         .site-banner {
             text-align: center;
-            background: white;
-            padding: 10px 0;
+            padding: 20px 0;
+            background: #f9f9f9;
         }
         .site-banner img {
             max-width: 100%;
             height: auto;
         }
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            background: white;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        .header {
-            background: #333;
-            color: white;
-            padding: 20px;
+        .article-header {
             text-align: center;
+            padding: 30px 0 20px 0;
         }
-        .header h1 {
-            margin: 0;
-            font-size: 24px;
+        .article-title {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 28px;
+            font-weight: bold;
+            margin: 0 0 10px 0;
+            color: #333;
         }
-        .header p {
-            margin: 5px 0;
+        .article-meta {
             font-size: 14px;
+            color: #666;
+            margin: 0;
         }
         .pdf-viewer {
             width: 100%;
-            height: 600px;
-            border: none;
-            display: block;
+            height: 800px;
+            margin: 20px 0;
+            border: 1px solid #ddd;
         }
         .home-button {
             text-align: center;
-            padding: 20px;
-            background: #f0f0f0;
+            padding: 30px 0;
         }
         .home-button a {
             display: inline-block;
-            padding: 10px 30px;
+            padding: 12px 40px;
             background: #333;
             color: white;
             text-decoration: none;
             font-weight: bold;
+            font-size: 16px;
             border-radius: 5px;
+            text-transform: uppercase;
         }
         .home-button a:hover {
             background: #555;
         }
         .text-section {
-            padding: 20px;
+            padding: 40px 0;
+            border-top: 3px solid #333;
+            margin-top: 40px;
         }
         .text-section h2 {
+            font-size: 20px;
             color: #333;
-            border-bottom: 2px solid #333;
-            padding-bottom: 10px;
+            margin: 0 0 20px 0;
+            text-transform: uppercase;
         }
         .text-content {
             line-height: 1.8;
             color: #333;
+            font-size: 16px;
         }
         .text-content p {
             margin-bottom: 15px;
         }
-        .footer {
-            background: #f0f0f0;
-            padding: 20px;
-            text-align: center;
-            font-size: 12px;
-            color: #666;
-        }
         @media (max-width: 768px) {
             .pdf-viewer {
-                height: 400px;
+                height: 500px;
+            }
+            .article-title {
+                font-size: 22px;
             }
         }
     </style>
-    <link rel="icon" type="image/x-icon" href="../favicon.ico">
-    <link rel="icon" type="image/png" href="../favicon.png">
 </head>
 <body>
-    <!-- Site Banner -->
-    <div class="site-banner">
-        <a href="../index.htm"><img src="../giltz.jpg" width="800" height="146" alt="MichaelGiltz.com" /></a>
-    </div>
-    
     <div class="container">
-        <div class="header">
-            <h1>Barracoon By Zora Neale Hurston-5-8</h1>
-            <p>Publication: BookFilter | Date: 2018 | by Michael Giltz</p>
+        <!-- Site Banner -->
+        <div class="site-banner">
+            <a href="../index.htm"><img src="../giltz.jpg" width="800" height="146" alt="MichaelGiltz.com" /></a>
         </div>
         
-        <!-- PDF Viewer -->
-        <iframe class="pdf-viewer" src="../scans/BookFilter-Barracoon_by_Zora_Neale_Hurston-5-8-2018.pdf" title="PDF Article">
-            <p>Your browser does not support embedded PDFs. <a href="../scans/BookFilter-Barracoon_by_Zora_Neale_Hurston-5-8-2018.pdf">Download the PDF</a> to view.</p>
+        <!-- Article Header -->
+        <div class="article-header">
+            <h1 class="article-title">Barracoon by Zora Neale Hurston</h1>
+            <p class="article-meta">Publication: BookFilter &nbsp;&nbsp;|&nbsp;&nbsp; Date: May 8, 2018</p>
+        </div>
+        
+        <!-- PDF Viewer - Direct embed without buttons -->
+        <iframe class="pdf-viewer" 
+                src="../scans/BookFilter-Barracoon_by_Zora_Neale_Hurston-5-8-2018.pdf#toolbar=0&navpanes=0" 
+                type="application/pdf"
+                frameborder="0">
+            <p>Your browser does not support PDFs. 
+               <a href="../scans/BookFilter-Barracoon_by_Zora_Neale_Hurston-5-8-2018.pdf">Click here to view the PDF</a>.
+            </p>
         </iframe>
         
         <!-- Home Button -->
         <div class="home-button">
-            <a href="../index.htm">HOME</a>
+            <a href="../index.htm">Home</a>
         </div>
         
-        <!-- Text Section -->
+        <!-- SEO Text Section -->
         <div class="text-section">
-            <h2>SEO TEXT: Article Content for Search</h2>
+            <h2>SEO TEXT: Article Content for Search Engines</h2>
             <div class="text-content">
                 <p>Home |Register |Sign In Home Top Picks: All Books Barracoon Barracoon The Story of the Last "Black Cargo" by Zora Neale Hurston, Deborah G.&lt;/p&gt;&lt;p&gt; Plant Price: $24.99 (Hardcover) Published: May 08, 2018 Rating: 0.0/ 5 (0 votes cast) From the Publisher: A major literary event: a never-before-published work from the author of the American classic Their Eyes Were WatchingGod that brilliantly illuminates the horror and injustices of slavery as it tells the true story of one of the last known survivors of the Atlantic slave trade—abducted from Africa on the last "Black Cargo" ship to arrive in the United States.&lt;/p&gt;&lt;p&gt; In 1927, Zora Neale Hurston went to Plateau, Alabama, justoutside Mobile, to interview eighty-six-year-old Cudjo Lewis.&lt;/p&gt;&lt;p&gt; Of the millions of men, women, and children transported from Africa to America as slaves, Cudjo was then the only person alive to tell the story of this integral part of the nation’s history.&lt;/p&gt;&lt;p&gt; Hurston was there to record Cudjo’sfirsthand account of the raid that led to his capture and bondage fiftyyears after the Atlantic slave trade was outlawed in the United States.&lt;/p&gt;&lt;p&gt; In1931, Hurston returned to Plateau, the African-centric community three miles from Mobile founded by Cudjo and other former slaves from his ship.&lt;/p&gt;&lt;p&gt; Spending more than three months there, she talked in depth with Cudjoabout the details of his life.&lt;/p&gt;&lt;p&gt; During those weeks, the young writer and theelderly once enslaved man ate peaches and watermelon that grew in the backyard and talked about Cudjo’s past—memories from his childhood in Africa, the horrors of being captured and held in a barracoon for selectionby American slavers, the harrowing experience of the Middle Passagepacked with more than 100 other souls aboard the Clotilda , and the years he spent in slavery until the end of the Civil War.&lt;/p&gt;&lt;p&gt; Based on those interviews, featuring Cudjo’s unique vernacular, and written from Hurston’s perspective with the compassion and singular style that havemade her one of the preeminent American authors of the twentieth-century, Barracoon brilliantly illuminates the tragedy of slavery and of one life forever defined by it.&lt;/p&gt;&lt;p&gt; Offering insight into the pernicious legacy thatcontinues to haunt us all, black and white, this poignant and powerfulwork is an invaluable contribution to our shared history and culture.&lt;/p&gt;&lt;p&gt; Rate This Book Add To Wishlist |Rate/Review Add To Bookshelf Get This Book Go to your preferred retailer, click to choose a format and you' ll be taken directly to their site where you can get this book.Share This Book About The Author Zora Neale Hurston, Deborah G.&lt;/p&gt;&lt;p&gt; Plant Zora Neale Hurston, the author of Their Eyes Were Watching God , was deemed "one of the greatest writers of our time" by ToniMorrison.&lt;/p&gt;&lt;p&gt; With the publication of Lies and Other Tall Tales , The Skull Talks Back , and What's the Hurry, Fox? new generations will be introduced to Hurston's legacy.&lt;/p&gt;&lt;p&gt; She was born in Notasulga, Alabama, in 1891, and died in 1960.&lt;/p&gt;&lt;p&gt; Release Info List Price: $24.99 (Hardcover) Published: May 08, 2018 Publisher: Amistad Pages: 208 ISBN 10: 0062748203 ISBN 13: 9780062748201Personalize / Add More Choices What We Say This singular work of biography, cultural history and witnessing reminds us that writer Zora Neale Hurston was not just a brilliant author but also an ethnographer and esteemed collector of folk tales.&lt;/p&gt;&lt;p&gt; This book shows her the respect of detailing the genesis of "Barracoon" (both good and ill) while providing the historical context essential to such a document.&lt;/p&gt;&lt;p&gt; Hurstonwent to Alabama to speak with a man known as Cudjo Lewis, but whom she respectfully calls Kossola.&lt;/p&gt;&lt;p&gt; He was almostunique among once enslaved people -- Kossola was able to tell his story from life in Africa to the Middle Passage toenslavement in the US and freedom after the Civil War, right on down to the injustice meted out to black people long after their freedom was first dangled as a possibility.&lt;/p&gt;&lt;p&gt; That journey is preserved here by an empathetic listener. "Barracoon" also documents the plagiarism that Hurston's initial piece about Kossola contained, keeping it in the context of why and how itmight have occurred and how it never appeared again throughout her lengthy and distinguished career.&lt;/p&gt;&lt;p&gt; Then comes themain narrative that Hurston captured after returning to Alabama and spending months nearby, slowly winning Kossola's trust and thus gathering essential details rarely if ever captured.&lt;/p&gt;&lt;p&gt; Footnotes explain certain claims Hurston made with the best available information at the time and why scholars now make new judgements in certain areas and confirm her judgementin others.&lt;/p&gt;&lt;p&gt; Hurston told Lewis's story in his voice and went to great lengths to back it up with facts from other sources; thatwork continues here.&lt;/p&gt;&lt;p&gt; His journey is an atypical "slave narrative," explaining the warring peoples in Africa and how one groupmight sell another into bondage. (Are we surprised that England and France warred for centuries and often despised each other? So why is it surprising in Africa? It too is a continent filled with diverse civilizations, after all.) Kossola's mournful, sometimes humorous voice comes through, along with Hurston's passion for the stories he digresses into, not to mention thecruelty of the court system and life in general for black people long after Reconstruction was abandoned by the governmentand betrayed by the South.&lt;/p&gt;&lt;p&gt; It is not a gripping story the way many slave narratives are, with their dramatic beats, heroicescapes and triumphs over evil crafted to win sympathy.&lt;/p&gt;&lt;p&gt; This is history, with all its complications and refusal to tie up a story in a neat bow.&lt;/p&gt;&lt;p&gt; It won't satisfy the casual reader looking for thrills.&lt;/p&gt;&lt;p&gt; But it's an important addition to the work of Hurston and our knowledge of the lives uprooted by the slave trade. -- Michael Giltz What Others Say “Zora Neale Hurston’s genius has once again produced a Maestrapiece.” (Alice Walker, Pulitzer Prize winning author of The Color Purple ) “That Zora Neale Hurston should find and befriend Cudjo Lewis, the last living manwith firsthand memory of capture in Africa and captivity in Alabama, is nothing shy of a miracle.&lt;/p&gt;&lt;p&gt; Barracoon is atestament to the enormous losses millions of men, women and children endured in both slavery and freedom—astory of urgent relevance to every American, everywhere.” (Tracy K.&lt;/p&gt;&lt;p&gt; Smith, Pulitzer Prize winning author of Life on Mars and Wade in the Water ) “Barracoon reinforces what those of us who love Hurston’s work have known all along: her keen intellect and curiosity was only surpassed by her genuine empathy for her subjects.&lt;/p&gt;&lt;p&gt; This bookis not just an account of one man’s survival in the face of atrocity, it’s a celebration of language and tradition; aclear labor of love.” (Angela Flournoy, National Book Award Finalist and author of The Turner House) “Barracoonis a powerful, breathtakingly beautiful, and at times, heart wrenching, account of one man’s story, eloquentlytold in his own language.&lt;/p&gt;&lt;p&gt; Zora Neale Hurston gives Kossola control of his narrative— a gift of freedom andhumanity.&lt;/p&gt;&lt;p&gt; It completely reinforces for me the fact that Zora Neale Hurston was both a cultural anthropologistand a truly gifted, and compassionate storyteller, who sat in the sometimes painful silence with Kossola and thedepth and breadth of memory as a slave.&lt;/p&gt;&lt;p&gt; Such is a narrative filled with emotions and histories bursting at theintricately woven seams.” (Nicole Dennis-Benn, author of Here Comes the Sun) What You Say Filter by No Reviews Found ..... about us |faq|advertise |privacy policy |newsletter |contact us ©2018, BookBuddha LLc.&lt;/p&gt;&lt;p&gt; All Rights Reserved.</p>
             </div>
-        </div>
-        
-        <!-- Footer -->
-        <div class="footer">
-            <p>&copy; 2025 Michael Giltz. All rights reserved.</p>
-            <p>This article originally appeared in BookFilter on 2018.</p>
         </div>
     </div>
 </body>

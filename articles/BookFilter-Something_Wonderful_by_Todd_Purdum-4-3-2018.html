@@ -3,135 +3,135 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Something Wonderful By Todd Purdum-4-3 by Michael Giltz - BookFilter">
-    <meta name="keywords" content="BookFilter, Something Wonderful By Todd Purdum-4-3, Michael Giltz, journalism, entertainment">
+    <meta name="description" content="Something Wonderful by Todd Purdum - BookFilter - Michael Giltz">
+    <meta name="keywords" content="Michael Giltz, BookFilter, journalism, article">
     <meta name="author" content="Michael Giltz">
-    <title>Something Wonderful By Todd Purdum-4-3 - BookFilter - Michael Giltz</title>
+    <title>Something Wonderful by Todd Purdum - Michael Giltz</title>
     <link href="../giltz.css" rel="stylesheet" type="text/css" />
     <style>
-        body { 
-            font-family: Arial, sans-serif;
+        body {
+            font-family: 'Times New Roman', Times, serif;
             margin: 0;
             padding: 0;
-            background: #f5f5f5;
+            background: #fff;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
         }
         .site-banner {
             text-align: center;
-            background: white;
-            padding: 10px 0;
+            padding: 20px 0;
+            background: #f9f9f9;
         }
         .site-banner img {
             max-width: 100%;
             height: auto;
         }
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            background: white;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        .header {
-            background: #333;
-            color: white;
-            padding: 20px;
+        .article-header {
             text-align: center;
+            padding: 30px 0 20px 0;
         }
-        .header h1 {
-            margin: 0;
-            font-size: 24px;
+        .article-title {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 28px;
+            font-weight: bold;
+            margin: 0 0 10px 0;
+            color: #333;
         }
-        .header p {
-            margin: 5px 0;
+        .article-meta {
             font-size: 14px;
+            color: #666;
+            margin: 0;
         }
         .pdf-viewer {
             width: 100%;
-            height: 600px;
-            border: none;
-            display: block;
+            height: 800px;
+            margin: 20px 0;
+            border: 1px solid #ddd;
         }
         .home-button {
             text-align: center;
-            padding: 20px;
-            background: #f0f0f0;
+            padding: 30px 0;
         }
         .home-button a {
             display: inline-block;
-            padding: 10px 30px;
+            padding: 12px 40px;
             background: #333;
             color: white;
             text-decoration: none;
             font-weight: bold;
+            font-size: 16px;
             border-radius: 5px;
+            text-transform: uppercase;
         }
         .home-button a:hover {
             background: #555;
         }
         .text-section {
-            padding: 20px;
+            padding: 40px 0;
+            border-top: 3px solid #333;
+            margin-top: 40px;
         }
         .text-section h2 {
+            font-size: 20px;
             color: #333;
-            border-bottom: 2px solid #333;
-            padding-bottom: 10px;
+            margin: 0 0 20px 0;
+            text-transform: uppercase;
         }
         .text-content {
             line-height: 1.8;
             color: #333;
+            font-size: 16px;
         }
         .text-content p {
             margin-bottom: 15px;
         }
-        .footer {
-            background: #f0f0f0;
-            padding: 20px;
-            text-align: center;
-            font-size: 12px;
-            color: #666;
-        }
         @media (max-width: 768px) {
             .pdf-viewer {
-                height: 400px;
+                height: 500px;
+            }
+            .article-title {
+                font-size: 22px;
             }
         }
     </style>
-    <link rel="icon" type="image/x-icon" href="../favicon.ico">
-    <link rel="icon" type="image/png" href="../favicon.png">
 </head>
 <body>
-    <!-- Site Banner -->
-    <div class="site-banner">
-        <a href="../index.htm"><img src="../giltz.jpg" width="800" height="146" alt="MichaelGiltz.com" /></a>
-    </div>
-    
     <div class="container">
-        <div class="header">
-            <h1>Something Wonderful By Todd Purdum-4-3</h1>
-            <p>Publication: BookFilter | Date: 2018 | by Michael Giltz</p>
+        <!-- Site Banner -->
+        <div class="site-banner">
+            <a href="../index.htm"><img src="../giltz.jpg" width="800" height="146" alt="MichaelGiltz.com" /></a>
         </div>
         
-        <!-- PDF Viewer -->
-        <iframe class="pdf-viewer" src="../scans/BookFilter-Something_Wonderful_by_Todd_Purdum-4-3-2018.pdf" title="PDF Article">
-            <p>Your browser does not support embedded PDFs. <a href="../scans/BookFilter-Something_Wonderful_by_Todd_Purdum-4-3-2018.pdf">Download the PDF</a> to view.</p>
+        <!-- Article Header -->
+        <div class="article-header">
+            <h1 class="article-title">Something Wonderful by Todd Purdum</h1>
+            <p class="article-meta">Publication: BookFilter &nbsp;&nbsp;|&nbsp;&nbsp; Date: April 3, 2018</p>
+        </div>
+        
+        <!-- PDF Viewer - Direct embed without buttons -->
+        <iframe class="pdf-viewer" 
+                src="../scans/BookFilter-Something_Wonderful_by_Todd_Purdum-4-3-2018.pdf#toolbar=0&navpanes=0" 
+                type="application/pdf"
+                frameborder="0">
+            <p>Your browser does not support PDFs. 
+               <a href="../scans/BookFilter-Something_Wonderful_by_Todd_Purdum-4-3-2018.pdf">Click here to view the PDF</a>.
+            </p>
         </iframe>
         
         <!-- Home Button -->
         <div class="home-button">
-            <a href="../index.htm">HOME</a>
+            <a href="../index.htm">Home</a>
         </div>
         
-        <!-- Text Section -->
+        <!-- SEO Text Section -->
         <div class="text-section">
-            <h2>SEO TEXT: Article Content for Search</h2>
+            <h2>SEO TEXT: Article Content for Search Engines</h2>
             <div class="text-content">
                 <p>Home |Register |Sign In Home Top Picks: All Books Something Wonderful: Rodgers and Hammerstein’s Broadway Revolution Something Wonderful: Rodgers and Hammerstein’s Broadway Revolution by Todd S.&lt;/p&gt;&lt;p&gt; Purdum Price: $32.00 (Hardcover) Published: April 03, 2018 Rating: 0.0/ 5 (0 votes cast) From the Publisher: A revelatory portrait of the creative partnership thattransformed musical theater and provided the soundtrack to the American Century They stand at the apex of the great age of songwriting, the creators of the classic Broadway musicals Oklahoma! , Carousel , South Pacific , The King and I , and The Sound of Music , whose songs have never lost their popularity or emotional power.&lt;/p&gt;&lt;p&gt; Even before they joined forces,Richard Rodgers and Oscar Hammerstein II had written dozens of Broadway shows, but together they pioneered a new art form: the serious musicalplay.&lt;/p&gt;&lt;p&gt; Their songs and dance numbers served to advance the drama andreveal character, a sharp break from the past and the template on whichall future musicals would be built.&lt;/p&gt;&lt;p&gt; Though different in personality and often emotionally distant from each other, Rodgers and Hammerstein presented an unbroken front to the world and forged much more than asongwriting team; their partnership was also one of the most profitableand powerful entertainment businesses of their era.&lt;/p&gt;&lt;p&gt; They were culturalpowerhouses whose work came to define postwar America on stage, screen, television, and radio.&lt;/p&gt;&lt;p&gt; But they also had their failures and flops, and more than once they feared they had lost their touch.&lt;/p&gt;&lt;p&gt; Todd S.Purdum’s portrait of these two men, their creative process, and theirgroundbreaking innovations will captivate lovers of musical theater, lovers of the classic American songbook, and young lovers wherever they are.&lt;/p&gt;&lt;p&gt; He shows that what Rodgers and Hammerstein wrought was truly somethingwonderful.&lt;/p&gt;&lt;p&gt; Rate This Book Add To Wishlist |Rate/Review Add To Bookshelf Get This Book Personalize / Add More ChoicesGo to your preferred retailer, click to choose a format and you' ll be taken directly to their site where you can get this book.&lt;/p&gt;&lt;p&gt; What We SayShare This Book About The Author Todd S.&lt;/p&gt;&lt;p&gt; Purdum Todd S.&lt;/p&gt;&lt;p&gt; Purdum is the author of An Idea Whose Time Has Come and A Time of Our Choosing.&lt;/p&gt;&lt;p&gt; He is a contributing editor atVanity Fair and a senior writer at Politico,having previously worked at The New YorkTimes for more than twenty years, where he served as White House correspondent, diplomatic correspondent, and Los Angelesbureau chief.&lt;/p&gt;&lt;p&gt; A graduate of PrincetonUniversity, he lives in Los Angeles with hiswife, Dee Dee Myers, and their two children, Kate and Stephen.&lt;/p&gt;&lt;p&gt; Release Info List Price: $32.00 (Hardcover) Published: April 03, 2018 Publisher: Henry Holt and Co.&lt;/p&gt;&lt;p&gt; Pages: 400 ISBN 10: 162779834X ISBN 13: 9781627798341This brisk and lively biography of the greatest team in musical theater history remains happily focused on what matters most: the shows.&lt;/p&gt;&lt;p&gt; Author Todd S.&lt;/p&gt;&lt;p&gt; Purdum begins with one chapter for Rodgers and another for Hammerstein, covering their lives and careers up to that fateful partnership.&lt;/p&gt;&lt;p&gt; This is rather bracing, for it reminds us that Oscar Hammerstein ("ShowBoat") and Richard Rodgers (Rodgers &amp; Hart) accomplished enough before they ever met to be remembered forever inmusical theater.&lt;/p&gt;&lt;p&gt; Then Purdum devotes about a chapter to each major work, as well the increasing activity that surrounds acommercial juggernaut like Rodgers and Hammerstein.&lt;/p&gt;&lt;p&gt; First up is "Oklahoma," the ground-breaking work that is the "Citizen Kane" or "Sgt.&lt;/p&gt;&lt;p&gt; Pepper" of musical theater, the show that changed everything.&lt;/p&gt;&lt;p&gt; Then came the equally dark and daring "Carousel," followed by the bland film "State Fair" (Rodgers &amp; Hammerstein were both rightly wary of Hollywood).&lt;/p&gt;&lt;p&gt; WhilePurdum emphasizes the negative impact of their "flop" hit "Allegro" along with the positive impact on a young StephenSondheim, that show ranks alongside "Oklahoma" in terms of pointing the way forward for decades to come.&lt;/p&gt;&lt;p&gt; And there were more hits ("South Pacific," "The King And I"), admirable misses ("The Flower Drum Song") and finally the epic success of "The Sound Of Music," the show that embalmed them for decades as middle-brow pap rather than the path-breaking innovatorsthey had been.&lt;/p&gt;&lt;p&gt; Purdum highlights the many signal contributions of others along the way, from Agnes de Mille todirector/writer Josh Logan to actors and orchestrators on down, along with the reluctance of R&amp;H to give fair credit wherecredit was due. (Genius is not always generous.) Did I mention the outstanding triumph that was the TV special "Cinderella" starring Julie Andrews? Purdum persuasively echoes the familiar argument that movies and TV were key to their falling reputation.&lt;/p&gt;&lt;p&gt; Film versions of "Oklahoma," "Carousel" and "South Pacific" were sanitized of their bold topics, poorly cast orjust plain awful.&lt;/p&gt;&lt;p&gt; However commercially successful, they ruined the team's image.&lt;/p&gt;&lt;p&gt; And their two biggest hits were by far thesweetest and simplest.&lt;/p&gt;&lt;p&gt; Even though film version of "The Sound Of Music" notably improved on the stage show, it didn't help.&lt;/p&gt;&lt;p&gt; But there's a happy ending: with R&amp;H gone, bold new directors weren't forced to mount old-fashioned museum pieces.&lt;/p&gt;&lt;p&gt; Suddenly, from the 1992 London revival of "Carousel" onward, the memory of treacly high school productions faded andstartling, imaginative revivals revealed what adherents always knew: Rodgers &amp; Hammerstein were the boldest and mostfascinating of talents.&lt;/p&gt;&lt;p&gt; They were pushing boundaries on what stories a musical could tell, how they would tell them anddoing it all with songs so precise and deceptively simple that everyone can sing them.&lt;/p&gt;&lt;p&gt; And yet, in the right hands those "simple" songs reveal passionate depths.&lt;/p&gt;&lt;p&gt; Purdum doesn't shy away from the personal, like Hammerstein's insecurities, Rodgers chasing after show girls or his battles with depression and alcoholism.&lt;/p&gt;&lt;p&gt; But it's always in the context of how personalmatters affected their relationship and their work. "Something Wonderful" doesn't rock the boat with any unexpected claimsfor this show or damning of that one.&lt;/p&gt;&lt;p&gt; It's a solid, affectionate description of artists who look more important today than at any time since, oh, 1945. -- Michael Giltz What Others Say "Todd Purdum’s skillful dual biography…strips away the accretions of time and reputation to retrieve the craft and dynamism with which his subjects created a new kind of musical."―The Economist "Readers will learn thestories behind the music and how this most successful of writing duos crafted some of the finest musicals tograce the American stage...Something wonderful, indeed." ―Booklist (starred review) "Joyous, brisk, andgossipy...An exuberant celebration of musical genius." ―Kirkus Reviews "Purdum’s anecdote-filled account is a sterling primer on the influential duo, both for newcomers to their work and to those looking to rekindle an old flame." ―Publishers Weekly “A scrupulously researched and infinitely fascinating history of the collaboration ofRodgers &amp; Hammerstein―two giants who propelled the musical theater to uncharted heights.&lt;/p&gt;&lt;p&gt; Todd Purdumacknowledges the contribution of directors, orchestrators, composers of incidental music, designers, andperformers who helped produce the seamless integration that influenced those of us who were their disciples.His book is a fair-minded appreciation of these gods but acknowledges that they had feet of clay.&lt;/p&gt;&lt;p&gt; It is animpressive addition to the literature celebrating the American musical theater.” ―Harold Prince “Rodgers andHammerstein drew pictures, made lists.&lt;/p&gt;&lt;p&gt; They understood and rewrote the longings of the heart.&lt;/p&gt;&lt;p&gt; My favorite oftheir songs happens to be the book’s title: ‘Something Wonderful.’ I have sung it live, on stage, on recordings,and with the man I felt the same way about.&lt;/p&gt;&lt;p&gt; I love the intimacy of the stories Todd Purdum tells―he shows himself to be especially sensitive to Oscar Hammerstein’s special connection with Richard Rodgers.” ―Carly Simon “Before there was Netflix and Hulu, some of the most gifted writers on the cultural landscape wrotebeautiful and clever songs.&lt;/p&gt;&lt;p&gt; And of the composers who bundled those songs together to accompany a story andthus gave us the Broadway musical, none have had more of an impact on the genre, or the business, thanRodgers and Hammerstein.&lt;/p&gt;&lt;p&gt; Todd Purdum’s book is a piece of American history you should devour, as nothing tellsus about our times and ourselves quite like our songs.” ―Alec Baldwin “A reminder in these tribalized times thatmusical theater, once so central to our culture, is still vividly alive – and that the art’s twin titans, Rodgers andHammerstein, still matter deeply.&lt;/p&gt;&lt;p&gt; Clear, precise, and passionate, this is a necessary book, and even better, onethat is a joy to read.” ―James Kaplan, author of Frank: The Voice and Sinatra: The Chairman What You Say Filter by No Reviews Found ..... about us |faq|advertise |privacy policy |newsletter |contact us ©2018, BookBuddha LLc.&lt;/p&gt;&lt;p&gt; All Rights Reserved.</p>
             </div>
-        </div>
-        
-        <!-- Footer -->
-        <div class="footer">
-            <p>&copy; 2025 Michael Giltz. All rights reserved.</p>
-            <p>This article originally appeared in BookFilter on 2018.</p>
         </div>
     </div>
 </body>

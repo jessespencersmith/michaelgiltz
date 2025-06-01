@@ -3,135 +3,135 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Theater Oklahoma Is Just Ok-10-12 by Michael Giltz - Popsurfing">
-    <meta name="keywords" content="Popsurfing, Theater Oklahoma Is Just Ok-10-12, Michael Giltz, journalism, entertainment">
+    <meta name="description" content="Theater Oklahoma Is Just OK - Popsurfing - Michael Giltz">
+    <meta name="keywords" content="Michael Giltz, Popsurfing, journalism, article">
     <meta name="author" content="Michael Giltz">
-    <title>Theater Oklahoma Is Just Ok-10-12 - Popsurfing - Michael Giltz</title>
+    <title>Theater Oklahoma Is Just OK - Michael Giltz</title>
     <link href="../giltz.css" rel="stylesheet" type="text/css" />
     <style>
-        body { 
-            font-family: Arial, sans-serif;
+        body {
+            font-family: 'Times New Roman', Times, serif;
             margin: 0;
             padding: 0;
-            background: #f5f5f5;
+            background: #fff;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
         }
         .site-banner {
             text-align: center;
-            background: white;
-            padding: 10px 0;
+            padding: 20px 0;
+            background: #f9f9f9;
         }
         .site-banner img {
             max-width: 100%;
             height: auto;
         }
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            background: white;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        .header {
-            background: #333;
-            color: white;
-            padding: 20px;
+        .article-header {
             text-align: center;
+            padding: 30px 0 20px 0;
         }
-        .header h1 {
-            margin: 0;
-            font-size: 24px;
+        .article-title {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 28px;
+            font-weight: bold;
+            margin: 0 0 10px 0;
+            color: #333;
         }
-        .header p {
-            margin: 5px 0;
+        .article-meta {
             font-size: 14px;
+            color: #666;
+            margin: 0;
         }
         .pdf-viewer {
             width: 100%;
-            height: 600px;
-            border: none;
-            display: block;
+            height: 800px;
+            margin: 20px 0;
+            border: 1px solid #ddd;
         }
         .home-button {
             text-align: center;
-            padding: 20px;
-            background: #f0f0f0;
+            padding: 30px 0;
         }
         .home-button a {
             display: inline-block;
-            padding: 10px 30px;
+            padding: 12px 40px;
             background: #333;
             color: white;
             text-decoration: none;
             font-weight: bold;
+            font-size: 16px;
             border-radius: 5px;
+            text-transform: uppercase;
         }
         .home-button a:hover {
             background: #555;
         }
         .text-section {
-            padding: 20px;
+            padding: 40px 0;
+            border-top: 3px solid #333;
+            margin-top: 40px;
         }
         .text-section h2 {
+            font-size: 20px;
             color: #333;
-            border-bottom: 2px solid #333;
-            padding-bottom: 10px;
+            margin: 0 0 20px 0;
+            text-transform: uppercase;
         }
         .text-content {
             line-height: 1.8;
             color: #333;
+            font-size: 16px;
         }
         .text-content p {
             margin-bottom: 15px;
         }
-        .footer {
-            background: #f0f0f0;
-            padding: 20px;
-            text-align: center;
-            font-size: 12px;
-            color: #666;
-        }
         @media (max-width: 768px) {
             .pdf-viewer {
-                height: 400px;
+                height: 500px;
+            }
+            .article-title {
+                font-size: 22px;
             }
         }
     </style>
-    <link rel="icon" type="image/x-icon" href="../favicon.ico">
-    <link rel="icon" type="image/png" href="../favicon.png">
 </head>
 <body>
-    <!-- Site Banner -->
-    <div class="site-banner">
-        <a href="../index.htm"><img src="../giltz.jpg" width="800" height="146" alt="MichaelGiltz.com" /></a>
-    </div>
-    
     <div class="container">
-        <div class="header">
-            <h1>Theater Oklahoma Is Just Ok-10-12</h1>
-            <p>Publication: Popsurfing | Date: 2018 | by Michael Giltz</p>
+        <!-- Site Banner -->
+        <div class="site-banner">
+            <a href="../index.htm"><img src="../giltz.jpg" width="800" height="146" alt="MichaelGiltz.com" /></a>
         </div>
         
-        <!-- PDF Viewer -->
-        <iframe class="pdf-viewer" src="../scans/Popsurfing-Theater_Oklahoma_Is_Just_OK-10-12-2018.pdf" title="PDF Article">
-            <p>Your browser does not support embedded PDFs. <a href="../scans/Popsurfing-Theater_Oklahoma_Is_Just_OK-10-12-2018.pdf">Download the PDF</a> to view.</p>
+        <!-- Article Header -->
+        <div class="article-header">
+            <h1 class="article-title">Theater Oklahoma Is Just OK</h1>
+            <p class="article-meta">Publication: Popsurfing &nbsp;&nbsp;|&nbsp;&nbsp; Date: October 12, 2018</p>
+        </div>
+        
+        <!-- PDF Viewer - Direct embed without buttons -->
+        <iframe class="pdf-viewer" 
+                src="../scans/Popsurfing-Theater_Oklahoma_Is_Just_OK-10-12-2018.pdf#toolbar=0&navpanes=0" 
+                type="application/pdf"
+                frameborder="0">
+            <p>Your browser does not support PDFs. 
+               <a href="../scans/Popsurfing-Theater_Oklahoma_Is_Just_OK-10-12-2018.pdf">Click here to view the PDF</a>.
+            </p>
         </iframe>
         
         <!-- Home Button -->
         <div class="home-button">
-            <a href="../index.htm">HOME</a>
+            <a href="../index.htm">Home</a>
         </div>
         
-        <!-- Text Section -->
+        <!-- SEO Text Section -->
         <div class="text-section">
-            <h2>SEO TEXT: Article Content for Search</h2>
+            <h2>SEO TEXT: Article Content for Search Engines</h2>
             <div class="text-content">
                 <p>More Create Blog Sign In FRIDAY, OCTOBER 12, 2018 THEATER: "Oklahoma" Is (Just) OK OKLAHOMA ** out of **** ST.&lt;/p&gt;&lt;p&gt; ANN'S WAREHOUSE At the end of this particular Oklahoma , our hero and heroine are splattered in blood, the entire cast is spitting out the lyrics of the title song and the show ends with their faces contorted in rage, frustrationand despair as they growl a defiant "HAAA!!" and we are plunged intodarkness.&lt;/p&gt;&lt;p&gt; Clearly, director Daniel Fish wants to expose the violentunderbelly of our nation's history.&lt;/p&gt;&lt;p&gt; But the final scenes of this classic musical are muddled and so little of what comes before leads logically to this ending that we're left exhausted and annoyed.&lt;/p&gt;&lt;p&gt; It begins nicely.&lt;/p&gt;&lt;p&gt; The cowboy Curly (Damon Daunno) wanders onstage, guitar in hand and turns "Oh, What A Beautiful Mornin'" from an ode to wide open spaces into a flirtatious charmer directed at Laurey.&lt;/p&gt;&lt;p&gt; Abluegrass band at one end of the wide open rectangular stage providesdown home accompaniment, chili cooks away on pinewood picnictables that stretch from one end of the theater to the other and Aunt Eller is whipping up some cornbread. (She's played with wit and vinegar by the marvelous Mary Testa).&lt;/p&gt;&lt;p&gt; Laurey (Rebecca Naomi Jones) does her best to resist Curly's appeal and take him down a notch,something his amiable ego can easily handle and probably needs.&lt;/p&gt;&lt;p&gt; Thesinging cowboy is a familiar trope but Laurey still gets a laugh by muttering, "Oh no, please don't play your guitar" when he launches into another song.&lt;/p&gt;&lt;p&gt; Fish sets an appealing, intimate tone thanks to choosing a small band rather than a full orchestra, embracing the audience as family sharing a meal and presenting dialogue that weaves in and out of song (just as in the original production).&lt;/p&gt;&lt;p&gt; Fish also plays with visible microphones,allowing characters who want to shout out their sentiments to grab amic and have their voices amplified.&lt;/p&gt;&lt;p&gt; It works a treat.&lt;/p&gt;&lt;p&gt; The show canMICHAEL GILTZ AT WORK Michael Giltz is a freelance writer based in NYC and can be reached atmgiltz@pipeline.com FAVORITE LINKS Americablog Five O'Clock Lightning baseball blogDeep Pop -- Lori Lakin's Blog The Back Page -- Jason Page on ESPN Radio Cine-Blog -- George Robinson's Blog Documents On Art &amp; Cinema - Daryl Chin's Blog Brucie G's Wondrous Blog Of Adventure and Mystery -- Bruce Greenspan's Blog BLOG ARCHIVE ► 2019 (58) ▼ 2018 (38) ► December (6)breathe, the marvelous songs sound fresh and natural and the story simply unfolds.&lt;/p&gt;&lt;p&gt; No meta conceit is needed here; they're just holding a classic up to the light.&lt;/p&gt;&lt;p&gt; Curly and Laurey are clearly meant for each other, but she won't make it that easy for him.&lt;/p&gt;&lt;p&gt; Fair enough, but she goes a little too far by accepting a ride from her hired hand Jud Fry to the dance thatSaturday.&lt;/p&gt;&lt;p&gt; Jud may be the best hand Aunt Eller ever had, but he's alsoa creepy loner.&lt;/p&gt;&lt;p&gt; Actor Patrick Vaill is duded up like a Seattle grungemusician and his Jud keeps to himself, puts nudies up in his room out back and proves a malignant presence, more disturbed than disdainful.&lt;/p&gt;&lt;p&gt; Indeed, Laurey is so scared of him she takes care never tobe alone with the man, if possible.&lt;/p&gt;&lt;p&gt; If Laurey goes too far by encouraging Jud, Ado Annie can't go far enough.&lt;/p&gt;&lt;p&gt; Played with charm by Ali Stroker of the marvelous Deaf Westrevival of Spring Awakening, Ado loves whichever man is in front of her, be it the dimwitted but lovable cowboy Will Parker (a winningJames Davis) or the traveling peddler Ali Hakim (Mallory Portnoy, demolishing the stereotypical take on the role and making this part his own).&lt;/p&gt;&lt;p&gt; Unlike the main romance, this triangle is pure fun and the three actors make the most of it from start to finish.&lt;/p&gt;&lt;p&gt; Davis avoids making Parker too dumb -- he's just determined to get the girl he loves if maybe not so good at math.&lt;/p&gt;&lt;p&gt; The peddler is usually done broadly and border-offensive whether played as wheedling or untrustworthy; Portnoymakes Ali so specific and fun (he just loves a good time) that aproblematic part becomes a showstopper.&lt;/p&gt;&lt;p&gt; This Hakim is moretraveling-salesman-with-the-farmer's-daughter than a distasteful ethnic stereotype.&lt;/p&gt;&lt;p&gt; And the fringe on top of this particular surrey is Stroker.&lt;/p&gt;&lt;p&gt; She is an actress with a disability, spending most of the showin a wheelchair.&lt;/p&gt;&lt;p&gt; It's notable how easily that fact is incorporated intothe movement and song and dance, helped immeasurably by Stroker'syodeling vocals and sexy presence.&lt;/p&gt;&lt;p&gt; No wonder Hakim gives Ado Annie a witty dip (wheelchair and all) when kissing her towards the end.&lt;/p&gt;&lt;p&gt; Despite the refreshing presentation, this really is your mother's Oklahoma!, especially in the first half.&lt;/p&gt;&lt;p&gt; The subplot is silly hijinks and the main story is a little serious.&lt;/p&gt;&lt;p&gt; As in most productions I've seen, Judisn't just a loner or outcast, he's a genuine threat to this civilizingterritory soon to be a state.&lt;/p&gt;&lt;p&gt; It's not that he doesn't fit in here: someoneas unhinged as Jud doesn't really belong anywhere.&lt;/p&gt;&lt;p&gt; That's driven home by the scene where Curly visits Jud in his lodgings and gives this snake of a man a good rattle.&lt;/p&gt;&lt;p&gt; Fish pulls out all the stopshere.&lt;/p&gt;&lt;p&gt; The theater is plunged into darkness and a camera swoops in todeliver a close-up of Jud's face which we see displayed on a back wall.Curly paints a picture of Jud dying and the whole town coming out to mourn him, suddenly realizing what a swell guy Jud really was.&lt;/p&gt;&lt;p&gt; Like some sour Tom Sawyer, Jud eats up this idea for a while until he turns► November (4) ▼ October (6) THEATER: "Thunderbodies!" and the Glorious Mess of...&lt;/p&gt;&lt;p&gt; THEATER: 'Fact" Vs Fiction; Pale "India" THEATER: "Love's Labour's Lost"...But A Good Meal ...&lt;/p&gt;&lt;p&gt; THEATER: "Mother Of The Maid" Lacks Fire THEATER: "Oklahoma" Is (Just) OK THEATER: Bill Irwin Clowns (A Little), The Constit... ► September (1) ► May (9) ► April (6) ► March (4) ► February (1) ► January (1) ► 2017 (6) ► 2016 (2) ► 2015 (20) ► 2014 (2) ► 2013 (5) ► 2012 (17) ► 2011 (15) ► 2010 (10) ► 2009 (43) ► 2008 (86) ► 2007 (781) ► 2006 (2412) ► 2005 (5)on Curly, vowing to have his revenge once and for all.&lt;/p&gt;&lt;p&gt; For all the flashy staging (movie cameras! total darkness!), nothing in this scene changes our understanding of Jud (or Curly) so it's hard to see the point.&lt;/p&gt;&lt;p&gt; Perhaps we're meant to be glimpsing into Jud's dark soul, butthe moment shows Curly in equally unpleasant terms.&lt;/p&gt;&lt;p&gt; All bets are off in the beginning of Act Two.&lt;/p&gt;&lt;p&gt; After some chili andcornbread is doled out to the audience during the break (thanks MaryTesta!), we're given a whole new slant on the show.&lt;/p&gt;&lt;p&gt; While the cast ishardly costumed in period clothing, the suggestion of prairies and the heartland has been strong (except for Jud's annoyingly anachronistic clothes and facial hair worthy of Kurt Cobain).&lt;/p&gt;&lt;p&gt; But following on thehigh-tech flash of those movie cameras in Act One, we get fog rollingon stage and dancer Gabrielle Hamilton appearing in a dream ballet choreographed by John Heginbotham.&lt;/p&gt;&lt;p&gt; You can hardly pretend they're not making a Statement when the five foot nothing and bald-headed woman of color Hamilton comesstriding out of the dark.&lt;/p&gt;&lt;p&gt; She's wearing an exceptionally ugly top emblazoned with the slogan "DREAM BABY DREAM" and disco shorts, both glossy and modern and looking more appropriate for aDonna Summer musical than Oklahoma! It's a statement writ large, but a rather juvenile one.&lt;/p&gt;&lt;p&gt; Hamilton's diminutive height and strong stage presence creates an interesting dynamic when she stares at multiple cast members,somehow looking down on them even as she looks up.&lt;/p&gt;&lt;p&gt; Yet other thansome modern technology, nothing in the first act has brought amodern sensibility or revisionist commentary on Oklahoma! , so the clothing and the slogan and the vibe of this number feels like adesperate attempt to carry some import.&lt;/p&gt;&lt;p&gt; Whereas the color and disability blind casting for the rest of the show is natural and unforced, here it feels unearned.&lt;/p&gt;&lt;p&gt; The show is asking Hamilton to symbolize something they haven't given her the context todeliver.&lt;/p&gt;&lt;p&gt; The house band suddenly breaks out an electric guitar and rocks the score, as if at Woodstock Jimi Hendrix tackled songs from Oklahoma! rather than the national anthem.&lt;/p&gt;&lt;p&gt; During this frenzied noise, Hamilton dances with poise and determination, but to what effect? The sudden appearance of a dozen or so additional dancers all wearing the same garish costume for a very brief flourish feelssimilarly wasteful and pointless.&lt;/p&gt;&lt;p&gt; I look forward to seeing Hamilton insomething worthier of her talent.&lt;/p&gt;&lt;p&gt; It gets worse.&lt;/p&gt;&lt;p&gt; Laurey has another scene alone with Jud and this too is done in total darkness, just like Curly's scene with him.&lt;/p&gt;&lt;p&gt; But since Jud'sactions during their drive to the dance can be portrayed as anythingfrom awkward to assault and Laurey's reaction is key to our understanding, having it take place in the dark is unhelpful.&lt;/p&gt;&lt;p&gt; She angrily fires Jud as he buckles up his pants and vows revenge, yet again.&lt;/p&gt;&lt;p&gt; Of course, Laurey and Curly get married but, after weeks away, Jud returns to spoil the moment.&lt;/p&gt;&lt;p&gt; Yet now he's modest and shy and nicely dressed? Jud bashfully asks to kiss the bride, but it's no peck on thecheek.&lt;/p&gt;&lt;p&gt; To add to our confusion, Laurey is aroused by his kisses,looking at him wonderingly or with confusion when they're done,rather than the fear or disgust one might expect.&lt;/p&gt;&lt;p&gt; In a final absurdity,Jud's death is staged as essentially "suicide by Curly," with Jud handing him a pistol, cocking it and then waiting politely to be shot down.&lt;/p&gt;&lt;p&gt; Though this production makes a big point of saying no lines inthe show have been added or cut from the original, the staging hereamounts to major changes indeed.&lt;/p&gt;&lt;p&gt; Unlike the original, there is no fightinstigated by Jud, no attempt to murder Curly, no self-inflicted mortal wound -- just Jud standing there, knowing what must be will be.&lt;/p&gt;&lt;p&gt; Laurey and Curly are splattered with blood and what in God's nameany of this could mean escapes me.&lt;/p&gt;&lt;p&gt; That leads right into the would-beblistering reprise of the title song.&lt;/p&gt;&lt;p&gt; What began as a rare chance to see talented pros tackle this work in an intimate setting turns into a frustrating shambles by the end.&lt;/p&gt;&lt;p&gt; AsLaurey, I found Jones rather stiff in her dialogue scenes but strong-voiced.&lt;/p&gt;&lt;p&gt; Vaill has the unenviable task of tackling Jud in a show that has no clue what to do with this character (villain? sacrificial lamb?), but Vaill certainly doesn't help matters.&lt;/p&gt;&lt;p&gt; My guest preferred Daunno in themusical Hadestown while I liked him more here.&lt;/p&gt;&lt;p&gt; But there's no doubt he has charm and presence.&lt;/p&gt;&lt;p&gt; Most everyone else is delightful wheneverthis production gets out of the way and let's them deliver those songs.But that gets rarer and rarer as the show goes on.&lt;/p&gt;&lt;p&gt; Whatever Fish wanted to do, he failed to consistently fulfill his vision from start to finish.I would hardly say Oklahoma! is a problem musical.&lt;/p&gt;&lt;p&gt; But I've never seen a production that quite makes sense of Jud, not even the brilliant 1998 revival in London that made Hugh Jackman a star and featuredShuler Hensley as Jud.&lt;/p&gt;&lt;p&gt; Why is Curly so hostile to Jud? Any fool would realize Jud is hardly a threat to woo away Laurey and Curly is no fool.&lt;/p&gt;&lt;p&gt; If Jud is genuinely dangerous then Curly is unnecessarily antagonizinghim.&lt;/p&gt;&lt;p&gt; If Jud is just a confused, inept loner with poor social skills thenthe handsome and winning Curly is just being cruel.&lt;/p&gt;&lt;p&gt; Jud makes me think of the John Wayne character in John Ford's classic The Searchers.&lt;/p&gt;&lt;p&gt; Wayne's violent, racist Ethan Edwards is a relic of the past, the murderous sort needed to clear the land of "hostiles" (that is, the Native Americans who lived there first).&lt;/p&gt;&lt;p&gt; Now that pioneersare settling down in West Texas, Ethan is an unwelcome reminder of how that land was made available in the first place.&lt;/p&gt;&lt;p&gt; He was a necessary evil but he's not necessary any more.&lt;/p&gt;&lt;p&gt; At the end of that film, the dooris firmly shut on Ethan, leaving him permanently on the outside ofhearth and home.&lt;/p&gt;&lt;p&gt; Jud on the other hand is hardly necessary at all.&lt;/p&gt;&lt;p&gt; Laurey says she is scared of him and -- in the original production -- Jud spoils thewedding, harasses her and tries to kill Curly twice, eventually dying bystumbling and accidentally stabbing himself with his own knife.&lt;/p&gt;&lt;p&gt; Jud is his own worst enemy.&lt;/p&gt;&lt;p&gt; Making him both hateful, frightening and a sacrificial lamb as in this production simply makes no sense.&lt;/p&gt;&lt;p&gt; But what if Jud were black? (And Laurey and Curly and the other farmers white?) Presumably this has been done somewhere before.Fish's desire to cast a new light on this story might have paid dividends with some color-specific casting.&lt;/p&gt;&lt;p&gt; With that change, many of the questions are answered and new possibilities open up.&lt;/p&gt;&lt;p&gt; Aunt Eller insists Jud is the best hired hand she ever had and yet he's given poor lodgings and clearly isolated from the rest of the town folk.&lt;/p&gt;&lt;p&gt; If Jud is black, that treatment takes on a whole new meaning.&lt;/p&gt;&lt;p&gt; Laureyinsists she is scared of him and refuses to be alone with the man.&lt;/p&gt;&lt;p&gt; Takeyour pick: that could be played as simple prejudice or a case of herprotesting too much, with Laurey loudly proclaiming one attitude but her genuine desire being quite another.Curly's immediate antagonism -- especially if he suspects Laurey might actually fancy Jud -- makes more sense here, too.&lt;/p&gt;&lt;p&gt; Curly's suggestion Jud simply hang himself takes on an even uglier meaning.&lt;/p&gt;&lt;p&gt; Some dialogue and action would be better if cut (like Jud's lame attempt to kill Curly with a novelty toy that's booby trapped), but much more thatremains would take on new resonance.&lt;/p&gt;&lt;p&gt; When Laurey and Judd are alone, it might be her initiating romance, only to have them be discovered.&lt;/p&gt;&lt;p&gt; At that point she could push him away, angrily imply an attempted rape and unfairly fire the man tocover her shame.&lt;/p&gt;&lt;p&gt; His brutal murder by Curly and the joke of a trial atthe end? That would be far more potent too.&lt;/p&gt;&lt;p&gt; If a production wanted to underline the violence and darkness in American history, a casting choice like this would be consistent with that goal, letting scene afterscene build to a shattering conclusion, rather than simply having itcome out of nowhere.&lt;/p&gt;&lt;p&gt; Certainly it would be in keeping with the boldand provocative work Rodgers and Hammerstein delivered throughouttheir partnership.&lt;/p&gt;&lt;p&gt; It would certainly be in keeping with the history of Oklahoma.&lt;/p&gt;&lt;p&gt; That territory once featured such a vibrant free black population thatPresident Teddy Roosevelt toyed with the idea of turning the area intoa black-majority state.&lt;/p&gt;&lt;p&gt; Needless to say, such success wasn't allowed tolast.&lt;/p&gt;&lt;p&gt; The prosperous black people of Tulsa were targeted by a resurgent Ku Klux Klan, the city government, the police and the white community all working in concert.&lt;/p&gt;&lt;p&gt; A campaign of intimidationclimaxed with the shameful 1921 Tulsa Race Riot in which black-owned businesses were decimated and an untold number of black people numbering in the thousands were beaten, hospitalized or killed.&lt;/p&gt;&lt;p&gt; Heck, Jud could be a Native American.&lt;/p&gt;&lt;p&gt; The Oklahoma Territory was the location where countless indigenous Americans were forced to relocate by the US government.&lt;/p&gt;&lt;p&gt; Eventually, dozens of tribes weredisplaced to the area and just as government officials consideredcreating a black-majority state, an all-Indian state was almost formedthere as well.&lt;/p&gt;&lt;p&gt; No such luck, but their presence remains.&lt;/p&gt;&lt;p&gt; The name Oklahoma itself is a combination of two words in the Choctaw language, literallymeaning "red people" or more colloquially "Native Americans." So inthe title song to this all-American musical, the one almost anyone cansing a snatch of, the state name they proclaim as "OK!" with exuberance and joy? That's a Choctaw word and they're shouting out "Native Americans!" The chorus loudly and proudly (and cluelessly)reminds us of the people that were here first.&lt;/p&gt;&lt;p&gt; If you want to rethinkthe musical Oklahoma! , you could start right there.&lt;/p&gt;&lt;p&gt; THEATER OF 2018 Homelife/The Zoo Story (at Signature) *** out of **** Escape To Margaritaville ** Broadway By The Year: 1947 and 1966 *** Lobby Hero *** Frozen ** Rocktopia * Angels in America ** 1/2 Mean Girls ** 1/2 The Sting ** Mlima's Tale ** 1/2 Children Of A Lesser God ** 1/2 Sancho: An Act Of Remembrance ** 1/2 The Metromaniacs *** Summer: The Donna Summer Musical * The Seafarer ** Henry V (Public Mobile Unit w Zenzi Williams) * 1/2 Saint Joan ** Travesties *** 1/2 Summer and Smoke ** 1/2 My Fair Lady ** 1/2 Broadway By The Year: 1956 and 1975 ** 1/2 Bernhard/Hamlet * 1/2 On Beckett *** What The Constitution Means To Me ** The Winning Side * Oklahoma ** Thanks for reading.&lt;/p&gt;&lt;p&gt; Michael Giltz is the creator of BookFilter, a book lover’s to BookFilter! Need a smart and easy gift? Head to BookFilter ! Wondering wh categories, like cookbooks and mystery and more? Head to BookFilter! It’s a w you do in a physical bookstore, provides comprehensive info on new releases e personal recommendations every step of the way.&lt;/p&gt;&lt;p&gt; It’s like a fall book preview category.&lt;/p&gt;&lt;p&gt; He’s also the cohost of Showbiz Sandbox , a weekly pop culture podc of the day with top journalists and opinion makers as guests.&lt;/p&gt;&lt;p&gt; It’s available for Download his podcast of celebrity interviews and his radio show, also called P POSTED BY MICHAEL GILTZ AT 12:57 AM NO COMMENTS: Post a Comment Subscribe to: Post Comments (Atom)Newer Post Older Post Home</p>
             </div>
-        </div>
-        
-        <!-- Footer -->
-        <div class="footer">
-            <p>&copy; 2025 Michael Giltz. All rights reserved.</p>
-            <p>This article originally appeared in Popsurfing on 2018.</p>
         </div>
     </div>
 </body>

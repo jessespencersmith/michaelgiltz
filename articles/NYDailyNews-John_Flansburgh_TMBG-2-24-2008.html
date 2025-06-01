@@ -3,135 +3,135 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="John Flansburgh Tmbg-2-24 by Michael Giltz - NYDailyNews">
-    <meta name="keywords" content="NYDailyNews, John Flansburgh Tmbg-2-24, Michael Giltz, journalism, entertainment">
+    <meta name="description" content="John Flansburgh TMBG - NYDailyNews - Michael Giltz">
+    <meta name="keywords" content="Michael Giltz, NYDailyNews, journalism, article">
     <meta name="author" content="Michael Giltz">
-    <title>John Flansburgh Tmbg-2-24 - NYDailyNews - Michael Giltz</title>
+    <title>John Flansburgh TMBG - Michael Giltz</title>
     <link href="../giltz.css" rel="stylesheet" type="text/css" />
     <style>
-        body { 
-            font-family: Arial, sans-serif;
+        body {
+            font-family: 'Times New Roman', Times, serif;
             margin: 0;
             padding: 0;
-            background: #f5f5f5;
+            background: #fff;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
         }
         .site-banner {
             text-align: center;
-            background: white;
-            padding: 10px 0;
+            padding: 20px 0;
+            background: #f9f9f9;
         }
         .site-banner img {
             max-width: 100%;
             height: auto;
         }
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            background: white;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        .header {
-            background: #333;
-            color: white;
-            padding: 20px;
+        .article-header {
             text-align: center;
+            padding: 30px 0 20px 0;
         }
-        .header h1 {
-            margin: 0;
-            font-size: 24px;
+        .article-title {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 28px;
+            font-weight: bold;
+            margin: 0 0 10px 0;
+            color: #333;
         }
-        .header p {
-            margin: 5px 0;
+        .article-meta {
             font-size: 14px;
+            color: #666;
+            margin: 0;
         }
         .pdf-viewer {
             width: 100%;
-            height: 600px;
-            border: none;
-            display: block;
+            height: 800px;
+            margin: 20px 0;
+            border: 1px solid #ddd;
         }
         .home-button {
             text-align: center;
-            padding: 20px;
-            background: #f0f0f0;
+            padding: 30px 0;
         }
         .home-button a {
             display: inline-block;
-            padding: 10px 30px;
+            padding: 12px 40px;
             background: #333;
             color: white;
             text-decoration: none;
             font-weight: bold;
+            font-size: 16px;
             border-radius: 5px;
+            text-transform: uppercase;
         }
         .home-button a:hover {
             background: #555;
         }
         .text-section {
-            padding: 20px;
+            padding: 40px 0;
+            border-top: 3px solid #333;
+            margin-top: 40px;
         }
         .text-section h2 {
+            font-size: 20px;
             color: #333;
-            border-bottom: 2px solid #333;
-            padding-bottom: 10px;
+            margin: 0 0 20px 0;
+            text-transform: uppercase;
         }
         .text-content {
             line-height: 1.8;
             color: #333;
+            font-size: 16px;
         }
         .text-content p {
             margin-bottom: 15px;
         }
-        .footer {
-            background: #f0f0f0;
-            padding: 20px;
-            text-align: center;
-            font-size: 12px;
-            color: #666;
-        }
         @media (max-width: 768px) {
             .pdf-viewer {
-                height: 400px;
+                height: 500px;
+            }
+            .article-title {
+                font-size: 22px;
             }
         }
     </style>
-    <link rel="icon" type="image/x-icon" href="../favicon.ico">
-    <link rel="icon" type="image/png" href="../favicon.png">
 </head>
 <body>
-    <!-- Site Banner -->
-    <div class="site-banner">
-        <a href="../index.htm"><img src="../giltz.jpg" width="800" height="146" alt="MichaelGiltz.com" /></a>
-    </div>
-    
     <div class="container">
-        <div class="header">
-            <h1>John Flansburgh Tmbg-2-24</h1>
-            <p>Publication: NYDailyNews | Date: 2008 | by Michael Giltz</p>
+        <!-- Site Banner -->
+        <div class="site-banner">
+            <a href="../index.htm"><img src="../giltz.jpg" width="800" height="146" alt="MichaelGiltz.com" /></a>
         </div>
         
-        <!-- PDF Viewer -->
-        <iframe class="pdf-viewer" src="../scans/NYDailyNews-John_Flansburgh_TMBG-2-24-2008.pdf" title="PDF Article">
-            <p>Your browser does not support embedded PDFs. <a href="../scans/NYDailyNews-John_Flansburgh_TMBG-2-24-2008.pdf">Download the PDF</a> to view.</p>
+        <!-- Article Header -->
+        <div class="article-header">
+            <h1 class="article-title">John Flansburgh TMBG</h1>
+            <p class="article-meta">Publication: NYDailyNews &nbsp;&nbsp;|&nbsp;&nbsp; Date: February 24, 2008</p>
+        </div>
+        
+        <!-- PDF Viewer - Direct embed without buttons -->
+        <iframe class="pdf-viewer" 
+                src="../scans/NYDailyNews-John_Flansburgh_TMBG-2-24-2008.pdf#toolbar=0&navpanes=0" 
+                type="application/pdf"
+                frameborder="0">
+            <p>Your browser does not support PDFs. 
+               <a href="../scans/NYDailyNews-John_Flansburgh_TMBG-2-24-2008.pdf">Click here to view the PDF</a>.
+            </p>
         </iframe>
         
         <!-- Home Button -->
         <div class="home-button">
-            <a href="../index.htm">HOME</a>
+            <a href="../index.htm">Home</a>
         </div>
         
-        <!-- Text Section -->
+        <!-- SEO Text Section -->
         <div class="text-section">
-            <h2>SEO TEXT: Article Content for Search</h2>
+            <h2>SEO TEXT: Article Content for Search Engines</h2>
             <div class="text-content">
                 <p>of the Brooklyn-bred music duo They Might Be Gianb, a band cwrenfly .celebnting 25 yea$ inthe budnesswith a CD in 2007 for adulb called 'The EIse" and a new CDDVD combo for kids (and patents) called "Here Come the 1,2,3s" ($18.98: Disney).wldbBiqdes. i ilaldng Music i in tte 196lls ; ByJoe Boyd i::Hil:I3illl9 iIttfhd Heb neafirgE "White i Bicycles: Making Music in the I 1960s" ($18; Serpent'sTail) by i acclaimed producer Joe Boyd. tlrhaft tfs About Boyd's memoir is a fly-on-the-wall look at some of the seminal music moments of that decade.&lt;/p&gt;&lt;p&gt; He served as Muddy Waterf tour manager, literally plugged in Bob Dylan's guitar when Mr. zimmerman went electric at the Newport Folk Festival, produced Pink Floyd's lirst single, worked with a shy fellow called Nick Drake, managed UFO (the.hippgst club in London for a briet psychedelic period) and on and on. fryhd fhnsbuil Srysr "Did you ever see Woody Allen's "Zelig"? Boyd was like the human Zelig of the '60s.&lt;/p&gt;&lt;p&gt; He has a really interesting point of view and he's a cool writer.&lt;/p&gt;&lt;p&gt; He went to Harvard and has really solid writing skills, really vivid." ttllhds b Be Leamed: The ABCS (and 123s) of creating great music, since Boyd was a signal player in touting classic groups like Fairport Convention (the British equivalent to The Band), ultimately producing classic albums by everyone from Sandy Denny and Richard Thompson to Nick Drake and R.E.M.&lt;/p&gt;&lt;p&gt; Michael GilE J)aYlof</p>
             </div>
-        </div>
-        
-        <!-- Footer -->
-        <div class="footer">
-            <p>&copy; 2025 Michael Giltz. All rights reserved.</p>
-            <p>This article originally appeared in NYDailyNews on 2008.</p>
         </div>
     </div>
 </body>

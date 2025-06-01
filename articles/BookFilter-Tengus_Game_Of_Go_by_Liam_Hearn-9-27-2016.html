@@ -3,135 +3,135 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Tengus Game Of Go By Liam Hearn-9-27 by Michael Giltz - BookFilter">
-    <meta name="keywords" content="BookFilter, Tengus Game Of Go By Liam Hearn-9-27, Michael Giltz, journalism, entertainment">
+    <meta name="description" content="Tengus Game Of Go by Liam Hearn - BookFilter - Michael Giltz">
+    <meta name="keywords" content="Michael Giltz, BookFilter, journalism, article">
     <meta name="author" content="Michael Giltz">
-    <title>Tengus Game Of Go By Liam Hearn-9-27 - BookFilter - Michael Giltz</title>
+    <title>Tengus Game Of Go by Liam Hearn - Michael Giltz</title>
     <link href="../giltz.css" rel="stylesheet" type="text/css" />
     <style>
-        body { 
-            font-family: Arial, sans-serif;
+        body {
+            font-family: 'Times New Roman', Times, serif;
             margin: 0;
             padding: 0;
-            background: #f5f5f5;
+            background: #fff;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
         }
         .site-banner {
             text-align: center;
-            background: white;
-            padding: 10px 0;
+            padding: 20px 0;
+            background: #f9f9f9;
         }
         .site-banner img {
             max-width: 100%;
             height: auto;
         }
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            background: white;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        .header {
-            background: #333;
-            color: white;
-            padding: 20px;
+        .article-header {
             text-align: center;
+            padding: 30px 0 20px 0;
         }
-        .header h1 {
-            margin: 0;
-            font-size: 24px;
+        .article-title {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 28px;
+            font-weight: bold;
+            margin: 0 0 10px 0;
+            color: #333;
         }
-        .header p {
-            margin: 5px 0;
+        .article-meta {
             font-size: 14px;
+            color: #666;
+            margin: 0;
         }
         .pdf-viewer {
             width: 100%;
-            height: 600px;
-            border: none;
-            display: block;
+            height: 800px;
+            margin: 20px 0;
+            border: 1px solid #ddd;
         }
         .home-button {
             text-align: center;
-            padding: 20px;
-            background: #f0f0f0;
+            padding: 30px 0;
         }
         .home-button a {
             display: inline-block;
-            padding: 10px 30px;
+            padding: 12px 40px;
             background: #333;
             color: white;
             text-decoration: none;
             font-weight: bold;
+            font-size: 16px;
             border-radius: 5px;
+            text-transform: uppercase;
         }
         .home-button a:hover {
             background: #555;
         }
         .text-section {
-            padding: 20px;
+            padding: 40px 0;
+            border-top: 3px solid #333;
+            margin-top: 40px;
         }
         .text-section h2 {
+            font-size: 20px;
             color: #333;
-            border-bottom: 2px solid #333;
-            padding-bottom: 10px;
+            margin: 0 0 20px 0;
+            text-transform: uppercase;
         }
         .text-content {
             line-height: 1.8;
             color: #333;
+            font-size: 16px;
         }
         .text-content p {
             margin-bottom: 15px;
         }
-        .footer {
-            background: #f0f0f0;
-            padding: 20px;
-            text-align: center;
-            font-size: 12px;
-            color: #666;
-        }
         @media (max-width: 768px) {
             .pdf-viewer {
-                height: 400px;
+                height: 500px;
+            }
+            .article-title {
+                font-size: 22px;
             }
         }
     </style>
-    <link rel="icon" type="image/x-icon" href="../favicon.ico">
-    <link rel="icon" type="image/png" href="../favicon.png">
 </head>
 <body>
-    <!-- Site Banner -->
-    <div class="site-banner">
-        <a href="../index.htm"><img src="../giltz.jpg" width="800" height="146" alt="MichaelGiltz.com" /></a>
-    </div>
-    
     <div class="container">
-        <div class="header">
-            <h1>Tengus Game Of Go By Liam Hearn-9-27</h1>
-            <p>Publication: BookFilter | Date: 2016 | by Michael Giltz</p>
+        <!-- Site Banner -->
+        <div class="site-banner">
+            <a href="../index.htm"><img src="../giltz.jpg" width="800" height="146" alt="MichaelGiltz.com" /></a>
         </div>
         
-        <!-- PDF Viewer -->
-        <iframe class="pdf-viewer" src="../scans/BookFilter-Tengus_Game_Of_Go_by_Liam_Hearn-9-27-2016.pdf" title="PDF Article">
-            <p>Your browser does not support embedded PDFs. <a href="../scans/BookFilter-Tengus_Game_Of_Go_by_Liam_Hearn-9-27-2016.pdf">Download the PDF</a> to view.</p>
+        <!-- Article Header -->
+        <div class="article-header">
+            <h1 class="article-title">Tengus Game Of Go by Liam Hearn</h1>
+            <p class="article-meta">Publication: BookFilter &nbsp;&nbsp;|&nbsp;&nbsp; Date: September 27, 2016</p>
+        </div>
+        
+        <!-- PDF Viewer - Direct embed without buttons -->
+        <iframe class="pdf-viewer" 
+                src="../scans/BookFilter-Tengus_Game_Of_Go_by_Liam_Hearn-9-27-2016.pdf#toolbar=0&navpanes=0" 
+                type="application/pdf"
+                frameborder="0">
+            <p>Your browser does not support PDFs. 
+               <a href="../scans/BookFilter-Tengus_Game_Of_Go_by_Liam_Hearn-9-27-2016.pdf">Click here to view the PDF</a>.
+            </p>
         </iframe>
         
         <!-- Home Button -->
         <div class="home-button">
-            <a href="../index.htm">HOME</a>
+            <a href="../index.htm">Home</a>
         </div>
         
-        <!-- Text Section -->
+        <!-- SEO Text Section -->
         <div class="text-section">
-            <h2>SEO TEXT: Article Content for Search</h2>
+            <h2>SEO TEXT: Article Content for Search Engines</h2>
             <div class="text-content">
                 <p>Home |Register |Sign In Home Top Picks: All Books The Tengu’s Game of Go The Tengu’s Game of Go Book 4 in the Tale of Shikanoko by Lian Hearn Price: $13.00 (Paperback) MorePublished: September 27, 2016 Rating: 0.0/ 5 (0 votes cast) From the Publisher: An epic four-volume adventure in mythical medieval Japan: a world of warriors and assassins, demons and spirits In The Tenguâs Game of Go , the final book of Lian Hearn's epic Tale of Shikanoko--all of which will be published in 2016--the rightful emperor is lost; illness and murder give rise to suspicions and make enemies of allies.Unrest rules the country.&lt;/p&gt;&lt;p&gt; Only Shika can end the madness by returning theLotus Throne to its rightful ruler.&lt;/p&gt;&lt;p&gt; As destiny weaves its rich tapestry, a compelling drama plays out against a background of wild forests, elegant castles, hidden temples, and savagebattlefields.&lt;/p&gt;&lt;p&gt; This is the medieval Japan of Lian Hearn's imagination, whereanimal spirits clash with warriors and children navigate a landscape asserene as it is deadly.&lt;/p&gt;&lt;p&gt; The Tale of Shikanoko, Book 1: Emperor of the Eight Islands (April… Rate This Book Add To Wishlist |Rate/Review Add To Bookshelf Get This Book Personalize / Add More ChoicesGo to your preferred retailer, click to choose a format and you' ll be taken directly to their site where you can get this book.Share This Book About The Author Lian Hearn Release Info List Price: $13.00 (Paperback) Published: September 27, 2016 Publisher: FSG Originals Pages: 256 ISBN 10: 0374536341 ISBN 13: 9780374536343What We Say NOTE: This is a review of all four books in the series, with minimal spoilers.&lt;/p&gt;&lt;p&gt; The best-selling author of the "Tales Of The Otori" adventures has another winner in "The Tale Of Shikanoko." Call it a Japanese "Game Of Thrones" and you'll get a goodidea of the fun on tap here.&lt;/p&gt;&lt;p&gt; While George R.R.&lt;/p&gt;&lt;p&gt; Martin's cycle draws upon the epic fantasy of Tolkein, writer Lian Hearnharkens back to the classical models of Japanese works like "Revenge Of The Soga Brothers" and "The Tale of The Heike." Martin is looser, rawer and more sprawling.&lt;/p&gt;&lt;p&gt; Hearn is more formal and rooted in the ethos of honor familiar to fans of movies by Akira Kurosawa and the like.&lt;/p&gt;&lt;p&gt; And here's the really good news for "GoT" fans: Hearn has already written acomplete 1000+ page epic, it's been split into four parts and they come out one after another, with the finale Volume 4 outin September.&lt;/p&gt;&lt;p&gt; So, no waiting.&lt;/p&gt;&lt;p&gt; Believe me, once you start you'll be glad you won't have to wait long to reach the end.&lt;/p&gt;&lt;p&gt; In thefirst two books -- "Emperor Of The Eight Islands" and "Autumn Princess, Dragon Child" -- our story begins with a lord who (Lear-like) creates turmoil by splitting apart his family and demanding the eldest son take the wife of the second-born son, sending the latter off to a rival clan.&lt;/p&gt;&lt;p&gt; He's determined the family will survive a coming civil war one way or another so eachson is thus paired with a rival clan.&lt;/p&gt;&lt;p&gt; Needless to say, this proves disastrous.&lt;/p&gt;&lt;p&gt; The vivid characters come tumbling out,especially our hero Shikanoko, who tumbles from one home to another, first targeted by a jealous uncle, then comingunder the sway of a mountain sorcerer, later learning the wily ways of a thief and finally becoming the servant of yet another master.&lt;/p&gt;&lt;p&gt; Taking center stage at one point or another are royalty, commoners, men of magic and women of cunning, monkeys, demons, and the young but wise true Emperor, who must go into hiding when a usurper takes the throne.&lt;/p&gt;&lt;p&gt; It'stremendous fun, with Hearn taking the point of view of a particular character for each chapter.&lt;/p&gt;&lt;p&gt; To her credit, the peoplewho seem like villains (and sometimes truly are), become complex, full-bodied people we have empathy for even when they do terrible things.&lt;/p&gt;&lt;p&gt; You know you're in good hands when a chapter begins with a certain character (such as the resourceful young girl Hina or the perenially frustrated second son Masachika) and think, "Oh good!" because you were wondering aboutthem.&lt;/p&gt;&lt;p&gt; And when the next chapter picks up the tale of someone else, you're eager to hear about them.&lt;/p&gt;&lt;p&gt; There's magic here,from an enchanted mask made from a stag to imp demons who love to fulfill the unspoken dark desires of our hero. (Hereally should have killed them at birth as the old sorcerer warned, I fear.) This story has the engrossing feel of a Japanese legend, right down to the tropes -- the rape of a woman by someone she loves, magical reveals that cheat on climaxes and the like.&lt;/p&gt;&lt;p&gt; I loved the movie "Crouching Tiger, Hidden Dragon" and still wish for a decent English translation of the novels itwas based on.&lt;/p&gt;&lt;p&gt; Indeed, even most of the classic tales Hearn references in this book are available only in dry academicversions, if at all. (Just as we await a truly thrilling English language translation of the Chinese Monkey King stories.&lt;/p&gt;&lt;p&gt; One exception for Japan is the 2012 translation of "The Tale Of The Heike" by Royall Tyler.) With meticulous attention to detail for the period, along with a bone-deep appreciation of Japanese culture, Hearn's homage to those masterpieces is as closeas we're going to get for the moment and tremendously entertaining in its own right.&lt;/p&gt;&lt;p&gt; True it doesn't deepen the complexityof the characters the way, say, "Crouching Tiger" added a moral, modern complexity to the grand entertainment it delivered.&lt;/p&gt;&lt;p&gt; But "The Tale Of Shikanoko" has romance, intrigue, fantasy, passion, betrayal, sacrifice and the old-fashioned pleasure of truly having no idea what will happen next.&lt;/p&gt;&lt;p&gt; Fans of fantasy and mythology shouldn't hesitate...unless they wantto wait till September so they can gobble it up all at once. -- Michael Giltz What You Say Filter by No Reviews Found ..... about us |faq|advertise |privacy policy |newsletter |contact us ©2018, BookBuddha LLc.&lt;/p&gt;&lt;p&gt; All Rights Reserved.</p>
             </div>
-        </div>
-        
-        <!-- Footer -->
-        <div class="footer">
-            <p>&copy; 2025 Michael Giltz. All rights reserved.</p>
-            <p>This article originally appeared in BookFilter on 2016.</p>
         </div>
     </div>
 </body>

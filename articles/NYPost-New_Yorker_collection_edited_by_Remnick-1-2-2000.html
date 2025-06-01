@@ -3,135 +3,135 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="New Yorker Collection Edited By Remnick-1-2 by Michael Giltz - NYPost">
-    <meta name="keywords" content="NYPost, New Yorker Collection Edited By Remnick-1-2, Michael Giltz, journalism, entertainment">
+    <meta name="description" content="New Yorker collection edited by Remnick - NYPost - Michael Giltz">
+    <meta name="keywords" content="Michael Giltz, NYPost, journalism, article">
     <meta name="author" content="Michael Giltz">
-    <title>New Yorker Collection Edited By Remnick-1-2 - NYPost - Michael Giltz</title>
+    <title>New Yorker collection edited by Remnick - Michael Giltz</title>
     <link href="../giltz.css" rel="stylesheet" type="text/css" />
     <style>
-        body { 
-            font-family: Arial, sans-serif;
+        body {
+            font-family: 'Times New Roman', Times, serif;
             margin: 0;
             padding: 0;
-            background: #f5f5f5;
+            background: #fff;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
         }
         .site-banner {
             text-align: center;
-            background: white;
-            padding: 10px 0;
+            padding: 20px 0;
+            background: #f9f9f9;
         }
         .site-banner img {
             max-width: 100%;
             height: auto;
         }
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            background: white;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        .header {
-            background: #333;
-            color: white;
-            padding: 20px;
+        .article-header {
             text-align: center;
+            padding: 30px 0 20px 0;
         }
-        .header h1 {
-            margin: 0;
-            font-size: 24px;
+        .article-title {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 28px;
+            font-weight: bold;
+            margin: 0 0 10px 0;
+            color: #333;
         }
-        .header p {
-            margin: 5px 0;
+        .article-meta {
             font-size: 14px;
+            color: #666;
+            margin: 0;
         }
         .pdf-viewer {
             width: 100%;
-            height: 600px;
-            border: none;
-            display: block;
+            height: 800px;
+            margin: 20px 0;
+            border: 1px solid #ddd;
         }
         .home-button {
             text-align: center;
-            padding: 20px;
-            background: #f0f0f0;
+            padding: 30px 0;
         }
         .home-button a {
             display: inline-block;
-            padding: 10px 30px;
+            padding: 12px 40px;
             background: #333;
             color: white;
             text-decoration: none;
             font-weight: bold;
+            font-size: 16px;
             border-radius: 5px;
+            text-transform: uppercase;
         }
         .home-button a:hover {
             background: #555;
         }
         .text-section {
-            padding: 20px;
+            padding: 40px 0;
+            border-top: 3px solid #333;
+            margin-top: 40px;
         }
         .text-section h2 {
+            font-size: 20px;
             color: #333;
-            border-bottom: 2px solid #333;
-            padding-bottom: 10px;
+            margin: 0 0 20px 0;
+            text-transform: uppercase;
         }
         .text-content {
             line-height: 1.8;
             color: #333;
+            font-size: 16px;
         }
         .text-content p {
             margin-bottom: 15px;
         }
-        .footer {
-            background: #f0f0f0;
-            padding: 20px;
-            text-align: center;
-            font-size: 12px;
-            color: #666;
-        }
         @media (max-width: 768px) {
             .pdf-viewer {
-                height: 400px;
+                height: 500px;
+            }
+            .article-title {
+                font-size: 22px;
             }
         }
     </style>
-    <link rel="icon" type="image/x-icon" href="../favicon.ico">
-    <link rel="icon" type="image/png" href="../favicon.png">
 </head>
 <body>
-    <!-- Site Banner -->
-    <div class="site-banner">
-        <a href="../index.htm"><img src="../giltz.jpg" width="800" height="146" alt="MichaelGiltz.com" /></a>
-    </div>
-    
     <div class="container">
-        <div class="header">
-            <h1>New Yorker Collection Edited By Remnick-1-2</h1>
-            <p>Publication: NYPost | Date: 2000 | by Michael Giltz</p>
+        <!-- Site Banner -->
+        <div class="site-banner">
+            <a href="../index.htm"><img src="../giltz.jpg" width="800" height="146" alt="MichaelGiltz.com" /></a>
         </div>
         
-        <!-- PDF Viewer -->
-        <iframe class="pdf-viewer" src="../scans/NYPost-New_Yorker_collection_edited_by_Remnick-1-2-2000.pdf" title="PDF Article">
-            <p>Your browser does not support embedded PDFs. <a href="../scans/NYPost-New_Yorker_collection_edited_by_Remnick-1-2-2000.pdf">Download the PDF</a> to view.</p>
+        <!-- Article Header -->
+        <div class="article-header">
+            <h1 class="article-title">New Yorker collection edited by Remnick</h1>
+            <p class="article-meta">Publication: NYPost &nbsp;&nbsp;|&nbsp;&nbsp; Date: January 2, 2000</p>
+        </div>
+        
+        <!-- PDF Viewer - Direct embed without buttons -->
+        <iframe class="pdf-viewer" 
+                src="../scans/NYPost-New_Yorker_collection_edited_by_Remnick-1-2-2000.pdf#toolbar=0&navpanes=0" 
+                type="application/pdf"
+                frameborder="0">
+            <p>Your browser does not support PDFs. 
+               <a href="../scans/NYPost-New_Yorker_collection_edited_by_Remnick-1-2-2000.pdf">Click here to view the PDF</a>.
+            </p>
         </iframe>
         
         <!-- Home Button -->
         <div class="home-button">
-            <a href="../index.htm">HOME</a>
+            <a href="../index.htm">Home</a>
         </div>
         
-        <!-- Text Section -->
+        <!-- SEO Text Section -->
         <div class="text-section">
-            <h2>SEO TEXT: Article Content for Search</h2>
+            <h2>SEO TEXT: Article Content for Search Engines</h2>
             <div class="text-content">
                 <p>-, . !.. •• ~~:Shon stories and profiles that spanthe -decad~~ /~; &lt; • " &gt;.&lt;/p&gt;&lt;p&gt; By MICHAEL GlLTZ. . .. \.... .&lt;/p&gt;&lt;p&gt; Like The New'Yorker at its best" two .new spin­ off collections '­ Wonderful Town:' New 'ork-Stories from The New 'orker" and "Life Stories: 'rofiles' from· The New 'orker" -. have a certain imelessness: You could dip 1W them tomorrow or 20 ears from tomorrow and le pieces you'd r~ad would e every bit as fascinating. "Wonderful Town" )Bects fiction from the 1St 50 years by the likes of ladimir Nabokov and hi lip Roth, all of which 'e set wholly or in part in ew York-.City. "Life :ories" offers profiles of Ie famous and obscure, mging from.&lt;/p&gt;&lt;p&gt; Marlon ,Brando in his prime to Richard Pryor in his sad, slow decline.&lt;/p&gt;&lt;p&gt; Reigning New Yorker editor David Remnick · offers brief, modest intro- . ductions that basically explain why certain pieces were excluded . (According to Remnick, Tom Wolfe's New York-set stories weren't up to snuff, while a' . number of classic profiles such as Joseph Mitchell's novella-length "Joe Gould's Secret," the basis of an upcoming Stanley Tucci film -were too lengthy for·inclusion.) Contrary to some people's belief, says Remnick, founding editor Harold Ross did not invent· the profile.&lt;/p&gt;&lt;p&gt; Plutarch and The Saturday Evening Post beat him to it -but Ross' New Yorker, contends Remnick, perfected it. .&lt;/p&gt;&lt;p&gt; As far as fiction is concerned, no one would dispute the magazine 's one-time preeminence.&lt;/p&gt;&lt;p&gt; For a writer in the '50s and '60s, getting a story published in The New Yorker was like a stand-up comic getting a slot on "The Tonight Show." The names included here reflect that: John Cheever, Ann Beattie, J.D.&lt;/p&gt;&lt;p&gt; Salinger and Susan Sontag among them._.&lt;/p&gt;&lt;p&gt; Most of these stories are well-known , like Woody L t F E )'101\\£S _ .• ,,_ ..... -"'u. nil:.' N['W' yORKffi .... -.. ~ ... -.... - ()O~S ,:? .'( up against . _ .Donald .&lt;/p&gt;&lt;p&gt; Barthel~e's ' :., " playful" modernism, for example­ -the fact that these stories are so familiar'ana widely .available undercut the collection's claim' to distinction . .&lt;/p&gt;&lt;p&gt; Far better is "Life Stories." While the short stories range all over the magazin~'s history, with 10 stories from the '40s, nine 'from the '80s and a batch from ': ." other . decades, the 'pieces' are heavily . weighted toward· the '90s, whi~h Remnick contends are the'glory days of The.&lt;/p&gt;&lt;p&gt; New Yorker.&lt;/p&gt;&lt;p&gt; Whether ' or not that Alien's "The Whore of for a fee.&lt;/p&gt;&lt;p&gt; And while the claim is true, the sketches Mensa," that hilarious gem stories are juxtaposed as that are· -included . -are .about men who get their imaginatively possible -terrific: from Kenneth kicks from women who Peter Taylor's old- 's fas'cinating discourse on Goethe, say, fashioned prose b /!t Johnny Carson ~~------ ------------to Wolcott Gibbs' famous decimation of Time's Henry Luce.&lt;/p&gt;&lt;p&gt; The collection begins, appropriately enough, with one of the best pieces by a master of the character sketch, Joseph Mitchell's "Mr.&lt;/p&gt;&lt;p&gt; Hunter's Grave." It ends with Janet Malcolm's look at the artist David Salle and offers detours along the way to Ernest Hemingway , Mikhail Baryshnikov and a charming imposter -who claimed to be a Russian prince named Michael Alexandrovitch Dmitry Obolensky Romanoff .&lt;/p&gt;&lt;p&gt; Unlike the short stories, many of these pieces are difficult if not impossible to find in other compilations .&lt;/p&gt;&lt;p&gt; Where else could you read Mark Singer's playful look at the sleight-of-hand master Ricky Jay or Susan Orlean's delightful riff on the show dog Biff? On their own, the stories in "Wonderful Town" have already stood the test of time. "Life Stories" -the more necessary of these collections - will certainly do the same.</p>
             </div>
-        </div>
-        
-        <!-- Footer -->
-        <div class="footer">
-            <p>&copy; 2025 Michael Giltz. All rights reserved.</p>
-            <p>This article originally appeared in NYPost on 2000.</p>
         </div>
     </div>
 </body>

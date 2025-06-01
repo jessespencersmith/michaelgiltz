@@ -3,135 +3,135 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Hank And Jim By Scott Eyman-10-24 by Michael Giltz - BookFilter">
-    <meta name="keywords" content="BookFilter, Hank And Jim By Scott Eyman-10-24, Michael Giltz, journalism, entertainment">
+    <meta name="description" content="Hank And Jim by Scott Eyman - BookFilter - Michael Giltz">
+    <meta name="keywords" content="Michael Giltz, BookFilter, journalism, article">
     <meta name="author" content="Michael Giltz">
-    <title>Hank And Jim By Scott Eyman-10-24 - BookFilter - Michael Giltz</title>
+    <title>Hank And Jim by Scott Eyman - Michael Giltz</title>
     <link href="../giltz.css" rel="stylesheet" type="text/css" />
     <style>
-        body { 
-            font-family: Arial, sans-serif;
+        body {
+            font-family: 'Times New Roman', Times, serif;
             margin: 0;
             padding: 0;
-            background: #f5f5f5;
+            background: #fff;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
         }
         .site-banner {
             text-align: center;
-            background: white;
-            padding: 10px 0;
+            padding: 20px 0;
+            background: #f9f9f9;
         }
         .site-banner img {
             max-width: 100%;
             height: auto;
         }
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            background: white;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        .header {
-            background: #333;
-            color: white;
-            padding: 20px;
+        .article-header {
             text-align: center;
+            padding: 30px 0 20px 0;
         }
-        .header h1 {
-            margin: 0;
-            font-size: 24px;
+        .article-title {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 28px;
+            font-weight: bold;
+            margin: 0 0 10px 0;
+            color: #333;
         }
-        .header p {
-            margin: 5px 0;
+        .article-meta {
             font-size: 14px;
+            color: #666;
+            margin: 0;
         }
         .pdf-viewer {
             width: 100%;
-            height: 600px;
-            border: none;
-            display: block;
+            height: 800px;
+            margin: 20px 0;
+            border: 1px solid #ddd;
         }
         .home-button {
             text-align: center;
-            padding: 20px;
-            background: #f0f0f0;
+            padding: 30px 0;
         }
         .home-button a {
             display: inline-block;
-            padding: 10px 30px;
+            padding: 12px 40px;
             background: #333;
             color: white;
             text-decoration: none;
             font-weight: bold;
+            font-size: 16px;
             border-radius: 5px;
+            text-transform: uppercase;
         }
         .home-button a:hover {
             background: #555;
         }
         .text-section {
-            padding: 20px;
+            padding: 40px 0;
+            border-top: 3px solid #333;
+            margin-top: 40px;
         }
         .text-section h2 {
+            font-size: 20px;
             color: #333;
-            border-bottom: 2px solid #333;
-            padding-bottom: 10px;
+            margin: 0 0 20px 0;
+            text-transform: uppercase;
         }
         .text-content {
             line-height: 1.8;
             color: #333;
+            font-size: 16px;
         }
         .text-content p {
             margin-bottom: 15px;
         }
-        .footer {
-            background: #f0f0f0;
-            padding: 20px;
-            text-align: center;
-            font-size: 12px;
-            color: #666;
-        }
         @media (max-width: 768px) {
             .pdf-viewer {
-                height: 400px;
+                height: 500px;
+            }
+            .article-title {
+                font-size: 22px;
             }
         }
     </style>
-    <link rel="icon" type="image/x-icon" href="../favicon.ico">
-    <link rel="icon" type="image/png" href="../favicon.png">
 </head>
 <body>
-    <!-- Site Banner -->
-    <div class="site-banner">
-        <a href="../index.htm"><img src="../giltz.jpg" width="800" height="146" alt="MichaelGiltz.com" /></a>
-    </div>
-    
     <div class="container">
-        <div class="header">
-            <h1>Hank And Jim By Scott Eyman-10-24</h1>
-            <p>Publication: BookFilter | Date: 2017 | by Michael Giltz</p>
+        <!-- Site Banner -->
+        <div class="site-banner">
+            <a href="../index.htm"><img src="../giltz.jpg" width="800" height="146" alt="MichaelGiltz.com" /></a>
         </div>
         
-        <!-- PDF Viewer -->
-        <iframe class="pdf-viewer" src="../scans/BookFilter-Hank_And_Jim_by_Scott_Eyman-10-24-2017.pdf" title="PDF Article">
-            <p>Your browser does not support embedded PDFs. <a href="../scans/BookFilter-Hank_And_Jim_by_Scott_Eyman-10-24-2017.pdf">Download the PDF</a> to view.</p>
+        <!-- Article Header -->
+        <div class="article-header">
+            <h1 class="article-title">Hank And Jim by Scott Eyman</h1>
+            <p class="article-meta">Publication: BookFilter &nbsp;&nbsp;|&nbsp;&nbsp; Date: October 24, 2017</p>
+        </div>
+        
+        <!-- PDF Viewer - Direct embed without buttons -->
+        <iframe class="pdf-viewer" 
+                src="../scans/BookFilter-Hank_And_Jim_by_Scott_Eyman-10-24-2017.pdf#toolbar=0&navpanes=0" 
+                type="application/pdf"
+                frameborder="0">
+            <p>Your browser does not support PDFs. 
+               <a href="../scans/BookFilter-Hank_And_Jim_by_Scott_Eyman-10-24-2017.pdf">Click here to view the PDF</a>.
+            </p>
         </iframe>
         
         <!-- Home Button -->
         <div class="home-button">
-            <a href="../index.htm">HOME</a>
+            <a href="../index.htm">Home</a>
         </div>
         
-        <!-- Text Section -->
+        <!-- SEO Text Section -->
         <div class="text-section">
-            <h2>SEO TEXT: Article Content for Search</h2>
+            <h2>SEO TEXT: Article Content for Search Engines</h2>
             <div class="text-content">
                 <p>Home |Register |Sign In Home Top Picks: All Books Hank and Jim Hank and Jim The Fifty-Year Friendship of Henry Fonda and James Stewart by Scott Eyman Price: $29.00 (Hardcover) Published: October 24, 2017 Rating: 0.0/ 5 (0 votes cast) From the Publisher: New York Times bestselling author Scott Eyman tells the story of the remarkable friendship of two Hollywood legends who, though different in many ways, maintained a close friendship that endured all of life’s twists and turns.&lt;/p&gt;&lt;p&gt; Henry Fonda and James Stewart were two of the biggest stars in Hollywood for forty years.&lt;/p&gt;&lt;p&gt; They became friends andthen roommates as stage actors in New York, and when they began makingfilms in Hollywood, they roomed together again.&lt;/p&gt;&lt;p&gt; Between them they madesuch memorable films as The Grapes of Wrath, Mister Roberts, Twelve Angry Men, and On Golden Pond; and Mr.&lt;/p&gt;&lt;p&gt; Smith Goes to Washington, Destry Rides Again, The Philadelphia Story, It’s a Wonderful Life, Vertigo, and Rear Window.&lt;/p&gt;&lt;p&gt; They got along famously, with a shared interest in elaborate practical jokes and model airplanes, among other things.&lt;/p&gt;&lt;p&gt; Fonda was a liberal Democrat, Stewart a conservative Republican, but after one memorable blow-up over politics, they agreed never to discuss thatsubject again.&lt;/p&gt;&lt;p&gt; Fonda was a ladies’ man who was married five times;Stewart remained married to the same woman for forty-five years.&lt;/p&gt;&lt;p&gt; Bothmen volunteered during World War II and were decorated for their service.&lt;/p&gt;&lt;p&gt; When Stewart returned home, still unmarried, he once again moved in with Fonda, his wife, and his two children, Jane and Peter, who knew himas Uncle Jimmy.&lt;/p&gt;&lt;p&gt; For Hank and Jim , biographer and film historian Scott Eyman spoke with Fonda’s widow and children as well as three ofStewart’s children, plus actors and directors who had worked with the men —in addition to doing extensive archival research to get the full details of their time together.&lt;/p&gt;&lt;p&gt; This is not another Hollywood story, but a fascinatingportrait of an extraordinary friendship that lasted through war, marriages,children, careers, and everything else.&lt;/p&gt;&lt;p&gt; Rate This Book Add To Wishlist |Rate/Review Add To Bookshelf Get This Book Personalize / Add More ChoicesGo to your preferred retailer, click to choose a format and you' ll be taken directly to their site where you can get this book.Share This Book About The Author Scott Eyman Scott Eyman has written fifteen books, three of them New York Times bestsellers, including John Wayne: The Life and Legend .&lt;/p&gt;&lt;p&gt; His most recent book is Hank and Jim .&lt;/p&gt;&lt;p&gt; He has been awarded the William K.&lt;/p&gt;&lt;p&gt; Everson Award for Film History by the National Board of Review.&lt;/p&gt;&lt;p&gt; He teaches film history at the University of Miami and lives in West PalmBeach with his wife, Lynn.&lt;/p&gt;&lt;p&gt; Release Info List Price: $29.00 (Hardcover) Published: October 24, 2017 Publisher: Simon &amp; Schuster Pages: 384 ISBN 10: 1501102176 ISBN 13: 9781501102172What We Say Henry Fonda and Jimmy Stewart are -- obviously -- two of the greatest actors in film history. (Both also excelled on the stage, which Fonda was especially devoted to his entire career.) Exceptionally private men, loners even, they were also the best of friends.&lt;/p&gt;&lt;p&gt; This amiable new biography tells the story of their lives through the prism of that friendship.&lt;/p&gt;&lt;p&gt; Hank and Jim were a classic odd couple: Stewart sort of fell into acting and Fonda knew it was his calling from day one.&lt;/p&gt;&lt;p&gt; Stewart had onewife his entire life; Fonda was married five times (though they both were crazy about Margaret Sullavan).&lt;/p&gt;&lt;p&gt; Stewart wasdeeply religious; Fonda was agnostic, at best.&lt;/p&gt;&lt;p&gt; Stewart was a rock-ribbed Republican; Fonda was liberal (though not as liberal as his daughter Jane).&lt;/p&gt;&lt;p&gt; The only serious fight they ever had was over the Communist witch hunt in Hollywood; the result was that they simply never discussed politics again.&lt;/p&gt;&lt;p&gt; But they had a lot more in common: they crossed paths incollege, roomed together in New York City when they were struggling actors, roomed again in Hollywood when they weremovie stars, built model airplanes, crafted elaborate practical jokes on friends and just plain enjoyed each other's company-- the less talking the better, as far as these two remote, honorable men were concerned.&lt;/p&gt;&lt;p&gt; Author Scott Eyman spoke to everyone he could and did his homework.&lt;/p&gt;&lt;p&gt; It's doubtful anyone who has read other biographies of them will learn much here but Eyman tells the story with compassion, albeit without blinders. (Neither man is very cuddly, whatever their screenpersonas.) No great insight into their films is offered, though the back and forth between their careers adds a little zip tofamiliar stories about screen successes like "Mr.&lt;/p&gt;&lt;p&gt; Roberts" and "Winchester '73," as well as projects that got away.&lt;/p&gt;&lt;p&gt; An early version of Larry McMurtry's "Lonesome Dove" was a screenplay and set to star Fonda, Stewart and John Wayne till the latter pulled out -- and those two alone weren't enough to get the film made! Stewart was angling to film "On Golden Pond" untilJane Fonda won the battle for movie rights. (She in turn ignored Peter Fonda's request to be director.) Yes, film buffs likeme can't help savoring even well-worn stories like these along with a few new tidbits. "Hank and Jim" quietly makes thecase that their friendship showed these two giant talents at their best, even when at times the burden of fame and old age didn't. -- Michael Giltz What Others Say “We love Hank Fonda and Jimmy Stewart already.&lt;/p&gt;&lt;p&gt; They were beloved actors in a beloved age.&lt;/p&gt;&lt;p&gt; So putting them either side of an ampersand seems natural.&lt;/p&gt;&lt;p&gt; But what Scott Eyman does is to say, well, pay attention – these were two difficult, lonely, inarticulate guys who could seem alarming and chilly.&lt;/p&gt;&lt;p&gt; But they were friends and Eyman has told their story like a movie, with humor, pathos and enchantment.&lt;/p&gt;&lt;p&gt; This is not two biopics hitchedtogether.&lt;/p&gt;&lt;p&gt; It’s a love story for guys who never mentioned or even noticed love.” - David Thomson, author of The Biographical Dictionary of Film and Warner Bros: The Story of an American Movie Studio "Henry Fonda and Jimmy Stewart were two of the most brilliant stars of Hollywood’s golden age.&lt;/p&gt;&lt;p&gt; They were also the best of friends, despite marked differences in their approach to life, love, family and politics.&lt;/p&gt;&lt;p&gt; Scott Eyman,one of our finest film historians, presents an intimate, powerful and bittersweet account of these gifted,complex and troubled men and the world they knew and dominated." - Glenn Frankel, Pulitzer Prize-winning journalist and author of High Noon: The Hollywood Blacklist and the Making of an American Classic “Scott Eyman has a gift for exploring subjects we think we know, then deepening and enriching that knowledge through diligent research and his gift of observation.&lt;/p&gt;&lt;p&gt; This book is no exception.&lt;/p&gt;&lt;p&gt; Henry Fonda and James Stewarthave never been captured so well, nor has their extraordinary fifty-year friendship.” - Leonard Maltin “In his engrossing new book, biographer and film historian Eyman vividly portrays the lives and work of twoHollywood legends. . . .&lt;/p&gt;&lt;p&gt; While their long-standing friendship is notable, in tracing their personal lives andaccomplishments, Eyman's narrative is even more compelling.&lt;/p&gt;&lt;p&gt; He provides a fascinating overview of the industry and the ebbs and flows of his subjects' careers in film, on stage, and eventually TV . . . .&lt;/p&gt;&lt;p&gt; An entertaining, richly documented biography that will be appreciated by film and theater scholars as well as fans of these memorableactors.” - Kirkus Reviews "With the same grace, intimacy, nuance, and thoughtfulness with which he brought John Wayne alive on thepage, Scott Eyman conjures the greatness and humanity of two Hollywood giants and the magic spell of theirfriendship." - Patrick McGilligan, author of Young Orson: The Years of Luck and Genius on the Path to Citizen Kane "I had no idea Fonda and Stewart even knew each other, and now I learn two of America's greatest actors were also the greatest of friends.&lt;/p&gt;&lt;p&gt; It's gratifying when a gifted writer finds a worthy subject, and Scott Eyman has with Hank and Jim.&lt;/p&gt;&lt;p&gt; You have to think both men would have loved the book—although Fonda probably wouldn't have admitted it." - Daniel de Visé, author of Andy &amp; Don: The Making of a Friendship and a Classic American TV Show "If you've ever wondered how the Greatest Generation got so great, it was due in part to the respect political opposites like Stewart and Fonda had for one another.&lt;/p&gt;&lt;p&gt; In fact, you could say it's a love story in the tradition of Howard Hawks, intimate, knowing, and compulsively readable." - James Curtis, author of Spencer Tracy: A Biography What You Say Filter by No Reviews Found ..... about us |faq|advertise |privacy policy |newsletter |contact us ©2018, BookBuddha LLc.&lt;/p&gt;&lt;p&gt; All Rights Reserved.</p>
             </div>
-        </div>
-        
-        <!-- Footer -->
-        <div class="footer">
-            <p>&copy; 2025 Michael Giltz. All rights reserved.</p>
-            <p>This article originally appeared in BookFilter on 2017.</p>
         </div>
     </div>
 </body>

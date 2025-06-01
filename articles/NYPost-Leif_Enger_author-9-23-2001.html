@@ -3,135 +3,135 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Leif Enger Author-9-23 by Michael Giltz - NYPost">
-    <meta name="keywords" content="NYPost, Leif Enger Author-9-23, Michael Giltz, journalism, entertainment">
+    <meta name="description" content="Leif Enger author - NYPost - Michael Giltz">
+    <meta name="keywords" content="Michael Giltz, NYPost, journalism, article">
     <meta name="author" content="Michael Giltz">
-    <title>Leif Enger Author-9-23 - NYPost - Michael Giltz</title>
+    <title>Leif Enger author - Michael Giltz</title>
     <link href="../giltz.css" rel="stylesheet" type="text/css" />
     <style>
-        body { 
-            font-family: Arial, sans-serif;
+        body {
+            font-family: 'Times New Roman', Times, serif;
             margin: 0;
             padding: 0;
-            background: #f5f5f5;
+            background: #fff;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
         }
         .site-banner {
             text-align: center;
-            background: white;
-            padding: 10px 0;
+            padding: 20px 0;
+            background: #f9f9f9;
         }
         .site-banner img {
             max-width: 100%;
             height: auto;
         }
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            background: white;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        .header {
-            background: #333;
-            color: white;
-            padding: 20px;
+        .article-header {
             text-align: center;
+            padding: 30px 0 20px 0;
         }
-        .header h1 {
-            margin: 0;
-            font-size: 24px;
+        .article-title {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 28px;
+            font-weight: bold;
+            margin: 0 0 10px 0;
+            color: #333;
         }
-        .header p {
-            margin: 5px 0;
+        .article-meta {
             font-size: 14px;
+            color: #666;
+            margin: 0;
         }
         .pdf-viewer {
             width: 100%;
-            height: 600px;
-            border: none;
-            display: block;
+            height: 800px;
+            margin: 20px 0;
+            border: 1px solid #ddd;
         }
         .home-button {
             text-align: center;
-            padding: 20px;
-            background: #f0f0f0;
+            padding: 30px 0;
         }
         .home-button a {
             display: inline-block;
-            padding: 10px 30px;
+            padding: 12px 40px;
             background: #333;
             color: white;
             text-decoration: none;
             font-weight: bold;
+            font-size: 16px;
             border-radius: 5px;
+            text-transform: uppercase;
         }
         .home-button a:hover {
             background: #555;
         }
         .text-section {
-            padding: 20px;
+            padding: 40px 0;
+            border-top: 3px solid #333;
+            margin-top: 40px;
         }
         .text-section h2 {
+            font-size: 20px;
             color: #333;
-            border-bottom: 2px solid #333;
-            padding-bottom: 10px;
+            margin: 0 0 20px 0;
+            text-transform: uppercase;
         }
         .text-content {
             line-height: 1.8;
             color: #333;
+            font-size: 16px;
         }
         .text-content p {
             margin-bottom: 15px;
         }
-        .footer {
-            background: #f0f0f0;
-            padding: 20px;
-            text-align: center;
-            font-size: 12px;
-            color: #666;
-        }
         @media (max-width: 768px) {
             .pdf-viewer {
-                height: 400px;
+                height: 500px;
+            }
+            .article-title {
+                font-size: 22px;
             }
         }
     </style>
-    <link rel="icon" type="image/x-icon" href="../favicon.ico">
-    <link rel="icon" type="image/png" href="../favicon.png">
 </head>
 <body>
-    <!-- Site Banner -->
-    <div class="site-banner">
-        <a href="../index.htm"><img src="../giltz.jpg" width="800" height="146" alt="MichaelGiltz.com" /></a>
-    </div>
-    
     <div class="container">
-        <div class="header">
-            <h1>Leif Enger Author-9-23</h1>
-            <p>Publication: NYPost | Date: 2001 | by Michael Giltz</p>
+        <!-- Site Banner -->
+        <div class="site-banner">
+            <a href="../index.htm"><img src="../giltz.jpg" width="800" height="146" alt="MichaelGiltz.com" /></a>
         </div>
         
-        <!-- PDF Viewer -->
-        <iframe class="pdf-viewer" src="../scans/NYPost-Leif_Enger_author-9-23-2001.pdf" title="PDF Article">
-            <p>Your browser does not support embedded PDFs. <a href="../scans/NYPost-Leif_Enger_author-9-23-2001.pdf">Download the PDF</a> to view.</p>
+        <!-- Article Header -->
+        <div class="article-header">
+            <h1 class="article-title">Leif Enger author</h1>
+            <p class="article-meta">Publication: NYPost &nbsp;&nbsp;|&nbsp;&nbsp; Date: September 23, 2001</p>
+        </div>
+        
+        <!-- PDF Viewer - Direct embed without buttons -->
+        <iframe class="pdf-viewer" 
+                src="../scans/NYPost-Leif_Enger_author-9-23-2001.pdf#toolbar=0&navpanes=0" 
+                type="application/pdf"
+                frameborder="0">
+            <p>Your browser does not support PDFs. 
+               <a href="../scans/NYPost-Leif_Enger_author-9-23-2001.pdf">Click here to view the PDF</a>.
+            </p>
         </iframe>
         
         <!-- Home Button -->
         <div class="home-button">
-            <a href="../index.htm">HOME</a>
+            <a href="../index.htm">Home</a>
         </div>
         
-        <!-- Text Section -->
+        <!-- SEO Text Section -->
         <div class="text-section">
-            <h2>SEO TEXT: Article Content for Search</h2>
+            <h2>SEO TEXT: Article Content for Search Engines</h2>
             <div class="text-content">
                 <p>The 'Peace' 1~,)/.l Hit debut novel by Leif Enger features old-fashioned virtues ,,_'IUZ -....... -..... -.... ... , __ .... 00&lt;_ -_ .... -., .. _ "'" _11_ .... ---"1;-' ----w.o,,,, ................ _ ... ..-..-.Ul&lt; .ll ........... __ -.- tt~i'""-:; --...... '""-- ..... _001 ........... ..... _-­...-01 ....... --o;:::.!l. 'in: ~.-----'--~-:::...::= -~----~_of_ --~ ~-~ J&lt;!_-:t -. -~ -" -~~ ,_' .... __ 01 ........... ..­...... ,-_ ... _ ...... c--,. .. __ .. -_ ... _--_ ...... _10_ ---"._ . ' ..... _k ..... _ ... ,_ ..... .. -.. _ .. _ ... _-----...... ----_ ... --.... _ .. __ . ........... -...... -w ................ , .. ........ -­_"_bo.1uo. ........... _ ....... -,.," --. ...... _-, ,....,. ...... -.... -...... _­.... _--__ .... __ of ... _ ........ .... -... -... -_ ... __ ... , . --­.=~­--_ .. "It's not likely you'll read a better piece of fiction this year.'" • ....... b&lt;n land, ,.,. " .... " .. ol Puce U~ •• IIi,,,,. boor""" in mi.&gt;&lt;ie.&lt;/p&gt;&lt;p&gt; To ...,joy th~ wi~y 1";':.1 __ 1. "'" d ..... ·' ha", '0.&lt;/p&gt;&lt;p&gt; Bu'. &lt;&lt;!fiIin .moon' '" I'illl ;, ,_"",1. h~, 11_ bel",,-. ",,11' in slirring.. hcart-1humping storytelling and sentences that sing, ,hi. boo!&lt; wm wo&lt;k lot \'0&lt;'-H 1'''., .... ..,.""'" oIl&gt;oys" ~,~ boo .......&lt;/p&gt;&lt;p&gt; I!rui!«l iM()COf'll&gt; conlrontiOll S&lt;ounOrcl, &lt;0l'0'&lt;I....,,.,. """"-,,II "'" _ ..&lt;/p&gt;&lt;p&gt; But what allows Peace Like a River 10 transcend any limitation s of belief and genre is its broad, saga~ious humanity. m,hin to. c,",,",,' ci .n _"'""'.@«I .. ,II .... oddly'"""'8 h, ,I&gt;&lt; 000&lt; "",ten." 00' 10 genl l~ exp~ ,"" .ne.,,,, "'r&gt;I«~ oi I.onil._ '",..".odon&lt;. .nd po&gt;I .... .,." 1oy,1" .M ~.""hery. lO'&gt;~ .00 ""lhiOS-rhey", .11 ....... ",eo il ~', "'" .1"'01" d.,., " I&gt;ic h ;, w~ i&lt;h. . . , There is magic here, none more potent than Leif Enger's prose." -0'0 c......-.&lt;/p&gt;&lt;p&gt; N .... &gt;d.y Nleif Enger may have unwil­ lingly written the perfect book for an anxious lime ....&lt;/p&gt;&lt;p&gt; It 1\.;1, • S" ... ",,1y 00' ... '" to-, i. ""'" ".Ie""", in, d,'" ti..,. .... '" boo!&lt; 01 ~ r",h", r,i'h. ro' i1 ~ ""';tht, .impl. 00&lt; """......,t.lI .. 11 is the surest thing to a winner this fall, • boo!&lt; 0/ sr.", li,...ry ..,.,.i, ,0-, """",he­ leu ""''''''' '0.&gt;&lt;1=' ;,ilo in '"" ,in&lt;l_. 0/ "me.: -M.orl.&lt;/p&gt;&lt;p&gt; Soli;' 0",.,;, '''' ~ Uif eller there was a time for a nOllel of faith and redemp­ tion-a quiet book of old­ fashioned lIerit ieS-oIH. i, i,.&lt;/p&gt;&lt;p&gt; W,;"o" in IV'I"I. op&lt;ftl&gt;&lt;.&lt;\&lt;"d prose. fW&lt;:e ! i1e • Ri"''', .. ~n h,' , &lt;""'fooling. ~",Me gl.t&gt;pse """ til&lt; .~Me: ~~irn..-l G;lu. "' ....• 0.-1~, -("8'" hi, ... ,in"". ""' .... \h.o", ""Idly "",,",n'oe • .-.1 """b..I,h.,lIy _,ling. • &lt;oll.te of~. f&lt;anl .... " .. "",ed , .nd ",of.'-'O---&lt;rom ,il&lt; Old T""-l""",' (0 ,ho Old W.".. ;,,,m ,I&gt;(, Goop.I, '0 poh&lt; .. d"""., It's a joutney you simply must not miss." -It .. 0....1&lt;&gt;. 1"" Chd""n St~ """""', "Enger has wril1en one of the year's best nOllels ....&lt;/p&gt;&lt;p&gt; One" in.&lt;/p&gt;&lt;p&gt; Y." whi~ •• boo!&lt; ,.,.,.,.. ,long m" b..I, OUCh ... ""cle,ful &lt;h.!,.&lt;:t"" .nd ""' ...... 1",,, prose ,0-, '''''' ,.ad i, .. muc:h for ,il&lt; 11'-'" joy i, """" .. ,i"u,IIV ""'"'Y P-'S""" ~"" 0UI1&gt;ow H_~ Cb..I,b " .. ..,., Coid AIOo",,;n w" h"e ,n".&lt;/p&gt;&lt;p&gt; So ...... 1'1,;"-8 by K«rt H.M, -'"ld l.,if £-ser"' , .. ,ifoe ""'" """,I _«liL', • R;,~'" ,h, .. ""'" I.".&lt;/p&gt;&lt;p&gt; Yoo'li be """I il voo mi .. iI ....&lt;/p&gt;&lt;p&gt; Go oo1.nd ~. '''I'Y' ..,"''' lhi .... i, """,,;;,1: ~'om w.I~ .. " 1"" a." .. , ,.,,,,. 'II"""~' work, Wliling.boo! f.illl ...&lt;/p&gt;&lt;p&gt; To ~ i' .. 'igh, .,lei/ Eng&lt;, 00.. i. his novel is nothing short of miraculou s .... who, &lt;wid ". """"1,n-.bI&lt; bee"""" ... ,...-d'"'f'\' in l"&amp;&lt;'" h'nd', , 11_"", "'""'" I,PIOd i. ith. il ... "'" "n ,,"roy. ,1l.lIey /ourrll'""" ,hen "'" flow oil"" .. ·• '''''''''0 f&gt;&lt;W "",el m.y !,o-i"" man: t!u" • ~ 0/ "&lt;10 hi. ptomi!&lt;d po •• ,,: -&lt;onni&lt;~ •. '''''M"",W ... hJ -You do,'-''''' """'" h~.&lt;/p&gt;&lt;p&gt; Ihi. on&lt;-....y "".n.&lt;/p&gt;&lt;p&gt; Peace like a Riller reminds a reader of Kent Haruf's Plainsong or ellen Norman Maclean 's A Riller Runs Through It. 1f.;;oI th., pur&lt; "', .... ,,'" 1,," 0/ """"'.f",. the-me, ",-" beli .. in ,od 1,1&lt;",-,,"" wi,h m"",I&lt;&gt;, ,"'" in,i""""" "" ",.&lt;/p&gt;&lt;p&gt; Sood""", 01 ",.., """ide oIlho I ..... : -...n So"" R'lnoldo. 1M A,,!,"/roo 1 ..... fool.&lt;/p&gt;&lt;p&gt; I ......&lt;/p&gt;&lt;p&gt; NATIONAL BESTSEllER Over 125,000 copies in print • , • , •••••.•.. , ••• , •• l"HE.HKW.&lt;/p&gt;&lt;p&gt; VO"U •• TUlF-S.E&gt;C&gt;O~.l!~)lJ'-:'W .&lt;/p&gt;&lt;p&gt; I</p>
             </div>
-        </div>
-        
-        <!-- Footer -->
-        <div class="footer">
-            <p>&copy; 2025 Michael Giltz. All rights reserved.</p>
-            <p>This article originally appeared in NYPost on 2001.</p>
         </div>
     </div>
 </body>

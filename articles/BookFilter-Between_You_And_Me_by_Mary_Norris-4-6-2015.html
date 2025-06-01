@@ -3,135 +3,135 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Between You And Me By Mary Norris-4-6 by Michael Giltz - BookFilter">
-    <meta name="keywords" content="BookFilter, Between You And Me By Mary Norris-4-6, Michael Giltz, journalism, entertainment">
+    <meta name="description" content="Between You And Me by Mary Norris - BookFilter - Michael Giltz">
+    <meta name="keywords" content="Michael Giltz, BookFilter, journalism, article">
     <meta name="author" content="Michael Giltz">
-    <title>Between You And Me By Mary Norris-4-6 - BookFilter - Michael Giltz</title>
+    <title>Between You And Me by Mary Norris - Michael Giltz</title>
     <link href="../giltz.css" rel="stylesheet" type="text/css" />
     <style>
-        body { 
-            font-family: Arial, sans-serif;
+        body {
+            font-family: 'Times New Roman', Times, serif;
             margin: 0;
             padding: 0;
-            background: #f5f5f5;
+            background: #fff;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
         }
         .site-banner {
             text-align: center;
-            background: white;
-            padding: 10px 0;
+            padding: 20px 0;
+            background: #f9f9f9;
         }
         .site-banner img {
             max-width: 100%;
             height: auto;
         }
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            background: white;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        .header {
-            background: #333;
-            color: white;
-            padding: 20px;
+        .article-header {
             text-align: center;
+            padding: 30px 0 20px 0;
         }
-        .header h1 {
-            margin: 0;
-            font-size: 24px;
+        .article-title {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 28px;
+            font-weight: bold;
+            margin: 0 0 10px 0;
+            color: #333;
         }
-        .header p {
-            margin: 5px 0;
+        .article-meta {
             font-size: 14px;
+            color: #666;
+            margin: 0;
         }
         .pdf-viewer {
             width: 100%;
-            height: 600px;
-            border: none;
-            display: block;
+            height: 800px;
+            margin: 20px 0;
+            border: 1px solid #ddd;
         }
         .home-button {
             text-align: center;
-            padding: 20px;
-            background: #f0f0f0;
+            padding: 30px 0;
         }
         .home-button a {
             display: inline-block;
-            padding: 10px 30px;
+            padding: 12px 40px;
             background: #333;
             color: white;
             text-decoration: none;
             font-weight: bold;
+            font-size: 16px;
             border-radius: 5px;
+            text-transform: uppercase;
         }
         .home-button a:hover {
             background: #555;
         }
         .text-section {
-            padding: 20px;
+            padding: 40px 0;
+            border-top: 3px solid #333;
+            margin-top: 40px;
         }
         .text-section h2 {
+            font-size: 20px;
             color: #333;
-            border-bottom: 2px solid #333;
-            padding-bottom: 10px;
+            margin: 0 0 20px 0;
+            text-transform: uppercase;
         }
         .text-content {
             line-height: 1.8;
             color: #333;
+            font-size: 16px;
         }
         .text-content p {
             margin-bottom: 15px;
         }
-        .footer {
-            background: #f0f0f0;
-            padding: 20px;
-            text-align: center;
-            font-size: 12px;
-            color: #666;
-        }
         @media (max-width: 768px) {
             .pdf-viewer {
-                height: 400px;
+                height: 500px;
+            }
+            .article-title {
+                font-size: 22px;
             }
         }
     </style>
-    <link rel="icon" type="image/x-icon" href="../favicon.ico">
-    <link rel="icon" type="image/png" href="../favicon.png">
 </head>
 <body>
-    <!-- Site Banner -->
-    <div class="site-banner">
-        <a href="../index.htm"><img src="../giltz.jpg" width="800" height="146" alt="MichaelGiltz.com" /></a>
-    </div>
-    
     <div class="container">
-        <div class="header">
-            <h1>Between You And Me By Mary Norris-4-6</h1>
-            <p>Publication: BookFilter | Date: 2015 | by Michael Giltz</p>
+        <!-- Site Banner -->
+        <div class="site-banner">
+            <a href="../index.htm"><img src="../giltz.jpg" width="800" height="146" alt="MichaelGiltz.com" /></a>
         </div>
         
-        <!-- PDF Viewer -->
-        <iframe class="pdf-viewer" src="../scans/BookFilter-Between_You_And_Me_by_Mary_Norris-4-6-2015.pdf" title="PDF Article">
-            <p>Your browser does not support embedded PDFs. <a href="../scans/BookFilter-Between_You_And_Me_by_Mary_Norris-4-6-2015.pdf">Download the PDF</a> to view.</p>
+        <!-- Article Header -->
+        <div class="article-header">
+            <h1 class="article-title">Between You And Me by Mary Norris</h1>
+            <p class="article-meta">Publication: BookFilter &nbsp;&nbsp;|&nbsp;&nbsp; Date: April 6, 2015</p>
+        </div>
+        
+        <!-- PDF Viewer - Direct embed without buttons -->
+        <iframe class="pdf-viewer" 
+                src="../scans/BookFilter-Between_You_And_Me_by_Mary_Norris-4-6-2015.pdf#toolbar=0&navpanes=0" 
+                type="application/pdf"
+                frameborder="0">
+            <p>Your browser does not support PDFs. 
+               <a href="../scans/BookFilter-Between_You_And_Me_by_Mary_Norris-4-6-2015.pdf">Click here to view the PDF</a>.
+            </p>
         </iframe>
         
         <!-- Home Button -->
         <div class="home-button">
-            <a href="../index.htm">HOME</a>
+            <a href="../index.htm">Home</a>
         </div>
         
-        <!-- Text Section -->
+        <!-- SEO Text Section -->
         <div class="text-section">
-            <h2>SEO TEXT: Article Content for Search</h2>
+            <h2>SEO TEXT: Article Content for Search Engines</h2>
             <div class="text-content">
                 <p>12/1/2015BookFilter | Evernote Web https://www.evernote.com/Home.action#n=1bd6d6a0-3eb2-4397-9e4f-e2f31dffc6ea&amp;ses=4&amp;sh=2&amp;sds=5&amp;1/3HomeTop Picks: All BooksBetween You &amp; Me Confessions of a Comma Queen MoreBetween You &amp; Meby Mary NorrisPrice: $24.95(Hardcover)Published: April 06, 2015Rating: 0.0/5 (0 votes cast)From the Publisher: Mary Norris has spent more than threedecades in The New Yorker's copy department, maintaining itscelebrated high standards.&lt;/p&gt;&lt;p&gt; Now she brings her vast experience,good cheer, and finely sharpened pencils to help the rest of us in aboisterous language book as full of life as it is of practical advice.Between You &amp; Me features Norris's laugh-out-loud descriptions ofsome of the most common and vexing problems in spelling,punctuation, and usage—comma faults, danglers, "who" vs."whom," "that" vs. "which," compound words, gender-neutrallanguage—and her clear explanations of how to handle them.Down-to-earth and always open-minded, she draws on examplesfrom Charles Dickens, Emily Dickinson, Henry James, and theLord's Prayer, as well as from The Honeymooners, The Simpsons,David Foster Wallace, and Gillian Flynn.&lt;/p&gt;&lt;p&gt; She takes us to see acopy of Noah Webster's groundbreaking…Rate This Book|Rate/ReviewAdd To BookshelfGet This Book Go to your preferred retailer, click to choose a format and you' ll be taken directly to their site whereyou can get this book.BookFilter12/1/2015BookFilter | Evernote Web https://www.evernote.com/Home.action#n=1bd6d6a0-3eb2-4397-9e4f-e2f31dffc6ea&amp;ses=4&amp;sh=2&amp;sds=5&amp;2/3 Personalize / Add More ChoicesWhat We SayIs it a memoir? Is it a (gentle) primer on punctuation and grammar? Is it funny? Yes, yes and yes.&lt;/p&gt;&lt;p&gt; Mary Norris is the"Comma Queen" who worked her way up the ladder at The New Yorker, the last bastion of clear and correct writing.Her delightfully shaggy new book does many things well.&lt;/p&gt;&lt;p&gt; It offers a glimpse into the fabled world of The New Yorker.It tells of her trials by fire -- tentatively suggesting a correction here, wrangling with writers there, receiving words ofpraise from this famed talent while getting nowhere with that famed talent who stubbornly clings to a certain wordingbecause it feels right.&lt;/p&gt;&lt;p&gt; Philip Roth, Pauline Kael and the vivid New Yorker figure of Eleanor Gould are all here.&lt;/p&gt;&lt;p&gt; Butthis isn't a straightforward memoir.&lt;/p&gt;&lt;p&gt; The girl can't help herself: Norris playfully dives into various burning issues, suchas whether the sentence "Yes, yes and yes" should have a comma after that second "yes," when to say "Betweenyou &amp; I" (pretty much never) and the purpose of that thingie that looks like an umlaut but isn't.&lt;/p&gt;&lt;p&gt; I couldn't diagram asentence to save my life.&lt;/p&gt;&lt;p&gt; I've never even heard of a copulative verb and blush to think what it might suggest.&lt;/p&gt;&lt;p&gt; YetNorris makes it all fun.&lt;/p&gt;&lt;p&gt; She's devilishly good at serving up examples of what she's talking about in the very sentencesshe uses to describe something.&lt;/p&gt;&lt;p&gt; Plus, it ends with an ode to the No. 1 pencil.&lt;/p&gt;&lt;p&gt; What's not to love? Between you and I,I'd be worried about my grammar if I ever spoke to her.&lt;/p&gt;&lt;p&gt; But I shouldn't be: she's no scold.&lt;/p&gt;&lt;p&gt; The Comma Queen makesproper punctuation a pleasure. -- Michael GiltzLessWhat Others Say“[Between You &amp; Me] brims with wit, personality — and commas… Norris' enthusiasm is infectious.&lt;/p&gt;&lt;p&gt; She's aspassionate about sharp pencils as she is about sharp writing… Delightful.” - Heller McAlpin NPR Books“[A] winningly tender, funny reckoning with labor and language.” - Megan O'Grady Vogue“Delightful.” - Miriam Krule Slate“Very funny, lucid, and lively.” - Julia Holmes The New Republic“Laugh-out-loud funny and wise and compelling from beginning to end.” - Steve Weinberg Houston Chronicle“Down-to-earth… [and] funny.” - Linda Lowenthal Boston Globe“An educational, entertaining narrative… Unforgettable anecdotes… Countless laugh-out-loud passages… A funnybook for any serious reader.” - Kirkus Reviews, Starred Review“A delightful discourse on the most common grammar, punctuation, and usage challenges faced by writers of allstripes… Norris writes with wit, sass, and smarts.” - Publishers Weekly“Thoughtful and humorous… [Between You &amp; Me] is not your grade school primer; expect wisecracks and pointedcommentary.” - Gricel ​Dominguez Library Journal“[A]…</p>
             </div>
-        </div>
-        
-        <!-- Footer -->
-        <div class="footer">
-            <p>&copy; 2025 Michael Giltz. All rights reserved.</p>
-            <p>This article originally appeared in BookFilter on 2015.</p>
         </div>
     </div>
 </body>

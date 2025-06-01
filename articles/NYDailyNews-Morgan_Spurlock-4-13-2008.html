@@ -3,135 +3,135 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Morgan Spurlock-4-13 by Michael Giltz - NYDailyNews">
-    <meta name="keywords" content="NYDailyNews, Morgan Spurlock-4-13, Michael Giltz, journalism, entertainment">
+    <meta name="description" content="Morgan Spurlock - NYDailyNews - Michael Giltz">
+    <meta name="keywords" content="Michael Giltz, NYDailyNews, journalism, article">
     <meta name="author" content="Michael Giltz">
-    <title>Morgan Spurlock-4-13 - NYDailyNews - Michael Giltz</title>
+    <title>Morgan Spurlock - Michael Giltz</title>
     <link href="../giltz.css" rel="stylesheet" type="text/css" />
     <style>
-        body { 
-            font-family: Arial, sans-serif;
+        body {
+            font-family: 'Times New Roman', Times, serif;
             margin: 0;
             padding: 0;
-            background: #f5f5f5;
+            background: #fff;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
         }
         .site-banner {
             text-align: center;
-            background: white;
-            padding: 10px 0;
+            padding: 20px 0;
+            background: #f9f9f9;
         }
         .site-banner img {
             max-width: 100%;
             height: auto;
         }
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            background: white;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        .header {
-            background: #333;
-            color: white;
-            padding: 20px;
+        .article-header {
             text-align: center;
+            padding: 30px 0 20px 0;
         }
-        .header h1 {
-            margin: 0;
-            font-size: 24px;
+        .article-title {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 28px;
+            font-weight: bold;
+            margin: 0 0 10px 0;
+            color: #333;
         }
-        .header p {
-            margin: 5px 0;
+        .article-meta {
             font-size: 14px;
+            color: #666;
+            margin: 0;
         }
         .pdf-viewer {
             width: 100%;
-            height: 600px;
-            border: none;
-            display: block;
+            height: 800px;
+            margin: 20px 0;
+            border: 1px solid #ddd;
         }
         .home-button {
             text-align: center;
-            padding: 20px;
-            background: #f0f0f0;
+            padding: 30px 0;
         }
         .home-button a {
             display: inline-block;
-            padding: 10px 30px;
+            padding: 12px 40px;
             background: #333;
             color: white;
             text-decoration: none;
             font-weight: bold;
+            font-size: 16px;
             border-radius: 5px;
+            text-transform: uppercase;
         }
         .home-button a:hover {
             background: #555;
         }
         .text-section {
-            padding: 20px;
+            padding: 40px 0;
+            border-top: 3px solid #333;
+            margin-top: 40px;
         }
         .text-section h2 {
+            font-size: 20px;
             color: #333;
-            border-bottom: 2px solid #333;
-            padding-bottom: 10px;
+            margin: 0 0 20px 0;
+            text-transform: uppercase;
         }
         .text-content {
             line-height: 1.8;
             color: #333;
+            font-size: 16px;
         }
         .text-content p {
             margin-bottom: 15px;
         }
-        .footer {
-            background: #f0f0f0;
-            padding: 20px;
-            text-align: center;
-            font-size: 12px;
-            color: #666;
-        }
         @media (max-width: 768px) {
             .pdf-viewer {
-                height: 400px;
+                height: 500px;
+            }
+            .article-title {
+                font-size: 22px;
             }
         }
     </style>
-    <link rel="icon" type="image/x-icon" href="../favicon.ico">
-    <link rel="icon" type="image/png" href="../favicon.png">
 </head>
 <body>
-    <!-- Site Banner -->
-    <div class="site-banner">
-        <a href="../index.htm"><img src="../giltz.jpg" width="800" height="146" alt="MichaelGiltz.com" /></a>
-    </div>
-    
     <div class="container">
-        <div class="header">
-            <h1>Morgan Spurlock-4-13</h1>
-            <p>Publication: NYDailyNews | Date: 2008 | by Michael Giltz</p>
+        <!-- Site Banner -->
+        <div class="site-banner">
+            <a href="../index.htm"><img src="../giltz.jpg" width="800" height="146" alt="MichaelGiltz.com" /></a>
         </div>
         
-        <!-- PDF Viewer -->
-        <iframe class="pdf-viewer" src="../scans/NYDailyNews-Morgan_Spurlock-4-13-2008.pdf" title="PDF Article">
-            <p>Your browser does not support embedded PDFs. <a href="../scans/NYDailyNews-Morgan_Spurlock-4-13-2008.pdf">Download the PDF</a> to view.</p>
+        <!-- Article Header -->
+        <div class="article-header">
+            <h1 class="article-title">Morgan Spurlock</h1>
+            <p class="article-meta">Publication: NYDailyNews &nbsp;&nbsp;|&nbsp;&nbsp; Date: April 13, 2008</p>
+        </div>
+        
+        <!-- PDF Viewer - Direct embed without buttons -->
+        <iframe class="pdf-viewer" 
+                src="../scans/NYDailyNews-Morgan_Spurlock-4-13-2008.pdf#toolbar=0&navpanes=0" 
+                type="application/pdf"
+                frameborder="0">
+            <p>Your browser does not support PDFs. 
+               <a href="../scans/NYDailyNews-Morgan_Spurlock-4-13-2008.pdf">Click here to view the PDF</a>.
+            </p>
         </iframe>
         
         <!-- Home Button -->
         <div class="home-button">
-            <a href="../index.htm">HOME</a>
+            <a href="../index.htm">Home</a>
         </div>
         
-        <!-- Text Section -->
+        <!-- SEO Text Section -->
         <div class="text-section">
-            <h2>SEO TEXT: Article Content for Search</h2>
+            <h2>SEO TEXT: Article Content for Search Engines</h2>
             <div class="text-content">
                 <p>New documentary hunts for 0sama, sort of ocumentary maker Morgan Spurlock chowed down on McDonald's hamburgers for "Supersize Me," his hilariously gross expos6 of fast-food chains, and turned to cable TV for his regular FX series'30 Days" (which begins its third season June 3).&lt;/p&gt;&lt;p&gt; Now with "Where in the World ls Osama Bin Laden?" opening Friday, Spurlock uses his amiable, regular-guy perspective to take a look at the most wanted man in the world.&lt;/p&gt;&lt;p&gt; Nominally done to make the world safer for the unborn child his wife, Alex, was carrying, the film has Spurlock traveling to hot zones throughout the region - Afghanistan, Egypt, lsrael and Saudi Arabia - talking to people about their lives, their hopes for the future, what they think of America and, oh, yeah, do they know where Osama Bin Laden is? Ilespite some cold stare+ most people gig- Where were you most scared? ln AfghanF gled or laughed when you asked them where I stan, when the soldiers guarding you sud- Osama Bin lnden was.&lt;/p&gt;&lt;p&gt; And, of course, the i denly said,'l.etb go!'and hustled you out tlm is framed as a video-game showdown r of there? Or in lsrael, when the Orthodox with you hunting him down, calling out'Osa- : Jeyus starting yelling at you and calling you na"whenyou'rcinTonBotaatacayenear i filth? his hst known location, and even showing a : Afghanistan. [The encounter in lsrael] just cartoon version of Bin laden dancing to MG , took us by surprise more than anything else. lt Hamrner. , was not neafly as frightening as when we were in lf you can make somebody laugh, then you ; Afghanistan.&lt;/p&gt;&lt;p&gt; Here you are out with the military. can make somebody listen. lt opens the door to i These guys are protecting us and making sure a dialogue.&lt;/p&gt;&lt;p&gt; You don't feel like you're being beat : that we were safe, but at the same time these over the head or being told what to do. : guys are targets.E o o3o)c a= I,IJz = o @ o ol Fl o c oI suppose the most basrt goal of the movie is to make peoplehughand sa5'tlh, I didnt realize they don"t all hate us.' There was a kid who saw the film who was about L9 or 20 years old, who came up to me and said, "l've been thinking about going overseasand traveling abroad, and now after seeing this movie, I'm going to get a passport as soon as I get home." For me, if it makes somebody say, "l'm going to go find out for myself and see whafs out there," great.&lt;/p&gt;&lt;p&gt; Michael Gilz.</p>
             </div>
-        </div>
-        
-        <!-- Footer -->
-        <div class="footer">
-            <p>&copy; 2025 Michael Giltz. All rights reserved.</p>
-            <p>This article originally appeared in NYDailyNews on 2008.</p>
         </div>
     </div>
 </body>

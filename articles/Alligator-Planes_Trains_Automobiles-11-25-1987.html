@@ -3,135 +3,135 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Planes Trains Automobiles-11-25 by Michael Giltz - Alligator">
-    <meta name="keywords" content="Alligator, Planes Trains Automobiles-11-25, Michael Giltz, journalism, entertainment">
+    <meta name="description" content="Planes Trains Automobiles - Alligator - Michael Giltz">
+    <meta name="keywords" content="Michael Giltz, Alligator, journalism, article">
     <meta name="author" content="Michael Giltz">
-    <title>Planes Trains Automobiles-11-25 - Alligator - Michael Giltz</title>
+    <title>Planes Trains Automobiles - Michael Giltz</title>
     <link href="../giltz.css" rel="stylesheet" type="text/css" />
     <style>
-        body { 
-            font-family: Arial, sans-serif;
+        body {
+            font-family: 'Times New Roman', Times, serif;
             margin: 0;
             padding: 0;
-            background: #f5f5f5;
+            background: #fff;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
         }
         .site-banner {
             text-align: center;
-            background: white;
-            padding: 10px 0;
+            padding: 20px 0;
+            background: #f9f9f9;
         }
         .site-banner img {
             max-width: 100%;
             height: auto;
         }
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            background: white;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        .header {
-            background: #333;
-            color: white;
-            padding: 20px;
+        .article-header {
             text-align: center;
+            padding: 30px 0 20px 0;
         }
-        .header h1 {
-            margin: 0;
-            font-size: 24px;
+        .article-title {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 28px;
+            font-weight: bold;
+            margin: 0 0 10px 0;
+            color: #333;
         }
-        .header p {
-            margin: 5px 0;
+        .article-meta {
             font-size: 14px;
+            color: #666;
+            margin: 0;
         }
         .pdf-viewer {
             width: 100%;
-            height: 600px;
-            border: none;
-            display: block;
+            height: 800px;
+            margin: 20px 0;
+            border: 1px solid #ddd;
         }
         .home-button {
             text-align: center;
-            padding: 20px;
-            background: #f0f0f0;
+            padding: 30px 0;
         }
         .home-button a {
             display: inline-block;
-            padding: 10px 30px;
+            padding: 12px 40px;
             background: #333;
             color: white;
             text-decoration: none;
             font-weight: bold;
+            font-size: 16px;
             border-radius: 5px;
+            text-transform: uppercase;
         }
         .home-button a:hover {
             background: #555;
         }
         .text-section {
-            padding: 20px;
+            padding: 40px 0;
+            border-top: 3px solid #333;
+            margin-top: 40px;
         }
         .text-section h2 {
+            font-size: 20px;
             color: #333;
-            border-bottom: 2px solid #333;
-            padding-bottom: 10px;
+            margin: 0 0 20px 0;
+            text-transform: uppercase;
         }
         .text-content {
             line-height: 1.8;
             color: #333;
+            font-size: 16px;
         }
         .text-content p {
             margin-bottom: 15px;
         }
-        .footer {
-            background: #f0f0f0;
-            padding: 20px;
-            text-align: center;
-            font-size: 12px;
-            color: #666;
-        }
         @media (max-width: 768px) {
             .pdf-viewer {
-                height: 400px;
+                height: 500px;
+            }
+            .article-title {
+                font-size: 22px;
             }
         }
     </style>
-    <link rel="icon" type="image/x-icon" href="../favicon.ico">
-    <link rel="icon" type="image/png" href="../favicon.png">
 </head>
 <body>
-    <!-- Site Banner -->
-    <div class="site-banner">
-        <a href="../index.htm"><img src="../giltz.jpg" width="800" height="146" alt="MichaelGiltz.com" /></a>
-    </div>
-    
     <div class="container">
-        <div class="header">
-            <h1>Planes Trains Automobiles-11-25</h1>
-            <p>Publication: Alligator | Date: 1987 | by Michael Giltz</p>
+        <!-- Site Banner -->
+        <div class="site-banner">
+            <a href="../index.htm"><img src="../giltz.jpg" width="800" height="146" alt="MichaelGiltz.com" /></a>
         </div>
         
-        <!-- PDF Viewer -->
-        <iframe class="pdf-viewer" src="../scans/Alligator-Planes_Trains_Automobiles-11-25-1987.pdf" title="PDF Article">
-            <p>Your browser does not support embedded PDFs. <a href="../scans/Alligator-Planes_Trains_Automobiles-11-25-1987.pdf">Download the PDF</a> to view.</p>
+        <!-- Article Header -->
+        <div class="article-header">
+            <h1 class="article-title">Planes Trains Automobiles</h1>
+            <p class="article-meta">Publication: Alligator &nbsp;&nbsp;|&nbsp;&nbsp; Date: November 25, 1987</p>
+        </div>
+        
+        <!-- PDF Viewer - Direct embed without buttons -->
+        <iframe class="pdf-viewer" 
+                src="../scans/Alligator-Planes_Trains_Automobiles-11-25-1987.pdf#toolbar=0&navpanes=0" 
+                type="application/pdf"
+                frameborder="0">
+            <p>Your browser does not support PDFs. 
+               <a href="../scans/Alligator-Planes_Trains_Automobiles-11-25-1987.pdf">Click here to view the PDF</a>.
+            </p>
         </iframe>
         
         <!-- Home Button -->
         <div class="home-button">
-            <a href="../index.htm">HOME</a>
+            <a href="../index.htm">Home</a>
         </div>
         
-        <!-- Text Section -->
+        <!-- SEO Text Section -->
         <div class="text-section">
-            <h2>SEO TEXT: Article Content for Search</h2>
+            <h2>SEO TEXT: Article Content for Search Engines</h2>
             <div class="text-content">
                 <p>alligator. wednesday november 25. 1987. 7 * * Yz Plancs.&lt;/p&gt;&lt;p&gt; Trains and Automobile), PI,/:.I This is a new movie made rhe old-' fashioncd way: wirh sryle, wir, a warm lirtle " message and a big dollop of semim(:mak :' ity.&lt;/p&gt;&lt;p&gt; PI./l/e.r. 1',."il1.r '/l/d AII/{J"/fJ/;ile .r is a rale about Neal Page (Steve Marrin), a dapper, reserved businessman who wams norhing more rha n to fly home for Thanksgiving .&lt;/p&gt;&lt;p&gt; But his plane i~ delayed and rhen rerouted.&lt;/p&gt;&lt;p&gt; So he decides to take the train.&lt;/p&gt;&lt;p&gt; BUI it runs our of st&lt;:am.&lt;/p&gt;&lt;p&gt; So h&lt;:Tem~ a car.&lt;/p&gt;&lt;p&gt; But ir expl()des.&lt;/p&gt;&lt;p&gt; Yes, danger dogs .rh~ par!l ot Neal, but' none more frighten­ ing than blustery Del (;riffith &lt;.John Candy), .1 noisy sh()wer­ ring :;alesman who. manages ttl steer Neal wrong every st&lt;:p'(lf the woly.&lt;/p&gt;&lt;p&gt; If Del says, "C() right," you Gill be sure you'd be((~r ' glr left.&lt;/p&gt;&lt;p&gt; Bur Neal is an ~Imi;;ble fell()\\ and everything t)e1 sugg&lt;:st~ seems reasonable umil disaster strikes.&lt;/p&gt;&lt;p&gt; Perhaps the biggest di:-.· aster of all is Del hims&lt;:lf, ,\11 overbearingly fri&lt;:l1dly guy, rhl' type of fellow wh() ac('osts you on a plane and ne\'er lets up.&lt;/p&gt;&lt;p&gt; You'd like to tell him to bug oft but, well, he's nic&lt;: ;Ind you don'( wam to hurr his feelings.&lt;/p&gt;&lt;p&gt; Neither does Neal.&lt;/p&gt;&lt;p&gt; He remains unflappable umil an early scene in a hotel nfl n­ where Del's scratching, burp· • ing. throat-dearin .g and orlwr 'ratin' habits finallv ~ush him over the edge.&lt;/p&gt;&lt;p&gt; That's when Ne.iI cuts lo()sc. venting all his anger' mi. .. haples. anger who is so inno­ cently messing up his life. 80th actors are un the mark the entire movie, but this is where they sluo&lt;:.&lt;/p&gt;&lt;p&gt; Martin explodes with pent-up energy in ;1 hilarious tirade that voices everything wc've secretly thought about Del. ---+-"1 We Qln't heIp laughing, but we catch ourselves feeling guilty because the pain in Del's eyes is so apparent.&lt;/p&gt;&lt;p&gt; This is Candy's first real rule and he makes the most of it, playj.ga, with a sweet but honest intens- jey; he !mews Del can be anno in' bYlllc:._ ........ likes..mmGOfWay.&lt;/p&gt;&lt;p&gt; After Neal' Sputtersfo a finish, ~ deli'gen • e speech in which Dd defendS 1UmseIf quietly and with di 'n'.!J.i~·_~~ It',. a wondel'fuhce'ne. the type that lets you sit back lHId-chink. "Yes. this movie is going to be good:' But Writeri Din.'Ccur John Hu~ohes neverc.lpiralizes on it.&lt;/p&gt;&lt;p&gt; He lets the characters revert to their antagonistic relationship as they muddle their wa)' througQ one predictable transportation problem after ,mother.&lt;/p&gt;&lt;p&gt; There's another honest S&lt;.-ene near the end, but Hughes cile-.lts again on the climax.&lt;/p&gt;&lt;p&gt; There is a fe-.lrful reunion betw(.~n Page and_ his wife,.m incidental character who speaks all of 10 lines in the movie.&lt;/p&gt;&lt;p&gt; Like Del (iriffith. we c.m unly stand in the b-.lckgruund smiling distr.l(tedly. .&lt;/p&gt;&lt;p&gt; And like Del Griffith, P/,IIIt:J.&lt;/p&gt;&lt;p&gt; Tn/illJ ,lilt! A III 0 II/obi/"J has its prublems.&lt;/p&gt;&lt;p&gt; It has ~ playful score fraught with inappropriarcr: ·' -'" ruck music. a predict.tble story amI a sappy ending.&lt;/p&gt;&lt;p&gt; Bu] Mar~in and Gmdy are wonder ~'"i'&gt; &gt; lui. they man¢ 0 be funny most of tht: . time and its' heart is in the right pl.tcc and. . well, it's nice.&lt;/p&gt;&lt;p&gt; Amt I don't want to be the ont: to hurt its feelinJ.,'S. 1~1' Midl,wl GIll:</p>
             </div>
-        </div>
-        
-        <!-- Footer -->
-        <div class="footer">
-            <p>&copy; 2025 Michael Giltz. All rights reserved.</p>
-            <p>This article originally appeared in Alligator on 1987.</p>
         </div>
     </div>
 </body>

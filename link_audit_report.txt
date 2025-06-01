@@ -1,0 +1,59 @@
+Link Audit Report
+==================================================
+
+Parade:
+  PDFs: 69
+  Links: {'article_links': 135, 'pdf_links': 0, 'old_links': 0, 'total_content_links': 135}
+
+HuffPo/HuffingtonPost:
+  PDFs: 1019
+  Links: {'article_links': 2039, 'pdf_links': 0, 'old_links': 0, 'total_content_links': 2039}
+
+AMERICAblog:
+  PDFs: 809
+  Links: {'article_links': 1619, 'pdf_links': 0, 'old_links': 0, 'total_content_links': 1619}
+
+NYPost:
+  PDFs: 531
+  Links: {'article_links': 1063, 'pdf_links': 0, 'old_links': 0, 'total_content_links': 1063}
+
+Popsurfing:
+  PDFs: 490
+  Links: {'article_links': 981, 'pdf_links': 0, 'old_links': 0, 'total_content_links': 981}
+
+Advocate:
+  PDFs: 147
+  Links: {'article_links': 295, 'pdf_links': 0, 'old_links': 0, 'total_content_links': 295}
+
+BookFilter:
+  PDFs: 260
+  Links: {'article_links': 521, 'pdf_links': 0, 'old_links': 0, 'total_content_links': 521}
+
+Alligator:
+  PDFs: 221
+  Links: {'article_links': 443, 'pdf_links': 0, 'old_links': 0, 'total_content_links': 443}
+
+NYDailyNews:
+  PDFs: 184
+  Links: {'article_links': 183, 'pdf_links': 0, 'old_links': 0, 'total_content_links': 183}
+
+NewYork:
+  PDFs: 60
+  Links: {'article_links': 121, 'pdf_links': 0, 'old_links': 0, 'total_content_links': 121}
+
+LATimes:
+  PDFs: 9
+  Links: {'article_links': 19, 'pdf_links': 0, 'old_links': 0, 'total_content_links': 19}
+
+EntertainmentWeekly:
+  PDFs: 55
+  Links: {'article_links': 111, 'pdf_links': 0, 'old_links': 0, 'total_content_links': 111}
+
+Premiere:
+  PDFs: 19
+  Links: {'article_links': 39, 'pdf_links': 0, 'old_links': 0, 'total_content_links': 39}
+
+BroadwayDirect:
+  PDFs: 78
+  Links: {'article_links': 155, 'pdf_links': 0, 'old_links': 0, 'total_content_links': 155}
+

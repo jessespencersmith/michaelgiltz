@@ -3,135 +3,135 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Another Brooklyn By Jacqueline Woodson-8-9 by Michael Giltz - BookFilter">
-    <meta name="keywords" content="BookFilter, Another Brooklyn By Jacqueline Woodson-8-9, Michael Giltz, journalism, entertainment">
+    <meta name="description" content="Another Brooklyn by Jacqueline Woodson - BookFilter - Michael Giltz">
+    <meta name="keywords" content="Michael Giltz, BookFilter, journalism, article">
     <meta name="author" content="Michael Giltz">
-    <title>Another Brooklyn By Jacqueline Woodson-8-9 - BookFilter - Michael Giltz</title>
+    <title>Another Brooklyn by Jacqueline Woodson - Michael Giltz</title>
     <link href="../giltz.css" rel="stylesheet" type="text/css" />
     <style>
-        body { 
-            font-family: Arial, sans-serif;
+        body {
+            font-family: 'Times New Roman', Times, serif;
             margin: 0;
             padding: 0;
-            background: #f5f5f5;
+            background: #fff;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
         }
         .site-banner {
             text-align: center;
-            background: white;
-            padding: 10px 0;
+            padding: 20px 0;
+            background: #f9f9f9;
         }
         .site-banner img {
             max-width: 100%;
             height: auto;
         }
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            background: white;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        .header {
-            background: #333;
-            color: white;
-            padding: 20px;
+        .article-header {
             text-align: center;
+            padding: 30px 0 20px 0;
         }
-        .header h1 {
-            margin: 0;
-            font-size: 24px;
+        .article-title {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 28px;
+            font-weight: bold;
+            margin: 0 0 10px 0;
+            color: #333;
         }
-        .header p {
-            margin: 5px 0;
+        .article-meta {
             font-size: 14px;
+            color: #666;
+            margin: 0;
         }
         .pdf-viewer {
             width: 100%;
-            height: 600px;
-            border: none;
-            display: block;
+            height: 800px;
+            margin: 20px 0;
+            border: 1px solid #ddd;
         }
         .home-button {
             text-align: center;
-            padding: 20px;
-            background: #f0f0f0;
+            padding: 30px 0;
         }
         .home-button a {
             display: inline-block;
-            padding: 10px 30px;
+            padding: 12px 40px;
             background: #333;
             color: white;
             text-decoration: none;
             font-weight: bold;
+            font-size: 16px;
             border-radius: 5px;
+            text-transform: uppercase;
         }
         .home-button a:hover {
             background: #555;
         }
         .text-section {
-            padding: 20px;
+            padding: 40px 0;
+            border-top: 3px solid #333;
+            margin-top: 40px;
         }
         .text-section h2 {
+            font-size: 20px;
             color: #333;
-            border-bottom: 2px solid #333;
-            padding-bottom: 10px;
+            margin: 0 0 20px 0;
+            text-transform: uppercase;
         }
         .text-content {
             line-height: 1.8;
             color: #333;
+            font-size: 16px;
         }
         .text-content p {
             margin-bottom: 15px;
         }
-        .footer {
-            background: #f0f0f0;
-            padding: 20px;
-            text-align: center;
-            font-size: 12px;
-            color: #666;
-        }
         @media (max-width: 768px) {
             .pdf-viewer {
-                height: 400px;
+                height: 500px;
+            }
+            .article-title {
+                font-size: 22px;
             }
         }
     </style>
-    <link rel="icon" type="image/x-icon" href="../favicon.ico">
-    <link rel="icon" type="image/png" href="../favicon.png">
 </head>
 <body>
-    <!-- Site Banner -->
-    <div class="site-banner">
-        <a href="../index.htm"><img src="../giltz.jpg" width="800" height="146" alt="MichaelGiltz.com" /></a>
-    </div>
-    
     <div class="container">
-        <div class="header">
-            <h1>Another Brooklyn By Jacqueline Woodson-8-9</h1>
-            <p>Publication: BookFilter | Date: 2016 | by Michael Giltz</p>
+        <!-- Site Banner -->
+        <div class="site-banner">
+            <a href="../index.htm"><img src="../giltz.jpg" width="800" height="146" alt="MichaelGiltz.com" /></a>
         </div>
         
-        <!-- PDF Viewer -->
-        <iframe class="pdf-viewer" src="../scans/BookFilter-Another_Brooklyn_by_Jacqueline_Woodson-8-9-2016.pdf" title="PDF Article">
-            <p>Your browser does not support embedded PDFs. <a href="../scans/BookFilter-Another_Brooklyn_by_Jacqueline_Woodson-8-9-2016.pdf">Download the PDF</a> to view.</p>
+        <!-- Article Header -->
+        <div class="article-header">
+            <h1 class="article-title">Another Brooklyn by Jacqueline Woodson</h1>
+            <p class="article-meta">Publication: BookFilter &nbsp;&nbsp;|&nbsp;&nbsp; Date: August 9, 2016</p>
+        </div>
+        
+        <!-- PDF Viewer - Direct embed without buttons -->
+        <iframe class="pdf-viewer" 
+                src="../scans/BookFilter-Another_Brooklyn_by_Jacqueline_Woodson-8-9-2016.pdf#toolbar=0&navpanes=0" 
+                type="application/pdf"
+                frameborder="0">
+            <p>Your browser does not support PDFs. 
+               <a href="../scans/BookFilter-Another_Brooklyn_by_Jacqueline_Woodson-8-9-2016.pdf">Click here to view the PDF</a>.
+            </p>
         </iframe>
         
         <!-- Home Button -->
         <div class="home-button">
-            <a href="../index.htm">HOME</a>
+            <a href="../index.htm">Home</a>
         </div>
         
-        <!-- Text Section -->
+        <!-- SEO Text Section -->
         <div class="text-section">
-            <h2>SEO TEXT: Article Content for Search</h2>
+            <h2>SEO TEXT: Article Content for Search Engines</h2>
             <div class="text-content">
                 <p>Home |Register |Sign In Home Top Picks: All Books Another Brooklyn Another Brooklyn A Novel by Jacqueline Woodson Price: $22.99 (Hardcover) MorePublished: August 09, 2016 Rating: 0.0/ 5 (0 votes cast) From the Publisher: The acclaimed New York Times bestselling and National Book Award–winning author of Brown Girl Dreaming delivers her first adult novel in twenty years.&lt;/p&gt;&lt;p&gt; Running into a long-ago friend sets memory from the 1970s in motion for August, transporting her to a time and a place where friendship was everything—until it wasn’t.&lt;/p&gt;&lt;p&gt; For August and her girls, sharing confidences as they ambled through neighborhoodstreets, Brooklyn was a place where they believed that they werebeautiful, talented, brilliant—a part of a future that belonged to them.&lt;/p&gt;&lt;p&gt; But beneath the hopeful veneer, there was another Brooklyn, a dangerous place where grown men reached for innocent girls in dark hallways, whereghosts haunted the night, where mothers disappeared.&lt;/p&gt;&lt;p&gt; A world wheremadness was just a sunset away and fathers found hope in religion.&lt;/p&gt;&lt;p&gt; LikeLouise Meriwether’s Daddy Was… Rate This Book Add To Wishlist |Rate/Review Add To Bookshelf Get This Book Personalize / Add More ChoicesGo to your preferred retailer, click to choose a format and you' ll be taken directly to their site where you can get this book.&lt;/p&gt;&lt;p&gt; What We Say Anyone who has read the young adult or middle grade fiction of Jacqueline Woodson won't be surprised by the sophisticated intelligence at play in this novel about kids, which is more reverie than narrative.&lt;/p&gt;&lt;p&gt; Anyone who has read the fiction foradults by Woodson won't be surprised by the vivid immediacy of her prose or how marvelously she captures the quicksilver emotions of a girl becoming a young woman.&lt;/p&gt;&lt;p&gt; How fresh and vivid it feels to be alive when the entire world can be encompassed on a single block in New York City.&lt;/p&gt;&lt;p&gt; And how sadly inevitable when that block cannot keep out the realities oflife.&lt;/p&gt;&lt;p&gt; Woodson's newest work is brief but overbrimming with the sights and sounds, the taste and feel of childhood --Share This Book About The Author Jacqueline Woodson MoreJacqueline Woodson is the bestselling author of more than two dozen award-winning books for young adults, middle graders, and children, including the New York Times bestselling memoir Brown Girl Dreaming , which won the 2014 National Book Award, the Coretta Scott King Award, a Newbery … Release Info List Price: $22.99 (Hardcover) Published: August 09, 2016 Publisher: Amistad Pages: 192 ISBN 10: 0062359983 ISBN 13: 9780062359988specifically the childhood of a young girl of color coming of age in Brooklyn in the 1970s.&lt;/p&gt;&lt;p&gt; Her name is August and she watches over her little brother while their dad toils away at an unforgiving job.&lt;/p&gt;&lt;p&gt; Nothing and everything happens, with Woodson moving the story forward in an imagistic rush drunk on the world August soaks up with the eagerness of a future artist.&lt;/p&gt;&lt;p&gt; Her little brother stares out of the window at the block they are forbidden to walk on until it finally shatters intopieces; their dad gives in to the inevitable and sets them free.&lt;/p&gt;&lt;p&gt; August stares in wonder at a trio of confident beautiful girlsnamed Sylvia, Gigi and Angela -- and then becomes one of them, linking arms and defiantly laughing as they stare down themen and boys who admire and taunt and prey (and pray) upon them.&lt;/p&gt;&lt;p&gt; So much happens and Woodson delivers it all with poetic ease, from her father's conversion to Islam to white flight to the dreams of August and her friends.&lt;/p&gt;&lt;p&gt; They dare dreams and dangers, ranging from a cobbler who offers a quarter just to see their panties to the boys who love them andoffer the physical pleasure of romance but want more and more and then just a little bit more.&lt;/p&gt;&lt;p&gt; It's a bold, beautiful,bewitching work, both heartbreaking and strong because Woodson remembers it all. -- Michael Giltz What Others Say “An engrossing novel about friendship, race, the magic of place and the relentlessness of change.” - People Magazine “In Jacqueline Woodson’s soaring choral poem of a novel…four young friends…navigate the perils of adolescence, mean streets, and haunted memory in 1970s Brooklyn, all while dreaming of escape.” - Vanity Fair “With Another Brooklyn, Jacqueline Woodson has delivered a love letter to loss, girlhood, and home.&lt;/p&gt;&lt;p&gt; It is a lyrical, haunting exploration of family, memory, and other ties that bind us to one another and the world.” - Boston Globe “Gorgeously written and moving, Another Brooklyn is an examination of the complexities of youth and adolescence, loss, friendship, family, race, and religion.” - Jarry Lee, Buzzfeed “[E]ntwined coming-of-age narratives-lost mothers, wounded war vets, nodding junkies, menacing streetscapes-are starkly realistic, yet brim with moments of pure poetry.” - Elle “There are nothrowaway sentences in Another Brooklyn — each short, poetic line feels carefully loved and polished.&lt;/p&gt;&lt;p&gt; The first half of this novel asks urgent questions; the second… More What You Say Filter by No Reviews Found ..... about us |faq|advertise |privacy policy |newsletter |contact us ©2018, BookBuddha LLc.&lt;/p&gt;&lt;p&gt; All Rights Reserved.</p>
             </div>
-        </div>
-        
-        <!-- Footer -->
-        <div class="footer">
-            <p>&copy; 2025 Michael Giltz. All rights reserved.</p>
-            <p>This article originally appeared in BookFilter on 2016.</p>
         </div>
     </div>
 </body>

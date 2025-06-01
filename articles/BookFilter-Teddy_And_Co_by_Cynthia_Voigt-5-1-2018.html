@@ -3,135 +3,135 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Teddy And Co By Cynthia Voigt-5-1 by Michael Giltz - BookFilter">
-    <meta name="keywords" content="BookFilter, Teddy And Co By Cynthia Voigt-5-1, Michael Giltz, journalism, entertainment">
+    <meta name="description" content="Teddy And Co by Cynthia Voigt - BookFilter - Michael Giltz">
+    <meta name="keywords" content="Michael Giltz, BookFilter, journalism, article">
     <meta name="author" content="Michael Giltz">
-    <title>Teddy And Co By Cynthia Voigt-5-1 - BookFilter - Michael Giltz</title>
+    <title>Teddy And Co by Cynthia Voigt - Michael Giltz</title>
     <link href="../giltz.css" rel="stylesheet" type="text/css" />
     <style>
-        body { 
-            font-family: Arial, sans-serif;
+        body {
+            font-family: 'Times New Roman', Times, serif;
             margin: 0;
             padding: 0;
-            background: #f5f5f5;
+            background: #fff;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
         }
         .site-banner {
             text-align: center;
-            background: white;
-            padding: 10px 0;
+            padding: 20px 0;
+            background: #f9f9f9;
         }
         .site-banner img {
             max-width: 100%;
             height: auto;
         }
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            background: white;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        .header {
-            background: #333;
-            color: white;
-            padding: 20px;
+        .article-header {
             text-align: center;
+            padding: 30px 0 20px 0;
         }
-        .header h1 {
-            margin: 0;
-            font-size: 24px;
+        .article-title {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 28px;
+            font-weight: bold;
+            margin: 0 0 10px 0;
+            color: #333;
         }
-        .header p {
-            margin: 5px 0;
+        .article-meta {
             font-size: 14px;
+            color: #666;
+            margin: 0;
         }
         .pdf-viewer {
             width: 100%;
-            height: 600px;
-            border: none;
-            display: block;
+            height: 800px;
+            margin: 20px 0;
+            border: 1px solid #ddd;
         }
         .home-button {
             text-align: center;
-            padding: 20px;
-            background: #f0f0f0;
+            padding: 30px 0;
         }
         .home-button a {
             display: inline-block;
-            padding: 10px 30px;
+            padding: 12px 40px;
             background: #333;
             color: white;
             text-decoration: none;
             font-weight: bold;
+            font-size: 16px;
             border-radius: 5px;
+            text-transform: uppercase;
         }
         .home-button a:hover {
             background: #555;
         }
         .text-section {
-            padding: 20px;
+            padding: 40px 0;
+            border-top: 3px solid #333;
+            margin-top: 40px;
         }
         .text-section h2 {
+            font-size: 20px;
             color: #333;
-            border-bottom: 2px solid #333;
-            padding-bottom: 10px;
+            margin: 0 0 20px 0;
+            text-transform: uppercase;
         }
         .text-content {
             line-height: 1.8;
             color: #333;
+            font-size: 16px;
         }
         .text-content p {
             margin-bottom: 15px;
         }
-        .footer {
-            background: #f0f0f0;
-            padding: 20px;
-            text-align: center;
-            font-size: 12px;
-            color: #666;
-        }
         @media (max-width: 768px) {
             .pdf-viewer {
-                height: 400px;
+                height: 500px;
+            }
+            .article-title {
+                font-size: 22px;
             }
         }
     </style>
-    <link rel="icon" type="image/x-icon" href="../favicon.ico">
-    <link rel="icon" type="image/png" href="../favicon.png">
 </head>
 <body>
-    <!-- Site Banner -->
-    <div class="site-banner">
-        <a href="../index.htm"><img src="../giltz.jpg" width="800" height="146" alt="MichaelGiltz.com" /></a>
-    </div>
-    
     <div class="container">
-        <div class="header">
-            <h1>Teddy And Co By Cynthia Voigt-5-1</h1>
-            <p>Publication: BookFilter | Date: 2018 | by Michael Giltz</p>
+        <!-- Site Banner -->
+        <div class="site-banner">
+            <a href="../index.htm"><img src="../giltz.jpg" width="800" height="146" alt="MichaelGiltz.com" /></a>
         </div>
         
-        <!-- PDF Viewer -->
-        <iframe class="pdf-viewer" src="../scans/BookFilter-Teddy_And_Co_by_Cynthia_Voigt-5-1-2018.pdf" title="PDF Article">
-            <p>Your browser does not support embedded PDFs. <a href="../scans/BookFilter-Teddy_And_Co_by_Cynthia_Voigt-5-1-2018.pdf">Download the PDF</a> to view.</p>
+        <!-- Article Header -->
+        <div class="article-header">
+            <h1 class="article-title">Teddy And Co by Cynthia Voigt</h1>
+            <p class="article-meta">Publication: BookFilter &nbsp;&nbsp;|&nbsp;&nbsp; Date: May 1, 2018</p>
+        </div>
+        
+        <!-- PDF Viewer - Direct embed without buttons -->
+        <iframe class="pdf-viewer" 
+                src="../scans/BookFilter-Teddy_And_Co_by_Cynthia_Voigt-5-1-2018.pdf#toolbar=0&navpanes=0" 
+                type="application/pdf"
+                frameborder="0">
+            <p>Your browser does not support PDFs. 
+               <a href="../scans/BookFilter-Teddy_And_Co_by_Cynthia_Voigt-5-1-2018.pdf">Click here to view the PDF</a>.
+            </p>
         </iframe>
         
         <!-- Home Button -->
         <div class="home-button">
-            <a href="../index.htm">HOME</a>
+            <a href="../index.htm">Home</a>
         </div>
         
-        <!-- Text Section -->
+        <!-- SEO Text Section -->
         <div class="text-section">
-            <h2>SEO TEXT: Article Content for Search</h2>
+            <h2>SEO TEXT: Article Content for Search Engines</h2>
             <div class="text-content">
                 <p>Home |Register |Sign In Home Top Picks: All Books Teddy &amp; Co.&lt;/p&gt;&lt;p&gt; Teddy &amp; Co. by Cynthia Voigt, Paola Zakimi Price: $6.99 (Paperback) MorePublished: May 01, 2018 Rating: 0.0/ 5 (0 votes cast) From the Publisher: Fans of classic toy stories like Winnie-the-Pooh by A.&lt;/p&gt;&lt;p&gt; A.&lt;/p&gt;&lt;p&gt; Milne, The Miraculous Journey of Edward Tulane by Kate DiCamillo, and Toys Go Out by Emily Jenkins will love this illustrated novel by Newbery Medalist Cynthia Voigt.&lt;/p&gt;&lt;p&gt; Winner of a Parents Choice Silver Honor Award Teddy is a thinking kind of bear.&lt;/p&gt;&lt;p&gt; Of all his friends, he does the most wondering.&lt;/p&gt;&lt;p&gt; He lives with a ragtag group of lost toys—a very hungry snake,an elephant who likes to bake, two charmingly silly pigs, and a reclusivepenguin—and they all bump along happily together.&lt;/p&gt;&lt;p&gt; But their peaceful world gets shaken up when new toys arrive—first a rabbit, who is not as soft and floppy as he looks, and then a beautiful doll with royal ambitions.&lt;/p&gt;&lt;p&gt; Will the newcomers learn to fit into the community? Or will thecommunity be forever changed by them?… Rate This Book Add To Wishlist |Rate/Review Add To Bookshelf Get This Book Personalize / Add More ChoicesGo to your preferred retailer, click to choose a format and you' ll be taken directly to their site where you can get this book.&lt;/p&gt;&lt;p&gt; What We Say Cynthia Voigt's latest book is a gentle bit of whimsy.&lt;/p&gt;&lt;p&gt; On a small island, a group of disparate toys live together in familial harmony -- which is to say they bicker and fight but everyone pretty much gets along.&lt;/p&gt;&lt;p&gt; Teddy is a legless teddy bear hauledaround on a red wagon by his roomie Umpah, an elephant.&lt;/p&gt;&lt;p&gt; Pia and Prinny are pigs, with Pia always clutching an ice cream cone and Prinny rather adorably little kid-ish, always bursting out with questions and exclamations like when she learns to swim. ("I'm swimming! Am I swimming?") Peng the penguin lives grumpily alone while Sid the snake is always hungry.&lt;/p&gt;&lt;p&gt; Luckilyfor him, Umpah is an excellent baker and always has a tray of muffins in the oven.&lt;/p&gt;&lt;p&gt; Their lives are interrupted byShare This Book About The Author Cynthia Voigt, Paola Zakimi MoreCynthia Voigt is the acclaimed author of many books, including Dicey’s Song, winner of the Newbery Medal; A Solitary Blue,winner of a Newbery Honor; andHomecoming , a National Book Award finalist .&lt;/p&gt;&lt;p&gt; For the body of her work, Cynthia Voigt was honored with the Margaret A.&lt;/p&gt;&lt;p&gt; Edwards … Release Info List Price: $6.99 (Paperback) Published: May 01, 2018 Publisher: Yearling Pages: 192 ISBN 10: 0553511637 ISBN 13: 9780553511635newcomers and rain and the like and it's all quietly entertaining.&lt;/p&gt;&lt;p&gt; This isn't quite the instant classic lovers of "Winnie The Pooh" might hope for, given Voigt's track record.&lt;/p&gt;&lt;p&gt; But it's disarming on its own terms and a pleasant addition to the author's shelf. -- Michael Giltz What Others Say PRAISE FOR Teddy &amp; Co. : "Voigt's writing remains masterful, and her attention continues to be on what makes a family, how we can live together in harmony, and how individuals overcome their difficulties." -- Kirkus Reviews "An affirming celebration of friendship, kindness, and embracing new experiences and relationships." - -Publishers Weekly "This work has a classic sensibility, reminiscent of Winnie-the-Pooh.&lt;/p&gt;&lt;p&gt; A great option for one-on-one bedtime read-alouds." -- School Library Journal "Voigt, who has won many fans with the Tillerman Cycle and the Mister Max series, shows that she can write for a younger audience with simplicity, clarity, and subtlety." --Booklist “I love finding new early chapter books that treat young readers with respect.&lt;/p&gt;&lt;p&gt; I can picture Teddy &amp; Co. being read aloud by a family together or stealthily under the covers by one kid with a flashlight.&lt;/p&gt;&lt;p&gt; Each lightly illustrated chapter functions well as its own short story and as a piece of the narrative whole.&lt;/p&gt;&lt;p&gt; These are lovable and unique characters that will charm parents and children alike.”… More What You Say Filter by No Reviews Found ..... about us |faq|advertise |privacy policy |newsletter |contact us ©2018, BookBuddha LLc.&lt;/p&gt;&lt;p&gt; All Rights Reserved.</p>
             </div>
-        </div>
-        
-        <!-- Footer -->
-        <div class="footer">
-            <p>&copy; 2025 Michael Giltz. All rights reserved.</p>
-            <p>This article originally appeared in BookFilter on 2018.</p>
         </div>
     </div>
 </body>

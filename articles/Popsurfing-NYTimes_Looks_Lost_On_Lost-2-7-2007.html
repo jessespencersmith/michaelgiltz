@@ -3,135 +3,135 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Nytimes Looks Lost On Lost-2-7 by Michael Giltz - Popsurfing">
-    <meta name="keywords" content="Popsurfing, Nytimes Looks Lost On Lost-2-7, Michael Giltz, journalism, entertainment">
+    <meta name="description" content="NYTimes Looks Lost On Lost - Popsurfing - Michael Giltz">
+    <meta name="keywords" content="Michael Giltz, Popsurfing, journalism, article">
     <meta name="author" content="Michael Giltz">
-    <title>Nytimes Looks Lost On Lost-2-7 - Popsurfing - Michael Giltz</title>
+    <title>NYTimes Looks Lost On Lost - Michael Giltz</title>
     <link href="../giltz.css" rel="stylesheet" type="text/css" />
     <style>
-        body { 
-            font-family: Arial, sans-serif;
+        body {
+            font-family: 'Times New Roman', Times, serif;
             margin: 0;
             padding: 0;
-            background: #f5f5f5;
+            background: #fff;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
         }
         .site-banner {
             text-align: center;
-            background: white;
-            padding: 10px 0;
+            padding: 20px 0;
+            background: #f9f9f9;
         }
         .site-banner img {
             max-width: 100%;
             height: auto;
         }
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            background: white;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        .header {
-            background: #333;
-            color: white;
-            padding: 20px;
+        .article-header {
             text-align: center;
+            padding: 30px 0 20px 0;
         }
-        .header h1 {
-            margin: 0;
-            font-size: 24px;
+        .article-title {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 28px;
+            font-weight: bold;
+            margin: 0 0 10px 0;
+            color: #333;
         }
-        .header p {
-            margin: 5px 0;
+        .article-meta {
             font-size: 14px;
+            color: #666;
+            margin: 0;
         }
         .pdf-viewer {
             width: 100%;
-            height: 600px;
-            border: none;
-            display: block;
+            height: 800px;
+            margin: 20px 0;
+            border: 1px solid #ddd;
         }
         .home-button {
             text-align: center;
-            padding: 20px;
-            background: #f0f0f0;
+            padding: 30px 0;
         }
         .home-button a {
             display: inline-block;
-            padding: 10px 30px;
+            padding: 12px 40px;
             background: #333;
             color: white;
             text-decoration: none;
             font-weight: bold;
+            font-size: 16px;
             border-radius: 5px;
+            text-transform: uppercase;
         }
         .home-button a:hover {
             background: #555;
         }
         .text-section {
-            padding: 20px;
+            padding: 40px 0;
+            border-top: 3px solid #333;
+            margin-top: 40px;
         }
         .text-section h2 {
+            font-size: 20px;
             color: #333;
-            border-bottom: 2px solid #333;
-            padding-bottom: 10px;
+            margin: 0 0 20px 0;
+            text-transform: uppercase;
         }
         .text-content {
             line-height: 1.8;
             color: #333;
+            font-size: 16px;
         }
         .text-content p {
             margin-bottom: 15px;
         }
-        .footer {
-            background: #f0f0f0;
-            padding: 20px;
-            text-align: center;
-            font-size: 12px;
-            color: #666;
-        }
         @media (max-width: 768px) {
             .pdf-viewer {
-                height: 400px;
+                height: 500px;
+            }
+            .article-title {
+                font-size: 22px;
             }
         }
     </style>
-    <link rel="icon" type="image/x-icon" href="../favicon.ico">
-    <link rel="icon" type="image/png" href="../favicon.png">
 </head>
 <body>
-    <!-- Site Banner -->
-    <div class="site-banner">
-        <a href="../index.htm"><img src="../giltz.jpg" width="800" height="146" alt="MichaelGiltz.com" /></a>
-    </div>
-    
     <div class="container">
-        <div class="header">
-            <h1>Nytimes Looks Lost On Lost-2-7</h1>
-            <p>Publication: Popsurfing | Date: 2007 | by Michael Giltz</p>
+        <!-- Site Banner -->
+        <div class="site-banner">
+            <a href="../index.htm"><img src="../giltz.jpg" width="800" height="146" alt="MichaelGiltz.com" /></a>
         </div>
         
-        <!-- PDF Viewer -->
-        <iframe class="pdf-viewer" src="../scans/Popsurfing-NYTimes_Looks_Lost_On_Lost-2-7-2007.pdf" title="PDF Article">
-            <p>Your browser does not support embedded PDFs. <a href="../scans/Popsurfing-NYTimes_Looks_Lost_On_Lost-2-7-2007.pdf">Download the PDF</a> to view.</p>
+        <!-- Article Header -->
+        <div class="article-header">
+            <h1 class="article-title">NYTimes Looks Lost On Lost</h1>
+            <p class="article-meta">Publication: Popsurfing &nbsp;&nbsp;|&nbsp;&nbsp; Date: February 7, 2007</p>
+        </div>
+        
+        <!-- PDF Viewer - Direct embed without buttons -->
+        <iframe class="pdf-viewer" 
+                src="../scans/Popsurfing-NYTimes_Looks_Lost_On_Lost-2-7-2007.pdf#toolbar=0&navpanes=0" 
+                type="application/pdf"
+                frameborder="0">
+            <p>Your browser does not support PDFs. 
+               <a href="../scans/Popsurfing-NYTimes_Looks_Lost_On_Lost-2-7-2007.pdf">Click here to view the PDF</a>.
+            </p>
         </iframe>
         
         <!-- Home Button -->
         <div class="home-button">
-            <a href="../index.htm">HOME</a>
+            <a href="../index.htm">Home</a>
         </div>
         
-        <!-- Text Section -->
+        <!-- SEO Text Section -->
         <div class="text-section">
-            <h2>SEO TEXT: Article Content for Search</h2>
+            <h2>SEO TEXT: Article Content for Search Engines</h2>
             <div class="text-content">
                 <p>W E D N E S D AY, F E B R U A RY 0 7 , 2 0 0 7The NYTimes Looks Lost On "Lost"I'm probably just jealous, but the NYTimes coverage of TV is justdownright odd.&lt;/p&gt;&lt;p&gt; They can't really take TV seriously because it's beneaththem.&lt;/p&gt;&lt;p&gt; But so many of the reviews and articles they write treat TV withabsurdly high-falutin' analysis.&lt;/p&gt;&lt;p&gt; Recently, they decided reality showslike "American Idol" were an example of generational warfare. (Thetruth is that "Idol" is wildly popular in part because it is one of the fewshows entire extended families from grandparents to grandchildrencan watch and enjoy together.) Now they're dissecting "Lost" and theNYTimes seems as lost as ever.“Lost” is at heart a science-fiction thriller, while “Heroes” ismore of a comic book, but both genres have a similar appeal:they provide an alternative society for those who don’t fitcomfortably into their own. (That is to say, smart, sociallyawkward adults and all 12-year-old boys.)No matter how far-fetched and complicated that imaginaryworld may be, it is bound by its own intricate set of rules andcustoms, be it Quidditch regulations at Hogwarts; etiquette onSuperman’s native planet, Krypton; or military rank in“Battlestar Galactica.”"Lost" and "Heroes" appeal to smart, socially awkward adults?Meaning socially well-adjusted adults can't be bothered with them? Ithink they're confusing the feelings of some of the characters with theaudience.&lt;/p&gt;&lt;p&gt; Surely, "Heroes" appeals to anyone who enjoys fun,well-written TV shows.&lt;/p&gt;&lt;p&gt; Does "24" appeal only to hawkish people with ataste for torture?And whatever could they mean by the intricate set of rules and customswhen they refer to the etiquette on Superman's native planet, Krypton?I haven't devoured ALL of Superman's many forms, but I've seen manyof the movies and TV shows and read years of the strip and haven't aclue as to what she might be talking about.&lt;/p&gt;&lt;p&gt; And the military protocol on"Battlestar Galactica" is so loose an entire storyline was built aroundtheir shock when they came into contact with another ship that WASrun by the rules.&lt;/p&gt;&lt;p&gt; Some more strange comments:The fans of these kinds of serialized thrillers are unusuallypassionate and devoted, carrying a clout not unlike that ofanti-abortion activists — their intensity is in some ways moreNext Blog»sal1mineo@hotmail.comSEARCH BLOG FLAG BLOGFOLLOW BLOGP O P S U R F I N G .&lt;/p&gt;&lt;p&gt; C O MS U R F I N G T H E WAV E S O F P O P U L A R C U LT U R EB Y M I C H A E L G I LT Z &amp; F R I E N D SPOPSURFING.COM: The NYTimes Looks Lost On "Lost"http://popsurﬁng.blogspot.com/2007/02/nytimes-looks-lost-on-lo... 1 of 37/27/09 10:59 PMFAV O R I T E L I N K SAmericablogFive O'Clock Lightning baseball blogDeep Pop -- Lori Lakin's BlogThe Back Page -- Jason Page on ESPNRadioCine-Blog -- George Robinson's BlogDocuments On Art &amp; Cinema - DarylChin's BlogBrucie G's Wondrous Blog OfAdventure and Mystery -- BruceGreenspan's BlogB L O G A R C H I V E▼ 2009 (17)▼ July (3)1939 -- The Greatest Year ForMoviesSwimming Bans Those Hi-TechSuits!Best Movies Of The Year -- TheMaster List► June (3)► May (1)► March (2)► February (1)► January (7)► 2008 (86)► 2007 (781)► 2006 (2412)► 2005 (5)C O N T R I B U TO R SMichael in New YorkBiboyAaron POPSURFING.COM: The NYTimes Looks Lost On "Lost"http://popsurﬁng.blogspot.com/2007/02/nytimes-looks-lost-on-lo... 2 of 37/27/09 10:59 PMPOPSURFING.COM: The NYTimes Looks Lost On "Lost"http://popsurﬁng.blogspot.com/2007/02/nytimes-looks-lost-on-lo... 3 of 37/27/09 10:59 PM</p>
             </div>
-        </div>
-        
-        <!-- Footer -->
-        <div class="footer">
-            <p>&copy; 2025 Michael Giltz. All rights reserved.</p>
-            <p>This article originally appeared in Popsurfing on 2007.</p>
         </div>
     </div>
 </body>

@@ -3,135 +3,135 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Razzle Dazzle By Michael Riedel-10-6 by Michael Giltz - BookFilter">
-    <meta name="keywords" content="BookFilter, Razzle Dazzle By Michael Riedel-10-6, Michael Giltz, journalism, entertainment">
+    <meta name="description" content="Razzle Dazzle by Michael Riedel - BookFilter - Michael Giltz">
+    <meta name="keywords" content="Michael Giltz, BookFilter, journalism, article">
     <meta name="author" content="Michael Giltz">
-    <title>Razzle Dazzle By Michael Riedel-10-6 - BookFilter - Michael Giltz</title>
+    <title>Razzle Dazzle by Michael Riedel - Michael Giltz</title>
     <link href="../giltz.css" rel="stylesheet" type="text/css" />
     <style>
-        body { 
-            font-family: Arial, sans-serif;
+        body {
+            font-family: 'Times New Roman', Times, serif;
             margin: 0;
             padding: 0;
-            background: #f5f5f5;
+            background: #fff;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
         }
         .site-banner {
             text-align: center;
-            background: white;
-            padding: 10px 0;
+            padding: 20px 0;
+            background: #f9f9f9;
         }
         .site-banner img {
             max-width: 100%;
             height: auto;
         }
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            background: white;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        .header {
-            background: #333;
-            color: white;
-            padding: 20px;
+        .article-header {
             text-align: center;
+            padding: 30px 0 20px 0;
         }
-        .header h1 {
-            margin: 0;
-            font-size: 24px;
+        .article-title {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 28px;
+            font-weight: bold;
+            margin: 0 0 10px 0;
+            color: #333;
         }
-        .header p {
-            margin: 5px 0;
+        .article-meta {
             font-size: 14px;
+            color: #666;
+            margin: 0;
         }
         .pdf-viewer {
             width: 100%;
-            height: 600px;
-            border: none;
-            display: block;
+            height: 800px;
+            margin: 20px 0;
+            border: 1px solid #ddd;
         }
         .home-button {
             text-align: center;
-            padding: 20px;
-            background: #f0f0f0;
+            padding: 30px 0;
         }
         .home-button a {
             display: inline-block;
-            padding: 10px 30px;
+            padding: 12px 40px;
             background: #333;
             color: white;
             text-decoration: none;
             font-weight: bold;
+            font-size: 16px;
             border-radius: 5px;
+            text-transform: uppercase;
         }
         .home-button a:hover {
             background: #555;
         }
         .text-section {
-            padding: 20px;
+            padding: 40px 0;
+            border-top: 3px solid #333;
+            margin-top: 40px;
         }
         .text-section h2 {
+            font-size: 20px;
             color: #333;
-            border-bottom: 2px solid #333;
-            padding-bottom: 10px;
+            margin: 0 0 20px 0;
+            text-transform: uppercase;
         }
         .text-content {
             line-height: 1.8;
             color: #333;
+            font-size: 16px;
         }
         .text-content p {
             margin-bottom: 15px;
         }
-        .footer {
-            background: #f0f0f0;
-            padding: 20px;
-            text-align: center;
-            font-size: 12px;
-            color: #666;
-        }
         @media (max-width: 768px) {
             .pdf-viewer {
-                height: 400px;
+                height: 500px;
+            }
+            .article-title {
+                font-size: 22px;
             }
         }
     </style>
-    <link rel="icon" type="image/x-icon" href="../favicon.ico">
-    <link rel="icon" type="image/png" href="../favicon.png">
 </head>
 <body>
-    <!-- Site Banner -->
-    <div class="site-banner">
-        <a href="../index.htm"><img src="../giltz.jpg" width="800" height="146" alt="MichaelGiltz.com" /></a>
-    </div>
-    
     <div class="container">
-        <div class="header">
-            <h1>Razzle Dazzle By Michael Riedel-10-6</h1>
-            <p>Publication: BookFilter | Date: 2015 | by Michael Giltz</p>
+        <!-- Site Banner -->
+        <div class="site-banner">
+            <a href="../index.htm"><img src="../giltz.jpg" width="800" height="146" alt="MichaelGiltz.com" /></a>
         </div>
         
-        <!-- PDF Viewer -->
-        <iframe class="pdf-viewer" src="../scans/BookFilter-Razzle_Dazzle_by_Michael_Riedel-10-6-2015.pdf" title="PDF Article">
-            <p>Your browser does not support embedded PDFs. <a href="../scans/BookFilter-Razzle_Dazzle_by_Michael_Riedel-10-6-2015.pdf">Download the PDF</a> to view.</p>
+        <!-- Article Header -->
+        <div class="article-header">
+            <h1 class="article-title">Razzle Dazzle by Michael Riedel</h1>
+            <p class="article-meta">Publication: BookFilter &nbsp;&nbsp;|&nbsp;&nbsp; Date: October 6, 2015</p>
+        </div>
+        
+        <!-- PDF Viewer - Direct embed without buttons -->
+        <iframe class="pdf-viewer" 
+                src="../scans/BookFilter-Razzle_Dazzle_by_Michael_Riedel-10-6-2015.pdf#toolbar=0&navpanes=0" 
+                type="application/pdf"
+                frameborder="0">
+            <p>Your browser does not support PDFs. 
+               <a href="../scans/BookFilter-Razzle_Dazzle_by_Michael_Riedel-10-6-2015.pdf">Click here to view the PDF</a>.
+            </p>
         </iframe>
         
         <!-- Home Button -->
         <div class="home-button">
-            <a href="../index.htm">HOME</a>
+            <a href="../index.htm">Home</a>
         </div>
         
-        <!-- Text Section -->
+        <!-- SEO Text Section -->
         <div class="text-section">
-            <h2>SEO TEXT: Article Content for Search</h2>
+            <h2>SEO TEXT: Article Content for Search Engines</h2>
             <div class="text-content">
                 <p>12/1/2015BookFilter | Evernote Web https://www.evernote.com/Home.action#n=3af2b652-4cb9-4958-b9e7-b5921e71d5ec&amp;ses=4&amp;sh=2&amp;sds=5&amp;1/4HomeTop Picks: All BooksRazzle Dazzle The Battle for Broadway MoreRazzle Dazzleby Michael RiedelPrice: $27.00(Hardcover)Published: October 06, 2015Rating: 0.0/5 (0 votes cast)From the Publisher: Broadway’s most respected (and feared)commentator pulls back the curtain on its stars, its producers, andits mega-hits to reveal all the shocking drama, intrigue, and powerplays that happened off stage.Razzle Dazzle is a provocative, no-holds-barred narrative accountof the people and the money and the power that re-invented aniconic quarter of New York City, turning its gritty back alleys andsex-shops into the glitzy, dazzling Great White Way—and bringinga crippled New York from the brink of bankruptcy to its glitteringglory.In the mid-1970s Times Square was the seedy symbol of NewYork’s economic decline.&lt;/p&gt;&lt;p&gt; Its once shining star, the renownedShubert Organization, was losing theaters to make way for parkinglots.&lt;/p&gt;&lt;p&gt; Bernard Jacobs and Jerry Schoenfeld, two ambitious boardmembers, saw the crumbling company was ripe for takeover andstaged…Rate This Book|Rate/ReviewAdd To BookshelfGet This BookGo to your preferred retailer, click to choose a format and you' ll be taken directly to their site whereyou can get this book.BookFilter12/1/2015BookFilter | Evernote Web https://www.evernote.com/Home.action#n=3af2b652-4cb9-4958-b9e7-b5921e71d5ec&amp;ses=4&amp;sh=2&amp;sds=5&amp;2/4 Personalize / Add More ChoicesWhat We SayNew York Post journalist Michael Riedel may have delicious fun stirring up trouble, pointing out the obvious (likefalling box office) and otherwise playing devil's advocate in the vicious but nominally one-big-family world ofBroadway.&lt;/p&gt;&lt;p&gt; But his first book reveals how seriously Riedel takes theater: seriously enough to do the work and deliveran ambitious profile of the Schuberts and thus the history of Broadway itself.&lt;/p&gt;&lt;p&gt; It begins with a bang as corruptionscandals (the "ice" that plagued/plagues theater box office) threaten to tear the community apart.&lt;/p&gt;&lt;p&gt; Then he jumpsback to the early days and how theater survived the Great Depression.&lt;/p&gt;&lt;p&gt; Then it's on to the heart of his novel: the darkdays of the 1970s when Times Square was a dangerous, dirty place and the parade of golden hits had dried up.Riedel's strength here is focused portraits of major figures like the Schuberts, their rivals the Nederlanders (givenshort shrift here), and talent like Michael Bennett, along with the making of shows like "A Chorus Line." It's aboutbackroom dealings as much as artistry because both are essential for Broadway.&lt;/p&gt;&lt;p&gt; A lot of it is fun, like the Tonyshowdown between "Dreamgirls" and "Nine." Keeping it from greatness is a confused, sprawling nature: the jumpingback and forth gets confusing at a few points, certain chapters start to feel like random features plopped in out ofnowhere and a rush to cover literally everything results in a flat-footed rush through some material.&lt;/p&gt;&lt;p&gt; It's vivid andserious and good enough to make you wish it was great.&lt;/p&gt;&lt;p&gt; Nonetheless, it's substantial and sure to be entertaining andinformative for all but the most ardent theater buffs.&lt;/p&gt;&lt;p&gt; Let's hope Riedel's next book gets either a tighter focus or takesits time and really sprawls out.&lt;/p&gt;&lt;p&gt; If this were an out of town tryout, the critics would say it could become a winner.Opening cold on Broadway, it's one the cognoscenti will enjoy but may not play to tourists.&lt;/p&gt;&lt;p&gt; Whatever it's commercialfate, Riedel is sure to be back. -- Michael GiltzLessWhat Others Say“This book is a love letter to Broadway, both a splendid history of this American institution and a wonderful account ofhow art gets made.&lt;/p&gt;&lt;p&gt; It made me fall for Broadway’s magic all over again: its history and its myths, its heroes and itsvillains, its up and its downs, its dirt and its dish, its failure and its glory.” - Hugh Jackman“There have only been a handful of books in history that have come close to accurately depicting the energy anddrive that run the business of Broadway.&lt;/p&gt;&lt;p&gt; Michael Riedel’s Razzle Dazzle joins that very short list that includesWilliam Goldman’s legendary The Season and Richard Maney’s classic Fanfare—and is every bit the equal of thosebooks that those of us who love Broadway can recite by heart.” - Scott Rudin“Razzle Dazzle is a fantastically fun book, full of high energy, anecdotes, and wit.&lt;/p&gt;&lt;p&gt; Michael Riedel lays bare the secrethistory of Broadway in all its grease paint, shady dealings, and shining moments.&lt;/p&gt;&lt;p&gt; Written with love but also a piercingeye, this is one show no one should miss.”- Amanda Foreman“If you've ever wondered how Times Square got its…</p>
             </div>
-        </div>
-        
-        <!-- Footer -->
-        <div class="footer">
-            <p>&copy; 2025 Michael Giltz. All rights reserved.</p>
-            <p>This article originally appeared in BookFilter on 2015.</p>
         </div>
     </div>
 </body>

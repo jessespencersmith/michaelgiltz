@@ -3,135 +3,135 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Writing To Save A Life By John Edgar Wideman-11-15 by Michael Giltz - BookFilter">
-    <meta name="keywords" content="BookFilter, Writing To Save A Life By John Edgar Wideman-11-15, Michael Giltz, journalism, entertainment">
+    <meta name="description" content="Writing To Save A Life by John Edgar Wideman - BookFilter - Michael Giltz">
+    <meta name="keywords" content="Michael Giltz, BookFilter, journalism, article">
     <meta name="author" content="Michael Giltz">
-    <title>Writing To Save A Life By John Edgar Wideman-11-15 - BookFilter - Michael Giltz</title>
+    <title>Writing To Save A Life by John Edgar Wideman - Michael Giltz</title>
     <link href="../giltz.css" rel="stylesheet" type="text/css" />
     <style>
-        body { 
-            font-family: Arial, sans-serif;
+        body {
+            font-family: 'Times New Roman', Times, serif;
             margin: 0;
             padding: 0;
-            background: #f5f5f5;
+            background: #fff;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
         }
         .site-banner {
             text-align: center;
-            background: white;
-            padding: 10px 0;
+            padding: 20px 0;
+            background: #f9f9f9;
         }
         .site-banner img {
             max-width: 100%;
             height: auto;
         }
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            background: white;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        .header {
-            background: #333;
-            color: white;
-            padding: 20px;
+        .article-header {
             text-align: center;
+            padding: 30px 0 20px 0;
         }
-        .header h1 {
-            margin: 0;
-            font-size: 24px;
+        .article-title {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 28px;
+            font-weight: bold;
+            margin: 0 0 10px 0;
+            color: #333;
         }
-        .header p {
-            margin: 5px 0;
+        .article-meta {
             font-size: 14px;
+            color: #666;
+            margin: 0;
         }
         .pdf-viewer {
             width: 100%;
-            height: 600px;
-            border: none;
-            display: block;
+            height: 800px;
+            margin: 20px 0;
+            border: 1px solid #ddd;
         }
         .home-button {
             text-align: center;
-            padding: 20px;
-            background: #f0f0f0;
+            padding: 30px 0;
         }
         .home-button a {
             display: inline-block;
-            padding: 10px 30px;
+            padding: 12px 40px;
             background: #333;
             color: white;
             text-decoration: none;
             font-weight: bold;
+            font-size: 16px;
             border-radius: 5px;
+            text-transform: uppercase;
         }
         .home-button a:hover {
             background: #555;
         }
         .text-section {
-            padding: 20px;
+            padding: 40px 0;
+            border-top: 3px solid #333;
+            margin-top: 40px;
         }
         .text-section h2 {
+            font-size: 20px;
             color: #333;
-            border-bottom: 2px solid #333;
-            padding-bottom: 10px;
+            margin: 0 0 20px 0;
+            text-transform: uppercase;
         }
         .text-content {
             line-height: 1.8;
             color: #333;
+            font-size: 16px;
         }
         .text-content p {
             margin-bottom: 15px;
         }
-        .footer {
-            background: #f0f0f0;
-            padding: 20px;
-            text-align: center;
-            font-size: 12px;
-            color: #666;
-        }
         @media (max-width: 768px) {
             .pdf-viewer {
-                height: 400px;
+                height: 500px;
+            }
+            .article-title {
+                font-size: 22px;
             }
         }
     </style>
-    <link rel="icon" type="image/x-icon" href="../favicon.ico">
-    <link rel="icon" type="image/png" href="../favicon.png">
 </head>
 <body>
-    <!-- Site Banner -->
-    <div class="site-banner">
-        <a href="../index.htm"><img src="../giltz.jpg" width="800" height="146" alt="MichaelGiltz.com" /></a>
-    </div>
-    
     <div class="container">
-        <div class="header">
-            <h1>Writing To Save A Life By John Edgar Wideman-11-15</h1>
-            <p>Publication: BookFilter | Date: 2016 | by Michael Giltz</p>
+        <!-- Site Banner -->
+        <div class="site-banner">
+            <a href="../index.htm"><img src="../giltz.jpg" width="800" height="146" alt="MichaelGiltz.com" /></a>
         </div>
         
-        <!-- PDF Viewer -->
-        <iframe class="pdf-viewer" src="../scans/BookFilter-Writing_To_Save_A_Life_by_John_Edgar_Wideman-11-15-2016.pdf" title="PDF Article">
-            <p>Your browser does not support embedded PDFs. <a href="../scans/BookFilter-Writing_To_Save_A_Life_by_John_Edgar_Wideman-11-15-2016.pdf">Download the PDF</a> to view.</p>
+        <!-- Article Header -->
+        <div class="article-header">
+            <h1 class="article-title">Writing To Save A Life by John Edgar Wideman</h1>
+            <p class="article-meta">Publication: BookFilter &nbsp;&nbsp;|&nbsp;&nbsp; Date: November 15, 2016</p>
+        </div>
+        
+        <!-- PDF Viewer - Direct embed without buttons -->
+        <iframe class="pdf-viewer" 
+                src="../scans/BookFilter-Writing_To_Save_A_Life_by_John_Edgar_Wideman-11-15-2016.pdf#toolbar=0&navpanes=0" 
+                type="application/pdf"
+                frameborder="0">
+            <p>Your browser does not support PDFs. 
+               <a href="../scans/BookFilter-Writing_To_Save_A_Life_by_John_Edgar_Wideman-11-15-2016.pdf">Click here to view the PDF</a>.
+            </p>
         </iframe>
         
         <!-- Home Button -->
         <div class="home-button">
-            <a href="../index.htm">HOME</a>
+            <a href="../index.htm">Home</a>
         </div>
         
-        <!-- Text Section -->
+        <!-- SEO Text Section -->
         <div class="text-section">
-            <h2>SEO TEXT: Article Content for Search</h2>
+            <h2>SEO TEXT: Article Content for Search Engines</h2>
             <div class="text-content">
                 <p>Home |Register |Sign In Home Top Picks: All Books Writing to Save a Life Writing to Save a Life The Louis Till File by John Edgar Wideman Price: $25.00 (Hardcover) MorePublished: November 15, 2016 Rating: 0.0/ 5 (0 votes cast) From the Publisher: An award-winning writer traces the life of the father of iconic Civil Rights martyr Emmett Till—a man who was executed by theArmy ten years before Emmett’s murder.&lt;/p&gt;&lt;p&gt; An evocative and personalexploration of individual and collective memory in America by one of the most formidable Black intellectuals of our time.&lt;/p&gt;&lt;p&gt; In 1955, Emmett Till, aged fourteen, traveled from his home in Chicago to visit family inMississippi.&lt;/p&gt;&lt;p&gt; Several weeks later he returned, dead; allegedly he whistledat a white woman.&lt;/p&gt;&lt;p&gt; His mother, Mamie, wanted the world to see what had been done to her son.&lt;/p&gt;&lt;p&gt; She chose to leave his casket open.&lt;/p&gt;&lt;p&gt; Images of her brutalized boy were published widely.&lt;/p&gt;&lt;p&gt; While Emmett’s story is known,there’s a dark side note that’s rarely mentioned.&lt;/p&gt;&lt;p&gt; Ten years earlier,Emmett’s father was executed by the Army for rape and murder.&lt;/p&gt;&lt;p&gt; InWriting to Save a Life , John Edgar Wideman searches… Rate This Book Add To Wishlist |Rate/Review Add To Bookshelf Get This Book Personalize / Add More ChoicesGo to your preferred retailer, click to choose a format and you' ll be taken directly to their site where you can get this book.&lt;/p&gt;&lt;p&gt; What We Say "Writing To Save A Life" is a book.&lt;/p&gt;&lt;p&gt; It's not exactly a novel or a memoir or a history or a travelogue or a biography or an essay.&lt;/p&gt;&lt;p&gt; But it uses elements of all these forms and more to accomplish exactly what writer John Edgar Wideman sets out toaccomplish at each and every stage.&lt;/p&gt;&lt;p&gt; Subtitled "The Louis Till File," it uses the story of Emmett Till (the 14 year old boy brutally murdered in the Deep South) and Wideman's own memory of seeing a famous photo of Emmett in "Jet" magazine when he too was 14 years old to launch into his narrative.&lt;/p&gt;&lt;p&gt; It quickly centers on Emmett's father Louis Till, a man executedby the US military during WWII for the crime of murder and rape or perhaps just rape or maybe just the theft of sugar andShare This Book About The Author John Edgar Wideman MoreJohn Edgar Wideman’s books include Writing to Save a Life , Philadelphia Fire, Brothers and Keepers, Fatheralong, Hoop Dreams, and Sent for You Yesterday .&lt;/p&gt;&lt;p&gt; He is a MacArthur Fellow and has won thePEN/Faulkner Award twice and has been a finalist for the National Book Critics Circle … Release Info List Price: $25.00 (Hardcover) Published: November 15, 2016 Publisher: Scribner Pages: 208 ISBN 10: 1501147285 ISBN 13: 9781501147289for being the wrong colored skin at the wrong place at the wrong time.&lt;/p&gt;&lt;p&gt; Wideman embraces the idea of lost fathers and lost sons, tells of his own disappearing dad and his own childhood, always circling back to Louis Till and Emmett Till, diving deep into the meaning of those crushed lives and then coming up, gasping for air.&lt;/p&gt;&lt;p&gt; Wideman quotes newspaper accounts about the trial of Emmett's murderers, reads and re-reads military documents obtained via the Freedom Of Information Act, makes upinner monologues for Louis and his wife, and then even Wideman's own mother and father.&lt;/p&gt;&lt;p&gt; He mixes in the story of howWideman lost his virginity on a couch to a girl visiting from Harlem, describes traveling to France to visit Louis Till's gravein an isolated spot set aside for the dishonorable dead, and then travels down south to his family's roots.&lt;/p&gt;&lt;p&gt; Wideman explores why he never traveled there as a boy with his grandfather -- despite repeated offers -- perhaps because of fear or shame or the simple indifference of youth.&lt;/p&gt;&lt;p&gt; This vivid, hard to shake book ponders injustice and examines conscience, turning thelife of Louis Till this way and that, looking for messages and meaning and accepting finally the same silence Louis offered tothe military investigators who Till knew all too well had already made up their minds as to what would happen to himwhether he was guilty or not, so what was the point in talking? All stories are true, Wideman quotes an Igbo proverb, and that's as true here as anywhere, whether the form of that story is a book that can be neatly slotted into memoir or essay or history or whether it selfishly slides this way and that across genre and style, gobbling up forms and tossing them asideto tell a story that needed to be told of a writer wrestling with race. -- Michael Giltz What Others Say “In his long awaited new book, Writing to Save a Life , John Edgar Wideman tells the largely forgotten story of Louis Till, a man of color who suffered a miscarriage of racial justice a full decade before the infamous lynching of his son Emmett.&lt;/p&gt;&lt;p&gt; Wideman pens a powerful blend of fact and fiction, riffing on concerns and themes that hehas explored for a half century now in his highly distinguished body of prose.&lt;/p&gt;&lt;p&gt; These pages represent a wise andwonderful achievement, both timely and timeless.” —Jeffery Renard Allen, author of the novels Song of the Shank and Rails Under My Back - "John Edgar Wideman’s Writing to Save a Life: The Louis Till File excavates the forgotten prequel to a brutal chapter in the ongoing history of American racial injustice.&lt;/p&gt;&lt;p&gt; Wideman examines a particular narrative—the way afather’s death was exhumed to justify his son’s murderers going free—in order to question the terms of narrativeitself, refusing to mistake silence for significance, absence for presence, or history for truth.&lt;/p&gt;&lt;p&gt; I read thisprovocative and surprising book in the wake of the murders of Alton Sterling and Philando Castile, and it feltutterly… More What You Say Filter by No Reviews Found ..... about us |faq|advertise |privacy policy |newsletter |contact us ©2018, BookBuddha LLc.&lt;/p&gt;&lt;p&gt; All Rights Reserved.</p>
             </div>
-        </div>
-        
-        <!-- Footer -->
-        <div class="footer">
-            <p>&copy; 2025 Michael Giltz. All rights reserved.</p>
-            <p>This article originally appeared in BookFilter on 2016.</p>
         </div>
     </div>
 </body>

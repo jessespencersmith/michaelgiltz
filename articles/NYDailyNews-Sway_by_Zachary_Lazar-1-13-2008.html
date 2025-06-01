@@ -3,135 +3,135 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Sway By Zachary Lazar-1-13 by Michael Giltz - NYDailyNews">
-    <meta name="keywords" content="NYDailyNews, Sway By Zachary Lazar-1-13, Michael Giltz, journalism, entertainment">
+    <meta name="description" content="Sway by Zachary Lazar - NYDailyNews - Michael Giltz">
+    <meta name="keywords" content="Michael Giltz, NYDailyNews, journalism, article">
     <meta name="author" content="Michael Giltz">
-    <title>Sway By Zachary Lazar-1-13 - NYDailyNews - Michael Giltz</title>
+    <title>Sway by Zachary Lazar - Michael Giltz</title>
     <link href="../giltz.css" rel="stylesheet" type="text/css" />
     <style>
-        body { 
-            font-family: Arial, sans-serif;
+        body {
+            font-family: 'Times New Roman', Times, serif;
             margin: 0;
             padding: 0;
-            background: #f5f5f5;
+            background: #fff;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
         }
         .site-banner {
             text-align: center;
-            background: white;
-            padding: 10px 0;
+            padding: 20px 0;
+            background: #f9f9f9;
         }
         .site-banner img {
             max-width: 100%;
             height: auto;
         }
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            background: white;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        .header {
-            background: #333;
-            color: white;
-            padding: 20px;
+        .article-header {
             text-align: center;
+            padding: 30px 0 20px 0;
         }
-        .header h1 {
-            margin: 0;
-            font-size: 24px;
+        .article-title {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 28px;
+            font-weight: bold;
+            margin: 0 0 10px 0;
+            color: #333;
         }
-        .header p {
-            margin: 5px 0;
+        .article-meta {
             font-size: 14px;
+            color: #666;
+            margin: 0;
         }
         .pdf-viewer {
             width: 100%;
-            height: 600px;
-            border: none;
-            display: block;
+            height: 800px;
+            margin: 20px 0;
+            border: 1px solid #ddd;
         }
         .home-button {
             text-align: center;
-            padding: 20px;
-            background: #f0f0f0;
+            padding: 30px 0;
         }
         .home-button a {
             display: inline-block;
-            padding: 10px 30px;
+            padding: 12px 40px;
             background: #333;
             color: white;
             text-decoration: none;
             font-weight: bold;
+            font-size: 16px;
             border-radius: 5px;
+            text-transform: uppercase;
         }
         .home-button a:hover {
             background: #555;
         }
         .text-section {
-            padding: 20px;
+            padding: 40px 0;
+            border-top: 3px solid #333;
+            margin-top: 40px;
         }
         .text-section h2 {
+            font-size: 20px;
             color: #333;
-            border-bottom: 2px solid #333;
-            padding-bottom: 10px;
+            margin: 0 0 20px 0;
+            text-transform: uppercase;
         }
         .text-content {
             line-height: 1.8;
             color: #333;
+            font-size: 16px;
         }
         .text-content p {
             margin-bottom: 15px;
         }
-        .footer {
-            background: #f0f0f0;
-            padding: 20px;
-            text-align: center;
-            font-size: 12px;
-            color: #666;
-        }
         @media (max-width: 768px) {
             .pdf-viewer {
-                height: 400px;
+                height: 500px;
+            }
+            .article-title {
+                font-size: 22px;
             }
         }
     </style>
-    <link rel="icon" type="image/x-icon" href="../favicon.ico">
-    <link rel="icon" type="image/png" href="../favicon.png">
 </head>
 <body>
-    <!-- Site Banner -->
-    <div class="site-banner">
-        <a href="../index.htm"><img src="../giltz.jpg" width="800" height="146" alt="MichaelGiltz.com" /></a>
-    </div>
-    
     <div class="container">
-        <div class="header">
-            <h1>Sway By Zachary Lazar-1-13</h1>
-            <p>Publication: NYDailyNews | Date: 2008 | by Michael Giltz</p>
+        <!-- Site Banner -->
+        <div class="site-banner">
+            <a href="../index.htm"><img src="../giltz.jpg" width="800" height="146" alt="MichaelGiltz.com" /></a>
         </div>
         
-        <!-- PDF Viewer -->
-        <iframe class="pdf-viewer" src="../scans/NYDailyNews-Sway_by_Zachary_Lazar-1-13-2008.pdf" title="PDF Article">
-            <p>Your browser does not support embedded PDFs. <a href="../scans/NYDailyNews-Sway_by_Zachary_Lazar-1-13-2008.pdf">Download the PDF</a> to view.</p>
+        <!-- Article Header -->
+        <div class="article-header">
+            <h1 class="article-title">Sway by Zachary Lazar</h1>
+            <p class="article-meta">Publication: NYDailyNews &nbsp;&nbsp;|&nbsp;&nbsp; Date: January 13, 2008</p>
+        </div>
+        
+        <!-- PDF Viewer - Direct embed without buttons -->
+        <iframe class="pdf-viewer" 
+                src="../scans/NYDailyNews-Sway_by_Zachary_Lazar-1-13-2008.pdf#toolbar=0&navpanes=0" 
+                type="application/pdf"
+                frameborder="0">
+            <p>Your browser does not support PDFs. 
+               <a href="../scans/NYDailyNews-Sway_by_Zachary_Lazar-1-13-2008.pdf">Click here to view the PDF</a>.
+            </p>
         </iframe>
         
         <!-- Home Button -->
         <div class="home-button">
-            <a href="../index.htm">HOME</a>
+            <a href="../index.htm">Home</a>
         </div>
         
-        <!-- Text Section -->
+        <!-- SEO Text Section -->
         <div class="text-section">
-            <h2>SEO TEXT: Article Content for Search</h2>
+            <h2>SEO TEXT: Article Content for Search Engines</h2>
             <div class="text-content">
                 <p>Out of their heads A novel tackles the Rolling Stones, Manson murders and Kenneth Anger BY MICHAEL GTLTZ, lhe year 1969 was bleak.&lt;/p&gt;&lt;p&gt; The Rolling , cross paths as both Beausoleil and the Stones I Storles stood by helplessly as their found- i appear in Anger's landmark "Invocation of I er Brian Jones drowned in a swimming i My Demon Brother." pool and a fan was killed at Altamont.&lt;/p&gt;&lt;p&gt; The i Lazar -whose first novel, "Aaron, Approx- tunatic Charles Manson urged his follow- i imately," was set in the '70s and '80s - might ers to slaughter "piggies" chosen at random. i easily have fallen under the sway of a rush of t_).1 Md experimental filmmaker Kenneth An- i adjectives.&lt;/p&gt;&lt;p&gt; Surely if any milieu encourages' 3 ger tapped into dark forces with . f . .. words to come tumbling out in ---strange, subterranean experi- ' &lt;l r^v : a mad psychedelic haze it is the rl mental works. :"^' . , '60s world of rock 'n' roll. --*"N;;;iirt 2""n.w rrrar tack- ' By Zachary Lazar , eut Lazar opts for cool- iesthaterawithhisslimbutam- , Little, BfOWn, ; nesr,u.".".u"thatpaysdivi- -/ citious second novel, "Sway." : $23.99 ; dends at some points, such as Everyonehereisunderthesway i".... -.. .r......-... "....r thepatheticdeathofJones, rf something: Mick Jagger and r who seemingly drowned in P feitfr Richards are under the sway of mu- .i ;ic and their hypnotic power on oihers, Bri- ! ln Jones is under the sway of drugs, devitish- a- iy handsome hippie Bobby Beausoleil is under - -, :he sway of his own beauty and ultimately *{ Manson, while Anger is under the sway of the magnetic, dismissive young men he worships coth physically and cinematically.&lt;/p&gt;&lt;p&gt; They allI the midst of partygoers at his home either ; through indifference or disdain. : Yetl-azar's invocation never quite com- ; pletes the spell he's hoping for.&lt;/p&gt;&lt;p&gt; Mick Jag- I ger and Keith Richards are too present in our : mina to come alive yet as characters in a work r offiction (thoughlazardoes nailthe needy i flirtafiousness of a star).&lt;/p&gt;&lt;p&gt; It doesn't help when"-4? magnetic figures like Marianne Faithfull come across as ciphers - that makes us trustLazar less.&lt;/p&gt;&lt;p&gt; On-ly the unfamiliar tale of Anger and his work comes fully alive, presumably because we know so little about it.&lt;/p&gt;&lt;p&gt; Ironically, a high point of the book under- mines it.&lt;/p&gt;&lt;p&gt; Lazar does a wonderful job of show- ing the Stones work through early versions of the sinuous classic "Sympathy for the Dev- il." But talking about the song simply sends you to the song.&lt;/p&gt;&lt;p&gt; Unfortunately for Lazaq those dn-rms, the "woo-woo" background vo- cals, that screechy, frightening guitar work and Jagger's dismissive, conspiratorial vo- cals capture the danger and magnetlsm ofthe '60s far more incisively than "Sway" can ever hope to do.&lt;/p&gt;&lt;p&gt; I-.\: $ "$,$ ilr{x,$' ,, ili. ,,: ., $,',:i N"",t ',,,$!i ,,1:: : .si: '::]l: : .iN :: .$i ri!: ' i'ij,::</p>
             </div>
-        </div>
-        
-        <!-- Footer -->
-        <div class="footer">
-            <p>&copy; 2025 Michael Giltz. All rights reserved.</p>
-            <p>This article originally appeared in NYDailyNews on 2008.</p>
         </div>
     </div>
 </body>

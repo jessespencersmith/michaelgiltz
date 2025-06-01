@@ -3,135 +3,135 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Theater Under The Radar Frankenstein-1-4 by Michael Giltz - Popsurfing">
-    <meta name="keywords" content="Popsurfing, Theater Under The Radar Frankenstein-1-4, Michael Giltz, journalism, entertainment">
+    <meta name="description" content="Theater Under The Radar Frankenstein - Popsurfing - Michael Giltz">
+    <meta name="keywords" content="Michael Giltz, Popsurfing, journalism, article">
     <meta name="author" content="Michael Giltz">
-    <title>Theater Under The Radar Frankenstein-1-4 - Popsurfing - Michael Giltz</title>
+    <title>Theater Under The Radar Frankenstein - Michael Giltz</title>
     <link href="../giltz.css" rel="stylesheet" type="text/css" />
     <style>
-        body { 
-            font-family: Arial, sans-serif;
+        body {
+            font-family: 'Times New Roman', Times, serif;
             margin: 0;
             padding: 0;
-            background: #f5f5f5;
+            background: #fff;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
         }
         .site-banner {
             text-align: center;
-            background: white;
-            padding: 10px 0;
+            padding: 20px 0;
+            background: #f9f9f9;
         }
         .site-banner img {
             max-width: 100%;
             height: auto;
         }
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            background: white;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        .header {
-            background: #333;
-            color: white;
-            padding: 20px;
+        .article-header {
             text-align: center;
+            padding: 30px 0 20px 0;
         }
-        .header h1 {
-            margin: 0;
-            font-size: 24px;
+        .article-title {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 28px;
+            font-weight: bold;
+            margin: 0 0 10px 0;
+            color: #333;
         }
-        .header p {
-            margin: 5px 0;
+        .article-meta {
             font-size: 14px;
+            color: #666;
+            margin: 0;
         }
         .pdf-viewer {
             width: 100%;
-            height: 600px;
-            border: none;
-            display: block;
+            height: 800px;
+            margin: 20px 0;
+            border: 1px solid #ddd;
         }
         .home-button {
             text-align: center;
-            padding: 20px;
-            background: #f0f0f0;
+            padding: 30px 0;
         }
         .home-button a {
             display: inline-block;
-            padding: 10px 30px;
+            padding: 12px 40px;
             background: #333;
             color: white;
             text-decoration: none;
             font-weight: bold;
+            font-size: 16px;
             border-radius: 5px;
+            text-transform: uppercase;
         }
         .home-button a:hover {
             background: #555;
         }
         .text-section {
-            padding: 20px;
+            padding: 40px 0;
+            border-top: 3px solid #333;
+            margin-top: 40px;
         }
         .text-section h2 {
+            font-size: 20px;
             color: #333;
-            border-bottom: 2px solid #333;
-            padding-bottom: 10px;
+            margin: 0 0 20px 0;
+            text-transform: uppercase;
         }
         .text-content {
             line-height: 1.8;
             color: #333;
+            font-size: 16px;
         }
         .text-content p {
             margin-bottom: 15px;
         }
-        .footer {
-            background: #f0f0f0;
-            padding: 20px;
-            text-align: center;
-            font-size: 12px;
-            color: #666;
-        }
         @media (max-width: 768px) {
             .pdf-viewer {
-                height: 400px;
+                height: 500px;
+            }
+            .article-title {
+                font-size: 22px;
             }
         }
     </style>
-    <link rel="icon" type="image/x-icon" href="../favicon.ico">
-    <link rel="icon" type="image/png" href="../favicon.png">
 </head>
 <body>
-    <!-- Site Banner -->
-    <div class="site-banner">
-        <a href="../index.htm"><img src="../giltz.jpg" width="800" height="146" alt="MichaelGiltz.com" /></a>
-    </div>
-    
     <div class="container">
-        <div class="header">
-            <h1>Theater Under The Radar Frankenstein-1-4</h1>
-            <p>Publication: Popsurfing | Date: 2019 | by Michael Giltz</p>
+        <!-- Site Banner -->
+        <div class="site-banner">
+            <a href="../index.htm"><img src="../giltz.jpg" width="800" height="146" alt="MichaelGiltz.com" /></a>
         </div>
         
-        <!-- PDF Viewer -->
-        <iframe class="pdf-viewer" src="../scans/Popsurfing-Theater_Under_The_Radar_Frankenstein-1-4-2019.pdf" title="PDF Article">
-            <p>Your browser does not support embedded PDFs. <a href="../scans/Popsurfing-Theater_Under_The_Radar_Frankenstein-1-4-2019.pdf">Download the PDF</a> to view.</p>
+        <!-- Article Header -->
+        <div class="article-header">
+            <h1 class="article-title">Theater Under The Radar Frankenstein</h1>
+            <p class="article-meta">Publication: Popsurfing &nbsp;&nbsp;|&nbsp;&nbsp; Date: January 4, 2019</p>
+        </div>
+        
+        <!-- PDF Viewer - Direct embed without buttons -->
+        <iframe class="pdf-viewer" 
+                src="../scans/Popsurfing-Theater_Under_The_Radar_Frankenstein-1-4-2019.pdf#toolbar=0&navpanes=0" 
+                type="application/pdf"
+                frameborder="0">
+            <p>Your browser does not support PDFs. 
+               <a href="../scans/Popsurfing-Theater_Under_The_Radar_Frankenstein-1-4-2019.pdf">Click here to view the PDF</a>.
+            </p>
         </iframe>
         
         <!-- Home Button -->
         <div class="home-button">
-            <a href="../index.htm">HOME</a>
+            <a href="../index.htm">Home</a>
         </div>
         
-        <!-- Text Section -->
+        <!-- SEO Text Section -->
         <div class="text-section">
-            <h2>SEO TEXT: Article Content for Search</h2>
+            <h2>SEO TEXT: Article Content for Search Engines</h2>
             <div class="text-content">
                 <p>More Create Blog Sign In FRIDAY, JANUARY 04, 2019 THEATER: It's Alive! "Frankenstein" at the Public's Under The Radar Festival UNDER THE RADAR FESTIVAL: FRANKENSTEIN ** 1/2 out of **** THE PUBLIC It's alive! Mary Shelley's gothic masterpiece Frankenstein; or, The Modern Prometheus was published in 1818 but it took this new multi- media work of theater to prompt me to finally read it. (The 1931 movieis better but the differences are fascinating; the book is very different.) Like me, most people are familiar with the story through that first film, the equally great sequel Bride Of Frankenstein from 1935, countless remakes ever since and the creature's omnipresence inpopular culture, from Abbott and Costello films to Halloween and Saturday morning cartoons and the Spanish classic film The Spirit of the Beehive and the Mel Brooks comic masterpiece Young Frankenstein and the stage version from the UK in 2011 with Benedict Cumberbatch and Jonny Lee Miller and on and on and on.&lt;/p&gt;&lt;p&gt; Yes, theidea of becoming a god and bestowing life on another is a powerful idea that never dies, anymore than the Creature himself.&lt;/p&gt;&lt;p&gt; The Chicago troupe Manual Cinema has crafted a silent film homage of sorts to that story.&lt;/p&gt;&lt;p&gt; But they've expanded the tale in numerous ways.&lt;/p&gt;&lt;p&gt; They also draw on the life of Mary Shelley, including the early death ofher prematurely born child.&lt;/p&gt;&lt;p&gt; And while the narrative mostly sticks tothe version in the novel, it also adds some new elements to simplifythe tale, along with key scenes from the film and its overall attitude towards the man-made Creature.&lt;/p&gt;&lt;p&gt; That's when it's not reminding us that Shelley wrote this story in the first place.&lt;/p&gt;&lt;p&gt; In short, it's a bit of a Frankenstein's monster itself, stitching together all sorts of ideas about the novel, the film, what inspired it, Shelley'slife and the creation of art in general.&lt;/p&gt;&lt;p&gt; If it's a little ungainly, whoMICHAEL GILTZ AT WORK Michael Giltz is a freelance writer based in NYC and can be reached atmgiltz@pipeline.com FAVORITE LINKS Americablog Five O'Clock Lightning baseball blogDeep Pop -- Lori Lakin's Blog The Back Page -- Jason Page on ESPN Radio Cine-Blog -- George Robinson's Blog Documents On Art &amp; Cinema - Daryl Chin's Blog Brucie G's Wondrous Blog Of Adventure and Mystery -- Bruce Greenspan's Blog BLOG ARCHIVE ▼ 2019 (7) ► February (1) ▼ January (6)would be surprised? First the good.&lt;/p&gt;&lt;p&gt; Manual Cinema works in a style similar to a number of new creative theatrical troupes like Pigpen Theatre.&lt;/p&gt;&lt;p&gt; In this case, they combine puppetry, actors, the sound effects of classic live radio andprojections to create a visual film right before your eyes.&lt;/p&gt;&lt;p&gt; You can seean actor holding up the prop of a door with one hand on stage or you can look at the screen hanging about the cast and musicians to see the effect fully realized.&lt;/p&gt;&lt;p&gt; You can watch puppeteers manipulate a tinyFrankenstein's monster on a tiny little set that features waves lappingonto a shore.&lt;/p&gt;&lt;p&gt; Or you can look at the screen where the creature loomslarge and the moment is alive and touching.&lt;/p&gt;&lt;p&gt; That constant tension between observing how an effect is created or simply watching the story unfold is great fun.&lt;/p&gt;&lt;p&gt; Very minor slip-ups (apause before a projection appears, an image slightly askew) only add tothe pleasure, reminding you how challenging such a performance canbe.&lt;/p&gt;&lt;p&gt; It's a refreshing, delightful approach to theater that is both hand-crafted and up to the minute.&lt;/p&gt;&lt;p&gt; If you've never seen anything like this before, Frankenstein is a fine introduction.&lt;/p&gt;&lt;p&gt; However, adopting the tropes of silent cinema for this particular show is daunting.&lt;/p&gt;&lt;p&gt; All the dialogue and narration appear as text onscreen andcreating a 90 minute silent movie is not easy, even with the welcome pleasure of seeing it done right before your eyes.&lt;/p&gt;&lt;p&gt; It seems this Frankenstein has been trimmed by 30 minutes from an earlier version they developed and that surely is all for the good.&lt;/p&gt;&lt;p&gt; While they make some wise adjustments to the novel's story within a story within a story structure, they've also tossed in Shelley a bit haphazardly.&lt;/p&gt;&lt;p&gt; They clearly show Mary treated with condescension byher husband Percy and Lord Byron early on.&lt;/p&gt;&lt;p&gt; So her triumph over themin this contest should be sweeter.&lt;/p&gt;&lt;p&gt; But after beginning with her story,the show moves onto the tale of Frankenstein .&lt;/p&gt;&lt;p&gt; And it goes on so long before they bring her back, one assumes Mary Shelley's story will be abookend.&lt;/p&gt;&lt;p&gt; Instead she pops back into the narrative rather jarringly.BookFilter Reading List THEATER: "Choir Boy" -- It's The Same Old Song THEATER: "Ink" -- The Art of Calligraphy, Performa...&lt;/p&gt;&lt;p&gt; THEATER: UNCLE VANYA; VANYA -- MY UNCLE; UNCLE IVA...&lt;/p&gt;&lt;p&gt; The Movies, Books, Theater, Concerts, CDs I've See...&lt;/p&gt;&lt;p&gt; THEATER: It's Alive! "Frankenstein" at the Public'... ► 2018 (34) ► 2017 (6) ► 2016 (2) ► 2015 (14) ► 2014 (2) ► 2013 (5) ► 2012 (18) ► 2011 (15) ► 2010 (10) ► 2009 (43) ► 2008 (86) ► 2007 (781) ► 2006 (2412) ► 2005 (5) Worse, she's seen writing out the words detailing a scene that took place ages ago.&lt;/p&gt;&lt;p&gt; It would only make sense if we saw her crafting the moment we just saw, describing what comes next or offering someinformation that relates to the story's creation that was pertinent atthat moment.&lt;/p&gt;&lt;p&gt; Instead, we're essentially told, "By the way, Mary wrote that scene you saw half an hour ago!" It muddies the moment, makes her presence at that stage feel pointless (surely the last thing theyintended) and breaks up the suspenseful story.&lt;/p&gt;&lt;p&gt; Nonetheless, the score is marvelous.&lt;/p&gt;&lt;p&gt; And the varied techniques of puppetry, live radio, theater and cinema are a pleasure to watch in action by this talented troupe.&lt;/p&gt;&lt;p&gt; Manual Cinema gives Shelley her dueby showing even bold, rule-breaking rebels like Byron and PercyShelley dismissing her efforts.&lt;/p&gt;&lt;p&gt; Fittingly, Shelley's triumph over men by drawing on the horror of watching her own baby die is yet anotherreminder of how painful and difficult the act of creation can be.&lt;/p&gt;&lt;p&gt; THEATER OF 2019 Frankenstein: Under The Radar Fest at the Public ** 1/2 Thanks for reading.&lt;/p&gt;&lt;p&gt; Michael Giltz is the creator of BookFilter, a book lover’s best friend.&lt;/p&gt;&lt;p&gt; It’s a website that lets you browse for books online the way you do in a physical bookstore, provides comprehensive info on new releases every week in every category and offers passionate personal recommendations every step of the way.&lt;/p&gt;&lt;p&gt; He’s also the cohost of Showbiz Sandbox , a weekly pop culture podcast that reveals the industry take on entertainment news of the day with top journalists and opinion makers as guests.&lt;/p&gt;&lt;p&gt; It’s available for free on iTunes.&lt;/p&gt;&lt;p&gt; Visit Michael Giltz at his website.&lt;/p&gt;&lt;p&gt; Download his podcast of celebrity interviews and his radio show, also called Popsurfing and also available for free on iTunes.&lt;/p&gt;&lt;p&gt; POSTED BY MICHAEL GILTZ AT 5:29 PM NO COMMENTS: Post a Comment Subscribe to: Post Comments (Atom)Newer Post Older Post Home</p>
             </div>
-        </div>
-        
-        <!-- Footer -->
-        <div class="footer">
-            <p>&copy; 2025 Michael Giltz. All rights reserved.</p>
-            <p>This article originally appeared in Popsurfing on 2019.</p>
         </div>
     </div>
 </body>

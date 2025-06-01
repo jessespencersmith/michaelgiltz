@@ -3,135 +3,135 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Nameless City By Faith Erin Hicks-4-5 by Michael Giltz - BookFilter">
-    <meta name="keywords" content="BookFilter, Nameless City By Faith Erin Hicks-4-5, Michael Giltz, journalism, entertainment">
+    <meta name="description" content="Nameless City by Faith Erin Hicks - BookFilter - Michael Giltz">
+    <meta name="keywords" content="Michael Giltz, BookFilter, journalism, article">
     <meta name="author" content="Michael Giltz">
-    <title>Nameless City By Faith Erin Hicks-4-5 - BookFilter - Michael Giltz</title>
+    <title>Nameless City by Faith Erin Hicks - Michael Giltz</title>
     <link href="../giltz.css" rel="stylesheet" type="text/css" />
     <style>
-        body { 
-            font-family: Arial, sans-serif;
+        body {
+            font-family: 'Times New Roman', Times, serif;
             margin: 0;
             padding: 0;
-            background: #f5f5f5;
+            background: #fff;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
         }
         .site-banner {
             text-align: center;
-            background: white;
-            padding: 10px 0;
+            padding: 20px 0;
+            background: #f9f9f9;
         }
         .site-banner img {
             max-width: 100%;
             height: auto;
         }
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            background: white;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        .header {
-            background: #333;
-            color: white;
-            padding: 20px;
+        .article-header {
             text-align: center;
+            padding: 30px 0 20px 0;
         }
-        .header h1 {
-            margin: 0;
-            font-size: 24px;
+        .article-title {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 28px;
+            font-weight: bold;
+            margin: 0 0 10px 0;
+            color: #333;
         }
-        .header p {
-            margin: 5px 0;
+        .article-meta {
             font-size: 14px;
+            color: #666;
+            margin: 0;
         }
         .pdf-viewer {
             width: 100%;
-            height: 600px;
-            border: none;
-            display: block;
+            height: 800px;
+            margin: 20px 0;
+            border: 1px solid #ddd;
         }
         .home-button {
             text-align: center;
-            padding: 20px;
-            background: #f0f0f0;
+            padding: 30px 0;
         }
         .home-button a {
             display: inline-block;
-            padding: 10px 30px;
+            padding: 12px 40px;
             background: #333;
             color: white;
             text-decoration: none;
             font-weight: bold;
+            font-size: 16px;
             border-radius: 5px;
+            text-transform: uppercase;
         }
         .home-button a:hover {
             background: #555;
         }
         .text-section {
-            padding: 20px;
+            padding: 40px 0;
+            border-top: 3px solid #333;
+            margin-top: 40px;
         }
         .text-section h2 {
+            font-size: 20px;
             color: #333;
-            border-bottom: 2px solid #333;
-            padding-bottom: 10px;
+            margin: 0 0 20px 0;
+            text-transform: uppercase;
         }
         .text-content {
             line-height: 1.8;
             color: #333;
+            font-size: 16px;
         }
         .text-content p {
             margin-bottom: 15px;
         }
-        .footer {
-            background: #f0f0f0;
-            padding: 20px;
-            text-align: center;
-            font-size: 12px;
-            color: #666;
-        }
         @media (max-width: 768px) {
             .pdf-viewer {
-                height: 400px;
+                height: 500px;
+            }
+            .article-title {
+                font-size: 22px;
             }
         }
     </style>
-    <link rel="icon" type="image/x-icon" href="../favicon.ico">
-    <link rel="icon" type="image/png" href="../favicon.png">
 </head>
 <body>
-    <!-- Site Banner -->
-    <div class="site-banner">
-        <a href="../index.htm"><img src="../giltz.jpg" width="800" height="146" alt="MichaelGiltz.com" /></a>
-    </div>
-    
     <div class="container">
-        <div class="header">
-            <h1>Nameless City By Faith Erin Hicks-4-5</h1>
-            <p>Publication: BookFilter | Date: 2016 | by Michael Giltz</p>
+        <!-- Site Banner -->
+        <div class="site-banner">
+            <a href="../index.htm"><img src="../giltz.jpg" width="800" height="146" alt="MichaelGiltz.com" /></a>
         </div>
         
-        <!-- PDF Viewer -->
-        <iframe class="pdf-viewer" src="../scans/BookFilter-Nameless_City_by_Faith_Erin_Hicks-4-5-2016.pdf" title="PDF Article">
-            <p>Your browser does not support embedded PDFs. <a href="../scans/BookFilter-Nameless_City_by_Faith_Erin_Hicks-4-5-2016.pdf">Download the PDF</a> to view.</p>
+        <!-- Article Header -->
+        <div class="article-header">
+            <h1 class="article-title">Nameless City by Faith Erin Hicks</h1>
+            <p class="article-meta">Publication: BookFilter &nbsp;&nbsp;|&nbsp;&nbsp; Date: April 5, 2016</p>
+        </div>
+        
+        <!-- PDF Viewer - Direct embed without buttons -->
+        <iframe class="pdf-viewer" 
+                src="../scans/BookFilter-Nameless_City_by_Faith_Erin_Hicks-4-5-2016.pdf#toolbar=0&navpanes=0" 
+                type="application/pdf"
+                frameborder="0">
+            <p>Your browser does not support PDFs. 
+               <a href="../scans/BookFilter-Nameless_City_by_Faith_Erin_Hicks-4-5-2016.pdf">Click here to view the PDF</a>.
+            </p>
         </iframe>
         
         <!-- Home Button -->
         <div class="home-button">
-            <a href="../index.htm">HOME</a>
+            <a href="../index.htm">Home</a>
         </div>
         
-        <!-- Text Section -->
+        <!-- SEO Text Section -->
         <div class="text-section">
-            <h2>SEO TEXT: Article Content for Search</h2>
+            <h2>SEO TEXT: Article Content for Search Engines</h2>
             <div class="text-content">
                 <p>Home |Register |Sign In Home Top Picks: All Books The Nameless City The Nameless City by Faith Erin Hicks, Jordie Bellaire Price: $21.99 (Hardcover) Published: April 05, 2016 Rating: 0.0/ 5 (0 votes cast) From the Publisher: Every nation that invades the City gives it a new name.&lt;/p&gt;&lt;p&gt; But before long, new invaders arrive and the City changes hands once again.&lt;/p&gt;&lt;p&gt; The natives don't let themselves get caught up in the unending wars.&lt;/p&gt;&lt;p&gt; To them, their home is the Nameless City, and those whotry to name it are forever outsiders.&lt;/p&gt;&lt;p&gt; Kaidu is one such outsider.&lt;/p&gt;&lt;p&gt; He's aDao born and bred--a member of the latest occupying nation.&lt;/p&gt;&lt;p&gt; Rat is a native of the Nameless City.&lt;/p&gt;&lt;p&gt; At first, she hates Kai for everything he stands for, but his love of his new home may be the one thing that canbring these two unlikely friends together.&lt;/p&gt;&lt;p&gt; Let's hope so, because the fateof the Nameless City rests in their hands.&lt;/p&gt;&lt;p&gt; Rate This Book Add To Wishlist |Rate/Review Add To Bookshelf Get This Book Personalize / Add More ChoicesGo to your preferred retailer, click to choose a format and you' ll be taken directly to their site where you can get this book.&lt;/p&gt;&lt;p&gt; What We Say The Nameless City is blessed and cursed by being at a crossroads: in this graphic novel set in an imaginary but very real locale, the Nameless City controls the only passage from a major river to the ocean on the other side of a mountain range.Three great nations battle for control of it, each one holding power for a few decades, re-naming the city and inevitably losing ground to someone else...who then renames the city, holds onto power for a while, then loses power and so on.&lt;/p&gt;&lt;p&gt; The people who actually live in the city never bother to name it themselves, choosing instead to simply endure while othernations battle over and around them.&lt;/p&gt;&lt;p&gt; Into the middle of this vivid world plops Kaidu, the son of a general.&lt;/p&gt;&lt;p&gt; Kaidu feelsShare This Book About The Author Faith Erin Hicks, Jordie Bellaire MoreFaith Erin Hicks is a writer and artist in Vancouver, British Columbia.&lt;/p&gt;&lt;p&gt; Her graphicnovels include Zombies Calling, The War atEllsmere, Brain Camp (with Susan Kim and Laurence Klavan), Friends with Boys,Nothing Can Possibly Go Wrong (with Prudence Shen), the Bigfoot Boy series … Release Info List Price: $21.99 (Hardcover) Published: April 05, 2016 Publisher: First Second Pages: 240 ISBN 10: 1626721572 ISBN 13: 9781626721579drawn to the Nameless City, leaving behind his mother (the leader of their tribe).&lt;/p&gt;&lt;p&gt; He's not a great warrior (really, he prefers a good book), but he's open to the charm of this daunting metropolis and refuses to see the locals as trash, the way most of the other young warriors do.&lt;/p&gt;&lt;p&gt; Kaidu soon befriends a street urchin named Rat, learns to race across the rooftops like her, appreciates the complexity of this city he's chosen as a home and then discovers a plot to bring it all crashing down.Creator Faith Erin Hicks has done a marvelous job in drawing on classic narratives but making her characters just human anddown-to-earth enough to be believable. (Though Rat sure can leap across some mighty chasms.) Hicks employs awonderfully grounded palette that makes the Nameless City vividly real -- this is no fantasy, though there is no particular real world equivalent at play.&lt;/p&gt;&lt;p&gt; Kaidu is appealing, but not a stock hero in waiting; Rat is resourceful, but not so plucky you can't imagine her getting hurt and the other characters follow suit.&lt;/p&gt;&lt;p&gt; And the vistas Hicks offers up are truly eye-catching.&lt;/p&gt;&lt;p&gt; Anexcellent launch to a new series. -- Michael Giltz What Others Say "Faith Erin Hicks breathes life into her characters with gale-force winds.&lt;/p&gt;&lt;p&gt; The Nameless City makes you feel everything its heroes are experiencing inside and out, from adolescent angst to the scrape of terra cotta tiles under a leaping boot." âBryan Konietzko, co-creator of Avatar: The Last Airbender "Faith Erin Hicks is one of the best creators working in graphic novels today and The Nameless City is a fantastic introduction to an exciting new series.&lt;/p&gt;&lt;p&gt; Looking forward to reading more!" âKazu Kibuishi, author of the Amulet series "This tale of unexpected alliances has everything: winning characters, a sumptuous setting, and sharpobservations about power and history.&lt;/p&gt;&lt;p&gt; Hidden depths abound in The Nameless City ." âScott Westerfeld, author of Uglies andZeroes "The beauty and construction of the Nameless City will leave you breathless.&lt;/p&gt;&lt;p&gt; Faith has created a world sodetailed and believable, it makes me want to explore the back alleys to see what is there." âJeff Smith, author of the Bone series "Hicksâs sequential artwork is polished, and though males hold nearly all the political power, the female characters are mighty warriors… More What You Say Filter by No Reviews Found ..... about us |faq|advertise |privacy policy |newsletter |contact us ©2018, BookBuddha LLc.&lt;/p&gt;&lt;p&gt; All Rights Reserved.</p>
             </div>
-        </div>
-        
-        <!-- Footer -->
-        <div class="footer">
-            <p>&copy; 2025 Michael Giltz. All rights reserved.</p>
-            <p>This article originally appeared in BookFilter on 2016.</p>
         </div>
     </div>
 </body>

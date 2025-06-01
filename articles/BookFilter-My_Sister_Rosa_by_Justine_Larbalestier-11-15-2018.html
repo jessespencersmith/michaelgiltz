@@ -3,135 +3,135 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="My Sister Rosa By Justine Larbalestier-11-15 by Michael Giltz - BookFilter">
-    <meta name="keywords" content="BookFilter, My Sister Rosa By Justine Larbalestier-11-15, Michael Giltz, journalism, entertainment">
+    <meta name="description" content="My Sister Rosa by Justine Larbalestier - BookFilter - Michael Giltz">
+    <meta name="keywords" content="Michael Giltz, BookFilter, journalism, article">
     <meta name="author" content="Michael Giltz">
-    <title>My Sister Rosa By Justine Larbalestier-11-15 - BookFilter - Michael Giltz</title>
+    <title>My Sister Rosa by Justine Larbalestier - Michael Giltz</title>
     <link href="../giltz.css" rel="stylesheet" type="text/css" />
     <style>
-        body { 
-            font-family: Arial, sans-serif;
+        body {
+            font-family: 'Times New Roman', Times, serif;
             margin: 0;
             padding: 0;
-            background: #f5f5f5;
+            background: #fff;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
         }
         .site-banner {
             text-align: center;
-            background: white;
-            padding: 10px 0;
+            padding: 20px 0;
+            background: #f9f9f9;
         }
         .site-banner img {
             max-width: 100%;
             height: auto;
         }
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            background: white;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        .header {
-            background: #333;
-            color: white;
-            padding: 20px;
+        .article-header {
             text-align: center;
+            padding: 30px 0 20px 0;
         }
-        .header h1 {
-            margin: 0;
-            font-size: 24px;
+        .article-title {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 28px;
+            font-weight: bold;
+            margin: 0 0 10px 0;
+            color: #333;
         }
-        .header p {
-            margin: 5px 0;
+        .article-meta {
             font-size: 14px;
+            color: #666;
+            margin: 0;
         }
         .pdf-viewer {
             width: 100%;
-            height: 600px;
-            border: none;
-            display: block;
+            height: 800px;
+            margin: 20px 0;
+            border: 1px solid #ddd;
         }
         .home-button {
             text-align: center;
-            padding: 20px;
-            background: #f0f0f0;
+            padding: 30px 0;
         }
         .home-button a {
             display: inline-block;
-            padding: 10px 30px;
+            padding: 12px 40px;
             background: #333;
             color: white;
             text-decoration: none;
             font-weight: bold;
+            font-size: 16px;
             border-radius: 5px;
+            text-transform: uppercase;
         }
         .home-button a:hover {
             background: #555;
         }
         .text-section {
-            padding: 20px;
+            padding: 40px 0;
+            border-top: 3px solid #333;
+            margin-top: 40px;
         }
         .text-section h2 {
+            font-size: 20px;
             color: #333;
-            border-bottom: 2px solid #333;
-            padding-bottom: 10px;
+            margin: 0 0 20px 0;
+            text-transform: uppercase;
         }
         .text-content {
             line-height: 1.8;
             color: #333;
+            font-size: 16px;
         }
         .text-content p {
             margin-bottom: 15px;
         }
-        .footer {
-            background: #f0f0f0;
-            padding: 20px;
-            text-align: center;
-            font-size: 12px;
-            color: #666;
-        }
         @media (max-width: 768px) {
             .pdf-viewer {
-                height: 400px;
+                height: 500px;
+            }
+            .article-title {
+                font-size: 22px;
             }
         }
     </style>
-    <link rel="icon" type="image/x-icon" href="../favicon.ico">
-    <link rel="icon" type="image/png" href="../favicon.png">
 </head>
 <body>
-    <!-- Site Banner -->
-    <div class="site-banner">
-        <a href="../index.htm"><img src="../giltz.jpg" width="800" height="146" alt="MichaelGiltz.com" /></a>
-    </div>
-    
     <div class="container">
-        <div class="header">
-            <h1>My Sister Rosa By Justine Larbalestier-11-15</h1>
-            <p>Publication: BookFilter | Date: 2018 | by Michael Giltz</p>
+        <!-- Site Banner -->
+        <div class="site-banner">
+            <a href="../index.htm"><img src="../giltz.jpg" width="800" height="146" alt="MichaelGiltz.com" /></a>
         </div>
         
-        <!-- PDF Viewer -->
-        <iframe class="pdf-viewer" src="../scans/BookFilter-My_Sister_Rosa_by_Justine_Larbalestier-11-15-2018.pdf" title="PDF Article">
-            <p>Your browser does not support embedded PDFs. <a href="../scans/BookFilter-My_Sister_Rosa_by_Justine_Larbalestier-11-15-2018.pdf">Download the PDF</a> to view.</p>
+        <!-- Article Header -->
+        <div class="article-header">
+            <h1 class="article-title">My Sister Rosa by Justine Larbalestier</h1>
+            <p class="article-meta">Publication: BookFilter &nbsp;&nbsp;|&nbsp;&nbsp; Date: November 15, 2018</p>
+        </div>
+        
+        <!-- PDF Viewer - Direct embed without buttons -->
+        <iframe class="pdf-viewer" 
+                src="../scans/BookFilter-My_Sister_Rosa_by_Justine_Larbalestier-11-15-2018.pdf#toolbar=0&navpanes=0" 
+                type="application/pdf"
+                frameborder="0">
+            <p>Your browser does not support PDFs. 
+               <a href="../scans/BookFilter-My_Sister_Rosa_by_Justine_Larbalestier-11-15-2018.pdf">Click here to view the PDF</a>.
+            </p>
         </iframe>
         
         <!-- Home Button -->
         <div class="home-button">
-            <a href="../index.htm">HOME</a>
+            <a href="../index.htm">Home</a>
         </div>
         
-        <!-- Text Section -->
+        <!-- SEO Text Section -->
         <div class="text-section">
-            <h2>SEO TEXT: Article Content for Search</h2>
+            <h2>SEO TEXT: Article Content for Search Engines</h2>
             <div class="text-content">
                 <p>Home |Register |Sign In Home Top Picks: All Books My Sister Rosa My Sister Rosa by Justine Larbalestier Price: $18.99 (Hardcover) MorePublished: November 15, 2016 Rating: 0.0/ 5 (0 votes cast) From the Publisher: "Beats The Silence of the Lambs for suspense—it's the kind of book that had me literally gasping aloud as it rattled to its incredible conclusion." —Cory Doctorow, New York Times bestselling author of Homeland What if the most terrifying person you know is your ten-year-old sister? Seventeen-year-old Aussie Che Taylor loves his younger sister, Rosa.&lt;/p&gt;&lt;p&gt; But he’s also certain that she’s a psychopath—clinically, threateningly,dangerously.&lt;/p&gt;&lt;p&gt; Recently Rosa has been making trouble, hurting things.&lt;/p&gt;&lt;p&gt; Che is the only one who knows; he’s the only one his sister trusts.&lt;/p&gt;&lt;p&gt; Rosa is smart, talented, pretty, and very good at hiding what she is and the manipulationshe’s capable of.&lt;/p&gt;&lt;p&gt; Their parents, whose business takes the family from place to place, brush off the warning signs as Rosa’s “acting out.” Now that they have movedagain—from… Rate This Book Add To Wishlist |Rate/Review Add To Bookshelf Get This Book Personalize / Add More ChoicesGo to your preferred retailer, click to choose a format and you' ll be taken directly to their site where you can get this book.&lt;/p&gt;&lt;p&gt; What We Say What if your little sister was Dexter, you know, the lovable serial killer from the Showtime series? That's the hook of this young adult novel that is both more complex and real but less engaging than that premise suggests.&lt;/p&gt;&lt;p&gt; It's ultimately not athriller or even a "raising Dexter" backstory, despite watching the teenager Che try to train his little sister (who lacks empathy to the level of being a psychopath) how to live in the world and not harm others.&lt;/p&gt;&lt;p&gt; What it proves to be is a fairly complicated novel that gets less and less interesting the more and more it devolves into "The Bad Seed." (A novel name-Share This Book About The Author Justine Larbalestier MoreJustine Larbalestier is the Australian- American author of many novels, including the award-winning Razorhurst and Liar , which both received four starred reviews.Justine lives in Sydney, Australia, and NewYork City, though not at the same time.&lt;/p&gt;&lt;p&gt; You can find her on Twitter @JustineLavaworm … Release Info List Price: $18.99 (Hardcover) Published: November 15, 2016 Publisher: Soho Teen Pages: 320 ISBN 10: 1616956747 ISBN 13: 9781616956745checked by the author at the end.) Here's the gist: Che is a teenage kid who is mostly homeschooled and moves all over the world with his do-gooding parents and his little sister Rosa.&lt;/p&gt;&lt;p&gt; Che has self-diagnosed Rosa as a psychopath and is learningeverything he can in order to try and keep her from hurting others.&lt;/p&gt;&lt;p&gt; Rosa consumes much of his attention.&lt;/p&gt;&lt;p&gt; But when thefamily moves -- again -- to New York City, Che sees the wide open world of Manhattan as his biggest challenge yet in keeping an eye on his budding evil villain sibling.&lt;/p&gt;&lt;p&gt; Now put all that aside.&lt;/p&gt;&lt;p&gt; The novel is on much firmer ground when author Larbalestier focuses on Che, his love of boxing, his budding romance with a free-love Christian female boxer namedSojourner and his friendship with an online celebrity friend of the family who is one of the few to realize Che's little sisteris weirdly robotic.&lt;/p&gt;&lt;p&gt; The simpler the story, the better.&lt;/p&gt;&lt;p&gt; Che debating with Rosa and trying to "trap" her with promises is effective.&lt;/p&gt;&lt;p&gt; An escalating series of Rosa-engineered tragedies? Not so interesting.&lt;/p&gt;&lt;p&gt; For a book whose high concept plot will be the reason most people pick it up, "My Sister Rosa" is at its best when Rosa fades into the background. -- Michael Giltz What Others Say Praise for My Sister Rosa Publishers Weekly Best Young Adult Books of 2016 "Not one to shy away from tough subject matter, Larbalestier addresses issues related to gender, sexual orientation, religion, identity, and race with tact . . .&lt;/p&gt;&lt;p&gt; This dark thriller is the 1956 film The Bad Seed meets 2016; readers will be simultaneously terrified when Rosa's present and afraid to let her out of their sight." —Kirkus , Starred Review "A chilling contemplation on human morality—Che’s physical sparring in the ring has nothing on his go-arounds with Rosa... [incorporates] sharp commentary on privilege, faith, gender identity, and race.&lt;/p&gt;&lt;p&gt; The tension of wondering where and how Rosa will strike next will keep readers riveted from start to finish." —Publishers Weekly , Starred Review "Larbalestier reminds readers of her masterful gift for slippery, unreliable characters... thriller fans will devour this suspenseful, chilling meditation on the roles of nature and nurture in creating dangerous criminals." —ShelfAwareness, Starred Review "A tense, thrilling rumination on the psychology… More What You Say Filter by No Reviews Found ..... about us |faq|advertise |privacy policy |newsletter |contact us ©2018, BookBuddha LLc.&lt;/p&gt;&lt;p&gt; All Rights Reserved.</p>
             </div>
-        </div>
-        
-        <!-- Footer -->
-        <div class="footer">
-            <p>&copy; 2025 Michael Giltz. All rights reserved.</p>
-            <p>This article originally appeared in BookFilter on 2018.</p>
         </div>
     </div>
 </body>

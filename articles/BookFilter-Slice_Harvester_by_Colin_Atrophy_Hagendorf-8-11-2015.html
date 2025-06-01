@@ -3,135 +3,135 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Slice Harvester By Colin Atrophy Hagendorf-8-11 by Michael Giltz - BookFilter">
-    <meta name="keywords" content="BookFilter, Slice Harvester By Colin Atrophy Hagendorf-8-11, Michael Giltz, journalism, entertainment">
+    <meta name="description" content="Slice Harvester by Colin Atrophy Hagendorf - BookFilter - Michael Giltz">
+    <meta name="keywords" content="Michael Giltz, BookFilter, journalism, article">
     <meta name="author" content="Michael Giltz">
-    <title>Slice Harvester By Colin Atrophy Hagendorf-8-11 - BookFilter - Michael Giltz</title>
+    <title>Slice Harvester by Colin Atrophy Hagendorf - Michael Giltz</title>
     <link href="../giltz.css" rel="stylesheet" type="text/css" />
     <style>
-        body { 
-            font-family: Arial, sans-serif;
+        body {
+            font-family: 'Times New Roman', Times, serif;
             margin: 0;
             padding: 0;
-            background: #f5f5f5;
+            background: #fff;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
         }
         .site-banner {
             text-align: center;
-            background: white;
-            padding: 10px 0;
+            padding: 20px 0;
+            background: #f9f9f9;
         }
         .site-banner img {
             max-width: 100%;
             height: auto;
         }
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            background: white;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        .header {
-            background: #333;
-            color: white;
-            padding: 20px;
+        .article-header {
             text-align: center;
+            padding: 30px 0 20px 0;
         }
-        .header h1 {
-            margin: 0;
-            font-size: 24px;
+        .article-title {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 28px;
+            font-weight: bold;
+            margin: 0 0 10px 0;
+            color: #333;
         }
-        .header p {
-            margin: 5px 0;
+        .article-meta {
             font-size: 14px;
+            color: #666;
+            margin: 0;
         }
         .pdf-viewer {
             width: 100%;
-            height: 600px;
-            border: none;
-            display: block;
+            height: 800px;
+            margin: 20px 0;
+            border: 1px solid #ddd;
         }
         .home-button {
             text-align: center;
-            padding: 20px;
-            background: #f0f0f0;
+            padding: 30px 0;
         }
         .home-button a {
             display: inline-block;
-            padding: 10px 30px;
+            padding: 12px 40px;
             background: #333;
             color: white;
             text-decoration: none;
             font-weight: bold;
+            font-size: 16px;
             border-radius: 5px;
+            text-transform: uppercase;
         }
         .home-button a:hover {
             background: #555;
         }
         .text-section {
-            padding: 20px;
+            padding: 40px 0;
+            border-top: 3px solid #333;
+            margin-top: 40px;
         }
         .text-section h2 {
+            font-size: 20px;
             color: #333;
-            border-bottom: 2px solid #333;
-            padding-bottom: 10px;
+            margin: 0 0 20px 0;
+            text-transform: uppercase;
         }
         .text-content {
             line-height: 1.8;
             color: #333;
+            font-size: 16px;
         }
         .text-content p {
             margin-bottom: 15px;
         }
-        .footer {
-            background: #f0f0f0;
-            padding: 20px;
-            text-align: center;
-            font-size: 12px;
-            color: #666;
-        }
         @media (max-width: 768px) {
             .pdf-viewer {
-                height: 400px;
+                height: 500px;
+            }
+            .article-title {
+                font-size: 22px;
             }
         }
     </style>
-    <link rel="icon" type="image/x-icon" href="../favicon.ico">
-    <link rel="icon" type="image/png" href="../favicon.png">
 </head>
 <body>
-    <!-- Site Banner -->
-    <div class="site-banner">
-        <a href="../index.htm"><img src="../giltz.jpg" width="800" height="146" alt="MichaelGiltz.com" /></a>
-    </div>
-    
     <div class="container">
-        <div class="header">
-            <h1>Slice Harvester By Colin Atrophy Hagendorf-8-11</h1>
-            <p>Publication: BookFilter | Date: 2015 | by Michael Giltz</p>
+        <!-- Site Banner -->
+        <div class="site-banner">
+            <a href="../index.htm"><img src="../giltz.jpg" width="800" height="146" alt="MichaelGiltz.com" /></a>
         </div>
         
-        <!-- PDF Viewer -->
-        <iframe class="pdf-viewer" src="../scans/BookFilter-Slice_Harvester_by_Colin_Atrophy_Hagendorf-8-11-2015.pdf" title="PDF Article">
-            <p>Your browser does not support embedded PDFs. <a href="../scans/BookFilter-Slice_Harvester_by_Colin_Atrophy_Hagendorf-8-11-2015.pdf">Download the PDF</a> to view.</p>
+        <!-- Article Header -->
+        <div class="article-header">
+            <h1 class="article-title">Slice Harvester by Colin Atrophy Hagendorf</h1>
+            <p class="article-meta">Publication: BookFilter &nbsp;&nbsp;|&nbsp;&nbsp; Date: August 11, 2015</p>
+        </div>
+        
+        <!-- PDF Viewer - Direct embed without buttons -->
+        <iframe class="pdf-viewer" 
+                src="../scans/BookFilter-Slice_Harvester_by_Colin_Atrophy_Hagendorf-8-11-2015.pdf#toolbar=0&navpanes=0" 
+                type="application/pdf"
+                frameborder="0">
+            <p>Your browser does not support PDFs. 
+               <a href="../scans/BookFilter-Slice_Harvester_by_Colin_Atrophy_Hagendorf-8-11-2015.pdf">Click here to view the PDF</a>.
+            </p>
         </iframe>
         
         <!-- Home Button -->
         <div class="home-button">
-            <a href="../index.htm">HOME</a>
+            <a href="../index.htm">Home</a>
         </div>
         
-        <!-- Text Section -->
+        <!-- SEO Text Section -->
         <div class="text-section">
-            <h2>SEO TEXT: Article Content for Search</h2>
+            <h2>SEO TEXT: Article Content for Search Engines</h2>
             <div class="text-content">
                 <p>12/1/2015BookFilter | Evernote Web https://www.evernote.com/Home.action#n=0ea572df-d6a0-4244-95b1-b22ae8d0d027&amp;ses=4&amp;sh=2&amp;sds=5&amp;1/3HomeTop Picks: All BooksSlice Harvester A Memoir in Pizza MoreSlice Harvesterby Colin Atrophy HagendorfPrice: $23.00(Hardcover)Published: August 11, 2015Rating: 0.0/5 (0 votes cast)From the Publisher: Over the course of two years, a twenty-something punk rocker eats a cheese slice from every pizzeria inNew York City, gets sober, falls in love, and starts a blog thatcaptures headlines around the world—he is the Slice Harvester,and this is his story.Since its arrival on US shores in 1905, pizza has risen from anobscure ethnic food to an iconic symbol of American culture.&lt;/p&gt;&lt;p&gt; It hasvisited us in our dorm rooms and apartments, sometimes beforewe’d even unpacked or painted.&lt;/p&gt;&lt;p&gt; It has nourished us during ourjobs, consoled us during break-ups, and celebrated our triumphsright alongside us.In August 2009, Colin Hagendorf set out to review every regularslice of pizza in Manhattan, and his blog, Slice Harvester, wasborn.&lt;/p&gt;&lt;p&gt; Two years and nearly 400 slices later, he’d been featured inThe Wall Street Journal, the Daily News (New…Rate This Book|Rate/ReviewAdd To BookshelfGet This BookGo to your preferred retailer, click to choose a format and you' ll be taken directly to their site whereyou can get this book.BookFilter12/1/2015BookFilter | Evernote Web https://www.evernote.com/Home.action#n=0ea572df-d6a0-4244-95b1-b22ae8d0d027&amp;ses=4&amp;sh=2&amp;sds=5&amp;2/3 Personalize / Add More ChoicesWhat We SayWell, I didn't expect this! Some young punk -- literally, he loves punk; I'm not being dismissive or Cagney-esque --got a clever idea.&lt;/p&gt;&lt;p&gt; Go to every pizza by the slice joint in Manhattan and review them all, one by one.&lt;/p&gt;&lt;p&gt; He starts a blog.He launches a zine.&lt;/p&gt;&lt;p&gt; He gets media attention because, like I said, it's a good idea and he wrote entertainingly about it.Good for him.&lt;/p&gt;&lt;p&gt; But a book? For whatever reason I casually started it (I skim a lot of books these days, panning forgold) and suddenly I was hooked.&lt;/p&gt;&lt;p&gt; Yes, he writes amusingly about pizza, even pointing me to some joints I need tocheck out.&lt;/p&gt;&lt;p&gt; But this isn't a glorified collection of blog posts.&lt;/p&gt;&lt;p&gt; It's a full blown memoir about growing up a disgruntled,pain in the ass kid who found salvation and meaning in the subculture of punk.&lt;/p&gt;&lt;p&gt; Hagendorf (love the name!) ischarmingly self-deprecating about his childhood, perceptive and smart in depicting life as he saw it then with enoughdetached amusement to be charming without ever demeaning the oh so passionate viewpoint of his younger self.Then we see him out on his own delivering burritos and other...stuff, developing a serious drinking problem, being ina band (natch) and having a friend die by choking on his own vomit at far too young an age.&lt;/p&gt;&lt;p&gt; Within a year, Hagendorfhas decided to do SOMETHING with his life and it might as well be this cockamie pizza idea.&lt;/p&gt;&lt;p&gt; He launches the blog,starts to date a super terrific gal who's way too cool for him yet somehow sticks around even as his drinking getsworse (taking a job at a bar didn't help) and ultimately sobering up.&lt;/p&gt;&lt;p&gt; Plus pizza! He works in all this along witheffective sketches of various pizza owners and the changing neighborhoods they are found in.&lt;/p&gt;&lt;p&gt; It's sweet, moving,breezy and quick.&lt;/p&gt;&lt;p&gt; And far more than an ode to pizza by the slice, but it's that too.&lt;/p&gt;&lt;p&gt; I'll bet he's got a novel in himsomewhere; presumably he'll write it in the booth of one of his favorite joints. -- Michael GiltzLessWhat Others Say“Hagendorf’s popular Slice Harvester blog chronicled his quest to eat and review a slice of cheese pizza from everypizzeria in Manhattan.&lt;/p&gt;&lt;p&gt; In this entertaining memoir, he mashes up that journey with the topics of addiction, family,punk rock, nostalgia, and love. … Full of drinking binges, colorful characters from the punk scene, and randomasides, like comparing a slice to Anthony Kiedis, the narrative takes readers on a roller-coaster ride.” - PublishersWeekly“It speaks to me man.&lt;/p&gt;&lt;p&gt; It’s about New York and pizza and getting your shit together.&lt;/p&gt;&lt;p&gt; That’s what I’m about and whatI’m trying to be about.” - Himanshu Suri, rapperWhat You SayFilter byNo Reviews Found .....</p>
             </div>
-        </div>
-        
-        <!-- Footer -->
-        <div class="footer">
-            <p>&copy; 2025 Michael Giltz. All rights reserved.</p>
-            <p>This article originally appeared in BookFilter on 2015.</p>
         </div>
     </div>
 </body>

@@ -3,135 +3,135 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Nest By Esther Ehrlich-9-9 by Michael Giltz - BookFilter">
-    <meta name="keywords" content="BookFilter, Nest By Esther Ehrlich-9-9, Michael Giltz, journalism, entertainment">
+    <meta name="description" content="Nest by Esther Ehrlich - BookFilter - Michael Giltz">
+    <meta name="keywords" content="Michael Giltz, BookFilter, journalism, article">
     <meta name="author" content="Michael Giltz">
-    <title>Nest By Esther Ehrlich-9-9 - BookFilter - Michael Giltz</title>
+    <title>Nest by Esther Ehrlich - Michael Giltz</title>
     <link href="../giltz.css" rel="stylesheet" type="text/css" />
     <style>
-        body { 
-            font-family: Arial, sans-serif;
+        body {
+            font-family: 'Times New Roman', Times, serif;
             margin: 0;
             padding: 0;
-            background: #f5f5f5;
+            background: #fff;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
         }
         .site-banner {
             text-align: center;
-            background: white;
-            padding: 10px 0;
+            padding: 20px 0;
+            background: #f9f9f9;
         }
         .site-banner img {
             max-width: 100%;
             height: auto;
         }
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            background: white;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        .header {
-            background: #333;
-            color: white;
-            padding: 20px;
+        .article-header {
             text-align: center;
+            padding: 30px 0 20px 0;
         }
-        .header h1 {
-            margin: 0;
-            font-size: 24px;
+        .article-title {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 28px;
+            font-weight: bold;
+            margin: 0 0 10px 0;
+            color: #333;
         }
-        .header p {
-            margin: 5px 0;
+        .article-meta {
             font-size: 14px;
+            color: #666;
+            margin: 0;
         }
         .pdf-viewer {
             width: 100%;
-            height: 600px;
-            border: none;
-            display: block;
+            height: 800px;
+            margin: 20px 0;
+            border: 1px solid #ddd;
         }
         .home-button {
             text-align: center;
-            padding: 20px;
-            background: #f0f0f0;
+            padding: 30px 0;
         }
         .home-button a {
             display: inline-block;
-            padding: 10px 30px;
+            padding: 12px 40px;
             background: #333;
             color: white;
             text-decoration: none;
             font-weight: bold;
+            font-size: 16px;
             border-radius: 5px;
+            text-transform: uppercase;
         }
         .home-button a:hover {
             background: #555;
         }
         .text-section {
-            padding: 20px;
+            padding: 40px 0;
+            border-top: 3px solid #333;
+            margin-top: 40px;
         }
         .text-section h2 {
+            font-size: 20px;
             color: #333;
-            border-bottom: 2px solid #333;
-            padding-bottom: 10px;
+            margin: 0 0 20px 0;
+            text-transform: uppercase;
         }
         .text-content {
             line-height: 1.8;
             color: #333;
+            font-size: 16px;
         }
         .text-content p {
             margin-bottom: 15px;
         }
-        .footer {
-            background: #f0f0f0;
-            padding: 20px;
-            text-align: center;
-            font-size: 12px;
-            color: #666;
-        }
         @media (max-width: 768px) {
             .pdf-viewer {
-                height: 400px;
+                height: 500px;
+            }
+            .article-title {
+                font-size: 22px;
             }
         }
     </style>
-    <link rel="icon" type="image/x-icon" href="../favicon.ico">
-    <link rel="icon" type="image/png" href="../favicon.png">
 </head>
 <body>
-    <!-- Site Banner -->
-    <div class="site-banner">
-        <a href="../index.htm"><img src="../giltz.jpg" width="800" height="146" alt="MichaelGiltz.com" /></a>
-    </div>
-    
     <div class="container">
-        <div class="header">
-            <h1>Nest By Esther Ehrlich-9-9</h1>
-            <p>Publication: BookFilter | Date: 2014 | by Michael Giltz</p>
+        <!-- Site Banner -->
+        <div class="site-banner">
+            <a href="../index.htm"><img src="../giltz.jpg" width="800" height="146" alt="MichaelGiltz.com" /></a>
         </div>
         
-        <!-- PDF Viewer -->
-        <iframe class="pdf-viewer" src="../scans/BookFilter-Nest_by_Esther_Ehrlich-9-9-2014.pdf" title="PDF Article">
-            <p>Your browser does not support embedded PDFs. <a href="../scans/BookFilter-Nest_by_Esther_Ehrlich-9-9-2014.pdf">Download the PDF</a> to view.</p>
+        <!-- Article Header -->
+        <div class="article-header">
+            <h1 class="article-title">Nest by Esther Ehrlich</h1>
+            <p class="article-meta">Publication: BookFilter &nbsp;&nbsp;|&nbsp;&nbsp; Date: September 9, 2014</p>
+        </div>
+        
+        <!-- PDF Viewer - Direct embed without buttons -->
+        <iframe class="pdf-viewer" 
+                src="../scans/BookFilter-Nest_by_Esther_Ehrlich-9-9-2014.pdf#toolbar=0&navpanes=0" 
+                type="application/pdf"
+                frameborder="0">
+            <p>Your browser does not support PDFs. 
+               <a href="../scans/BookFilter-Nest_by_Esther_Ehrlich-9-9-2014.pdf">Click here to view the PDF</a>.
+            </p>
         </iframe>
         
         <!-- Home Button -->
         <div class="home-button">
-            <a href="../index.htm">HOME</a>
+            <a href="../index.htm">Home</a>
         </div>
         
-        <!-- Text Section -->
+        <!-- SEO Text Section -->
         <div class="text-section">
-            <h2>SEO TEXT: Article Content for Search</h2>
+            <h2>SEO TEXT: Article Content for Search Engines</h2>
             <div class="text-content">
                 <p>12/1/2015BookFilter | Evernote Web https://www.evernote.com/Home.action#n=c6f1e8c6-8d3f-4234-9ece-7d62c9dca149&amp;ses=4&amp;sh=2&amp;sds=5&amp;1/2HomeTop Picks: All BooksNest MoreNestby Esther EhrlichPrice: $19.99(Hardcover)Published: September 09, 2014Rating: 0.0/5 (0 votes cast)From the Publisher: For fans of Jennifer Holm (Penny fromHeaven, Turtle in Paradise), a heartfelt and unforgettable middle-grade novel about an irresistible girl and her family, tragic change,and the healing power of love and friendship.&lt;/p&gt;&lt;p&gt; In 1972 home is acozy nest on Cape Cod for eleven-year-old Naomi “Chirp”Orenstein, her older sister, Rachel; her psychiatrist father; and herdancer mother.&lt;/p&gt;&lt;p&gt; But then Chirp’s mom develops symptoms of aserious disease, and everything changes.&lt;/p&gt;&lt;p&gt; Chirp finds comfort in watching her beloved wild birds.&lt;/p&gt;&lt;p&gt; She alsofinds a true friend in Joey, the mysterious boy who lives across thestreet.&lt;/p&gt;&lt;p&gt; Together they create their own private world and come upwith the perfect plan: Escape.&lt;/p&gt;&lt;p&gt; Adventure.&lt;/p&gt;&lt;p&gt; Discovery.&lt;/p&gt;&lt;p&gt; Nest is Esther Ehrlich’s stunning debut novel.&lt;/p&gt;&lt;p&gt; Her lyrical writingis honest, humorous, and deeply affecting.…Rate This Book|Rate/ReviewAdd To BookshelfGet This Book Go to your preferred retailer, click to choose a format and you' ll be taken directly to their site whereyou can get this book.BookFilter12/1/2015BookFilter | Evernote Web https://www.evernote.com/Home.action#n=c6f1e8c6-8d3f-4234-9ece-7d62c9dca149&amp;ses=4&amp;sh=2&amp;sds=5&amp;2/2 Personalize / Add More ChoicesWhat We SayThis debut novel by Esther Ehrlich is a winner.&lt;/p&gt;&lt;p&gt; Set in 1972, it shows 11 year old Chirp dealing with her dancer mom'ssudden illness.&lt;/p&gt;&lt;p&gt; As if a diagnosis of multiple sclerosis wasn't hard enough, Chirp's mom sinks into depression and hasto be institutionalized and conceivably undergo electro-shock therapy to snap her out of her doldrums.&lt;/p&gt;&lt;p&gt; Chirp'spsychiatrist dad is annoyingly (if lovingly) ready to address her feelings and her older sister Rachel too quick to stepinto the role of mother.&lt;/p&gt;&lt;p&gt; Still, as her travails pile up, one of the unexpected insights of "Nest" is that she may have itbetter than her neighbor and classmate Joey.&lt;/p&gt;&lt;p&gt; Ehrlich never quite spells out what is going on in Joey's household, buthe's got three dangerous and bullying older brothers and a hateful father, not to mention what we would ID as someserious OCD issues.&lt;/p&gt;&lt;p&gt; But that drama is only hinted at -- this isn't an AfterSchool Special.&lt;/p&gt;&lt;p&gt; Esther and Joey simplybecome wary friends who have ups and downs with their misunderstandings and attempts to help each other.&lt;/p&gt;&lt;p&gt; WhyChirp as a nickname? Because our heroine loves birds and is a budding naturalist who escapes to nature with herbinoculars whenever she can.&lt;/p&gt;&lt;p&gt; That leads to a poignant scene late in the book and gives her a positive passion tocounteract all the high drama in Chirp's life.&lt;/p&gt;&lt;p&gt; Ehrlich's book is excellent at depicting her family life, especially how anolder sibling can be annoying one moment and the most important person in the world to a kid in the next. "Nest" isfunny, sharp and quite moving.&lt;/p&gt;&lt;p&gt; It's slotted in the category for kids and young adults, but anyone should savor thissharply written tale and its memorable heroine. -- Michael GiltzLessWhat Others SayKirkus starred review, May 15, 2014:“A poignant, insightful story of family crisis and the healing power of friendship.”School Library Journal starred review, May 15, 2014:A stunning debut, with lyrical prose and superbly developed characters, this novel is an emotional roller coaster thateffectively conveys a family’s visceral tragedy.Publishers Weekly starred review, July 14, 2014:"Ehrlich’s novel beautifully captures the fragile bond shared by Chirp and Joey and their growing trust for each otherin a world filled with disappointments and misunderstandings."What You SayFilter byNo Reviews Found .....</p>
             </div>
-        </div>
-        
-        <!-- Footer -->
-        <div class="footer">
-            <p>&copy; 2025 Michael Giltz. All rights reserved.</p>
-            <p>This article originally appeared in BookFilter on 2014.</p>
         </div>
     </div>
 </body>

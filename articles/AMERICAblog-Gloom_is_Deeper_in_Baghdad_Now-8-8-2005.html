@@ -3,135 +3,135 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Gloom Is Deeper In Baghdad Now-8-8 by Michael Giltz - AMERICAblog">
-    <meta name="keywords" content="AMERICAblog, Gloom Is Deeper In Baghdad Now-8-8, Michael Giltz, journalism, entertainment">
+    <meta name="description" content="Gloom is Deeper in Baghdad Now - AMERICAblog - Michael Giltz">
+    <meta name="keywords" content="Michael Giltz, AMERICAblog, journalism, article">
     <meta name="author" content="Michael Giltz">
-    <title>Gloom Is Deeper In Baghdad Now-8-8 - AMERICAblog - Michael Giltz</title>
+    <title>Gloom is Deeper in Baghdad Now - Michael Giltz</title>
     <link href="../giltz.css" rel="stylesheet" type="text/css" />
     <style>
-        body { 
-            font-family: Arial, sans-serif;
+        body {
+            font-family: 'Times New Roman', Times, serif;
             margin: 0;
             padding: 0;
-            background: #f5f5f5;
+            background: #fff;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
         }
         .site-banner {
             text-align: center;
-            background: white;
-            padding: 10px 0;
+            padding: 20px 0;
+            background: #f9f9f9;
         }
         .site-banner img {
             max-width: 100%;
             height: auto;
         }
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            background: white;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        .header {
-            background: #333;
-            color: white;
-            padding: 20px;
+        .article-header {
             text-align: center;
+            padding: 30px 0 20px 0;
         }
-        .header h1 {
-            margin: 0;
-            font-size: 24px;
+        .article-title {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 28px;
+            font-weight: bold;
+            margin: 0 0 10px 0;
+            color: #333;
         }
-        .header p {
-            margin: 5px 0;
+        .article-meta {
             font-size: 14px;
+            color: #666;
+            margin: 0;
         }
         .pdf-viewer {
             width: 100%;
-            height: 600px;
-            border: none;
-            display: block;
+            height: 800px;
+            margin: 20px 0;
+            border: 1px solid #ddd;
         }
         .home-button {
             text-align: center;
-            padding: 20px;
-            background: #f0f0f0;
+            padding: 30px 0;
         }
         .home-button a {
             display: inline-block;
-            padding: 10px 30px;
+            padding: 12px 40px;
             background: #333;
             color: white;
             text-decoration: none;
             font-weight: bold;
+            font-size: 16px;
             border-radius: 5px;
+            text-transform: uppercase;
         }
         .home-button a:hover {
             background: #555;
         }
         .text-section {
-            padding: 20px;
+            padding: 40px 0;
+            border-top: 3px solid #333;
+            margin-top: 40px;
         }
         .text-section h2 {
+            font-size: 20px;
             color: #333;
-            border-bottom: 2px solid #333;
-            padding-bottom: 10px;
+            margin: 0 0 20px 0;
+            text-transform: uppercase;
         }
         .text-content {
             line-height: 1.8;
             color: #333;
+            font-size: 16px;
         }
         .text-content p {
             margin-bottom: 15px;
         }
-        .footer {
-            background: #f0f0f0;
-            padding: 20px;
-            text-align: center;
-            font-size: 12px;
-            color: #666;
-        }
         @media (max-width: 768px) {
             .pdf-viewer {
-                height: 400px;
+                height: 500px;
+            }
+            .article-title {
+                font-size: 22px;
             }
         }
     </style>
-    <link rel="icon" type="image/x-icon" href="../favicon.ico">
-    <link rel="icon" type="image/png" href="../favicon.png">
 </head>
 <body>
-    <!-- Site Banner -->
-    <div class="site-banner">
-        <a href="../index.htm"><img src="../giltz.jpg" width="800" height="146" alt="MichaelGiltz.com" /></a>
-    </div>
-    
     <div class="container">
-        <div class="header">
-            <h1>Gloom Is Deeper In Baghdad Now-8-8</h1>
-            <p>Publication: AMERICAblog | Date: 2005 | by Michael Giltz</p>
+        <!-- Site Banner -->
+        <div class="site-banner">
+            <a href="../index.htm"><img src="../giltz.jpg" width="800" height="146" alt="MichaelGiltz.com" /></a>
         </div>
         
-        <!-- PDF Viewer -->
-        <iframe class="pdf-viewer" src="../scans/AMERICAblog-Gloom_is_Deeper_in_Baghdad_Now-8-8-2005.pdf" title="PDF Article">
-            <p>Your browser does not support embedded PDFs. <a href="../scans/AMERICAblog-Gloom_is_Deeper_in_Baghdad_Now-8-8-2005.pdf">Download the PDF</a> to view.</p>
+        <!-- Article Header -->
+        <div class="article-header">
+            <h1 class="article-title">Gloom is Deeper in Baghdad Now</h1>
+            <p class="article-meta">Publication: AMERICAblog &nbsp;&nbsp;|&nbsp;&nbsp; Date: August 8, 2005</p>
+        </div>
+        
+        <!-- PDF Viewer - Direct embed without buttons -->
+        <iframe class="pdf-viewer" 
+                src="../scans/AMERICAblog-Gloom_is_Deeper_in_Baghdad_Now-8-8-2005.pdf#toolbar=0&navpanes=0" 
+                type="application/pdf"
+                frameborder="0">
+            <p>Your browser does not support PDFs. 
+               <a href="../scans/AMERICAblog-Gloom_is_Deeper_in_Baghdad_Now-8-8-2005.pdf">Click here to view the PDF</a>.
+            </p>
         </iframe>
         
         <!-- Home Button -->
         <div class="home-button">
-            <a href="../index.htm">HOME</a>
+            <a href="../index.htm">Home</a>
         </div>
         
-        <!-- Text Section -->
+        <!-- SEO Text Section -->
         <div class="text-section">
-            <h2>SEO TEXT: Article Content for Search</h2>
+            <h2>SEO TEXT: Article Content for Search Engines</h2>
             <div class="text-content">
                 <p>M O N D A Y , A U G U S T 0 8 , 2 0 0 5"Gloom is Deeper in Baghdad Now..."by Michael in New York on 8/08/2005 11:31:00 PMAn excellent London Review of Books article on Iraq fromreporter Patrick Cockburn.&lt;/p&gt;&lt;p&gt; Only available to subscribers, sohere are some substantial highlights.&lt;/p&gt;&lt;p&gt; In short: things arelooking down.Suicide bombs blow up with the regularity of an artillerybarrage in Baghdad.&lt;/p&gt;&lt;p&gt; I no longer always go up onto the roofof the al-Hamra Hotel, where I am living, to see the blacksmoke rising and to try to work out where the bomb wentoff.&lt;/p&gt;&lt;p&gt; On a single day recently 12 suicide bombsexploded in the city, killing at least 30 people....Gloom is deeper in Baghdad now than at any time since theoverthrow of Saddam Hussein in 2003.&lt;/p&gt;&lt;p&gt; Even Iraqiofficials in the relative safety of the Green Zone, onceinvariably optimistic, are beginning to despair.&lt;/p&gt;&lt;p&gt; It isnot only the increase in the number of suicide bombs.There is a water shortage in some parts of the city.Electricity supply is down to five hours a day....Hatred between Sunni and Shia Arabs has been intensifyingover the past few months.&lt;/p&gt;&lt;p&gt; Iraqis used to claim thatsectarianism had been fomented or exacerbated bySaddam.&lt;/p&gt;&lt;p&gt; In reality the tension between Sunni, Shia andKurd has always shaped Iraqi politics....Defence procurement in the Middle East, as in much of theworld, is corrupt.&lt;/p&gt;&lt;p&gt; But in most countries usable equipment,however overpriced, does eventually turn up.&lt;/p&gt;&lt;p&gt; In Iraq thecorruption is on a different scale: often the moneydisappears entirely and nothing is received in return....Nobody knows how many soldiers and policemen actuallyturn up for work.&lt;/p&gt;&lt;p&gt; Mahmoud Othman, a veteran Kurdishpolitical leader, says that an army unit supposedlynumbering 2200 men was sent to Kirkuk.&lt;/p&gt;&lt;p&gt; The Kurdscounted them: there were just 300 men in the unit.&lt;/p&gt;&lt;p&gt; Nobodyknew what had happened to the other 1900. "They saythat there are 150,000 men in the army and police,"Othman says, "but I believe the real figure is40,000." The rest either appear only to draw theirpay or never existed in the first place....The chances of a unitary Iraq emerging from the conflictare dwindling.&lt;/p&gt;&lt;p&gt; The Kurds, triumphant after fighting for halfa century, are not going to give up the oil city of Kirkuk orabandon a level of autonomy close to independence.&lt;/p&gt;&lt;p&gt; TheShias want as much power as they can get.&lt;/p&gt;&lt;p&gt; The Sunnishave shown by their armed resistance that they candestabilise Iraq for as long as they want.&lt;/p&gt;&lt;p&gt; But the insurgentswill not be able to spread resistance beyond the Sunnicommunity because of the savage attacks by the suicidebombers on Shia mosques and children playing in the streetin Shia districts.&lt;/p&gt;&lt;p&gt; The appeal of Iraqi nationalism isebbing....And my favorite line:The looting of Baghdad which began in the days afterSaddam's fall has never really ended.&lt;/p&gt;&lt;p&gt; Advertisement 'Lose Your Belly: 1 Rule'How I cut down 3 lbs of body fatevery week by obeying this 1simple rule.&lt;/p&gt;&lt;p&gt; Learn more Ben SmithRegrets, sort of - Gibbs says Obama regrets hisGates comments, sort of, and blames he press: "Ithink he would regret if realized how much of an o5 minutes ago Daily KosSpecter, Sestak to Visit Netroots Nation - I amthrilled to announce that on Friday, August 14,Sen.&lt;/p&gt;&lt;p&gt; Arlen Specter and Rep.&lt;/p&gt;&lt;p&gt; Joseph Sestak will bejoining us at Netroots Nation 2009 for aPennsylva...12 minutes ago HuffPost PoliticsMike Elk: GE Moves Green Jobs To China - In thelast decade, GE has closed over fifteen factories inOhio and downsized numerous others.&lt;/p&gt;&lt;p&gt; Since 1980,employment in GE Lighting has dropped by 68percent.21 minutes ago FiredoglakeFDL Action: Public Option Whip Count – Day 30 -We've updated the whip count with a whole newround of folks from Mike Stark's interviews on theHill.&lt;/p&gt;&lt;p&gt; Sadly, many of our new additions fall into thecat...30 minutes ago Crooks and LiarsThe sickening hate of our new Surgeon General -Check out the above video from Neil Cavuto'sshow.&lt;/p&gt;&lt;p&gt; He had on some weird work-out dude namedJ O H N ' S P H OT O S AMERICAblog News| A great nation deserves the truth: "Gloom...http://www.americablog.com/2005/08/gloom-is-deeper-in-bagh... 1 of 57/24/09 11:42 AMMichael Karolchyk who has a porn lite websitecalled "Anti Gy...45 minutes agoShow AllA M E R I C A B L O G T V Visit our AMERICAblog TV site.see all 326 videos &gt;I collect with vodpod Judge order San Diego toget rid of the seals Massive brawl in SouthKorean parliament Mormons may havesecretly baptized Medieval helpdesk withEnglish subtitles The Taco Bell dog hasdied In honor of SenatorDeMintNext 6AMERICAblog News| A great nation deserves the truth: "Gloom...http://www.americablog.com/2005/08/gloom-is-deeper-in-bagh... 2 of 57/24/09 11:42 AMEzra KleinKirsten Gillibrand andthe Power of Primaries16 minutes agoThe TreatmentPaul Krugman Gets It(Shocking, I Know)1 hour agoWonk RoomThe WonkLine: July 24,20091 hour agoManaged CareMattersFresh Health WonkReview awaiting yourperusal3 hours agoWalker ReportSimple Test ToDetermine If Conrad'sCo-ops Are Worthless12 hours agoG AY P O L I T I C S Visit our new gay politicssection, AMERICAblog Gay.F E E D S Blog RSS AMERICAblog TV RSS Twitter RSSTwitter Feed Get the blog by email: Subscribe me!Ads by Yahoo!Bank of America®MortgageTake Advantage Of LowRefi Rates For Home LoansUp To $3 Million.www.bankofamerica.comHome Warranty ofAmericaSave money protectinghome appliances/systems.Plans from $24.95/mo.hwahomewarranty.comJST Sales AmericaSearch Our Huge Selectionof Quality ElectronicComponents Here.www.DigiKey.comHilton Americas-houstonRead reviews for this Hotel&amp; find more Hotel &amp; MotelInformation.Houston.Citysearch.comBank of America® -Reverse MortgageGuidance &amp; Tools to HelpYou Make The Choice Thatis Right For You.bankofamerica.comTop AdAdvertise in this spot.H E A LT H C A R ER E F O R MAMERICAblog News| A great nation deserves the truth: "Gloom...http://www.americablog.com/2005/08/gloom-is-deeper-in-bagh... 3 of 57/24/09 11:42 AMS E A R C H AMERICAblog Web SearchS E N D U S T I P S &amp;C O M M E N T Samericablog@starpower.netB L O G A R C H I V E Blog ArchiveS I T E S W E L I K EAir America RadioAlan Colmes' blogAri Melber (The Nation)Ben SmithBicycleMark's blog &amp;podcastBilericoBradBlogBring It OnCarrie FisherCrooks and LiarsDailyKosDan Savage's "Slog"Daou ReportDemocratic UndergroundEschatonEzra KleinFire Dog LakeFiveThirtyEight.comFreeway BloggerThe Gavel (SpeakerPelosi's blog)Good As YouGlenn GreenwaldHoly Bullies and HeadlessMonstersHuffington PostHullabaloo (Digby)Jack and Jill PoliticsJed ReportJesus' GeneralKenneth in the 212Margaret and HelenMatthew GrossMedia MattersMike Signorile's "The Gist"MudflatsMyDDOpen LeftPlum LinePolitical Punch (JakeTapper)Political WirePolitics 1Pop SurfingProgressive Blog DigestQueers UnitedRawStoryRex WocknerRude PunditSmirking ChimpTalk LeftTappedTaylor MarshThink ProgressTowleRoadVetVoice.comWashington NoteWayneBesen.comWonketteWorth Repeating N E W S L I N K SUSWashington PostNYTAP PoliticsReuters PoliticsRasmussen PollsTimeNewsweekRoll CallThe HillABCNews P L E A S E S U P P O RTA M E R I C A B L O GOne-time donation$ Recurring monthlydonation$ Donations are nottax-deductible.L A B E L S Select a labelL A S T 1 0 0 V I S I T O R SRecent Visitors A B O U TA M E R I C A B L O GWhy AMERICAblog?Because a great nationdeserves the truth.What issues do youcover?US politics overall with aparticular focus on theObama Administration, theradical right, and civilrights.Who are you?John AravosisEditorWashington, DCJoe SudbayDeputy EditorWashington, DCChris RyanAssociate EditorParis, FranceRobert ArenaContributing EditorBaltimore, MarylandJacki SchechnerContributing EditorWashington, DCAMERICAblog News| A great nation deserves the truth: "Gloom...http://www.americablog.com/2005/08/gloom-is-deeper-in-bagh... 4 of 57/24/09 11:42 AM© 2009 - John Aravosis | Design maintenance by Jason RosenbaumSend me your tips: americablog@starpower.netAMERICAblog News| A great nation deserves the truth: "Gloom...http://www.americablog.com/2005/08/gloom-is-deeper-in-bagh... 5 of 57/24/09 11:42 AM</p>
             </div>
-        </div>
-        
-        <!-- Footer -->
-        <div class="footer">
-            <p>&copy; 2025 Michael Giltz. All rights reserved.</p>
-            <p>This article originally appeared in AMERICAblog on 2005.</p>
         </div>
     </div>
 </body>

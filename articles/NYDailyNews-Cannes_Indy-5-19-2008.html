@@ -3,135 +3,135 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Cannes Indy-5-19 by Michael Giltz - NYDailyNews">
-    <meta name="keywords" content="NYDailyNews, Cannes Indy-5-19, Michael Giltz, journalism, entertainment">
+    <meta name="description" content="Cannes Indy - NYDailyNews - Michael Giltz">
+    <meta name="keywords" content="Michael Giltz, NYDailyNews, journalism, article">
     <meta name="author" content="Michael Giltz">
-    <title>Cannes Indy-5-19 - NYDailyNews - Michael Giltz</title>
+    <title>Cannes Indy - Michael Giltz</title>
     <link href="../giltz.css" rel="stylesheet" type="text/css" />
     <style>
-        body { 
-            font-family: Arial, sans-serif;
+        body {
+            font-family: 'Times New Roman', Times, serif;
             margin: 0;
             padding: 0;
-            background: #f5f5f5;
+            background: #fff;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
         }
         .site-banner {
             text-align: center;
-            background: white;
-            padding: 10px 0;
+            padding: 20px 0;
+            background: #f9f9f9;
         }
         .site-banner img {
             max-width: 100%;
             height: auto;
         }
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            background: white;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        .header {
-            background: #333;
-            color: white;
-            padding: 20px;
+        .article-header {
             text-align: center;
+            padding: 30px 0 20px 0;
         }
-        .header h1 {
-            margin: 0;
-            font-size: 24px;
+        .article-title {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 28px;
+            font-weight: bold;
+            margin: 0 0 10px 0;
+            color: #333;
         }
-        .header p {
-            margin: 5px 0;
+        .article-meta {
             font-size: 14px;
+            color: #666;
+            margin: 0;
         }
         .pdf-viewer {
             width: 100%;
-            height: 600px;
-            border: none;
-            display: block;
+            height: 800px;
+            margin: 20px 0;
+            border: 1px solid #ddd;
         }
         .home-button {
             text-align: center;
-            padding: 20px;
-            background: #f0f0f0;
+            padding: 30px 0;
         }
         .home-button a {
             display: inline-block;
-            padding: 10px 30px;
+            padding: 12px 40px;
             background: #333;
             color: white;
             text-decoration: none;
             font-weight: bold;
+            font-size: 16px;
             border-radius: 5px;
+            text-transform: uppercase;
         }
         .home-button a:hover {
             background: #555;
         }
         .text-section {
-            padding: 20px;
+            padding: 40px 0;
+            border-top: 3px solid #333;
+            margin-top: 40px;
         }
         .text-section h2 {
+            font-size: 20px;
             color: #333;
-            border-bottom: 2px solid #333;
-            padding-bottom: 10px;
+            margin: 0 0 20px 0;
+            text-transform: uppercase;
         }
         .text-content {
             line-height: 1.8;
             color: #333;
+            font-size: 16px;
         }
         .text-content p {
             margin-bottom: 15px;
         }
-        .footer {
-            background: #f0f0f0;
-            padding: 20px;
-            text-align: center;
-            font-size: 12px;
-            color: #666;
-        }
         @media (max-width: 768px) {
             .pdf-viewer {
-                height: 400px;
+                height: 500px;
+            }
+            .article-title {
+                font-size: 22px;
             }
         }
     </style>
-    <link rel="icon" type="image/x-icon" href="../favicon.ico">
-    <link rel="icon" type="image/png" href="../favicon.png">
 </head>
 <body>
-    <!-- Site Banner -->
-    <div class="site-banner">
-        <a href="../index.htm"><img src="../giltz.jpg" width="800" height="146" alt="MichaelGiltz.com" /></a>
-    </div>
-    
     <div class="container">
-        <div class="header">
-            <h1>Cannes Indy-5-19</h1>
-            <p>Publication: NYDailyNews | Date: 2008 | by Michael Giltz</p>
+        <!-- Site Banner -->
+        <div class="site-banner">
+            <a href="../index.htm"><img src="../giltz.jpg" width="800" height="146" alt="MichaelGiltz.com" /></a>
         </div>
         
-        <!-- PDF Viewer -->
-        <iframe class="pdf-viewer" src="../scans/NYDailyNews-Cannes_Indy-5-19-2008.pdf" title="PDF Article">
-            <p>Your browser does not support embedded PDFs. <a href="../scans/NYDailyNews-Cannes_Indy-5-19-2008.pdf">Download the PDF</a> to view.</p>
+        <!-- Article Header -->
+        <div class="article-header">
+            <h1 class="article-title">Cannes Indy</h1>
+            <p class="article-meta">Publication: NYDailyNews &nbsp;&nbsp;|&nbsp;&nbsp; Date: May 19, 2008</p>
+        </div>
+        
+        <!-- PDF Viewer - Direct embed without buttons -->
+        <iframe class="pdf-viewer" 
+                src="../scans/NYDailyNews-Cannes_Indy-5-19-2008.pdf#toolbar=0&navpanes=0" 
+                type="application/pdf"
+                frameborder="0">
+            <p>Your browser does not support PDFs. 
+               <a href="../scans/NYDailyNews-Cannes_Indy-5-19-2008.pdf">Click here to view the PDF</a>.
+            </p>
         </iframe>
         
         <!-- Home Button -->
         <div class="home-button">
-            <a href="../index.htm">HOME</a>
+            <a href="../index.htm">Home</a>
         </div>
         
-        <!-- Text Section -->
+        <!-- SEO Text Section -->
         <div class="text-section">
-            <h2>SEO TEXT: Article Content for Search</h2>
+            <h2>SEO TEXT: Article Content for Search Engines</h2>
             <div class="text-content">
                 <p>i 7sc p,ffi deff&amp;dsffitr E AY NyDaityNews.comDiIectotstevenspie|belgt|.ti'id;io;'."g.;;e"&amp;r.ucaiuepinedoid;il; cannes premierc ot 'lndina 'ons and rh" l0n-sj:T.:-l**:-"."::s:*l': t"l"*,lior n.Jo*ioi"al in ,cen. from firm. photo b)/ cetrvCannes of flr{'6raiderscrazy for 'lost art BY MICHAEL GILTZ DAILY NEWS WRITER CANNES, France - The world premiere of "lndiana Jones and the Kingdom of the- Crystal Skull" turned rhe nomally high-minded Cannes Film Festival into ; mob of shmeless movie fans. .&lt;/p&gt;&lt;p&gt; Thousands of journa.lists pushed and snoted yesterday as if they were at a rock concert hoping to ahend the first screening.of the movie, which opens -t hursday in New york, They whooped it up at the begiming and applauded strongly at the end. , Meanwhile, fms md photographers clamored foF Harison ford,- Sieven Spietberg, George Lucas, Cate Blanchett, I(a{en Allen and Shia laBeouf :ve,rlehere they went during their pub_ ucrry sprn on tJre Riviera.&lt;/p&gt;&lt;p&gt; For the stoic but friendly Ford, it was ,aR qqexP9gte+y,eggtignal expenence.,"Especially in the peFon of lGren,*19 Plrng" back a lot of memories,,, hesaid..Karen Allen played lndiana Jones,n$t tove interest in lggl's "RaideF ofthe Iost Ark."FUT? GO S.INDY' Thrills, chills, fights, Blanchett as villain.&lt;/p&gt;&lt;p&gt; Yup, 'Crystal Skull' has it all "INDIANA JONES and the Kingdom of the Crystal Skull" is entertaining, inventive and old-fashioned in the best way.&lt;/p&gt;&lt;p&gt; Steven Spielberg, Harrison Ford and company prove they still keep their guts right next to therr heans- The adventuring archaeologrst's reap- pearance after 19 years does come with a few curses, however Expeclations are hlgh. age is ines. capable and wtrile it's true that there's not much novelfy in "Crystal Skull," that's okay.&lt;/p&gt;&lt;p&gt; Startin€iwith l98l's "Raid- ers of the Losl Ark.' rhe Indy movies have shown that those who underesti- mate history do so at their peril There's been buzz that the film might be a bomb after an anonlmous online reviewer's thumbs down made entertainment headlines And produc- er George Lucas has said-he doesn't expect much positive response But he has also said he envisioos a fifth Indy movie, with a younger hero inheriting the whip While it has flaws, this new mone earns its event status ln "Crystal Skull," set in 1957, greas- er IMutt Williams (Shia LaBeouf) seeks Indv out after their mutual fr iend Oxley. played by John Hurt, dis- apPears while in possession of the title artifact, a quartz relic that evll Soviet agent Spalko (Cate Blanchett) be- lieves was left by early alien civiliza- tions on Earth With Mutt as his partner, Indy hunts Ior Oxley and the skull, and finds his onetime love Marion Ravenwood I(aren Allen, back from "Raiders" - wlro also happens to be Mutt's mom (wlro's his dad? Hey, even Tarzan found a son ) On the way to a meetrng with the skull's ancielrt ET. body, there are hair-breadth escapes, fights and a rev- elation of mystical power Sound Ianriliar? Sure. it does that's part of lhe lun 'ftris film, like 1989's 'lndima Jones and the Last Crusade," follows the template set by "Raiders" and contin- ued in the underappreciated "Indiana Jones and the Temple of Doom" (1984), the worst reviewed of the se- ries Raiders rnade $2-12 rnrllron in the U S , "Crusade" $197 mrllion md "Doom" $180 million There's an early action sequence here, a truck battle in a fmilia. ware-BY JOE NEUMAIER DAILY NEWS NLM CRITIC house - a glimpse of lndy as profes- sor then an explanaIion of a sought-al- ter object's othesorldly powers, along with the obsession with skele- Lons and bugs plucked from "Strange Tales" magazine Some of it seems a bit dusty but Spielberg remains the master builder - eleBant chNe scenes de construct- i ed pJrtectly and without overediting.! or confusion. : In an era of CGI thrills, Blanchett I and faBeouf's sord duel atop mov- ,/,,r. ing jeeps and Indy's fistfight with a /.t'j.i handful of thugs are like watch- /::i. oprnent Into llle aclion beals - a lol ilbout lndv s oast is rc- /,lvealed, if vou listen - and 1.., the film riifs on l950s pres- ; : sure points like Commu- ' rt more of a cartoon though he pemanent- ly stakes his claim toIt's good to have lndy back cracking the whip. nism, UFOS md nuclear f-atesting- l:'.Ford, at 65, may not ::' ,Princely 56M for'Caspian' LOS ANGEIIS - "The Chronicles of Narnia: Prince CspiaD" dethroned "Iron Man" as ruler at the box of- fice, putling down $56 6 mil- lion, according to studio esti- mates yesterday, Drsney's action sequel took in less domestically in its opening weekend than "The Chronicles of Narnia: The lion in its sec- ond weekend Its domestic total reached $40 3 million The Assiated PressLion, the Witch and the Wardrobe," which sold $65 6 miUion in December 2005 "Caspian" also raked in $20 7 million overseas Disney expects the PG- rated movie, based on the C.S- l€wis filtmy se- ries, to ride htgh through the Memorial Dayweekend The first "Narnia" tale grossed $745 million wor ld- wide over rts thealri- cal run "Iron Man" sllpped to second place after two weeks at No I with $31 2 milhon ".what Happens in Vegas," stafting Cameron Diz and Ashton Kutcher, came ln third, with $13 I mil-stardom; arld Allen's Marion is stiLl tough and appealing The chameleon Blancheft, wrth her pos- ture imposingly rigid and her face like a 1/- '.* shaped alien etching, needed to be more villainous Dr Jones (called "Henry" for much of the movie) deserves foes who are cunning and scary.&lt;/p&gt;&lt;p&gt; Yet, did he deseNe to stay buried in the cineria of the 19ll0s? Nah Like any good my'th, Indiana Jones shows up when he's needed Great to have him back jne u maier@nyda ily news co m</p>
             </div>
-        </div>
-        
-        <!-- Footer -->
-        <div class="footer">
-            <p>&copy; 2025 Michael Giltz. All rights reserved.</p>
-            <p>This article originally appeared in NYDailyNews on 2008.</p>
         </div>
     </div>
 </body>

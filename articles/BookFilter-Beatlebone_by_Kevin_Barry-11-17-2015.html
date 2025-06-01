@@ -3,135 +3,135 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Beatlebone By Kevin Barry-11-17 by Michael Giltz - BookFilter">
-    <meta name="keywords" content="BookFilter, Beatlebone By Kevin Barry-11-17, Michael Giltz, journalism, entertainment">
+    <meta name="description" content="Beatlebone by Kevin Barry - BookFilter - Michael Giltz">
+    <meta name="keywords" content="Michael Giltz, BookFilter, journalism, article">
     <meta name="author" content="Michael Giltz">
-    <title>Beatlebone By Kevin Barry-11-17 - BookFilter - Michael Giltz</title>
+    <title>Beatlebone by Kevin Barry - Michael Giltz</title>
     <link href="../giltz.css" rel="stylesheet" type="text/css" />
     <style>
-        body { 
-            font-family: Arial, sans-serif;
+        body {
+            font-family: 'Times New Roman', Times, serif;
             margin: 0;
             padding: 0;
-            background: #f5f5f5;
+            background: #fff;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
         }
         .site-banner {
             text-align: center;
-            background: white;
-            padding: 10px 0;
+            padding: 20px 0;
+            background: #f9f9f9;
         }
         .site-banner img {
             max-width: 100%;
             height: auto;
         }
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            background: white;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        .header {
-            background: #333;
-            color: white;
-            padding: 20px;
+        .article-header {
             text-align: center;
+            padding: 30px 0 20px 0;
         }
-        .header h1 {
-            margin: 0;
-            font-size: 24px;
+        .article-title {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 28px;
+            font-weight: bold;
+            margin: 0 0 10px 0;
+            color: #333;
         }
-        .header p {
-            margin: 5px 0;
+        .article-meta {
             font-size: 14px;
+            color: #666;
+            margin: 0;
         }
         .pdf-viewer {
             width: 100%;
-            height: 600px;
-            border: none;
-            display: block;
+            height: 800px;
+            margin: 20px 0;
+            border: 1px solid #ddd;
         }
         .home-button {
             text-align: center;
-            padding: 20px;
-            background: #f0f0f0;
+            padding: 30px 0;
         }
         .home-button a {
             display: inline-block;
-            padding: 10px 30px;
+            padding: 12px 40px;
             background: #333;
             color: white;
             text-decoration: none;
             font-weight: bold;
+            font-size: 16px;
             border-radius: 5px;
+            text-transform: uppercase;
         }
         .home-button a:hover {
             background: #555;
         }
         .text-section {
-            padding: 20px;
+            padding: 40px 0;
+            border-top: 3px solid #333;
+            margin-top: 40px;
         }
         .text-section h2 {
+            font-size: 20px;
             color: #333;
-            border-bottom: 2px solid #333;
-            padding-bottom: 10px;
+            margin: 0 0 20px 0;
+            text-transform: uppercase;
         }
         .text-content {
             line-height: 1.8;
             color: #333;
+            font-size: 16px;
         }
         .text-content p {
             margin-bottom: 15px;
         }
-        .footer {
-            background: #f0f0f0;
-            padding: 20px;
-            text-align: center;
-            font-size: 12px;
-            color: #666;
-        }
         @media (max-width: 768px) {
             .pdf-viewer {
-                height: 400px;
+                height: 500px;
+            }
+            .article-title {
+                font-size: 22px;
             }
         }
     </style>
-    <link rel="icon" type="image/x-icon" href="../favicon.ico">
-    <link rel="icon" type="image/png" href="../favicon.png">
 </head>
 <body>
-    <!-- Site Banner -->
-    <div class="site-banner">
-        <a href="../index.htm"><img src="../giltz.jpg" width="800" height="146" alt="MichaelGiltz.com" /></a>
-    </div>
-    
     <div class="container">
-        <div class="header">
-            <h1>Beatlebone By Kevin Barry-11-17</h1>
-            <p>Publication: BookFilter | Date: 2015 | by Michael Giltz</p>
+        <!-- Site Banner -->
+        <div class="site-banner">
+            <a href="../index.htm"><img src="../giltz.jpg" width="800" height="146" alt="MichaelGiltz.com" /></a>
         </div>
         
-        <!-- PDF Viewer -->
-        <iframe class="pdf-viewer" src="../scans/BookFilter-Beatlebone_by_Kevin_Barry-11-17-2015.pdf" title="PDF Article">
-            <p>Your browser does not support embedded PDFs. <a href="../scans/BookFilter-Beatlebone_by_Kevin_Barry-11-17-2015.pdf">Download the PDF</a> to view.</p>
+        <!-- Article Header -->
+        <div class="article-header">
+            <h1 class="article-title">Beatlebone by Kevin Barry</h1>
+            <p class="article-meta">Publication: BookFilter &nbsp;&nbsp;|&nbsp;&nbsp; Date: November 17, 2015</p>
+        </div>
+        
+        <!-- PDF Viewer - Direct embed without buttons -->
+        <iframe class="pdf-viewer" 
+                src="../scans/BookFilter-Beatlebone_by_Kevin_Barry-11-17-2015.pdf#toolbar=0&navpanes=0" 
+                type="application/pdf"
+                frameborder="0">
+            <p>Your browser does not support PDFs. 
+               <a href="../scans/BookFilter-Beatlebone_by_Kevin_Barry-11-17-2015.pdf">Click here to view the PDF</a>.
+            </p>
         </iframe>
         
         <!-- Home Button -->
         <div class="home-button">
-            <a href="../index.htm">HOME</a>
+            <a href="../index.htm">Home</a>
         </div>
         
-        <!-- Text Section -->
+        <!-- SEO Text Section -->
         <div class="text-section">
-            <h2>SEO TEXT: Article Content for Search</h2>
+            <h2>SEO TEXT: Article Content for Search Engines</h2>
             <div class="text-content">
                 <p>12/1/2015BookFilter | Evernote Web https://www.evernote.com/Home.action#n=701c5ba5-bcac-48e8-b2f9-b326e3ca36b0&amp;ses=4&amp;sh=2&amp;sds=5&amp;1/3HomeTop Picks: All BooksBeatlebone Beatleboneby Kevin BarryPrice: $24.95(Hardcover)Published: November 17, 2015Rating: 0.0/5 (0 votes cast)From the Publisher: A searing, surreal novel that bleedsfantasy and reality—and Beatles fandom—from one ofliterature's most striking contemporary voices, author of theinternational sensation City of Bohane.&lt;/p&gt;&lt;p&gt; It is 1978, and John Lennon has escaped New York City to try tofind the island off the west coast of Ireland he bought nine yearsprior.&lt;/p&gt;&lt;p&gt; Leaving behind domesticity, his approaching forties, hisinability to create, and his memories of his parents, he sets off tofind calm in the comfortable silence of isolation.&lt;/p&gt;&lt;p&gt; But when he putshimself in the hands of a shape-shifting driver full of Irish charmand dark whimsy, what ensues can only be termed a magicalmystery tour.&lt;/p&gt;&lt;p&gt; Beatlebone is a tour de force of language and literary imaginationthat marries the most improbable element to the most strikingeffect.Rate This Book|Rate/ReviewAdd To BookshelfGet This Book Go to your preferred retailer, click to choose a format and you' ll be taken directly to their site whereyou can get this book.BookFilter12/1/2015BookFilter | Evernote Web https://www.evernote.com/Home.action#n=701c5ba5-bcac-48e8-b2f9-b326e3ca36b0&amp;ses=4&amp;sh=2&amp;sds=5&amp;2/3 Personalize / Add More ChoicesWhat We SayI'm a serious fan of all things Beatles (who isn't?) and was wowed by two short story collections of Kevin Barry.&lt;/p&gt;&lt;p&gt; So Iwas warily intrigued by the idea of Barry writing a novel about John Lennon off on a lark in 1978, trying to get to anisland he purchased in Ireland for a little down time.&lt;/p&gt;&lt;p&gt; Based on bits and pieces of reality, the novel starts off inmarvelous, word-drunk, Joycean style.&lt;/p&gt;&lt;p&gt; Lennon is on his own, trying to remain inconspicuous (ha!) and keeping hishead down while making his solitary way towards a soul-recharging visit to the scrap of rock he bought and hasnever really been on.&lt;/p&gt;&lt;p&gt; Barry won me over by capturing Lennon's dry wit -- when a wary hotel manager eyes himdistrustfully saying it's a foxy time of day to be renting a room, Lennon responds deadpan, "And in denim." So yes,Barry captures the spirit of what we imagine Lennon to be.&lt;/p&gt;&lt;p&gt; Here he's sidetracked and overwhelmed by the hilariousdriver/jack of all trades Cornelius, who ferries Lennon about, gets the semi-teetotaler drunk in a pub (and singing!),feeds the now-macrobiotic man blood pudding, and talks and talks and talks in vivid, beautiful, endlessly funny style.Toss in a cult that specializes in its own Scream therapy (Lennon is nonplussed, having done it all before), a snipingpress and you have the makings of a rambunctious tale.&lt;/p&gt;&lt;p&gt; Instead, we are given a quieter, sadder work, less SpikeMilligan and more Alan Bennett.&lt;/p&gt;&lt;p&gt; Out of nowhere, Barry inserts himself in a passage describing his research for thebook, a section that gingerly brings up the ghosts he encountered. (Barry apologizes for this, there's no way to bringup ghosts without seeming daft, but there you are.) And then back into the story proper.&lt;/p&gt;&lt;p&gt; It didn't quite reach anepiphany for me, but I was delighted to feel like I'd sort of stumbled across an unguarded Lennon of sorts and thrilledby the rambling Cornelius, as Irish a character as you can get.&lt;/p&gt;&lt;p&gt; And that's saying something. -- Michael GiltzLessWhat Others SayPraise for Beatlebone:Winner of the Goldsmiths Prize 2015"Beatlebone is a novel that takes its reader to the edge—of the Western world, of sanity, of fame, of words.&lt;/p&gt;&lt;p&gt; But italso takes us to the very edge of the novel form, where it meets its notorious doppelgänger, autobiography.&lt;/p&gt;&lt;p&gt; Itscompulsive narrative of one of the last century’s great musicians and pop icons gradually, and without a hint ofcontrivance, becomes a startling and original meditation on the uncanny relationship of a writer to his character.Intricately weaving and blurring fiction and life, Beatlebone embodies beautifully this prize’s spirit of creative risk.We’re proud to crown it our winner."—Josh Cohen, Chair of Judges, Goldsmiths Prize 2015"There’s music to Barry’s prose: Smart rhythms dart through his sentences; taut bridges join his paragraphs; thetinge of hysteria serves to animate his characters and their surroundings.&lt;/p&gt;&lt;p&gt; His dialogue is whimsical, sometimeshilarious, catching the idiom of the local life, and, in Beatlebone, nailing John Lennon, the wittiest and darkest Beatle,spot on."—Fred Kaplan,…More</p>
             </div>
-        </div>
-        
-        <!-- Footer -->
-        <div class="footer">
-            <p>&copy; 2025 Michael Giltz. All rights reserved.</p>
-            <p>This article originally appeared in BookFilter on 2015.</p>
         </div>
     </div>
 </body>

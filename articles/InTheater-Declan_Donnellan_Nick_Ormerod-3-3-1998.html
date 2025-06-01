@@ -3,135 +3,135 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Declan Donnellan Nick Ormerod-3-3 by Michael Giltz - InTheater">
-    <meta name="keywords" content="InTheater, Declan Donnellan Nick Ormerod-3-3, Michael Giltz, journalism, entertainment">
+    <meta name="description" content="Declan Donnellan Nick Ormerod - InTheater - Michael Giltz">
+    <meta name="keywords" content="Michael Giltz, InTheater, journalism, article">
     <meta name="author" content="Michael Giltz">
-    <title>Declan Donnellan Nick Ormerod-3-3 - InTheater - Michael Giltz</title>
+    <title>Declan Donnellan Nick Ormerod - Michael Giltz</title>
     <link href="../giltz.css" rel="stylesheet" type="text/css" />
     <style>
-        body { 
-            font-family: Arial, sans-serif;
+        body {
+            font-family: 'Times New Roman', Times, serif;
             margin: 0;
             padding: 0;
-            background: #f5f5f5;
+            background: #fff;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
         }
         .site-banner {
             text-align: center;
-            background: white;
-            padding: 10px 0;
+            padding: 20px 0;
+            background: #f9f9f9;
         }
         .site-banner img {
             max-width: 100%;
             height: auto;
         }
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            background: white;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        .header {
-            background: #333;
-            color: white;
-            padding: 20px;
+        .article-header {
             text-align: center;
+            padding: 30px 0 20px 0;
         }
-        .header h1 {
-            margin: 0;
-            font-size: 24px;
+        .article-title {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 28px;
+            font-weight: bold;
+            margin: 0 0 10px 0;
+            color: #333;
         }
-        .header p {
-            margin: 5px 0;
+        .article-meta {
             font-size: 14px;
+            color: #666;
+            margin: 0;
         }
         .pdf-viewer {
             width: 100%;
-            height: 600px;
-            border: none;
-            display: block;
+            height: 800px;
+            margin: 20px 0;
+            border: 1px solid #ddd;
         }
         .home-button {
             text-align: center;
-            padding: 20px;
-            background: #f0f0f0;
+            padding: 30px 0;
         }
         .home-button a {
             display: inline-block;
-            padding: 10px 30px;
+            padding: 12px 40px;
             background: #333;
             color: white;
             text-decoration: none;
             font-weight: bold;
+            font-size: 16px;
             border-radius: 5px;
+            text-transform: uppercase;
         }
         .home-button a:hover {
             background: #555;
         }
         .text-section {
-            padding: 20px;
+            padding: 40px 0;
+            border-top: 3px solid #333;
+            margin-top: 40px;
         }
         .text-section h2 {
+            font-size: 20px;
             color: #333;
-            border-bottom: 2px solid #333;
-            padding-bottom: 10px;
+            margin: 0 0 20px 0;
+            text-transform: uppercase;
         }
         .text-content {
             line-height: 1.8;
             color: #333;
+            font-size: 16px;
         }
         .text-content p {
             margin-bottom: 15px;
         }
-        .footer {
-            background: #f0f0f0;
-            padding: 20px;
-            text-align: center;
-            font-size: 12px;
-            color: #666;
-        }
         @media (max-width: 768px) {
             .pdf-viewer {
-                height: 400px;
+                height: 500px;
+            }
+            .article-title {
+                font-size: 22px;
             }
         }
     </style>
-    <link rel="icon" type="image/x-icon" href="../favicon.ico">
-    <link rel="icon" type="image/png" href="../favicon.png">
 </head>
 <body>
-    <!-- Site Banner -->
-    <div class="site-banner">
-        <a href="../index.htm"><img src="../giltz.jpg" width="800" height="146" alt="MichaelGiltz.com" /></a>
-    </div>
-    
     <div class="container">
-        <div class="header">
-            <h1>Declan Donnellan Nick Ormerod-3-3</h1>
-            <p>Publication: InTheater | Date: 1998 | by Michael Giltz</p>
+        <!-- Site Banner -->
+        <div class="site-banner">
+            <a href="../index.htm"><img src="../giltz.jpg" width="800" height="146" alt="MichaelGiltz.com" /></a>
         </div>
         
-        <!-- PDF Viewer -->
-        <iframe class="pdf-viewer" src="../scans/InTheater-Declan_Donnellan_Nick_Ormerod-3-3-1998.pdf" title="PDF Article">
-            <p>Your browser does not support embedded PDFs. <a href="../scans/InTheater-Declan_Donnellan_Nick_Ormerod-3-3-1998.pdf">Download the PDF</a> to view.</p>
+        <!-- Article Header -->
+        <div class="article-header">
+            <h1 class="article-title">Declan Donnellan Nick Ormerod</h1>
+            <p class="article-meta">Publication: InTheater &nbsp;&nbsp;|&nbsp;&nbsp; Date: March 3, 1998</p>
+        </div>
+        
+        <!-- PDF Viewer - Direct embed without buttons -->
+        <iframe class="pdf-viewer" 
+                src="../scans/InTheater-Declan_Donnellan_Nick_Ormerod-3-3-1998.pdf#toolbar=0&navpanes=0" 
+                type="application/pdf"
+                frameborder="0">
+            <p>Your browser does not support PDFs. 
+               <a href="../scans/InTheater-Declan_Donnellan_Nick_Ormerod-3-3-1998.pdf">Click here to view the PDF</a>.
+            </p>
         </iframe>
         
         <!-- Home Button -->
         <div class="home-button">
-            <a href="../index.htm">HOME</a>
+            <a href="../index.htm">Home</a>
         </div>
         
-        <!-- Text Section -->
+        <!-- SEO Text Section -->
         <div class="text-section">
-            <h2>SEO TEXT: Article Content for Search</h2>
+            <h2>SEO TEXT: Article Content for Search Engines</h2>
             <div class="text-content">
                 <p>heater can be dan­ gerous.&lt;/p&gt;&lt;p&gt; The British theatrical troupe Cheek by Jowl was in Moscow to stage a show at the Red Army theater, a massive space built for spectacles glorifying the state.&lt;/p&gt;&lt;p&gt; Director Declan Donnellan and set designer Nick Ormerod, his artis­ tic and personal partner, were won­ dering what might be available to them in the free market chaos of the former Soviet Union. "We were speaking to some of the people working with us and I asked, 'Is the stage strong enough to bring a jeep on?' And they said yes.&lt;/p&gt;&lt;p&gt; Then I asked, 'Well, could we bring a tank on stage?' And they said yes, but it would be very expensive.&lt;/p&gt;&lt;p&gt; Then they smiled and said, 'We could even get you a nuclear bomb.' " Donnellan laughs, quickly adding that the Russians were just jok­ ing -never a given in the Wild West that is Moscow today.&lt;/p&gt;&lt;p&gt; He's relaxing with tea and a smoke at Method and Madness, a rehearsal space in London a stone's throw from the National.&lt;/p&gt;&lt;p&gt; It's late January, and Donnellan and his cast have just finished a run-through of the first act of Shakespeare's Much Ado About Nothing, which comes to the Brooklyn Academy of Music's Majestic Theater March 25-April 5.&lt;/p&gt;&lt;p&gt; For theater people, a rehearsal space is a safe haven, a bunker they can hunker down in without fear.&lt;/p&gt;&lt;p&gt; But Donnellan has more reason than usual to enjoy its solitude today.&lt;/p&gt;&lt;p&gt; Cameron Mackintosh has just posted a closing notice for Ma1tin wm7e, the less-than­ mega musical that Donnellan and Ormerod staged for him in the sum­ mer of 1996.&lt;/p&gt;&lt;p&gt; Instead of spawning countless productions around the world, Ma11:in Guerre was coming to a London's innovative Cheek by Jowl brings Much Ado About Nothing to BAM.&lt;/p&gt;&lt;p&gt; By Michael Giltz 30 April 3. 1998 InTheater close after a turbulent West End run.&lt;/p&gt;&lt;p&gt; Donnellan's publicist suggests he won't be very interested in talking about the show's fate ("That's the past," he says), and indeed all the director will say about it is a noncommittal , "It was an interesting experience." Donnellan opens up when the sub­ ject turns to Cheek by Jowl's fresh approach to the classics.&lt;/p&gt;&lt;p&gt; The company first won raves at BAM in 1994 for As You Like It, a revelatory all-male pro-duction that launched Adrian Lester (now featured in the Mike Nichols film Primary Colors) to stardom. "Shakespeare doesn't have answers; he asks wonderful questions," the director says. "The lines are a mystery.&lt;/p&gt;&lt;p&gt; You never actually get to the bottom of it.&lt;/p&gt;&lt;p&gt; I think it's vanity [for a director] to say, 'This is what I have to say about this play; it's going to be under my control.' We try very hard not to do that." The versatile Donnellan, 44, and Ormerod, 46, have collabo­ rated on acclaimed productions such as Sweeney Todd, Peer Gynt, and the electrifying initial London staging of Angels in America that helped ensure its worldwide reception.&lt;/p&gt;&lt;p&gt; But it's Cheek by Jowl -founded in 1981 when the men decided they'd rather make a case for the classics than work as bar­ risters -that's remained a con­ stant.&lt;/p&gt;&lt;p&gt; Asked about his and Ormerod 's working relationship, Donnellan says with a laugh, "We don't have one.&lt;/p&gt;&lt;p&gt; He does what he does [as the designer], and I do what I do, which is talk to the actors.&lt;/p&gt;&lt;p&gt; It's not very struc­ tured, although he sits in on rehearsals as much as he can." The pair chose to tackle the often­ performed Much Ado because, says Donnellan, "After The Duchess of Malfi [another critical success, which came to BAM in '95], I wanted to do some­ thing funny - though this one . .&lt;/p&gt;&lt;p&gt; IS seemrng more and more dark! It's sort of a COlniC version of Macbeth.&lt;/p&gt;&lt;p&gt; I think all the Shakespeare comedies are about the com­ plexity of mar­ riage in its dif­ ferent forms; that marriages are important, but they also involve compro­ mise.&lt;/p&gt;&lt;p&gt; You open certain doors by closing other ones.&lt;/p&gt;&lt;p&gt; Lots of people are in tears at a wedding because they're [feeling] excluded." Donnellan and Ormerod set the play in 1900 England so that the pro­ duction could be as modern as possible but still bound by societal restraints. "We explored it in a very free way, like As You Like It, but we had to provide a very specific social context," Donnellan says. "That period is quite useful to provide a cage in which the passions can rattle.&lt;/p&gt;&lt;p&gt; If you don't set up the conventions, you can't watch them being broken.&lt;/p&gt;&lt;p&gt; We wanted to do it first in the Titanic period, but it was hard to avoid the feelings of the mass dead. [In every production] we put a lot of work into how people move in differ­ ent periods and how accents change.&lt;/p&gt;&lt;p&gt; Aristocratic English is vety, very good for this play." Even Beatrice and Benedick (Saskia Reeves and Matthew MacFadyen) have been rethought .&lt;/p&gt;&lt;p&gt; That sparring couple is usually seen as Tracy and Hepburn soulmates, verbal­ ly fencing with someone they secretly admire.&lt;/p&gt;&lt;p&gt; But Donnellan zeroes in on the seemingly harmless trap set for them by the others in the play. "I think they playa very cruel trick on Beatrice and Benedick, telling each that the other professed their love when they hadn't.&lt;/p&gt;&lt;p&gt; It may be one of the cruelest things one can do.&lt;/p&gt;&lt;p&gt; It's actual­ ly probably worse than saying some­ one hates you.&lt;/p&gt;&lt;p&gt; People want to control love, and they think they can turn it on very cheaply.&lt;/p&gt;&lt;p&gt; What they forget about love is that it's out of control and you have to obey it.&lt;/p&gt;&lt;p&gt; We can block it, bury it, but we can't control it." At Donnellan and Ormerod's behest, Cheek by Jowl's productions are actor-driven . "Performances change from place to place," the direc­ tor explains. "Audiences affect things when they see them, so it's important for me that a production is not seen as 'finished.' We want to take the pres­ sure off actors and not make them feel that they're producing a finished arti­ cle.&lt;/p&gt;&lt;p&gt; It's always a work in progress." • MICHAEL GILTZ is a freelance writer with a special interest in the arts.&lt;/p&gt;&lt;p&gt; InTheater April 3. 1998 31</p>
             </div>
-        </div>
-        
-        <!-- Footer -->
-        <div class="footer">
-            <p>&copy; 2025 Michael Giltz. All rights reserved.</p>
-            <p>This article originally appeared in InTheater on 1998.</p>
         </div>
     </div>
 </body>

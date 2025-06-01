@@ -3,135 +3,135 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Coffeehouse Musicians-9-1 by Michael Giltz - Alligator">
-    <meta name="keywords" content="Alligator, Coffeehouse Musicians-9-1, Michael Giltz, journalism, entertainment">
+    <meta name="description" content="Coffeehouse musicians - Alligator - Michael Giltz">
+    <meta name="keywords" content="Michael Giltz, Alligator, journalism, article">
     <meta name="author" content="Michael Giltz">
-    <title>Coffeehouse Musicians-9-1 - Alligator - Michael Giltz</title>
+    <title>Coffeehouse musicians - Michael Giltz</title>
     <link href="../giltz.css" rel="stylesheet" type="text/css" />
     <style>
-        body { 
-            font-family: Arial, sans-serif;
+        body {
+            font-family: 'Times New Roman', Times, serif;
             margin: 0;
             padding: 0;
-            background: #f5f5f5;
+            background: #fff;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
         }
         .site-banner {
             text-align: center;
-            background: white;
-            padding: 10px 0;
+            padding: 20px 0;
+            background: #f9f9f9;
         }
         .site-banner img {
             max-width: 100%;
             height: auto;
         }
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            background: white;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        .header {
-            background: #333;
-            color: white;
-            padding: 20px;
+        .article-header {
             text-align: center;
+            padding: 30px 0 20px 0;
         }
-        .header h1 {
-            margin: 0;
-            font-size: 24px;
+        .article-title {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 28px;
+            font-weight: bold;
+            margin: 0 0 10px 0;
+            color: #333;
         }
-        .header p {
-            margin: 5px 0;
+        .article-meta {
             font-size: 14px;
+            color: #666;
+            margin: 0;
         }
         .pdf-viewer {
             width: 100%;
-            height: 600px;
-            border: none;
-            display: block;
+            height: 800px;
+            margin: 20px 0;
+            border: 1px solid #ddd;
         }
         .home-button {
             text-align: center;
-            padding: 20px;
-            background: #f0f0f0;
+            padding: 30px 0;
         }
         .home-button a {
             display: inline-block;
-            padding: 10px 30px;
+            padding: 12px 40px;
             background: #333;
             color: white;
             text-decoration: none;
             font-weight: bold;
+            font-size: 16px;
             border-radius: 5px;
+            text-transform: uppercase;
         }
         .home-button a:hover {
             background: #555;
         }
         .text-section {
-            padding: 20px;
+            padding: 40px 0;
+            border-top: 3px solid #333;
+            margin-top: 40px;
         }
         .text-section h2 {
+            font-size: 20px;
             color: #333;
-            border-bottom: 2px solid #333;
-            padding-bottom: 10px;
+            margin: 0 0 20px 0;
+            text-transform: uppercase;
         }
         .text-content {
             line-height: 1.8;
             color: #333;
+            font-size: 16px;
         }
         .text-content p {
             margin-bottom: 15px;
         }
-        .footer {
-            background: #f0f0f0;
-            padding: 20px;
-            text-align: center;
-            font-size: 12px;
-            color: #666;
-        }
         @media (max-width: 768px) {
             .pdf-viewer {
-                height: 400px;
+                height: 500px;
+            }
+            .article-title {
+                font-size: 22px;
             }
         }
     </style>
-    <link rel="icon" type="image/x-icon" href="../favicon.ico">
-    <link rel="icon" type="image/png" href="../favicon.png">
 </head>
 <body>
-    <!-- Site Banner -->
-    <div class="site-banner">
-        <a href="../index.htm"><img src="../giltz.jpg" width="800" height="146" alt="MichaelGiltz.com" /></a>
-    </div>
-    
     <div class="container">
-        <div class="header">
-            <h1>Coffeehouse Musicians-9-1</h1>
-            <p>Publication: Alligator | Date: 1985 | by Michael Giltz</p>
+        <!-- Site Banner -->
+        <div class="site-banner">
+            <a href="../index.htm"><img src="../giltz.jpg" width="800" height="146" alt="MichaelGiltz.com" /></a>
         </div>
         
-        <!-- PDF Viewer -->
-        <iframe class="pdf-viewer" src="../scans/Alligator-Coffeehouse_musicians-9-1-1985.pdf" title="PDF Article">
-            <p>Your browser does not support embedded PDFs. <a href="../scans/Alligator-Coffeehouse_musicians-9-1-1985.pdf">Download the PDF</a> to view.</p>
+        <!-- Article Header -->
+        <div class="article-header">
+            <h1 class="article-title">Coffeehouse musicians</h1>
+            <p class="article-meta">Publication: Alligator &nbsp;&nbsp;|&nbsp;&nbsp; Date: September 1, 1985</p>
+        </div>
+        
+        <!-- PDF Viewer - Direct embed without buttons -->
+        <iframe class="pdf-viewer" 
+                src="../scans/Alligator-Coffeehouse_musicians-9-1-1985.pdf#toolbar=0&navpanes=0" 
+                type="application/pdf"
+                frameborder="0">
+            <p>Your browser does not support PDFs. 
+               <a href="../scans/Alligator-Coffeehouse_musicians-9-1-1985.pdf">Click here to view the PDF</a>.
+            </p>
         </iframe>
         
         <!-- Home Button -->
         <div class="home-button">
-            <a href="../index.htm">HOME</a>
+            <a href="../index.htm">Home</a>
         </div>
         
-        <!-- Text Section -->
+        <!-- SEO Text Section -->
         <div class="text-section">
-            <h2>SEO TEXT: Article Content for Search</h2>
+            <h2>SEO TEXT: Article Content for Search Engines</h2>
             <div class="text-content">
                 <p>Coffeehouses: The New Generation .&lt;/p&gt;&lt;p&gt; By Michael Giltz Pop music can be frightfully dull.&lt;/p&gt;&lt;p&gt; Hit singles are played ad nauseam over the airwaves and on MTV.&lt;/p&gt;&lt;p&gt; Eventually, even the songs you originally liked become tiresome and mundane.&lt;/p&gt;&lt;p&gt; Most bar bands also must resign them­ selves to playing covers of those very same Top 40 hits.&lt;/p&gt;&lt;p&gt; The precious few that do get a chance to play original music often compete with noisy crowds and people who, when thinking of licks, do not think of guitars.&lt;/p&gt;&lt;p&gt; The person longing for direct contact with an artist, the person who is searching for meaningful music, the' person who thinks thrash is trash, must think there is no hope.&lt;/p&gt;&lt;p&gt; But there is.&lt;/p&gt;&lt;p&gt; Tucked away in various corners of Gainesville is a string of coffeehouses; pla­ ces where musicians can share their music with small, intimate, interested crowds.&lt;/p&gt;&lt;p&gt; The emphasis is on acoustic music and the atmosphere is laid back and friendly.&lt;/p&gt;&lt;p&gt; Unencumbered by disinterested drinkers and commercial pressures, coffeehouses are Gainesville's alternative to alternative music.&lt;/p&gt;&lt;p&gt; On any given night, you're likely to hear everything from folk and rock classics to traditional Irish jigs -all spiced with healthy doses of original songs penned by the performers . "The performers really seem to enjoy playing there.&lt;/p&gt;&lt;p&gt; So, of course, that makes their performance all the better," said Doug Hornbeck, who frequently goes to the Acrosstown Coffeehouse .&lt;/p&gt;&lt;p&gt; Established about three years ago, the Acrosstown Coffeehouse is the' longest­ running and best-attended coffeehouse in town.&lt;/p&gt;&lt;p&gt; On the first Sunday of every month, musicians perform for about 50-100 people on the stage of the Acrosstown Repertory Theatre.&lt;/p&gt;&lt;p&gt; Located at 619 South Main Street in the· Baird Center, the Acrosstown requests a but also because we all enjoy playing $2.50 cover charge to defray the cost of rent together," she added. and to pay the artists. ' Rucker performed at the Acrosstown Despite this nominal honorarium, the Coffeehouse in December.&lt;/p&gt;&lt;p&gt; Her set was , coffeehouse is clearly a chance to play in notable for her warm, clear voice, sharp front of an enthusiastic and receptive au-originals and casual, friendly stage presence dience.&lt;/p&gt;&lt;p&gt; This open, friendly atmosphere reminiscent of Carole King.&lt;/p&gt;&lt;p&gt; She is indica­ compels both the audience and the musi-tive of the surprising and delightfully high I cians to attend. quality of musicians who play at the cof- At the Acrosstown Coffeehouse, the feehouses. roster of artists changes fr-om month to In the past year, the Acrosstown Coffee­ month.&lt;/p&gt;&lt;p&gt; It is usually comprised of solo house has been joined by two others.&lt;/p&gt;&lt;p&gt; The musicians and groups who often provide Reunion Peace Center Coffeehouse , at backup for each other during their indi-1240-112 NW 21st Avenue, in the office vidual sets. building behind the Pizza Hut on Northwest "Most musicians aren't competitive ' with 13th Street, is held on the second and fourth each other, which makes. it (playing in Friday of every month.&lt;/p&gt;&lt;p&gt; Gainesville) really nice.&lt;/p&gt;&lt;p&gt; People playa lot in The Third Friday Coffeehouse takes different formations," said Janet Rucker, Ii place at the United Chur~h of Gainesville local musician who is a member of the on Northwest 17th Street and Fifth A ve- popular Rhythm and Blues Revue. . nue.&lt;/p&gt;&lt;p&gt; Both employ an "open mike" format. "If I'm short a person, I can always find David Beede is involved with the Re- someone to fill in.&lt;/p&gt;&lt;p&gt; F orthe money, of course, union Peace Center and often acts as master, ~~~~~~~ ~~~--~ of ceremony for the coffeehouse.&lt;/p&gt;&lt;p&gt; Because it is intended as a fund-raiser for the center, which is run on "a shoestring and a prayer," the musicians donate their services freely.&lt;/p&gt;&lt;p&gt; The goal of the Reunion Peace Center is to promote the idea of the internal peace movement as a necessary prerequisite for the external peace movement.&lt;/p&gt;&lt;p&gt; Simply put, they believe that men must be at ease with themselves before they can deal effectively with the world around them. "It's a real easy place to offer your music," Beede said. "The audience is open­ hearted and friendly." Like the Acrosstown Coffeehouse, the Reunion Peace Center features 15-20 minute sets featuring artists of various sty­ les, with the rest of the evening open to any musician who wishes to play.&lt;/p&gt;&lt;p&gt; Beede thinlcs this format is ideal. "If someone's great, you're left wanting more," he explained. "If someone's not so great, well, you know they'll be gone in a few minutes." As of now, the Reunion Peace Center Coffeehouse is strictly "open mike." Any musician who arrives early and signs up is given a chance to play.&lt;/p&gt;&lt;p&gt; But, according to Beede, the coffeehouse is considering a change in format that would allow it to devote half an evening to "open mike" and half an evening to a featured act.&lt;/p&gt;&lt;p&gt; Judging from the support in the local community , the coffeehou ses are fulfilling an important function.&lt;/p&gt;&lt;p&gt; The Acrosstown Coffeehouse has a mailing lisr with more than 200 names and it grows every day. "People will go out of their way to see it," said Bob Freeman, a production manager and one of the founders of the Acrosstown Repertory Theatre. "Of course, there isn't as much acoustic music on campus as there used to be," noted Alan Agresti, business manager of the Acrosstown Coffeehouse . "Ten or 15 years ago, you could walk across campus and find people playing music all along the way." Because of this absence, Agresti felt cer­ tain "there was a real need for this type of music." A visit to Acrosstown on the first Sunday of any month bears him out.&lt;/p&gt;&lt;p&gt; The theater is buzzing with a crowd of people, many of whom are regulars and know each other. "The atmosphere is very warm and friendly," Hornbeck said. "The audiences are friendly to the performers and each other." Musicians sit with friends and welI­ wishers until their set.&lt;/p&gt;&lt;p&gt; Encouraging banter. often passes between the crowd and the performers.&lt;/p&gt;&lt;p&gt; Their positive attitudes, coupled with Acrosstown's intimate sur­ roundings ; make you feel perfectly lit ease, as if you were sitting in someone's living room and listening to a friend pick out a tune on the guitar. see Coffeehouse, page 10 Coffeehouse festivals and the like.&lt;/p&gt;&lt;p&gt; But HooYler waoted to do lOQIC'IhiDc that would involve the from page 1 eabre CIOIDIIIaoity.&lt;/p&gt;&lt;p&gt; As of ~ IIoweYer allis r..iIy iDdudcs -I told them. "This is the bigh-white stuff. very few UF stadea1s. ~coa6rms allis.&lt;/p&gt;&lt;p&gt; Where'. the music and activities for the But, lie said, ""Wc'd c:ataiDIy lite to readI people that area't bigh-wbiteT' out to die stakuls. ..&lt;/p&gt;&lt;p&gt; Their polite disioterest ooly spurred him ShMIcaI5 do DOt anead c:oIfedIooscs for OD. two ..m rasoas.&lt;/p&gt;&lt;p&gt; FIISI, ..tvatisiaa ~ .. ) IOllOldber with Makolm Meekes. " sOan:a uc simply too sc:aroe, so ...... , Hoovlcr coatinued.&lt;/p&gt;&lt;p&gt; Meckes was ODe of the people dou't eYCO bow the cotfcebollscs fouadiDa members of the cross-culturai. exist.&lt;/p&gt;&lt;p&gt; SecoadIy, eYCO iftlley haw: heard of multiracial, avant-garde AcrosstOWD Reo tile coft'eebolas.&lt;/p&gt;&lt;p&gt; SlDdeDI5 area't quite sure pertory Tbcater, accordiog to Hoovler. what it would be lite. ") said, ·Let's try ao acoustic: music niJht Tllat's DOt SWl*isiIt&amp;- As n:ceatlyas four with music, poetry, stories, comedy, aDY­ yean .." then: wac DO coIfecboascs. thiDa that's JOOd.' Then: wetC abDost DO YCllIICS for acoustic "We did uid the house was always full. music at all.&lt;/p&gt;&lt;p&gt; But then: .....&lt;/p&gt;&lt;p&gt; Ed Hoovler.&lt;/p&gt;&lt;p&gt; And it ..... the mid-whites instead of the lIoovIer, who is a member of the ....... wlrites, you taow what ) mean? We CJoaas and tbe Burr Oat Easemble, were drawing a different audience, but DOt bepa die Aaosstowu CoIfechouse and IU (the multincial one he'd been hoping for)," it for I80re tbaa a year.&lt;/p&gt;&lt;p&gt; As Azresti said,"1Ie Hoovlcr said. started it aD. ..&lt;/p&gt;&lt;p&gt; ThouP it didn't live up to his idealistic Boowier' said,"'7he first impetus for the pis.&lt;/p&gt;&lt;p&gt; IIoovIeI' coasiders the AcrosstOWD Coft"edIouse W8S when the ~ CoIfeehouse 'a success. ")t gives the people rida ArI5 CcIebnIioD was ,trYiD&amp; to get of( that are playing the music a chance for the poaad with a represeotatima of every-people to listen to them -not like in bars," thia&amp; dial was JOiaI 00 in the arIS." be said.&lt;/p&gt;&lt;p&gt; Their plus iDduded sympIIoIIic:s. art For an eumple. he pointed to Janet Rucker. "Janet bas been ,playing around here for yean, but seldom does she get a chance to have people just sit down and listen." Rucker agrees. "The coffeehouse is the only, place I get to play my original SOIIp. " Thanks to recent growth, the Acrosstown Coffeehouse is becoming even more ambi­ tious.&lt;/p&gt;&lt;p&gt; Having incorporated, Agresti said it recently applied for status as 'a non-profit organization. "Eventually," Agresti said. "we bope to sponsor concert series similar to tbose done by the Gainesville Friends of Jazz." As for the moment, the coffeehouses are offering their small but loyal audiences something they can't find anywbere else.&lt;/p&gt;&lt;p&gt; And, 'as Hoovler said, there's no lack of talented local artists wbo are ready and eager to perform. "I've never been to a place witb more musicians, .. he said. . "In. some cities, tbere's one musician for every 10 potential audience members.&lt;/p&gt;&lt;p&gt; But, in Gainesville, it seems like there are 10 musicians to every one audience member." "There's not much of an outlet for . b t tbere's a terrific au-acoustic mUSIC, u d "Like the f ·t·' Freeman agree . dience or Ip'le really like it when they get theater, peo , used to it."</p>
             </div>
-        </div>
-        
-        <!-- Footer -->
-        <div class="footer">
-            <p>&copy; 2025 Michael Giltz. All rights reserved.</p>
-            <p>This article originally appeared in Alligator on 1985.</p>
         </div>
     </div>
 </body>

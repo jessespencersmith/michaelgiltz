@@ -3,135 +3,135 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Otis Redding By Jonathan Gould-5-16 by Michael Giltz - BookFilter">
-    <meta name="keywords" content="BookFilter, Otis Redding By Jonathan Gould-5-16, Michael Giltz, journalism, entertainment">
+    <meta name="description" content="Otis Redding by Jonathan Gould - BookFilter - Michael Giltz">
+    <meta name="keywords" content="Michael Giltz, BookFilter, journalism, article">
     <meta name="author" content="Michael Giltz">
-    <title>Otis Redding By Jonathan Gould-5-16 - BookFilter - Michael Giltz</title>
+    <title>Otis Redding by Jonathan Gould - Michael Giltz</title>
     <link href="../giltz.css" rel="stylesheet" type="text/css" />
     <style>
-        body { 
-            font-family: Arial, sans-serif;
+        body {
+            font-family: 'Times New Roman', Times, serif;
             margin: 0;
             padding: 0;
-            background: #f5f5f5;
+            background: #fff;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
         }
         .site-banner {
             text-align: center;
-            background: white;
-            padding: 10px 0;
+            padding: 20px 0;
+            background: #f9f9f9;
         }
         .site-banner img {
             max-width: 100%;
             height: auto;
         }
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            background: white;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        .header {
-            background: #333;
-            color: white;
-            padding: 20px;
+        .article-header {
             text-align: center;
+            padding: 30px 0 20px 0;
         }
-        .header h1 {
-            margin: 0;
-            font-size: 24px;
+        .article-title {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 28px;
+            font-weight: bold;
+            margin: 0 0 10px 0;
+            color: #333;
         }
-        .header p {
-            margin: 5px 0;
+        .article-meta {
             font-size: 14px;
+            color: #666;
+            margin: 0;
         }
         .pdf-viewer {
             width: 100%;
-            height: 600px;
-            border: none;
-            display: block;
+            height: 800px;
+            margin: 20px 0;
+            border: 1px solid #ddd;
         }
         .home-button {
             text-align: center;
-            padding: 20px;
-            background: #f0f0f0;
+            padding: 30px 0;
         }
         .home-button a {
             display: inline-block;
-            padding: 10px 30px;
+            padding: 12px 40px;
             background: #333;
             color: white;
             text-decoration: none;
             font-weight: bold;
+            font-size: 16px;
             border-radius: 5px;
+            text-transform: uppercase;
         }
         .home-button a:hover {
             background: #555;
         }
         .text-section {
-            padding: 20px;
+            padding: 40px 0;
+            border-top: 3px solid #333;
+            margin-top: 40px;
         }
         .text-section h2 {
+            font-size: 20px;
             color: #333;
-            border-bottom: 2px solid #333;
-            padding-bottom: 10px;
+            margin: 0 0 20px 0;
+            text-transform: uppercase;
         }
         .text-content {
             line-height: 1.8;
             color: #333;
+            font-size: 16px;
         }
         .text-content p {
             margin-bottom: 15px;
         }
-        .footer {
-            background: #f0f0f0;
-            padding: 20px;
-            text-align: center;
-            font-size: 12px;
-            color: #666;
-        }
         @media (max-width: 768px) {
             .pdf-viewer {
-                height: 400px;
+                height: 500px;
+            }
+            .article-title {
+                font-size: 22px;
             }
         }
     </style>
-    <link rel="icon" type="image/x-icon" href="../favicon.ico">
-    <link rel="icon" type="image/png" href="../favicon.png">
 </head>
 <body>
-    <!-- Site Banner -->
-    <div class="site-banner">
-        <a href="../index.htm"><img src="../giltz.jpg" width="800" height="146" alt="MichaelGiltz.com" /></a>
-    </div>
-    
     <div class="container">
-        <div class="header">
-            <h1>Otis Redding By Jonathan Gould-5-16</h1>
-            <p>Publication: BookFilter | Date: 2017 | by Michael Giltz</p>
+        <!-- Site Banner -->
+        <div class="site-banner">
+            <a href="../index.htm"><img src="../giltz.jpg" width="800" height="146" alt="MichaelGiltz.com" /></a>
         </div>
         
-        <!-- PDF Viewer -->
-        <iframe class="pdf-viewer" src="../scans/BookFilter-Otis_Redding_by_Jonathan_Gould-5-16-2017.pdf" title="PDF Article">
-            <p>Your browser does not support embedded PDFs. <a href="../scans/BookFilter-Otis_Redding_by_Jonathan_Gould-5-16-2017.pdf">Download the PDF</a> to view.</p>
+        <!-- Article Header -->
+        <div class="article-header">
+            <h1 class="article-title">Otis Redding by Jonathan Gould</h1>
+            <p class="article-meta">Publication: BookFilter &nbsp;&nbsp;|&nbsp;&nbsp; Date: May 16, 2017</p>
+        </div>
+        
+        <!-- PDF Viewer - Direct embed without buttons -->
+        <iframe class="pdf-viewer" 
+                src="../scans/BookFilter-Otis_Redding_by_Jonathan_Gould-5-16-2017.pdf#toolbar=0&navpanes=0" 
+                type="application/pdf"
+                frameborder="0">
+            <p>Your browser does not support PDFs. 
+               <a href="../scans/BookFilter-Otis_Redding_by_Jonathan_Gould-5-16-2017.pdf">Click here to view the PDF</a>.
+            </p>
         </iframe>
         
         <!-- Home Button -->
         <div class="home-button">
-            <a href="../index.htm">HOME</a>
+            <a href="../index.htm">Home</a>
         </div>
         
-        <!-- Text Section -->
+        <!-- SEO Text Section -->
         <div class="text-section">
-            <h2>SEO TEXT: Article Content for Search</h2>
+            <h2>SEO TEXT: Article Content for Search Engines</h2>
             <div class="text-content">
                 <p>Home |Register |Sign In Home Top Picks: All Books Otis Redding Otis Redding by Jonathan Gould Price: $28.00 (Hardcover) MorePublished: May 16, 2017 Rating: 0.0/ 5 (0 votes cast) From the Publisher: A definitive biography of Otis Redding, the musical artist who was widely regarded as the quintessential soul singer of the 1960s, timed to coincide with the 50th anniversary of Redding's iconic performance at the 1967 Monterey Pop Festival.&lt;/p&gt;&lt;p&gt; Otis Redding remains a living presence in the canon of American popular music on the strength ofsuch classic hits as "(Sittin’ on) The Dock of the Bay," “I’ve Been Loving You Too Long (To Stop Now),” "Try a Little Tenderness," and "Respect," a song that Redding wrote and recorded before Aretha Franklin made itimmortal.&lt;/p&gt;&lt;p&gt; As a singer, songwriter, bandleader, and arranger, Redding was the chief architect of the distinctly southern, gospel-inflected style ofrhythm &amp; blues associated with Stax Records in Memphis.&lt;/p&gt;&lt;p&gt; Yet, while Redding’s music has long served as the gold standard of 1960s soul, an aura of myth… Rate This Book Add To Wishlist |Rate/Review Add To Bookshelf Get This Book Personalize / Add More ChoicesGo to your preferred retailer, click to choose a format and you' ll be taken directly to their site where you can get this book.&lt;/p&gt;&lt;p&gt; What We Say Author Jonathan Gould is not fooling around.&lt;/p&gt;&lt;p&gt; You want to read about the brilliant, died-too-soon singer Otis Redding? Ok, but first Gould is gonna school you on how all of American music is inextricably tied up with race.&lt;/p&gt;&lt;p&gt; He'll give a sharp,knowing rundown of the minstrel shows that swept the nation, why record labels embraced hillbilly music (ie. country) but turned its nose up at "race" records (yep, prejudice), the rise of radio stations and why a focus on r&amp;b only happened when TV stole the attention of most households and so on.&lt;/p&gt;&lt;p&gt; In lesser hands, this might have felt like the inevitable padding out ofa life short on details (Redding was rarely interviewed, kept no journal and died at the age of 26).&lt;/p&gt;&lt;p&gt; Not here.&lt;/p&gt;&lt;p&gt; Gould beginsShare This Book About The Author Jonathan Gould JONATHAN GOULD is a former professional musician and the author of CAN’T BUY ME LOVE: The Beatles, Britain &amp; America.&lt;/p&gt;&lt;p&gt; He divides his time between a home in Brooklynand a house near Hudson, NY.&lt;/p&gt;&lt;p&gt; Release Info List Price: $28.00 (Hardcover) Published: May 16, 2017 Publisher: Crown Archetype Pages: 480 ISBN 10: 0307453944 ISBN 13: 9780307453945with Redding's ancestors and then his childhood, eventually moving on to chart his career and the rise of indie r&amp;b record labels (obviously including Stax) in engaging detail.&lt;/p&gt;&lt;p&gt; The book begins with Redding's monumental performance at Monterey, flashes back to the beginning and ends with his creative leap forward with the song "(Sittin' On) The Dock Of The Bay," a record so terrific it might well have hit #1 on the charts even if he hadn't died tragically in a plane crash months earlier.One can't help wondering what this artist just coming into his own might have accomplished.&lt;/p&gt;&lt;p&gt; But Gould does justice to whathe did achieve and paints a vivid, passionate picture of how one can't appreciate Redding or the rise of soul music withoutlearning more about the never-ending struggle over race in America. -- Michael Giltz What Others Say One of Men's Journal's "Best Books of May 2017" “An excellent and definitive biography… A master storyteller, Gould tackles Redding’s life by planting his flag firmly at the crossroads of individual genius and social andcultural context… [His] fabulous portrait…provides Redding with the “Respect” he richly deserves.&lt;/p&gt;&lt;p&gt; Highlyrecommended.” —Library Journal (starred review) "A music biography with the depth to do its subject justice.Otis Redding (1941-1967) ranks high in the pantheon of 1960s musical luminaries, so it's fitting that [OtisRedding] ranks equally high among such work focusing on popular musical artists....&lt;/p&gt;&lt;p&gt; Better late than never, the soul master receives his considerable due in this superbly researched and written biography." —Kirkus Reviews (starred review) "Gould vividly brings to life the man Stax Records boss Jim Steward called 'a walking inspiration'....&lt;/p&gt;&lt;p&gt; From his supreme triumphs to his one last heart-breaking phone-call to Zelma, devotees and soul scholars alike could not wish for a more thorough and sensitive portrait." —Kris Needs, Mojo “Nuanced and well-researched…. [Otis Redding] belongs in the hands of anyone who cares about soul music in the sixties.” —Booklist What You Say Filter by No Reviews Found ..... about us |faq|advertise |privacy policy |newsletter |contact us ©2018, BookBuddha LLc.&lt;/p&gt;&lt;p&gt; All Rights Reserved.</p>
             </div>
-        </div>
-        
-        <!-- Footer -->
-        <div class="footer">
-            <p>&copy; 2025 Michael Giltz. All rights reserved.</p>
-            <p>This article originally appeared in BookFilter on 2017.</p>
         </div>
     </div>
 </body>

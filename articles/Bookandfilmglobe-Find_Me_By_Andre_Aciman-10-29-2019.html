@@ -3,135 +3,135 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Find Me By Andre Aciman-10-29 by Michael Giltz - Bookandfilmglobe">
-    <meta name="keywords" content="Bookandfilmglobe, Find Me By Andre Aciman-10-29, Michael Giltz, journalism, entertainment">
+    <meta name="description" content="Find Me By Andre Aciman - Bookandfilmglobe - Michael Giltz">
+    <meta name="keywords" content="Michael Giltz, Bookandfilmglobe, journalism, article">
     <meta name="author" content="Michael Giltz">
-    <title>Find Me By Andre Aciman-10-29 - Bookandfilmglobe - Michael Giltz</title>
+    <title>Find Me By Andre Aciman - Michael Giltz</title>
     <link href="../giltz.css" rel="stylesheet" type="text/css" />
     <style>
-        body { 
-            font-family: Arial, sans-serif;
+        body {
+            font-family: 'Times New Roman', Times, serif;
             margin: 0;
             padding: 0;
-            background: #f5f5f5;
+            background: #fff;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
         }
         .site-banner {
             text-align: center;
-            background: white;
-            padding: 10px 0;
+            padding: 20px 0;
+            background: #f9f9f9;
         }
         .site-banner img {
             max-width: 100%;
             height: auto;
         }
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            background: white;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        .header {
-            background: #333;
-            color: white;
-            padding: 20px;
+        .article-header {
             text-align: center;
+            padding: 30px 0 20px 0;
         }
-        .header h1 {
-            margin: 0;
-            font-size: 24px;
+        .article-title {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 28px;
+            font-weight: bold;
+            margin: 0 0 10px 0;
+            color: #333;
         }
-        .header p {
-            margin: 5px 0;
+        .article-meta {
             font-size: 14px;
+            color: #666;
+            margin: 0;
         }
         .pdf-viewer {
             width: 100%;
-            height: 600px;
-            border: none;
-            display: block;
+            height: 800px;
+            margin: 20px 0;
+            border: 1px solid #ddd;
         }
         .home-button {
             text-align: center;
-            padding: 20px;
-            background: #f0f0f0;
+            padding: 30px 0;
         }
         .home-button a {
             display: inline-block;
-            padding: 10px 30px;
+            padding: 12px 40px;
             background: #333;
             color: white;
             text-decoration: none;
             font-weight: bold;
+            font-size: 16px;
             border-radius: 5px;
+            text-transform: uppercase;
         }
         .home-button a:hover {
             background: #555;
         }
         .text-section {
-            padding: 20px;
+            padding: 40px 0;
+            border-top: 3px solid #333;
+            margin-top: 40px;
         }
         .text-section h2 {
+            font-size: 20px;
             color: #333;
-            border-bottom: 2px solid #333;
-            padding-bottom: 10px;
+            margin: 0 0 20px 0;
+            text-transform: uppercase;
         }
         .text-content {
             line-height: 1.8;
             color: #333;
+            font-size: 16px;
         }
         .text-content p {
             margin-bottom: 15px;
         }
-        .footer {
-            background: #f0f0f0;
-            padding: 20px;
-            text-align: center;
-            font-size: 12px;
-            color: #666;
-        }
         @media (max-width: 768px) {
             .pdf-viewer {
-                height: 400px;
+                height: 500px;
+            }
+            .article-title {
+                font-size: 22px;
             }
         }
     </style>
-    <link rel="icon" type="image/x-icon" href="../favicon.ico">
-    <link rel="icon" type="image/png" href="../favicon.png">
 </head>
 <body>
-    <!-- Site Banner -->
-    <div class="site-banner">
-        <a href="../index.htm"><img src="../giltz.jpg" width="800" height="146" alt="MichaelGiltz.com" /></a>
-    </div>
-    
     <div class="container">
-        <div class="header">
-            <h1>Find Me By Andre Aciman-10-29</h1>
-            <p>Publication: Bookandfilmglobe | Date: 2019 | by Michael Giltz</p>
+        <!-- Site Banner -->
+        <div class="site-banner">
+            <a href="../index.htm"><img src="../giltz.jpg" width="800" height="146" alt="MichaelGiltz.com" /></a>
         </div>
         
-        <!-- PDF Viewer -->
-        <iframe class="pdf-viewer" src="../scans/Bookandfilmglobe-Find_Me_By_Andre_Aciman-10-29-2019.pdf" title="PDF Article">
-            <p>Your browser does not support embedded PDFs. <a href="../scans/Bookandfilmglobe-Find_Me_By_Andre_Aciman-10-29-2019.pdf">Download the PDF</a> to view.</p>
+        <!-- Article Header -->
+        <div class="article-header">
+            <h1 class="article-title">Find Me By Andre Aciman</h1>
+            <p class="article-meta">Publication: Bookandfilmglobe &nbsp;&nbsp;|&nbsp;&nbsp; Date: October 29, 2019</p>
+        </div>
+        
+        <!-- PDF Viewer - Direct embed without buttons -->
+        <iframe class="pdf-viewer" 
+                src="../scans/Bookandfilmglobe-Find_Me_By_Andre_Aciman-10-29-2019.pdf#toolbar=0&navpanes=0" 
+                type="application/pdf"
+                frameborder="0">
+            <p>Your browser does not support PDFs. 
+               <a href="../scans/Bookandfilmglobe-Find_Me_By_Andre_Aciman-10-29-2019.pdf">Click here to view the PDF</a>.
+            </p>
         </iframe>
         
         <!-- Home Button -->
         <div class="home-button">
-            <a href="../index.htm">HOME</a>
+            <a href="../index.htm">Home</a>
         </div>
         
-        <!-- Text Section -->
+        <!-- SEO Text Section -->
         <div class="text-section">
-            <h2>SEO TEXT: Article Content for Search</h2>
+            <h2>SEO TEXT: Article Content for Search Engines</h2>
             <div class="text-content">
                 <p>Monday, November 4, 2019  FICTION Love, Awfully Call Me By Your Name…Again!  October 29, 2019 Michael Giltz A sequel to the literary sensation Call Me By Your Name? That sounds like a bad idea, I thought.&lt;/p&gt;&lt;p&gt; I was wrong.&lt;/p&gt;&lt;p&gt; It turns out to be a positively dreadful idea.&lt;/p&gt;&lt;p&gt; André Aciman’s new novel Find Me manages to be terrible in itsown right and make you question your appreciation of the earlier book.&lt;/p&gt;&lt;p&gt; I saw the film version of Call Me By Your Name , starring Timothée Chalamet as the precocious and fawn-like 17-year-old Elio and Armie Hammer as Oliver, a supremely handsome 24-year-old grad student.&lt;/p&gt;&lt;p&gt; Oliver takesElio to his bed but is too afraid to take Elio to his heart.&lt;/p&gt;&lt;p&gt; Also, Elio has sex with a peach.&lt;/p&gt;&lt;p&gt; It’s a bittersweet taleand while I didn’t like it nearly as much as others, I enjoyed it well enough.&lt;/p&gt;&lt;p&gt; Then I read the novel.&lt;/p&gt;&lt;p&gt; It’s superior to the film in every way.&lt;/p&gt;&lt;p&gt; Subtler and clearer at the same time, the novel accomplishes everything at which the movie clumsily hints.&lt;/p&gt;&lt;p&gt; While the film was wise to focus the action onElio’s symbolic summer of ’42, the book extends well into the future.&lt;/p&gt;&lt;p&gt; Aciman leaves us in no doubt about how to see this romance.&lt;/p&gt;&lt;p&gt; The novel Call Me By Your Name is not a story of first love.&lt;/p&gt;&lt;p&gt; It’s an earthshaking story of true love, a story of two people who should be together.&lt;/p&gt;&lt;p&gt; But, alas, Oliver lacked the courage and it will never be.Exciting and New Well, forget all that! In a Jane Austen-like orgy of happy endings, Find Me doles out feel-good moments for all the men we cared about in the original novel.&lt;/p&gt;&lt;p&gt; We nostalgically visit landmarks from the earlier novel andreminisce, which is just as embarrassing as it sounds.&lt;/p&gt;&lt;p&gt; Characters who proved just this side of believable nowturn into caricatures.&lt;/p&gt;&lt;p&gt; People passionately in love become the sort of bores everyone else finds annoying.&lt;/p&gt;&lt;p&gt; No oneelse has ever experienced such bliss, they insist, which is obnoxious whether they’re right or wrong.&lt;/p&gt;&lt;p&gt; And witheach plot twist insistently pointing towards joy and happiness, we grimace.&lt;/p&gt;&lt;p&gt; Aciman breaks up Find Me into four sections with pretentious musical titles.&lt;/p&gt;&lt;p&gt; He titles the first “Tempo”, which in this case is quite slow, taking up nearly half the book.&lt;/p&gt;&lt;p&gt; Here we follow Elio’s supremely understanding father Samuel.&lt;/p&gt;&lt;p&gt; He divorced Elio’s mother because once their brilliant son left home, they realized the child was allthey had in common.&lt;/p&gt;&lt;p&gt; Samuel is heading to Rome to visit Elio.&lt;/p&gt;&lt;p&gt; On the train, he sits by an attractive but unhappy young woman who could be his daughter, or even granddaughter.&lt;/p&gt;&lt;p&gt; Needless to say, they begin to chat and fall hopelessly in love.&lt;/p&gt;&lt;p&gt; Truly, it’s a miracle any novel depicts people in love with satisfaction.&lt;/p&gt;&lt;p&gt; Here the annoyance trebles because Samuel is such a cliché–a much older man bewitched by a young woman.&lt;/p&gt;&lt;p&gt; She’s so mature for her age, hemarvels! She, in response, insists no one has ever understood her so completely the way he does! In one whirlwind day, they meet, go to her ailing father to celebrate his birthday (needless to say, he’s delighted to meet a man as old as himself about to ravage his daughter), eat and drink and talk and talk, make love–hervagina is like a ripe fig; she dubs his erect penis “my lighthouse”–and threaten to get matching tattoos.&lt;/p&gt;&lt;p&gt; This is where I quote some risible dialogue to make you laugh at the awfulness of the text in Find Me.&lt;/p&gt;&lt;p&gt; They’re making love and Aciman writes this very typical passage: “She smiled and after touching herself, brought her damp hand to my face, to my cheek and my forehead: ‘I want you to smell of me.’ And she touched my lips, my tongue, my eyelids, and I kissed her deep in the mouth,which was a signal we both understood, for it was, from time immemorial, the gift of one human to anotherhuman. “’Where did they invent you?’ I said when we were resting.&lt;/p&gt;&lt;p&gt; What I meant to say was I didn’t know what life was before this.&lt;/p&gt;&lt;p&gt; So I quoted Goethe again.” Love, European Style Find Me gets worse.&lt;/p&gt;&lt;p&gt; Aciman dubs the second section Cadenza, though it lasts almost as long as Tempo.&lt;/p&gt;&lt;p&gt; Wewatch as a 30-year-old Elio heads to Paris where he falls in love with an older man twice his age.&lt;/p&gt;&lt;p&gt; Their romancetakes days rather than minutes and involves classical-music concerts and lovely weekend getaways to homesmaintained by discreet servants.&lt;/p&gt;&lt;p&gt; Still, the apple doesn’t fall far from the tree.&lt;/p&gt;&lt;p&gt; Capriccio, in which Elio’s eternal love Oliver dallies with a younger man and woman at his going-away party, briskly follows.&lt;/p&gt;&lt;p&gt; He’s barely spoken to them before this party but they implicitly understand he’d gladly bedthem both.&lt;/p&gt;&lt;p&gt; Each, of course, feels honored and finds the idea delightful.&lt;/p&gt;&lt;p&gt; Yet all the while Oliver is hypnoticallyhearing the voice of Elio calling to him.&lt;/p&gt;&lt;p&gt; The book ends emphatically with Da Capo, where every possibleplotline is tied up neatly and wrapped in a bow.&lt;/p&gt;&lt;p&gt; As each impossibly joyful revelation followed the next, I winced.&lt;/p&gt;&lt;p&gt; As Aciman turned a bittersweet story into the rom-com movie Love, Actually, I looked away in embarrassment.&lt;/p&gt;&lt;p&gt; Maybe you enjoy Love, Actually .&lt;/p&gt;&lt;p&gt; But if they made a sequel and everyone ended up divorced, addicted to drugs, homeless or committing suicide, you mightjust wonder what the hell was going on. (Farrar, Strauss, and Giroux, October 29, 2019) Tags: Andre Aciman , Call Me By Your Name , Find Me← ‘How To Fight Anti-Semitism’ The Skin-Deep Dilemma of ‘Insatiable’ → High In the Air (An Everest Novel)  February 13, 2013 A Good Book by a GoodGuy  January 6, 2015 The Apex of MyAudiobook Addiction  December 4, 2013 Michael Giltz Michael Giltz is a freelance writer based in New York City covering all areas of entertainment, politics, sports and more.&lt;/p&gt;&lt;p&gt; He has written extensively for the New York Post, New York DailyNews, New York Magazine, The Advocate, Out, Huffington Post, Premiere Magazine,Entertainment Weekly, BookFilter, USA Today and the Los Angeles Times.&lt;/p&gt;&lt;p&gt; He co-hosts the long-running podcast Showbiz Sandbox . You May Also Like Leave a Reply Your email address will not be published.&lt;/p&gt;&lt;p&gt; Required fields are marked * CommentName * Email * WebsiteSubscribe to our mailing list Social Twitter Facebook Recent Posts Keep Your Eye on the Farrow Dharma Bum Harriet Tubman, Action Hero ‘The Irishman’: Scorsese’s Late-Career Wiseguy Masterwork Re-TerminatorRecent Comments Michael De La Riva on Die Hard is a Halloween Movie Sam Winters on Darkness Visible Robert L Lane on Die Hard is a Halloween Movie babajide ayodele on The Skin-Deep Dilemma of ‘Insatiable’ Ken Kurson on ‘How To Fight Anti-Semitism’ Archives November 2019 October 2019 September 2019 August 2019 July 2019 June 2019 May 2019 April 2019March 2019 February 2019 January 2019 December 2018 November 2018 October 2018 September 2018August 2018 July 2018 May 2017 February 2016 May 2015February 2015 January 2015 December 2014 November 2014 March 2014 December 2013 September 2013 April 2013February 2013 January 2013 December 2012 July 2012 November 2011 September 2011 June 2011May 2011 March 2011 May 2001 March 2001 October 2000 August 2000 July 2000June 2000 February 2000 January 2000 December 1999 November 1999 October 1999 September 1999August 1999 July 1999June 1999 May 1999 April 1999 March 1999 February 1999 September 1998 June 1998 May 1998April 1998 February 1998 October 1997 September 1997 August 1997 June 1997 May 1997April 1997 March 1997 February 1997 January 1997 November 1996 September 1996 August 1996June 1996 May 1996 April 1996 February 1996 January 1996 October 1995 August 1995February 1995 January 1995Editor: Neal Pollack | General Manager, Advertising: Kevin Sanders – 201-724-0340 Book and Film Globe California Globe Fine Art Globe Modern Consensus New Jersey Globe Rock and Roll Globe© 2019 Book and Film Globe About Us | Terms &amp; Conditions | Privacy Policy | Advertise with us |</p>
             </div>
-        </div>
-        
-        <!-- Footer -->
-        <div class="footer">
-            <p>&copy; 2025 Michael Giltz. All rights reserved.</p>
-            <p>This article originally appeared in Bookandfilmglobe on 2019.</p>
         </div>
     </div>
 </body>

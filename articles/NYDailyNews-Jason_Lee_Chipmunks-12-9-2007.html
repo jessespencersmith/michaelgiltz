@@ -3,135 +3,135 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Jason Lee Chipmunks-12-9 by Michael Giltz - NYDailyNews">
-    <meta name="keywords" content="NYDailyNews, Jason Lee Chipmunks-12-9, Michael Giltz, journalism, entertainment">
+    <meta name="description" content="Jason Lee Chipmunks - NYDailyNews - Michael Giltz">
+    <meta name="keywords" content="Michael Giltz, NYDailyNews, journalism, article">
     <meta name="author" content="Michael Giltz">
-    <title>Jason Lee Chipmunks-12-9 - NYDailyNews - Michael Giltz</title>
+    <title>Jason Lee Chipmunks - Michael Giltz</title>
     <link href="../giltz.css" rel="stylesheet" type="text/css" />
     <style>
-        body { 
-            font-family: Arial, sans-serif;
+        body {
+            font-family: 'Times New Roman', Times, serif;
             margin: 0;
             padding: 0;
-            background: #f5f5f5;
+            background: #fff;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
         }
         .site-banner {
             text-align: center;
-            background: white;
-            padding: 10px 0;
+            padding: 20px 0;
+            background: #f9f9f9;
         }
         .site-banner img {
             max-width: 100%;
             height: auto;
         }
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            background: white;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        .header {
-            background: #333;
-            color: white;
-            padding: 20px;
+        .article-header {
             text-align: center;
+            padding: 30px 0 20px 0;
         }
-        .header h1 {
-            margin: 0;
-            font-size: 24px;
+        .article-title {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 28px;
+            font-weight: bold;
+            margin: 0 0 10px 0;
+            color: #333;
         }
-        .header p {
-            margin: 5px 0;
+        .article-meta {
             font-size: 14px;
+            color: #666;
+            margin: 0;
         }
         .pdf-viewer {
             width: 100%;
-            height: 600px;
-            border: none;
-            display: block;
+            height: 800px;
+            margin: 20px 0;
+            border: 1px solid #ddd;
         }
         .home-button {
             text-align: center;
-            padding: 20px;
-            background: #f0f0f0;
+            padding: 30px 0;
         }
         .home-button a {
             display: inline-block;
-            padding: 10px 30px;
+            padding: 12px 40px;
             background: #333;
             color: white;
             text-decoration: none;
             font-weight: bold;
+            font-size: 16px;
             border-radius: 5px;
+            text-transform: uppercase;
         }
         .home-button a:hover {
             background: #555;
         }
         .text-section {
-            padding: 20px;
+            padding: 40px 0;
+            border-top: 3px solid #333;
+            margin-top: 40px;
         }
         .text-section h2 {
+            font-size: 20px;
             color: #333;
-            border-bottom: 2px solid #333;
-            padding-bottom: 10px;
+            margin: 0 0 20px 0;
+            text-transform: uppercase;
         }
         .text-content {
             line-height: 1.8;
             color: #333;
+            font-size: 16px;
         }
         .text-content p {
             margin-bottom: 15px;
         }
-        .footer {
-            background: #f0f0f0;
-            padding: 20px;
-            text-align: center;
-            font-size: 12px;
-            color: #666;
-        }
         @media (max-width: 768px) {
             .pdf-viewer {
-                height: 400px;
+                height: 500px;
+            }
+            .article-title {
+                font-size: 22px;
             }
         }
     </style>
-    <link rel="icon" type="image/x-icon" href="../favicon.ico">
-    <link rel="icon" type="image/png" href="../favicon.png">
 </head>
 <body>
-    <!-- Site Banner -->
-    <div class="site-banner">
-        <a href="../index.htm"><img src="../giltz.jpg" width="800" height="146" alt="MichaelGiltz.com" /></a>
-    </div>
-    
     <div class="container">
-        <div class="header">
-            <h1>Jason Lee Chipmunks-12-9</h1>
-            <p>Publication: NYDailyNews | Date: 2007 | by Michael Giltz</p>
+        <!-- Site Banner -->
+        <div class="site-banner">
+            <a href="../index.htm"><img src="../giltz.jpg" width="800" height="146" alt="MichaelGiltz.com" /></a>
         </div>
         
-        <!-- PDF Viewer -->
-        <iframe class="pdf-viewer" src="../scans/NYDailyNews-Jason_Lee_Chipmunks-12-9-2007.pdf" title="PDF Article">
-            <p>Your browser does not support embedded PDFs. <a href="../scans/NYDailyNews-Jason_Lee_Chipmunks-12-9-2007.pdf">Download the PDF</a> to view.</p>
+        <!-- Article Header -->
+        <div class="article-header">
+            <h1 class="article-title">Jason Lee Chipmunks</h1>
+            <p class="article-meta">Publication: NYDailyNews &nbsp;&nbsp;|&nbsp;&nbsp; Date: December 9, 2007</p>
+        </div>
+        
+        <!-- PDF Viewer - Direct embed without buttons -->
+        <iframe class="pdf-viewer" 
+                src="../scans/NYDailyNews-Jason_Lee_Chipmunks-12-9-2007.pdf#toolbar=0&navpanes=0" 
+                type="application/pdf"
+                frameborder="0">
+            <p>Your browser does not support PDFs. 
+               <a href="../scans/NYDailyNews-Jason_Lee_Chipmunks-12-9-2007.pdf">Click here to view the PDF</a>.
+            </p>
         </iframe>
         
         <!-- Home Button -->
         <div class="home-button">
-            <a href="../index.htm">HOME</a>
+            <a href="../index.htm">Home</a>
         </div>
         
-        <!-- Text Section -->
+        <!-- SEO Text Section -->
         <div class="text-section">
-            <h2>SEO TEXT: Article Content for Search</h2>
+            <h2>SEO TEXT: Article Content for Search Engines</h2>
             <div class="text-content">
                 <p>Jason Lee brings his nice-guy petsona to the 'Chipmunks' moviO "" MT.HAEL e,urz ctor Jason Lee is promoting his new fmily fllm "Alvin and the Chipmunks" (opening Friday), and that means being griled by the media For the moment, the media is represented by three middle-school girls from Long Island who've won the opportunity to intereiew the acton Armed with glasses of milk, they pepper Lee with questions, and though they know him from his voice work in the movies "Underdog" and "The ./ Incredibles," they're unaware that he appar- ently is on some Tv show called "My Name Is Earl-" 'You've never seen it?" asks I€e Politely. "You should watch it sometime lt's a really good show." The entire scene is sweet, just like the family fiIm he's promoting and indeed just like the 37-year-old Califomia native's entire careef, Since his wry but kind-eyed breakout in di rector Kevin Smith's movies, he's always sought or rector Kevin Smith's movies, he's always sought out good karma by seeking out good roles.&lt;/p&gt;&lt;p&gt; In "Alvin," t€e plays Dave Seville, the human straight man to the titular rodents.&lt;/p&gt;&lt;p&gt; In this CGI-sPiked update' a struBgling musician whose lite gets turned upside dom when three talking, singing chipmunks - Simon, The- odore and Alvin - pop up in his life.&lt;/p&gt;&lt;p&gt; They become pop sensations when Dave writes them a holiday tune called"The Chipmunk Song (Christmas Don't Be Late) " There is, of course, an evil record company executive (David Cross) who must be thwarted before Dave md the gang figure out how to live as a family, though not before Dave hollers "Alvin.&lt;/p&gt;&lt;p&gt; Alvin! ALVIN! !!!" The goodwill l€e brings.to the frlm is also evident on his hit NBC sitcom "My Name Is Earl." Though it revolvesmustache, which gets annofng, as petty as that seem: don't necessarily tell my agent I only want to do sweet funny or endearing things." So it wasn't a plm to avoid bitter or cynical roles B Lee - who has a 4-year-old son named Pilot Inspektor with his longtime girlfriend, actress Beth Riesgraf - i still reaping the karmic benefits ,.. he thinks "Maybe it's a good thing that no matter how angry I get, I'm still not the fierky guy]," he says. "Or maybe itts a bad thing.&lt;/p&gt;&lt;p&gt; Maybe it mems I would never be able to play Bill the Butcher in 'Gangs of New York' or som thing like that.&lt;/p&gt;&lt;p&gt; Maybe the audiencejust wouldn't buy Maybe people would just say, 'Oh, that's Earl.'" For the moment, though, Lee is not Earl, since the Miters strike has put TV shows on hiatus and given h an unexpected vacation.&lt;/p&gt;&lt;p&gt; A huge fan of road trips' he's plaming to head out in pursuit of another of his pas' iions: photography.&lt;/p&gt;&lt;p&gt; And along the way, he'll probably be listening to the band Midlake, a critically acclaime grorip steeped in'70s music like Fleetwood Mac that he's been championing for years.&lt;/p&gt;&lt;p&gt; Talking about Mid- lake's driving tbrce - singer md sonBMiter Tim Smi - Lee reveals what's important to himself as well, an what may be the fuel for his laidback nice-guyness. "What Tim Smith is into, he is very passionately inl You have a lot of things these days passed off as iron- ic.&lt;/p&gt;&lt;p&gt; That's sort of m excuse to like something that wot othemise be considered ridiculous or cmpy," says L who's knom to appreciate the work of Burt Reynoldr and achieved fame as a skateboarder long before the sport became an X Games fixture. "Just to see someone so unapologetically passiona about this music that really inspires him - it's not fot cool points.&lt;/p&gt;&lt;p&gt; You can sense md feel the sincerity." aaround a one-time criminal, his foul-tempered ex- wife, an illegal alien and a guy in the witness pro- \ tection program, it, too, is a chamrng, sweet- natured affair, Throw in his Zen-fllled rocker in 2000's "Almost Famous," his skatebording mil- lionaire in the 1999 comedy "Mumford" and his loyal best-bud to Ben Affleck in 1997's "Chasing Amy," and you see a pattem.&lt;/p&gt;&lt;p&gt; Nice- ness becomes him.&lt;/p&gt;&lt;p&gt; Or would he jump at the chance to play a serial killer? killer," muses Lee, who nonetheless played a gleeful demon in Smith's 1999 religious lark "Dogma." "I think there ile other wajrc to challenge myself as m actor with- out going to the extremes that other actors feel they have to go to.&lt;/p&gt;&lt;p&gt; You cm do it comedicallY.nThere are many challenges and in different forms 'Earl' is a challenge - the challenge of having to main- tain that kind of schedule.&lt;/p&gt;&lt;p&gt; To maintain patience with the"I wouldn't go out of my way to play a serial killer," muses Lee, who nonetheless played a gleef</p>
             </div>
-        </div>
-        
-        <!-- Footer -->
-        <div class="footer">
-            <p>&copy; 2025 Michael Giltz. All rights reserved.</p>
-            <p>This article originally appeared in NYDailyNews on 2007.</p>
         </div>
     </div>
 </body>

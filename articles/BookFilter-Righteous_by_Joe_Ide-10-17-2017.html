@@ -3,135 +3,135 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Righteous By Joe Ide-10-17 by Michael Giltz - BookFilter">
-    <meta name="keywords" content="BookFilter, Righteous By Joe Ide-10-17, Michael Giltz, journalism, entertainment">
+    <meta name="description" content="Righteous by Joe Ide - BookFilter - Michael Giltz">
+    <meta name="keywords" content="Michael Giltz, BookFilter, journalism, article">
     <meta name="author" content="Michael Giltz">
-    <title>Righteous By Joe Ide-10-17 - BookFilter - Michael Giltz</title>
+    <title>Righteous by Joe Ide - Michael Giltz</title>
     <link href="../giltz.css" rel="stylesheet" type="text/css" />
     <style>
-        body { 
-            font-family: Arial, sans-serif;
+        body {
+            font-family: 'Times New Roman', Times, serif;
             margin: 0;
             padding: 0;
-            background: #f5f5f5;
+            background: #fff;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
         }
         .site-banner {
             text-align: center;
-            background: white;
-            padding: 10px 0;
+            padding: 20px 0;
+            background: #f9f9f9;
         }
         .site-banner img {
             max-width: 100%;
             height: auto;
         }
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            background: white;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        .header {
-            background: #333;
-            color: white;
-            padding: 20px;
+        .article-header {
             text-align: center;
+            padding: 30px 0 20px 0;
         }
-        .header h1 {
-            margin: 0;
-            font-size: 24px;
+        .article-title {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 28px;
+            font-weight: bold;
+            margin: 0 0 10px 0;
+            color: #333;
         }
-        .header p {
-            margin: 5px 0;
+        .article-meta {
             font-size: 14px;
+            color: #666;
+            margin: 0;
         }
         .pdf-viewer {
             width: 100%;
-            height: 600px;
-            border: none;
-            display: block;
+            height: 800px;
+            margin: 20px 0;
+            border: 1px solid #ddd;
         }
         .home-button {
             text-align: center;
-            padding: 20px;
-            background: #f0f0f0;
+            padding: 30px 0;
         }
         .home-button a {
             display: inline-block;
-            padding: 10px 30px;
+            padding: 12px 40px;
             background: #333;
             color: white;
             text-decoration: none;
             font-weight: bold;
+            font-size: 16px;
             border-radius: 5px;
+            text-transform: uppercase;
         }
         .home-button a:hover {
             background: #555;
         }
         .text-section {
-            padding: 20px;
+            padding: 40px 0;
+            border-top: 3px solid #333;
+            margin-top: 40px;
         }
         .text-section h2 {
+            font-size: 20px;
             color: #333;
-            border-bottom: 2px solid #333;
-            padding-bottom: 10px;
+            margin: 0 0 20px 0;
+            text-transform: uppercase;
         }
         .text-content {
             line-height: 1.8;
             color: #333;
+            font-size: 16px;
         }
         .text-content p {
             margin-bottom: 15px;
         }
-        .footer {
-            background: #f0f0f0;
-            padding: 20px;
-            text-align: center;
-            font-size: 12px;
-            color: #666;
-        }
         @media (max-width: 768px) {
             .pdf-viewer {
-                height: 400px;
+                height: 500px;
+            }
+            .article-title {
+                font-size: 22px;
             }
         }
     </style>
-    <link rel="icon" type="image/x-icon" href="../favicon.ico">
-    <link rel="icon" type="image/png" href="../favicon.png">
 </head>
 <body>
-    <!-- Site Banner -->
-    <div class="site-banner">
-        <a href="../index.htm"><img src="../giltz.jpg" width="800" height="146" alt="MichaelGiltz.com" /></a>
-    </div>
-    
     <div class="container">
-        <div class="header">
-            <h1>Righteous By Joe Ide-10-17</h1>
-            <p>Publication: BookFilter | Date: 2017 | by Michael Giltz</p>
+        <!-- Site Banner -->
+        <div class="site-banner">
+            <a href="../index.htm"><img src="../giltz.jpg" width="800" height="146" alt="MichaelGiltz.com" /></a>
         </div>
         
-        <!-- PDF Viewer -->
-        <iframe class="pdf-viewer" src="../scans/BookFilter-Righteous_by_Joe_Ide-10-17-2017.pdf" title="PDF Article">
-            <p>Your browser does not support embedded PDFs. <a href="../scans/BookFilter-Righteous_by_Joe_Ide-10-17-2017.pdf">Download the PDF</a> to view.</p>
+        <!-- Article Header -->
+        <div class="article-header">
+            <h1 class="article-title">Righteous by Joe Ide</h1>
+            <p class="article-meta">Publication: BookFilter &nbsp;&nbsp;|&nbsp;&nbsp; Date: October 17, 2017</p>
+        </div>
+        
+        <!-- PDF Viewer - Direct embed without buttons -->
+        <iframe class="pdf-viewer" 
+                src="../scans/BookFilter-Righteous_by_Joe_Ide-10-17-2017.pdf#toolbar=0&navpanes=0" 
+                type="application/pdf"
+                frameborder="0">
+            <p>Your browser does not support PDFs. 
+               <a href="../scans/BookFilter-Righteous_by_Joe_Ide-10-17-2017.pdf">Click here to view the PDF</a>.
+            </p>
         </iframe>
         
         <!-- Home Button -->
         <div class="home-button">
-            <a href="../index.htm">HOME</a>
+            <a href="../index.htm">Home</a>
         </div>
         
-        <!-- Text Section -->
+        <!-- SEO Text Section -->
         <div class="text-section">
-            <h2>SEO TEXT: Article Content for Search</h2>
+            <h2>SEO TEXT: Article Content for Search Engines</h2>
             <div class="text-content">
                 <p>Home |Register |Sign In Home Top Picks: All Books Righteous Righteous by Joe Ide Price: $26.00 (Hardcover) Published: October 17, 2017 Rating: 0.0/ 5 (0 votes cast) From the Publisher: In this hotly anticipated follow-up to the smash hit IQ, a New York Times Critics' Best of the Year and nominee for the Best First Novel Edgar Award, Isaiah uncovers a secret behind the deathof his brother, Marcus.&lt;/p&gt;&lt;p&gt; For ten years, something has gnawed at Isaiah Quintabe's gut and kept him up nights, boiling with anger and thoughts of revenge.&lt;/p&gt;&lt;p&gt; Ten years ago, when Isaiah was just a boy, his brother was killed by an unknownassailant.&lt;/p&gt;&lt;p&gt; The search for the killer sent Isaiah plunging into despair andnearly destroyed his life.&lt;/p&gt;&lt;p&gt; Even with a flourishing career, a new dog, andnear-iconic status as a PI in his hometown, East Long Beach, he has to begin the hunt again-or lose his mind.&lt;/p&gt;&lt;p&gt; A case takes him and his volatile, dubious sidekick, Dodson, to Vegas,where Chinese gangsters and a terrifying seven-foot loan shark arestalking a DJ and her screwball boyfriend.&lt;/p&gt;&lt;p&gt; If Isaiah doesn't find the two first, they'll be murdered.&lt;/p&gt;&lt;p&gt; Awaiting the outcome is the love of IQ's life: fail, and he'll lose her.&lt;/p&gt;&lt;p&gt; Isaiah's quest is fraught with treachery, menace,and startling twists, and it will lead him to the mastermind behind hisbrother's death, Isaiah's own sinister Moriarty.With even more action, suspense, and mind-bending mysteries than Isaiah's first adventures, Righteous is a rollicking, ingenious thrill ride.&lt;/p&gt;&lt;p&gt; Rate This Book Add To Wishlist |Rate/Review Add To Bookshelf Get This Book Personalize / Add More ChoicesGo to your preferred retailer, click to choose a format and you' ll be taken directly to their site where you can get this book.&lt;/p&gt;&lt;p&gt; What We Say Joe Ide follows up his terrific debut "IQ" with a solid entry, a mystery not as immediately satisfying as the first in the series but one that wisely sets him up for the long haul.&lt;/p&gt;&lt;p&gt; Our hero Isaiah Quintabe -- aka "IQ" because he's so damned smart -- is acombination Sherlock Holmes/Easy Rawlins, super brainy but just as likely to be helping kids with a school bully as aShare This Book About The Author Joe Ide Joe Ide is of Japanese American descent.&lt;/p&gt;&lt;p&gt; Growing up in South Central Los Angeles,Joe's favorite books were the Conan DoyleSherlock Holmes stories.&lt;/p&gt;&lt;p&gt; The idea that aperson could face the world and vanquish hisenemies with just his intelligence fascinated him.&lt;/p&gt;&lt;p&gt; Joe went on to earn a graduate degree and had several careers before writing hisdebut novel, IQ, inspired by his earlyexperiences and his love of Sherlock.&lt;/p&gt;&lt;p&gt; Joelives in Santa Monica, California.&lt;/p&gt;&lt;p&gt; Visit his website at www.joeide.com Release Info List Price: $26.00 (Hardcover) Published: October 17, 2017 Publisher: Mulholland Books Pages: 336 ISBN 10: 0316267775 ISBN 13: 9780316267779wealthy rapper.&lt;/p&gt;&lt;p&gt; The first book told two stories: one that showed IQ on a current case and the other showing how this very precocious and confident young man escaped a desperate childhood after the accidental death of his brother made IQ embrace an easy life of crime. "Righteous" does a similar trick, though not as well.&lt;/p&gt;&lt;p&gt; Here again we see IQ dealing with a complicated case involving Vegas, gamblers up to their ears in debt, a prostitution ring and organized crime.&lt;/p&gt;&lt;p&gt; That'scontrasted with a second story where IQ discovers his brother was murdered and becomes determined to figure out why.&lt;/p&gt;&lt;p&gt; Inthe first book, IQ was always seven steps ahead of everyone else.&lt;/p&gt;&lt;p&gt; Here, he's been "reset" -- we see him learning on the job,sometimes petulant, etc.&lt;/p&gt;&lt;p&gt; His partner/sidekick is also fleshed out.&lt;/p&gt;&lt;p&gt; Unlike Watson and so many others, Dodson is super annoyed that IQ is so smart and never asks for an opinion or advice.&lt;/p&gt;&lt;p&gt; Determined to prove himself, Dodson is nobody's fool and that makes their dynamic fresh and surprising, a solid new twist on an old idea.&lt;/p&gt;&lt;p&gt; The crime and its resolution isn't themystery's strength -- it's the characters, from the female deejay who loves her loser, gambling boyfriend to Dodson'spregnant woman, who stares down gangsters with unnerving calm. "Righteous" is a good book and Ide is playing the long game by ratcheting down IQ's savvy and giving him room to grow.&lt;/p&gt;&lt;p&gt; This should be a very good series. -- Michael Giltz What Others Say "Ide's debut, IQ, was one of last year's best crime novels, and he follows it with another scorcher. . . .&lt;/p&gt;&lt;p&gt; Like the great Thomas Perry, Ide manages to combine light and dark in wholly unpredictable ways, blending comic capering with real-life bloodletting in a manner that diminishes neither and taps a vein of deep emotion lurking amid the laugh lines and spurts of violence.&lt;/p&gt;&lt;p&gt; Anyonewho loves Perry or Timothy Hallinan needs to hop on Ide's bandwagon while there's still room to sit.""Joe Ide is the best new discovery I've come across in a long time.&lt;/p&gt;&lt;p&gt; And Isaiah Quintabe is the kind of sleuth not seen on the mystery landscape before.&lt;/p&gt;&lt;p&gt; Righteous is a riveting follow up to IQ."âMichael Connelly, author of The Late Show - "Last year, Joe Ide became the best thing to happen to mystery writing in a very long time. . . .&lt;/p&gt;&lt;p&gt; There are a lot of fine reasons to discover Ide's work. . . .&lt;/p&gt;&lt;p&gt; He writes thumbnail descriptions that rival Elmore Leonard's. . . .&lt;/p&gt;&lt;p&gt; Hisdialogue, much of it unprintable here, has bite that puts him in the Winslow/Lehane league. . . .&lt;/p&gt;&lt;p&gt; The world ofthese books is one of constant trash talk, and Ide delivers it with style. . . .&lt;/p&gt;&lt;p&gt; It may be time for Ide to lay to restIsaiah's Marcus obsession and give him other things to think about.&lt;/p&gt;&lt;p&gt; I can't wait to find out what they'll be."â Janet Maslin , New York Times - "Excellent...&lt;/p&gt;&lt;p&gt; Ide keeps Righteous on a righteous path of compelling storytelling, allowing his characters to flourish while exploring the worst of human nature.&lt;/p&gt;&lt;p&gt; Never once does Righteous go over the top as Ide keeps each plot point chillingly realistic...&lt;/p&gt;&lt;p&gt; Ide's debut IQ showed what a skillful writer he is.&lt;/p&gt;&lt;p&gt; Righteous elevates the author--and his characters--to a new level."â Oline Cogdill , The Associated Press - "Ide is the real thing.&lt;/p&gt;&lt;p&gt; This column was late, because I couldn't stop reading my advance copy."â Allison K.&lt;/p&gt;&lt;p&gt; Hill , Long Beach Press-Telegram - "Outstanding . . .&lt;/p&gt;&lt;p&gt; Ide again makes his hero's deductive brilliance plausible, while presenting an emotionallyengaging story that doesn't shy away from presenting the bleakest aspects of humanity."â Publishers Weekly (starred review) - âBooklist (starred review) - "Brilliantly executed . . .&lt;/p&gt;&lt;p&gt; Deftly weaving the search for Marcus's killer with various escapades in Vegas, Ideemploys a clever mixing of time lines that will keep readers guessing until the explosive, bloody denouement.&lt;/p&gt;&lt;p&gt; Awinning combination of skillful writing and flawless pacing, this second series outing is packed with adrenaline-inducing scenes along with a colorful cast of violent and treacherous villains."â Library Journal (starred review) - "The game's afoot once again for 20-something genius sleuth Isaiah Quintabe. . . . [Ide] keeps your head in the game throughout with his witty style and edgy storytelling, both of which show greater assurance than in hisfirst novel--and even bigger potential for the future.&lt;/p&gt;&lt;p&gt; A thrilling follow-up to one of the more auspicious detective-series debuts in recent memory."â Kirkus Reviews - "Righteous is action packed, cerebral and altogether engaging, and I predict a long string of follow-up novels in this fine series."â Bruce Tierney , Bookpage - "Introducing one of the best loved detectives in the recent annals of crime fiction... a shot of adrenaline for Sherlock-style mystery lovers."â Dwyer Murphy , Lit Hub - What You Say Filter by No Reviews Found ..... about us |faq|advertise |privacy policy |newsletter |contact us ©2018, BookBuddha LLc.&lt;/p&gt;&lt;p&gt; All Rights Reserved.</p>
             </div>
-        </div>
-        
-        <!-- Footer -->
-        <div class="footer">
-            <p>&copy; 2025 Michael Giltz. All rights reserved.</p>
-            <p>This article originally appeared in BookFilter on 2017.</p>
         </div>
     </div>
 </body>
